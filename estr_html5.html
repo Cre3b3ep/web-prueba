@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+
+<head>
+	<!-- ↓ Metas primarios ↓ -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Estructura HTML5</title>
+
+	<!-- ↓ CSS  ↓ -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+
+	<!-- ↓ Favicons ↓ -->
+	<link rel="icon" type="image/png" href="img/favicon1.png" sizes="64x64" />
+
+	<!-- ↓ Metas SEO ↓ -->
+	<meta name="description" content="Aprende html5, su estructura estándar, y conceptos básicos sobre la web semántica" />
+	<meta name="keywords" content="html, html5, Brendan Eich, Tim Berners-Lee, w3schools, &lt;section>, &lt;header>, &lt;main>" />
+	<meta name="author" content="BJ" />
+	<meta name="copyright" content="DwBorja" />
+	<meta name="robots" content="index,follow" />
+
+	<!-- ↓ Fuentes ↓ -->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+	<!-- Funk -->
+
+
+
+</head>
+
+<body onload="fechas(),mueveReloj();">
+	<div id="contenedor">
+		<a id="index"></a> <!-- Ancla -->
+		<!-- Navegador movil vertical -->
+		<div id="nav_dropdowns">
+			<ul id="dropdown3" class="dropdown-content">
+				<li><a class="center-align" href="html.html">HTML</a></li>
+				<li><a class="center-align" href="html5.html">HTML+5</a></li>
+				<li><a class="center-align" href="fw-html.html">FrameWorks</a></li>
+			</ul>
+
+			<ul id="dropdown2" class="dropdown-content">
+				<li><a class="center-align" href="css.html">CSS</a></li>
+				<li><a class="center-align" href="css3.html">CSS 3</a></li>
+				<li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
+			</ul>
+
+			<ul id="dropdown1" class="dropdown-content">
+				<li><a class="center-align" href="js.html">JS</a></li>
+				<li><a class="center-align" href="es6.html">JS ES6</a></li>
+				<li><a class="center-align" href="fw-js.html">FrameWorkss</a></li>
+			</ul>
+
+			<ul id="dropdown4" class="dropdown-content">
+				<li><a class="center-align" href="php.html">PHP</a></li>
+				<li><a class="center-align" href="php7.html">PHP 7</a></li>
+				<li><a class="center-align" href="https://openwebinars.net/blog/los-10-mejores-frameworks-php-que-solicitan-las-empresas/">FrameWorks</a></li>
+			</ul>
+		</div>
+    <!-- Navegador horizontal -->
+    <header>
+		<nav class="white">
+			<div class="nav-wrapper container">
+				<ul class="right hide-on-med-and-down">
+					<li><a class="dropdown-trigger html" href="javascript:void(0);" data-target="dropdown3">HTML</a></li>
+					<li><a class="dropdown-trigger css" href="#!" data-target="dropdown2">CSS</a></li>
+					<li><a class="dropdown-trigger js" href="#!" data-target="dropdown1">JavaScript</a></li>
+					<li><a class="dropdown-trigger php" href="#!" data-target="dropdown4">PHP</a></li>
+					<li><a class="resto" href="#">Guías</a></li>
+					<li><a class="resto" href="#">Relacionado</a></li>
+				</ul>
+
+				<a href="#" class="sidenav-trigger" data-target="menu-lateral">
+					<i class="material-icons">menu</i></a>
+
+				<div id="logo">
+					<a class="tooltipped" data-position="top" data-tooltip="Click! => Inicio" href="index.html">
+						<span class="red-text text-darken-4">H</span>
+						<span class="blue-text text-darken-4">C</span>
+						<span class="yellow-text text-darken-4">J</span>
+						<span class="deep-purple-text text-darken-4">P</span>
+					</a>
+				</div>
+
+				<!-- nav movil -->
+				<ul id="menu-lateral" class="sidenav">
+					<li>
+						<div class="user-view">
+							<div class="background">
+								<img src="img/22.png" alt="fondo menú lateral" class="">
+							</div>
+							<a href="index.html"><i class="material-icons white-text">home</i>
+							</a>
+						</div>
+					</li>
+					<li>
+						<a href="html.html">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>HTML</p>
+						</a>
+					</li>
+					<li>
+						<a href="css.html">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>CSS</p>
+						</a>
+					</li>
+					<li>
+						<a href="js.html">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>JavaScript</p>
+						</a>
+					</li>
+					<li>
+						<a href="php.html">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>PHP</p>
+						</a>
+					</li>
+					<li>
+						<a href="contacto.html">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>Escribeme</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>Comprende las Cookies</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+    </nav>
+  </header>
+
+		<!-- HTML -->
+		<a id="html"></a> <!-- Ancla -->
+		<div id="index-banner" class="parallax-container">
+			<div class="section no-pad-bot">
+				<div class="container">
+					<h1 class="titulos header center red-text text-accent-4">Estructura html recomendada</h1>
+					<div class="row center">
+						<h4 class="header col s12 red-text">Esto nos facilita muchas cosas a todos!</h4>
+					</div>
+					<div class="row center">
+						<a href="html.html" aria-label="Más información sobre html" class="btn btn-large teal-text text-lighten-3 red accent-4 waves-effect waves-red html">Ver maqueta!</a>
+					</div>
+					<br><br>
+					<a target="_blank" href="https://www.pexels.com/photo/black-black-and-white-key-keys-1443834/" class="red-text text-darken-4">Pexel
+						por</a>
+					<a target="_blank" href="https://www.pexels.com/@jbaton-640439" class="red-text text-lighten-4">@jBaton</a> <i
+					 class="tiny material-icons red-text">open_in_new</i>
+				</div>
+			</div>
+			<div class="parallax">
+				<img src="img/f4.jpg" title="Max DeRoin" alt="Photo by Max DeRoin from Pexels">
+			</div>
+		</div>
+		<!-- Sección HTML -->
+		<div class="container">
+			<section class="section">
+					<div class="col s12">
+            <div class="card-content">
+            <h3 class="center">Estructura <i class="fab fa-html5"></i> semántica. </h3>
+            <blockquote><q>Una estructura que tenga un significado relevante, tanto para los desarrolladores como para las máquinas...</q></blockquote>
+						<p class="left-align kolo">Si haces zoom arriba en tu editor de texto, si alejas la vista para englobar desde la etiqueta <b>&lt;!DOCTYPE html></b> hasta la última <b>&lt;/html></b> puede que veas algo así:</p>
+						<pre><span class="red-text text-accent-4">&lt;!DOCTYPE html></span> <br><span class="amber-text text-accent-4">&lt;html lang="es-ES" dir="ltr"></span><br><span class="yellow-text text-accent-4">&lt;head></span>  <br>  &lt;meta charset="UTF-8"><br>  &lt;link href="css/.." type="text/css" rel="stylesheet" /><br><span class="yellow-text text-accent-4">&lt;/head></span> <br><span class="lime-text text-accent-2">&lt;body></span> <br><span class="lime-text text-accent-3">&lt;header> &lt;/header></span> <br> <span class="lime-text text-accent-4">&lt;nav>&lt;/nav></span><br><span class="green-text text-lighten-1">&lt;article></span> &lt;!-- <span class="white-text"> Puede cambiarse por section</span> --> <br> <span class="green-text text-accent-4">&lt;section>&lt;/section></span> <br> <span class="green-text text-lighten-4"> &lt;aside>&lt;/aside></span><br><span class="green-text text-lighten-1">&lt;/article></span><br> <span class="blue-text text-darken-">&lt;footer>&lt;/footer></span><br>&lt;script src="js/..">&lt;/script> <br><span class="lime-text lighten-4">&lt;/body></span> <br><span class="amber-text text-accent-4">&lt;/html></span><br><br><span class="pre"><span class="white-text"><span class="red-text text-accent-4">El documento html</span> contiene una <span class="yellow-text text-accent-4">cabeza pensante</span>, <span class="lime-text text-accent-2">un cuerpo contenedor</span>.  <br><br> <span class="lime-text text-accent-3">Cabecera</span>,  <span class="lime-text text-accent-4">navegación o menú</span>, <span class="green-text text-accent-4">sección</span>, <span class="green-text text-lighten-1">articulo</span>, <span class="green-text text-lighten-4">espacio publicitario</span> y un <span class="blue-text text-darken-">pié de página.</span></span></span>
+						</pre>
+						
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col s12">
+						<p class="kolo">Traduciendo este ejemplo... Con HTML<sub>5</sub>se nos recomienda el uso de varias etiquetas html estándar, estas permiten que la máquina "entienda" de qué trata el contenido de la página. Podemos decir que dentro de un espacio &lt;div> se encuentra un párrafo &lt;p> pero de aquí no pasa, no es capaz de diferenciar que es lo que pone dentro de ese parrafo. Con varias etiqueta que ofrece: &lt;q> dentro de una &lt;p> indicaría que en ese párrafo se encuentra una pequeña "cita"</p>
+					</div>
+					<div class="col s6 red"> <blockquote>
+							<h3>&lt;header></h3>
+							<p>soy la caja que contendrá tu cabecera</p>
+							<h3>&lt;/header></h3>
+						</blockquote>
+					</div>
+					<div class="col s12">
+							<p class="kolo">Traduciendo este ejemplo... Con HTML<sub>5</sub>se nos recomienda el uso de varias etiquetas html estándar, estas permiten que la máquina "entienda" de qué trata el contenido de la página. Podemos decir que dentro de un espacio &lt;div> se encuentra un párrafo &lt;p> pero de aquí no pasa, no es capaz de diferenciar que es lo que pone dentro de ese parrafo. Con varias etiqueta que ofrece: &lt;q> dentro de una &lt;p> indicaría que en ese párrafo se encuentra una pequeña "cita"</p>
+						</div>
+					<div class="col s6 red"> <blockquote>
+						<h3>&lt;q></h3>
+						<p>Estando entre estas Q's! soy un texto citado</p>
+						<h3>&lt;/q></h3>
+					</blockquote>
+				</div>
+				<div class="col s7"><blockquote><p>Lorem ipasdasda asd era af aerac aer asd aer asd ar a </p></blockquote></div>
+				</div>
+          
+          
+ 
+				<!-- publicidad -->
+				<div class="container center">
+					<div class="row">
+						<div class="card section card-action s5 m5 l5">
+							<a href="#">Publicidad</a>
+						</div>
+					</div>
+				</div>
+				<!-- publicidad -->
+			</section>
+    </div>
+    
+		<footer class="page-footer black">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Company Bio</h5>
+						<p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+							full time job. Any amount would help support and continue development on this project and is greatly
+							appreciated.</p>
+					</div>
+
+
+					<!-- Fixed bton -->
+					<div class="fixed-action-btn">
+						<a class="btn-floating btn-large resto">
+							<i class="fas fa-cog fa-spin"></i>
+						</a>
+						<ul>
+							<li><a class="btn-floating" href="#index"><i class="fas fa-chevron-up"></i></a></li>
+							<li><a class="btn-floating red" href="#html"><i class="fab fa-html5"></i></a></li>
+							<li><a class="btn-floating blue darken-4" href="#css"><i class="fab fa-css3-alt"></i></a></li>
+							<li><a class="btn-floating yellow" href="#js"><i class="fab fa-js"></i></a></li>
+							<li><a class="btn-floating blue" href="#php"><i class="fab fa-php"></i></a></li>
+							<li><a class="btn-floating" href="#footer"><i class="fas fa-chevron-down"></i></a></li>
+						</ul>
+					</div>
+					<!-- Fixed bton -->
+
+
+					<div class="col l3 s12">
+						<h5 class="white-text">Mapa del sitio</h5>
+						<ul>
+							<li><a class="white-text" href="html.html">HTML</a></li>
+							<li><a class="white-text" href="css.html">CSS</a></li>
+							<li><a class="white-text" href="js.html">JS</a></li>
+							<li><a class="white-text" href="curiosidades.html">Curiosidades</a></li>
+							<li><a class="white-text" href="guias.html">Guías</a></li>
+							<li><a class="white-text" href="relacionado.html">Relacionado</a></li>
+						</ul>
+					</div>
+
+					<div class="col l3 s12">
+						<h5 class="white-text">Connect</h5>
+						<ul>
+							<li><a class="white-text" href="#!">Link 1</a></li>
+							<li><a class="white-text" href="#!">Link 2</a></li>
+							<li><a class="white-text" href="#!">Link 3</a></li>
+							<li><a class="white-text" href="#!">Link 4</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<a id="footer"></a>
+			<div class="footer-copyright">
+				<div class="container">
+					Made by&with <a class="red-text text-lighten-2" href="http://materializecss.com">Materialize</a>
+				</div>
+			</div>
+		</footer>
+    
+    </div>
+    	<!--  Scripts-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+	<script src="js/funk.js"></script> 
+
+    </body>
+    </html>

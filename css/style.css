@@ -1,0 +1,265 @@
+a,
+nav,
+nav ul a {
+  color: #0c8d80
+}
+a {
+  font-family: 'Special Elite', sans-serif
+}
+li a:hover,
+p a:hover {
+  color: #000
+}
+blockquote {
+  color: #4a0080;
+  font-style: italic;
+}
+blockquote,
+cite,
+figcaption,
+h1,h2,h3,
+h4,h5,h6,
+li,p {
+  cursor: default;
+  font-family: 'Special Elite', sans-serif;
+
+}
+p {
+  font-size: 1.11em;
+  line-height: 6.6mm;
+  word-spacing: .03mm;
+}
+li:hover, p, pre {
+  cursor: default;
+}
+/* font-family: 'Life Savers',cursive !important;*/
+pre {
+  background-color: rgb(13, 14, 15);
+  border-radius: .2rem;
+  color: hsla(54, 71%, 81%, 0.349);
+  font-family: 'Special Elite', sans-serif;
+  font-size: 1.1em;
+  word-wrap: break-word;
+  padding: 0.6em 1em 0.6em 1em !important;
+  white-space: pre-wrap;
+}
+
+#contenedor {
+  background-color: hsla(54, 100%, 100%, 0.224);
+  margin: 0;
+  padding: 0;
+  height: 100%;  
+  transition: 1.33s ease-in-out;
+}
+#contenedor:hover{
+  background-color: hsla(54, 100%, 50%, 0.224);
+    
+}
+
+#dropdown3 li a:hover {
+  background-color: #d11800 !important;
+  color: #fff
+}
+
+#dropdown2 li a:hover {
+  background-color: navy !important;
+  color: #fff
+}
+
+#dropdown1 li a:hover {
+  background-color: #ffd900 !important;
+  color: #fff
+}
+
+#dropdown4 li a:hover {
+  background-color: #661fff !important;
+  color: #fff
+}
+#google_translate_element{
+  z-index: 99999
+}
+
+#logo {
+  font-size: 4.5em;
+  width: 5.1%;
+  -webkit-perspective: 100px; /* Safari 4-8  */
+  perspective: 100px;
+}
+#logo img{
+  -webkit-transform-style: preserve-3d; /* Safari 3-8  */    
+  -webkit-transform: rotateX(33deg); /* Safari 3-8  */
+  transform-style: preserve-3d;
+  transform: rotateX(33deg);
+}
+.lista1 li {
+  display:inline-block;
+  padding:0 11px 0 11px;
+}
+.afuera i{
+  display: none
+}
+.afuera:hover i{
+  display: inline;
+}
+.aportaciones:before {
+  content: open-quote
+}
+.aportaciones:after {
+  content: close-quote
+}
+.aportaciones {
+  font-size: 90%;
+  font-style: oblique;
+}
+
+.css:hover {
+  background-color : #110766 !important ;
+  color : #fff !important;
+}
+.deco{
+  text-decoration: underline;
+  text-decoration-style: wavy
+}
+.ejCss{
+  color:#F33333 !important;
+  font-family:'Orbitron', sans-serif ;
+  font-size: 15pt;
+}
+.html:hover {
+  background-color : #d11800 !important ;
+  color : #fff !important;
+}
+.icon-block {
+  padding: 0 15px
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+.js:hover {
+  background-color : #ffd000 !important ;
+  color : #fff !important;
+}
+.fondo_tit{
+  background-color: hsla(51, 66%, 6%, 0.111);
+  border-radius: 3px  
+}
+.kolo:first-letter {
+  font-size: 33pt
+}
+.mainontaOikealla {
+  padding: 1.3%
+}
+.nodeh:hover{
+  background-color: #68cf00
+}
+.oculto{
+  visibility:hidden;
+}
+.parallax-container {
+  min-height: 35rem;
+  z-index: 99
+}
+.parallax-container .section {
+  width: 100%
+}
+.pieInvisible {
+  color: transparent;
+  transition: all 1s ease-in-out
+}
+.purpur{
+  background-color: hsla(322, 54%, 7%, 0.8) !important;
+}
+.php:hover{
+  background-color: #4a0080
+}
+.pre{
+  color: hsla(54, 71%, 81%, 0.349);
+}
+.pieInvisible:hover {
+  color: #000
+}
+.pKlein {
+  font-size: 10pt;
+  font-family: 'Special Elite', sans-serif;
+  word-wrap: break-word;
+  cursor: default
+}
+.reduce img{
+  max-width: 7%;
+}
+.resenyas{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 69%;
+}
+.resalto{
+  text-shadow: #000 2px 2px 2px;
+}
+.resalte {
+  background-color: rgba(25, 148, 136, .082)
+}
+.resto{
+  color: #3c8e7e 
+}
+.resto:hover {
+  background-color : #3c8e7e !important ;
+  color : #fff !important;
+}
+.subrr {
+  background-color: #ffd900
+}
+.sidenav-trigger {
+  color: #26a699
+}
+.sombraBtns {
+  text-shadow: #000 .4px .6px .4px
+}
+.titSemantik {
+  font-size: 1.3em;
+  font-style: italic;
+}
+.valor {
+  color: #0c8d80
+}
+.yaen{
+  background-color: #48beb3;
+}
+
+
+@media only screen and (max-width:992px) {
+  .parallax-container .section {
+    /* position: absolute; */
+    top: 0
+  }
+
+  #index-banner .section {
+    top: 10%
+  }
+}
+
+@media only screen and (min-width:413px) and (max-width:794px) {
+  #contenedor {
+    background-color: rgba(255, 229, 0, .333);
+    transition: all 2s ease-in-out
+  }
+}
+
+@media only screen and (max-width:600px) {
+  #index-banner .section {
+    top: 0
+  }
+}
+
+@media only screen and (max-width:413px) {
+  #contenedor {
+    background-color: rgba(255, 229, 0, .666);
+    transition: all 2s ease-in-out
+  }
+  .titulos,
+  h2 {
+    font-size: 2em;
+    text-align: left;
+  }
+  h1{
+    font-size: 2.8em;
+  }
+}

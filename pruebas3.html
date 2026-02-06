@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+
+<head>
+	<!-- ↓ Metas primarios ↓ -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>DWB Inicio</title>
+
+	<!-- ↓ CSS  ↓ -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+
+	<!-- ↓ Favicons ↓ -->
+	<link rel="icon" type="image/png" href="img/favicon1.png" sizes="64x64" />
+
+	<!-- ↓ Metas SEO ↓ -->
+	<meta name="description" content="Aprende html5, html, css3, css, javascript, ES6, ecmascript 6, ecmas, php, php7 y encuentra las fuentes de todo desarrollador web." />
+	<meta name="keywords" content="html, css, javascript, php, html5, css3, ES6, ecmas6, Brendan Eich, Tim Berners-Lee, hcjp" />
+	<meta name="author" content="BJ" />
+	<meta name="copyright" content="DwBorja" />
+	<meta name="robots" content="index,follow" />
+
+	<!-- ↓ Fuentes ↓ -->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script>
+			$(document).ready(function(){anchor.init()}),anchor={init:function(){$("a.anchorLink").click(function(){return elementClick=$(this).attr("href"),destination=$(elementClick).offset().top,$("html:not(:animated),body:not(:animated)").animate({scrollTop:destination},666),!1})}};
+			 </script>
+
+
+</head>
+<body onload="fechas(),mueveReloj();">
+	<div id="contenedor">
+		<a id="anchorTarget"></a> <!-- Ancla -->
+		<!-- Navegador movil vertical -->
+		<div id="nav_dropdowns">
+			<ul id="dropdown3" class="dropdown-content">
+				<li><a class="center-align" href="html.html">HTML</a></li>
+				<li><a class="center-align" href="html5.html">HTML+5</a></li>
+				<li><a class="center-align" href="fw-html.html">FrameWorks</a></li>
+			</ul>
+
+			<ul id="dropdown2" class="dropdown-content">
+				<li><a class="center-align" href="css.html">CSS</a></li>
+				<li><a class="center-align" href="css3.html">CSS 3</a></li>
+				<li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
+			</ul>
+			<ul id="dropdown1" class="dropdown-content">
+				<li><a class="center-align" href="js.html">JS</a></li>
+				<li><a class="center-align" href="es6.html">JS ES6</a></li>
+				<li><a class="center-align" href="fw-js.html">FrameWorkss</a></li>
+			</ul>
+
+			<ul id="dropdown4" class="dropdown-content">
+				<li><a class="center-align" href="php.html">PHP</a></li>
+				<li><a class="center-align" href="php7.html">PHP 7</a></li>
+				<li><a class="center-align" href="https://openwebinars.net/blog/los-10-mejores-frameworks-php-que-solicitan-las-empresas/">FrameWorks</a></li>
+			</ul>
+		</div>
+		<!-- Navegador horizontal -->
+		<header>
+		<nav class="white">
+			<div class="nav-wrapper container">
+				<ul class="right hide-on-med-and-down">
+					<li><a class="dropdown-trigger html" href="javascript:void(0);" data-target="dropdown3">HTML</a></li>
+					<li><a class="dropdown-trigger css" href="#!" data-target="dropdown2">CSS</a></li>
+					<li><a class="dropdown-trigger js" href="#!" data-target="dropdown1">JavaScript</a></li>
+					<li><a class="dropdown-trigger php" href="#!" data-target="dropdown4">PHP</a></li>
+					<li><a class="resto" href="#">Guías</a></li>
+					<li><a class="resto" href="relacionando.html">Relacionado</a></li>
+				</ul>
+
+				<a href="#" class="sidenav-trigger" data-target="menu-lateral">
+					<i class="material-icons">menu</i></a>
+
+				<div id="logo">
+					<a class="tooltipped" data-position="left" data-tooltip="Click! => Inicio" href="index.html">
+						<span class="red-text text-darken-4">H</span>
+						<span class="blue-text text-darken-4">C</span>
+						<span class="yellow-text text-darken-4">J</span>
+						<span class="deep-purple-text text-darken-4">P</span>
+					</a>
+				</div>
+
+				<!-- nav movil -->
+				<ul id="menu-lateral" class="sidenav">
+					<li>
+						<div class="user-view">
+							<div class="background">
+								<img src="img/22.png" alt="fondo menú lateral" class="">
+							</div>
+							<a href="index.html"><i class="material-icons white-text">home</i>
+							</a>
+						</div>
+					</li>
+					<li>
+						<a href="html.html">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>HTML</p>
+						</a>
+					</li>
+					<li>
+						<a href="css.html">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>CSS</p>
+						</a>
+					</li>
+					<li>
+						<a href="js.html">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>JavaScript</p>
+						</a>
+					</li>
+					<li>
+						<a href="php.html">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>PHP</p>
+						</a>
+					</li>
+					<li>
+						<a href="contacto.html">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>Escribeme</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="material-icons">check_box_outline_blank</i>
+							<p>Comprende las Cookies</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+		<!-- HTML -->
+		<a id="html"></a> <!-- Ancla -->
+		<div id="index-banner" class="parallax-container row">
+			<div class="section no-pad-bot">				
+				<div class="container center">
+
+					<div class="col s12 m10 l12">
+						<h1 class="titulos header white-text text-accent-4 ">HTML</h1>	
+						<h4 class="white-text text-accent-4">Lenguaje de marcas hipertextuales</h4>
+					</div>
+
+					<div class="col s12 m10 l12 right">
+						<a href="html.html" aria-label="Más sobre html" class="btn btn-large red waves-effect waves-red html">Empieza!</a>
+					</div>
+
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+					<div class="col s4 bottom left">
+						<a target="_blank" href="https://www.pexels.com/photo/close-up-of-computer-keyboard-249203/" class="red-text text-darken-4">Pexel	por</a>
+						<a target="_blank" href="https://www.pexels.com/@maxderoin" class="red-text text-lighten-4">@maxderoin<i class="tiny material-icons red-text">open_in_new</i></a>
+				  </div>
+				</div>
+			</div>
+			<div class="parallax">
+				<img src="img/pexels-photo-249203.jpeg" title="Max DeRoin" alt="Photo by Max DeRoin from Pexels">
+			</div>
+		</div>
+
+		
+		<!-- Sección HTML -->
+		<div class="container" id="cont_html">
+			<section class="section">
+				<div class="row">
+					<div class="col s12 center">
+						<h3><i class="redHtml">HTML</i></h3>
+						<p class="left-align kolo">Hace ya <span id="fecha"></span>
+							<span id="segundos"></span>en el <a target="_blank" href="https://home.cern/" class="tooltipped" data-position="top"
+							 data-tooltip="Conseil Européen pour la Recherche Nucléaire"><abbr title="Organización Europea para la Investigación Nuclear">CERN</abbr><sup><i class="tiny material-icons">open_in_new</i></sup>
+							</a>
+							a un ingeniero llamado <a href="https://www.w3.org/People/Berners-Lee/" target="_blank" class="tooltipped"
+							 data-position="top" data-tooltip="w3.org/People/Berners-Lee">Tim Berners-Lee<sup><i class="tiny material-icons">open_in_new</i></sup></a>
+							se le ocurrió crear un sistema para compartir archivos en línea, estableciendo la primera comunicación entre un
+							"cliente" y un "servidor" a través de <span class="tooltipped black-text" data-position="top" data-tooltip="HyperText Transfer Protocol">
+								<abbr title="Protocolo de transferencia de hipertexto"><b>HTTP</b></abbr> </span> bautizando a su creación bajo las siglas<span class="black-text tooltipped" data-position="top"
+							 data-tooltip="Hyper Text Markup Language"> <abbr title="Lenguaje de marcado hipertextual"><b>HTML</b></abbr></span>	. Como todo en esta vida <abbr title="HyperText Markup Language"> HTML</abbr> evoluciona a
+							pasos casi agigantados, pasados 20 años se comienza a desarrollar el estándar de la versión 5 y hasta el 2014 no
+							se establece, pero durante ese plazo de 7 años se dio a conocer al Mundo y gracias a él se pudo estandarizar
+							en octubre de ese año.</p>
+							<p>El hombre ingenuo considera como real lo que puede percibir con los sentidos, y lo que no se le presenta como percepción (Dios, el alma, el conocimiento, etc.) se lo representa como algo análogo a lo que se percibe.</p> <br> <p>Si el realismo ingenuo quiere fundar una ciencia, sólo puede concebirla como una descripxión extacta del contenido de la percepción. Los conceptos le son solo medios para su fin. Existen para crear imágenes reflejas de las percepciones. Carecen de sentido para las cosas mismas. El realista ingenuo sólo considera reales los tulipanes individuales que se ven, o que podrían ver; la idea misma del tuli`´an la considera una abstracción, la imagen mental irreal que el alma se ha fomrado de las características comunes a todos los tulipanes.</p>
+						<article>
+							<h4>HTML <i>5</i> es la última versión.</h4>
+							<p class="left-align kolo">Publicada y estandarizada por el <a target="_blank" href="https://www.w3.org/TR/html52/"
+								 class="tooltipped" data-position="top" data-tooltip="w3.org/TR/html52">World
+									Wide Web Consortium<sup><i class="tiny material-icons">open_in_new</i></sup></a><br>Conociendo a fondo el uso
+								y funcionamiento de HTML se comprenden mejor los cambios
+								realizados en las versiones posteriores. <br> HTML5 especifica:</p>
+							<ol class="left-align">
+								<li>
+									<p>Una estructura que <a href="estr_html5.html" class="tooltipped" data-position="top" data-tooltip="Estructura recomendada con HTML5">ayuda</a>
+										a los desarrolladores.</p>
+								</li>
+								<li>
+									<p>Una mejora en su <a class="tooltipped" data-position="top" data-tooltip="Verificación de formularios" href="seg_html5.html">seguridad.</a></p>
+								</li>
+								<li>
+									<p>Corrección de errores y eliminación de funcionalidades obsoletas.</p>
+								</li>
+								<li>
+									<p><a class="tooltipped" data-position="top" data-tooltip=".w3schools.com/html/html5_geolocation.asp" href="https://www.w3schools.com/html/html5_geolocation.asp">Diferentes
+											API's<sup><i class="material-icons tiny">open_in_new</i></sup></a></p>
+								</li>
+								<li>
+									<p><a class="tooltipped" data-position="top" data-tooltip="Recopilación de etiquetas HTML5 semánticas" href="accesibilidad.html">Accesibilidad</a>,
+										gracias a sus etiquetas semánticas.</p>
+								</li>
+							</ol>
+						</article>
+					</div>
+				</div>
+				<!-- publicidad -->
+				<div class="container center">
+					<div class="row">
+						<div class="card section card-action s5 m5 l5">
+							<a href="#">Publicidad</a>
+						</div>
+					</div>
+				</div>
+				<!-- publicidad -->
+			</section>
+		</div>
+		<!--Fin sección HTML -->
+
+		<!-- CSS -->
+		<a id="css"></a> <!-- Ancla -->
+		<div class="parallax-container">
+			<div class="section no-pad-bot">
+				<div class="container">
+					<h2 class="titulos center blue-text text-darken-1 left">CSS</h2>
+					<div class="row center">
+						<h4 class="header col s12 blue-text text-lighten-2">Hoja de Estilos en Cascada</h4>
+					</div>
+					<div class="row center">
+						<a href="css3.html" aria-label="Más información sobre css" class="btn btn-large blue waves-effect waves-light css right">CSS
+							3.1!</a>
+					</div>
+					<a href="https://www.pexels.com/photo/closeup-photo-of-black-and-blue-keyboard-1194713/" target="_blank">Pexel
+						por</a>
+					<a href="https://www.pexels.com/@martabranco" target="_blank" class="blue-text text-lighten-4">@martabranco</a><i
+					 class="material-icons tiny cyan-text">open_in_new</i>
+				</div>
+			</div>
+			<div class="parallax"><img src="img/pexels-photo-1010497.jpeg" title="Marta Branco" alt="Photo by Marta Branco from Pexels"></div>
+		</div>
+		<!-- Seccion CSS -->
+		<div class="container" id="cont_css">
+			<section class="section">
+				<div class="row">
+
+					<div class="col s12">
+						<h3 class="blue-text center">CSS</h3>
+						<p class="kolo"><i>"C<b>ascade..."</b></i> Cascada, la <a href="sint_css.html" class="tooltipped" data-position="top"
+							 data-tooltip="Ver sintaxis de CSS">sintaxis</a> de CSS produce un "efecto cascada", cuando es escrito de modo
+							externo en un archivo con la extensión .css, el cual es llamado desde un "doc".html con la etiqueta
+							<a class="tooltipped" data-position="top" data-tooltip="+ Sobre los link en html" href="links.html">&lt;link></a>
+						</p>
+					</div>
+
+
+					<!-- Sección Ejemplo1 css -->
+					<div class="col m4 s12 codigo">
+						<div class="card">
+							<pre><span class="red-text text-darken-4">*</span><span class="white-text">{</span> <br> margin: <span class="valor">0</span>;<br> padding:<span class="valor">0</span> <br> <span class="white-text">}</span> <br><br><span class="red-text text-darken-4">body,html</span><span class="white-text">{</span><br> font-family: <span class="amber-text">'Specila Elite'</span>, sans -serfi;<br> color: <span class="white-text">#FFF</span><br><span class="white-text">}</span> <br><br><span class="red-text text-darken-4">pre</span><span class="white-text">{</span><br> font-size: <span class="valor">87.5</span><span class="red-text">%</span>; <br> color: <span class="valor">#e83e8c</span>; <br> word-break: break-word; <br> background-color: <span class="valor">#212529</span>;<br> padding: <span class="valor">0.2<span class="red-text">rem</span> 0.4<span class="red-text">rem</span></span>; <br> border-radius: <span class="valor">0.2 <span class="red-text">rem</span></span>;<br><span class="white-text">}</span>	
+</pre>
+						</div>
+					</div>
+					<div class="col m8 s12">
+						<div class="card">
+						<pre><span class="white-text">/*</span> La sintaxis en CSS, aparte de usar palabras Inglés, es sencilla. Invocas un elemento, encierras dentro uno o más atributos con sus respectivos valores separados por ";" y por ordenar mejor el código, dando un salto de línea. <br> Mirando el ejemplo de la izquierda: <br> <span class="white-text">*/</span> <br><span class="amber-text">ELEMENTO</span> <span class="white-text">=></span> <span class="white-text">(</span><span class="red-text text-darken-4">body, html, pre, h1... h6, nav, div...</span> <span class="white-text">)</span> <br><span class="white-text">/*</span> Los elementos serán nuestro modo de especificar donde exactamente queremos el estilo.<span class="white-text">*/</span> <br><span class="amber-text">ATRIBUTO </span> <span class="white-text">=></span> <span class="white-text">(</span>margin, padding, color, position, background... <span class="white-text">)</span> <br><span class="white-text">/*</span> Con los atributos indicamos qué es lo que queremos modificar. Su tamaño, color, posición y mucho más.<span class="white-text">*/</span><br> <span class="amber-text">VALOR</span> <span class="white-text">=></span> <span class="white-text">(</span><span class="valor">0, 87.5<span class="red-text">%</span>, #e83e8c</span><span class="white-text">)</span> <br><span class="white-text">/*</span> Los valores son muy variados, desde colores rgb, rgba, en hexadecimal unidades de medida absolutas, relativas, etc...<span class="white-text">*/</span> <br><span class="grey-text"><i>Quedando algo así:</i></span> <br> <span class="red-text text-accent-4">ELEMENTO</span> <span class="white-text">{</span> <br> ATRIBUTO: <span class="valor">VALOR</span>; <br> <span class="white-text">}</span></pre>
+					</div>
+				</div>
+				<div class="pieInvisible"><p>El texto que se encuentra entre '/* */' es el método a seguir en CSS, que nos permite, en su formato .css, dejar indicaciones a tener en cuenta en ese punto del doc.css, y estas no interrupirán el flujo de lectura de la máquina.<span class="subrr"><br>/* comentario con mas de una linea en CSS. */ </span></p>
+				</div>
+				
+				
+<!-- Fin Sección ejemplos css -->
+
+<!-- Sección Iframe -->
+					<div class="col s12">
+						<p class="kolo"><i>"S<b>tyle..."</b></i> sería<span class="subrr"> el conjunto de ATRIBUTOS Y VALORES</span> que
+							proporcionamos al <span class="subrr">ELEMENTO</span> o los elementos, para <b>Formar</b> una estructura
+							visualmente "firme" como dándole carácter... <br><b>El estilo, vamos!</b></p>
+							<p data-height="265" data-theme-id="dark" data-slug-hash="PdxJzj" data-default-tab="css,result" data-user="jBaton" data-pen-title="Estilos simples de CSS" class="codepen">See the Pen <a href="https://codepen.io/jBaton/pen/PdxJzj/">Estilos simples de CSS</a> by jaronJabaton (<a href="https://codepen.io/jBaton">@jBaton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+							<script async src="https://static.codepen.io/assets/embed/ei.js"></script><br><br><br>
+						<div class="col s12">
+							<p class="kolo"><i>"S<b>heets..."</b></i> hojas. Es en una o varias "hojas de estilos en cascada" donde vamos a indicar lo
+								necesario para que nuestra estructura html sea más vistosa! <br> Antes de CSS los estilos se aplicaban dentro
+								del mismo código HTML, pero se externalizó, de modo que resultase, por un lado la estructura HTML y por otro
+								las características visuales.</p>
+							<div class="col l4 left">
+								<div class="transparent center">
+									<img src="img/SAM_3389.png" alt="" class="responsive-img">
+								</div>
+							</div>
+							<p>Una vez separados los estilos del código HTML, CSS evoluciona rápido llegando en 1999 a su versión
+								3.1. Entender el funcionamiento base de CSS, mejora la comprensión de las actualizaciones
+								hasta CSS 3.1</p>
+						</div>
+					</div>
+					<!-- Fin sección Iframe -->
+
+						<div class="col s11 m5 l5">
+								<p>Dentro de HTML</p>
+							<ol>
+								<li>Llamar estilos css inline<img class="materialboxed" data-caption="Dentro del documento HTML entre las etiquetas head podemos crear una 'hoja de estilos'."
+									 width="150" src="img/declare_stylecss.png" alt="captura de pantalla llamando a style"></li>
+								<li>Misma sintaxis...<img class="materialboxed" data-caption="Lo bueno de este método es que editas más rápido los estilos. Lo malo lo verás pronto."
+									 width="150" src="img/style_on_head.png" alt="Caputra de pantalla estilos en el head"></li>
+							</ol>
+						</div>
+						<div class="col s11 m5 l5">
+							<p>Llamando al archivo.css</p>
+							<ol>
+								<li>Indica la ruta hasta .css<img class="materialboxed" data-caption="Buscando el archivo de estilos CSS" width="150" src="img/call_ext_stylecss.png" alt="captura de pantalla/guardando archivo.html"></li>
+								<li>Dentro de css<img class="materialboxed" data-caption="A diseñar! Indíca que valores de atributo tendrán tus elementos." width="150" src="img/ej_css.png" alt="captura de pantalla/guardando archivo.html"></li>
+								
+							</ol>
+						</div>
+						<div class="col s2">
+							<div class="card">
+								<p> Anunciatem O Fortuna, Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum molestias repellendus in voluptates tempore  velutadd</p>
+							</div>
+						</div>
+						<p>En <a href="met_css.html" class="tooltipped" data-position="top" data-tooltip="Metodos para incluir CSS">este</a> apartado, podrás ver los distintos métodos más a fondo.</p>
+					</div>
+					<!-- Fin CSS -->					
+			</section>
+		</div>
+
+
+<!-- Sección JS -->
+		<a id="js"></a> <!-- Ancla Js -->
+		<div class="parallax-container">
+			<div class="section no-pad-bot">
+				<div class="container">
+					<h2 class="titulos center yellow-text right">JavaScript</h2>
+					<div class="row center">
+						<h4 class="header col s12 yellow-text">Lenguaje de programación</h4>
+					</div>
+					<div class="row center">
+						<a href="es6.html" aria-label="Más información sobre javascript" class="btn btn-large yellow waves-effect waves-amber js left black-text">EcmaSCRIPT 6!</a>
+					</div>
+					<a href="https://www.pexels.com/photo/blur-blurred-blurry-dark-572665/" target="_blank" class="yellow-text">Pexel
+						por</a>
+					<a href="https://www.pexels.com/@wesley-woodard-177495" target="_blank" class="yellow-text text-darken-2">@wesleywoodard</a>
+				</div>
+			</div>
+			<div class="parallax">
+				<img src="img/javascript.jpg" alt="Photo by Wesley Woodard-177495 from Pexels">
+			</div>
+		</div>
+
+		<div class="container" id="cont_js">
+			<div class="section">
+				<div class="row">
+					<div class="col s12">
+						<h3 class="amber-text text-accent-2 center"><i>JavaScript</i></h3>
+						<div class="col s12 m4 l10">
+							<p><strong>Ventajas de saber JavaScript.</strong> <br>
+								Podrás personalizar efectos visuales.
+								Adaptar la visualización para distintos navegadores.
+								Interactuación con el usuario sin problemas de red.
+								Una gran parte de lo que se te ocurra que podrías implementar en tu sitio web <strong>!Ya estará creado¡</strong> Solo deberás adaptarlo.
+								O lo que sería en Biología...							
+								<strong>El sistema nervioso, impulsos eléctricos o cómo éstos hacen funcionar el sistema nervioso.</strong>
+							</p>
+						</div>					
+							<p>Diseñado por <a target="_blank" href="https://www.google.com/search?q=+Netscape+Communications+Corp&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b-ab">Netscape Communications Corp</a> y <a target="_blank" href="https://www.google.com/search?q=Mozilla+Fundation&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b">Mozilla Foundation</a>. <em>Creado por <a target="_blank" href="https://github.com/BrendanEich">Brendan Eich</a> en 10 días, seguro que de resaca. </em><a target="_blank" href="https://brendaneich.com/">B. Eich </a>en <a target="_blank" href="https://www.youtube.com/watch?v=zlcnOr81lPc">TED<sup>X</sup></a></p>
+							<p>Aquí puedes ver un ejemplo de las posibilidad de unir estos 3 lenguajes, es decir, los tres métodos más usados para el diseño de paginas web <a target="_blank" href="https://es.wikipedia.org/wiki/Front-end_y_back-end">(FrontEnd)</a></p><br>
+							<a target="_blank" href="https://codepen.io/akm2/pen/rHIsa">Ver en Codepen</a>
+							<div class="cp_embed_wrapper"><iframe id="cp_embed_rHIsa" src="https://codepen.io/akm2/embed/preview/rHIsa?height=265&amp;theme-id=0&amp;slug-hash=rHIsa&amp;default-tab=js%2Cresult&amp;user=akm2&amp;embed-version=2&amp;pen-title=Gravity%20Points&amp;preview=true" name="CodePen Embed" title="Gravity Points" class="cp_embed_iframe " style="width: 100%; overflow: hidden;" height="265"></iframe></div>
+							<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
+							<a target="_blank" href="https://codepen.io/akm2"><small>Autor:<cite> @akm2</cite></small></a><br>
+						<p class="left-align light kolo">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id
+							nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies
+							eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et
+							pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed.
+							Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam
+							eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+							posuere cubilia Curae;</p>
+						<p class="left-align light kolo">El hombre ingenuo considera como real lo que puede percibir con los sentidos, y
+							lo que no se le presenta como percepción (Dios, el alma, el conocimiento, etc.) se lo representa como algo
+							análogo a lo que se percibe.</p> <br>
+						<p class="left-align light kolo">Si el realismo ingenuo quiere fundar una ciencia, sólo puede concebirla como una
+							descripxión extacta del contenido de la percepción. Los conceptos le son solo medios para su fin. Existen para
+							crear imágenes reflejas de las percepciones. Carecen de sentido para las cosas mismas. El realista ingenuo sólo
+							considera reales los tulipanes individuales que se ven, o que podrían ver; la idea misma del tuli`´an la
+							considera una abstracción, la imagen mental irreal que el alma se ha fomrado de las características comunes a
+							todos los tulipanes.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a id="php"></a> <!-- Ancla -->
+		<div class="parallax-container">
+			<div class="section no-pad-bot">
+				<div class="container">
+					<h2 class="titulos left phpcolor">PHP</h2>
+					<div class="row center">
+						<h4 class="header col s12 blue-text text-lighten-4">Preprocesador de hipertexto</h4>
+					</div>
+					<div class="row center">
+						<a href="php.html" aria-label="Más información sobre php" class="btn btn-large phpcolo waves-effect waves-light php btnPhp right">Empieza!</a>
+					</div>
+					<a href="https://www.pexels.com/photo/apple-magic-keyboard-1309766/" target="_blank" class="purple-text">Pexel
+						por</a>
+					<a href="https://www.pexels.com/@shottrotter" target="_blank" class="pink-text text-lighten-4">@shottrotter</a>
+				</div>
+			</div>
+			<div class="parallax">
+				<img src="img/teclado_php.jpeg" title="Tom Swinnen" alt="Photo by Tom Swinnen from Pexels">
+			</div>
+		</div>
+
+
+		<div class="container" id="cont_php">
+			<div class="section">
+				<div class="row">
+					<div class="col s12 center">
+						<h3 class="deep-purple-text">Porqué PHP?</h3>
+						<p class="left-align light kolo">Plumen inter vitae decurrit ad litora aeternitatis, et hominis, qui in ejus
+							creatura
+							aquae superius et inferius placido Ora turbido esse purgatos emergere verum error speculis ostendit fugientia
+							prendere et reflexes apparentibus putari uisis, quaeritis invenire exitum respicite et levate velum intrabit in
+							maius vel de Iside vel latebat. Natura est principium motus Naturata corporis sensibus blandiatur, ita ut non
+							consciousness erecti. Natura
+							naturans, postquam percipi omnipraesens sit manifestatio potius confirmat quod ad affectum mundi formae. In
+							aliis verbis, phaenomenon omnubila spiritualiter dormiunt qui praesentit noumenon etiam agens quod facit futuri
+							temporis spatio et uiatori modo procedatur: 'illusio' in 'illusio' viatorem; neque tandem expergiscimini, scelus
+							ut quod habere, te permanens, et etiam absoluta et immutabilis.</p>
+						<p class="kolo">Himiliter, Satanists in principle 'et coagula solvere 'significat exitium superandam fractionem -
+							constructione, ut et ideam totius transmutatio processus est perniciosius utilemque paratus statim processus.
+							Quo
+							iuvaremur requirit novum illius prioris. Hoc in prospectu percipitur quod non sit necesse est perdere negans
+							symbolic (vel aedificare positivum crimen est), sed utrumque se complent processus pluris aestimantur. Una non
+							est sine alia.</p>
+						<p class="kolo">P Fortuna, velut Luna statu variabilis, semper crescis aut decrescis; vita detestabilis nunc
+							obdurat et tunc
+							curat ludo mentis aciem, egestatem, potestamem dissolvit ut glaciem. Sors immanis et inanis, rota tu volubilis,
+							status malus, vana salus semper dissolubilis, obumbrata et velata michi quoque niteris; nunc per ludum dorsum
+							nudum fero tui sceleris. Sors salutis et virtutis michi nunc contraria est affectus et defectus semper in
+							angaria. Hac in hora sine nora cordum pulsum tangite; quod per sortem sternit fortem, mecum omnes langite!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a id="node"></a> <!-- Ancla -->
+		<div class="parallax-container">
+			<div class="section no-pad-bot">
+				<div class="container">
+					<h2 class="titulos center lime-text">Node</h2>
+					<div class="row center">
+						<h4 class="header col s12 lime-text text-lighten-1">Interprete de JavaScript</h4>
+					</div>
+					<div class="row center">
+						<a href="php.html" aria-label="Más información sobre node" class="btn btn-large waves-effect waves-light node">Empieza!</a>
+					</div>
+					<a href="https://www.pexels.com/photo/apple-magic-keyboard-1309766/" target="_blank" class="purple-text">Pexel
+						por</a>
+					<a href="https://www.pexels.com/@shottrotter" target="_blank" class="pink-text text-lighten-4">@shottrotter</a>
+				</div>
+			</div>
+			<div class="parallax">
+				<img src="img/pexels-photo-633409xx.jpeg" title="Tom Swinnen" alt="">
+			</div>
+		</div>
+
+
+		<div class="container" id="cont_node">
+			<div class="section">
+				<div class="row">
+					<div class="col s12 center">
+						<h3 class="black-text">N<span class="lime-text text-accent-3">o</span>de.js</h3>
+						<p class="left-align light kolo">Plumen inter vitae decurrit ad litora aeternitatis, et hominis, qui in ejus
+							creatura
+							aquae superius et inferius placido Ora turbido esse purgatos emergere verum error speculis ostendit fugientia
+							prendere et reflexes apparentibus putari uisis, quaeritis invenire exitum respicite et levate velum intrabit in
+							maius vel de Iside vel latebat. Natura est principium motus Naturata corporis sensibus blandiatur, ita ut non
+							consciousness erecti. Natura
+							naturans, postquam percipi omnipraesens sit manifestatio potius confirmat quod ad affectum mundi formae. In
+							aliis verbis, phaenomenon omnubila spiritualiter dormiunt qui praesentit noumenon etiam agens quod facit futuri
+							temporis spatio et uiatori modo procedatur: 'illusio' in 'illusio' viatorem; neque tandem expergiscimini, scelus
+							ut quod habere, te permanens, et etiam absoluta et immutabilis.</p>
+						<p class="kolo">Himiliter, Satanists in principle 'et coagula solvere 'significat exitium superandam fractionem -
+							constructione, ut et ideam totius transmutatio processus est perniciosius utilemque paratus statim processus.
+							Quo
+							iuvaremur requirit novum illius prioris. Hoc in prospectu percipitur quod non sit necesse est perdere negans
+							symbolic (vel aedificare positivum crimen est), sed utrumque se complent processus pluris aestimantur. Una non
+							est sine alia.</p>
+						<p class="kolo">P Fortuna, velut Luna statu variabilis, semper crescis aut decrescis; vita detestabilis nunc
+							obdurat et tunc
+							curat ludo mentis aciem, egestatem, potestamem dissolvit ut glaciem. Sors immanis et inanis, rota tu volubilis,
+							status malus, vana salus semper dissolubilis, obumbrata et velata michi quoque niteris; nunc per ludum dorsum
+							nudum fero tui sceleris. Sors salutis et virtutis michi nunc contraria est affectus et defectus semper in
+							angaria. Hac in hora sine nora cordum pulsum tangite; quod per sortem sternit fortem, mecum omnes langite!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="page-footer black">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">Company Bio</h5>
+						<p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+							full time job. Any amount would help support and continue development on this project and is greatly
+							appreciated.</p>
+					</div>
+
+
+					<!-- Fixed bton -->
+					<div class="fixed-action-btn">
+						<a class="btn-floating btn-large resto">
+							<i class="fas fa-cog fa-spin"></i>
+						</a>
+						<ul>
+							<li><a class="btn-floating resto anchorLink" href="#anchorTarget"><i class="fas fa-chevron-up"></i></a></li>
+							<li><a class="btn-floating resto red" href="#html"><i class="fab fa-html5"></i></a></li>
+							<li><a class="btn-floating resto blue" href="#css"><i class="fab fa-css3-alt"></i></a></li>
+							<li><a class="btn-floating resto yellow" href="#js"><i class="fab fa-js"></i></a></li>
+							<li><a class="btn-floating resto deep-purple" href="#php"><i class="fab fa-php"></i></a></li>
+							<li><a class="btn-floating resto lime" href="#node"><i class="fab fa-node-js""></i></a></li>
+							<li><a class="btn-floating resto" href="#footer"><i class="fas fa-chevron-down"></i></a></li>
+						</ul>
+					</div>
+					<!-- Fixed bton -->
+					
+
+
+					<div class="col l3 s12">
+						<h5 class="white-text">Mapa del sitio</h5>
+						<ul>
+							<li><a class="white-text" href="html.html">HTML</a></li>
+							<li><a class="white-text" href="css.html">CSS</a></li>
+							<li><a class="white-text" href="js.html">JS</a></li>
+							<li><a class="white-text" href="curiosidades.html">Curiosidades</a></li>
+							<li><a class="white-text" href="guias.html">Guías</a></li>
+							<li><a class="white-text" href="relacionado.html">Relacionado</a></li>
+						</ul>
+					</div>
+
+					<div class="col l3 s12">
+						<h5 class="white-text">Connect</h5>
+						<ul>
+							<li><a class="white-text" href="#!">Link 1</a></li>
+							<li><a class="white-text" href="#!">Link 2</a></li>
+							<li><a class="white-text" href="#!">Link 3</a></li>
+							<li><a class="white-text" href="#!">Link 4</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<a id="footer"></a>
+			<div class="footer-copyright">
+				<div class="container">
+					Made by&with <a class="red-text text-lighten-2" href="http://materializecss.com">Materialize</a>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!--  Scripts-->
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/funk.js"></script>
+
+
+</body>
+
+</html>

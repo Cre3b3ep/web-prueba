@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+
+<head>
+	<!-- ↓ Metas primarios ↓ -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>HTML</title>
+
+	<!-- ↓ CSS  ↓ -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+	<!-- ↓ Favicons ↓ -->
+	<link rel="icon" type="image/png" href="img/favicon1.png" sizes="64x64" />
+
+	<!-- ↓ Metas SEO ↓ -->
+	<meta name="description" content="Casi de todo sobre htmly html5, hacia una web semántica, para tod@s!. Estructura estándar de html5. Api's de HTML5 y muchas más" />
+	<meta name="keywords" content="html, html5, canvas, audio, video, figure, caption, header, nav, section, article, aside" />
+	<meta name="author" content="BJlr" />
+	<meta name="copyright" content="DwBorja" />
+	<meta name="robots" content="index,follow" />
+
+	<!-- ↓ Fuentes ↓ -->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+
+	 	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script>
+			$(document).ready(function(){anchor.init()}),anchor={init:function(){$("a.anchorLink").click(function(){return elementClick=$(this).attr("href"),destination=$(elementClick).offset().top,$("html:not(:animated),body:not(:animated)").animate({scrollTop:destination},666),!1})}};
+			 </script>
+
+</head>
+
+<body><a id="anchorTarget"></a>
+	<div id="navegación_lateral_del_movil">
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="js.html">Solo JS</a></li>
+			<li><a href="es6.html">JS ES6</a></li>
+			<li><a href="fw-js.html">FrameWorkss</a></li>
+		</ul>
+
+		<ul id="dropdown2" class="dropdown-content">
+			<li><a href="css.html">Solo CSS</a></li>
+			<li><a href="css3.html">CSS 3</a></li>
+			<li><a href="fw-css.html">FrameWorks</a></li>
+		</ul>
+
+		<ul id="dropdown3" class="dropdown-content">
+			<li><a href="html.html">Solo HTML</a></li>
+			<li><a href="html5.html">HTML+5</a></li>
+			<li><a href="fw-html.html">FrameWorks</a></li>
+		</ul>
+
+		<ul id="dropdown4" class="dropdown-content">
+			<li><a href="php.html">Solo PHP</a></li>
+			<li><a href="php7.html">PHP+Host</a></li>
+			<li><a href="https://openwebinars.net/blog/los-10-mejores-frameworks-php-que-solicitan-las-empresas/">FrameWorks</a></li>
+		</ul>
+	</div>
+
+	<nav class="white">
+		<div class="nav-wrapper container">			
+		
+			<ul class="right hide-on-med-and-down">
+				<li><a class="dropdown-trigger html" href="#!" data-target="dropdown3">HTML</a></li>
+				<li><a class="dropdown-trigger css" href="#!" data-target="dropdown2">CSS</a></li>
+				<li><a class="dropdown-trigger js" href="#!" data-target="dropdown1">JavaScript</a></li>
+				<li><a class="dropdown-trigger php" href="#!" data-target="dropdown4">PHP</a></li>
+				<li><a class="resto" href="#">Guías</a></li>
+				<li><a class="resto teal white-text" href="#">Relacionado<i class="material-icons left">arrow_drop_down</i></a></li>
+			</ul>
+
+			<a href="#" class="sidenav-trigger" data-target="menu-lateral">
+				<i class="material-icons">menu</i>
+			</a>
+			<div id="logo">
+					<a class="card-title" href="index.html">
+					<span class="red-text text-darken-4">H</span>
+					<span class="blue-text text-darken-4">C</span>
+					<span class="yellow-text text-darken-4">J</span>
+					<span class="deep-purple-text text-darken-4">P</span>
+				</a>
+			</div> 
+			
+			<ul id="menu-lateral" class="sidenav">
+				<li>
+					<div class="user-view">
+						<div class="background">
+							<img src="img/22.png" alt="fondo menú lateral">
+						</div>
+						<a href="index.html"><i class="material-icons white-text">home</i>
+						</a>
+					</div>
+				</li>
+				<li>
+					<a href="html.html">
+						<i class="material-icons">check_box_outline_blank</i>
+						<p>HTML</p>
+					</a>
+				</li>
+				<li>
+					<a href="css.html">
+						<i class="material-icons">check_box_outline_blank</i>
+						<p>CSS</p>
+					</a>
+				</li>
+				<li>
+					<a href="js.html">
+						<i class="material-icons">check_box_outline_blank</i>
+						<p>JavaScript</p>
+					</a>
+				</li>
+				<li>
+					<a href="html.html">
+						<i class="material-icons">check_box_outline_blank</i>
+						<p>HTML</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="material-icons">check_box_outline_blank</i>
+						<p>CSS</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="material-icons">check_box_outline_blank</i>
+						<p>JavaScript</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot">
+			<div class="container">
+        <br><br>
+        <div class="right">
+        <div class="col s12">
+        <h1 class="titulos yellow-text text-accent-4">Recopilación de enlaces </h1></div>
+
+        <div class="col s5">
+          <h4 class="header col s6 cyan-text text-lighten-4">agrupandose por temática... dales tiempo!</h4></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<a href="https://www.google.com" aria-label="Más información sobre html" class="btn btn-small transparent waves-effect waves-light center google">Google!</a>
+
+        <div class="col s12 red">        
+				<a href="https://www.pexels.com/@donaldtong94" class="valor right">@donaldtong94</a>
+        <a href="https://www.pexels.com/photo/yellow-insects-close-up-hd-wallpaper-53040/" target="_blank" class="red-text right text-lighten-4">Pexelado por</a>
+        </div>
+				<!--  -->
+      </div>
+    </div>
+		</div>
+		<div class="parallax">
+			<img src="img/links3.jpeg" title="Max DeRoin" alt="Photo by Max DeRoin from Pexels">
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="section">
+			<!--   Icon Section   -->
+			<div class="row">
+          <div class="col s12">
+                  <div class="card-title">
+                    <article class="pre">
+                      <h1>Esta página se está actualizando! <br> Vuelve! y así lo corroboras.</h1>
+                    </article>
+                  </div>
+            <div class="card card-action center section">
+              <a href="https://www.hijosdigitales.es/es/2017/02/haz-copias-de-seguridad-automaticas-de-tus-archivos-con-windows-10/" target="_blank" title="hijosdigitales.es"><p>Consejos y guía para realizar copias de seguridad en windows 10</p></a>
+              <a href="https://www.genbeta.com/paso-a-paso/como-programar-tareas-en-windows-10" target="_blank" title="Genbeta"><p>Guía para el programador de tareas de windows</p></a>
+              <a href="http://web.tursos.com/como-hacer-un-formulario-de-contacto-i-html-y-css/" target="_blank" title="WebTursos"><p>Ejemplo de formulario de contacto</p></a>
+              <a href="https://www.todopatuweb.net/" target="_blank" title="todopatuweb"><p>Recursos para desarrollo web</p></a>
+              <a href="https://www.123formbuilder.com/es/formulario-de-contacto-html/" target="_blank" title="123formbuilder"><p>Generador de código HTML para crear formularios</p></a>
+              <a href="https://knowledge.hubspot.com/es/articles/kcs_article/cos-general/how-do-i-add-google-fonts-to-my-new-landing-pages" target="_blank" title="hubspot"><p>Agregar fuentes con GoogleFonts</p></a>
+              <a href="https://www.aprendoencasa.com/index.php/2013/10/17/etiqueta-samp-curso-prctico-html5/" target="_blank" title="aprendoencasa"><p>Sobre el uso de la etiqueta &lt;samp&gt; con HTML5</p></a>
+              <a href="http://librosweb.es/" target="_blank" title="librosweb.es"><p>Gran página web con guías, tutoriales, ejercicios resueltos, etc...</p></a>
+              <a href="http://mrdoob.com/projects/harmony" target="_blank" title="Mrdoob"><p>Dibuja sin gastar en papel</p></a>
+              <a href="http://reas.com/" target="_blank" title="Galería de arte digital"><p>Digitalizando el Arte?</p></a>
+              <a href="https://www.webbizarro.com/" target="_blank" title="webBizarro"><p>No hace falta resumen, WebBizarro!</p></a>
+              <a href="http://slipsum.com/" target="_blank" title="slipsum"><p>Lorem qué? Yo no sé latín!</p></a>
+              <!-- copias -->    			
+              <a href="https://www.coursebuffet.com/" target="_blank" title="Buscador de cursos Gratuitos"><p>Encuentra el curso que buscas</p></a>
+              <a href="https://www.webceo.com/es/el-mejor-software-de-seo.htm?source=Spain-Best-SEO-Tools&kwd=Herramienta+para+analisis+web&gclid=EAIaIQobChMI25je9cnf3AIVFYbVCh2YOwjKEAAYASAAEgLGDPD_BwE" target="_blank" title="Herramientas SEO"><p>Aprendiendo algo de SEO</p></a>
+              <a href="https://entredesarrolladores.com/" target="_blank" title="Comunidad"><p>Entorno para aprender con preguntas y respuestas parecido a StackOverflow</p></a>
+              <a href="http://snapsvg.io/" target="_blank" title="Librería JS de SVG"><p>Paquetitos de JavaScript para utilizar SVG</p></a>
+              <a href="http://unicorn-ui.com/buttons/builder/" target="_blank" title="unicornUi.com"><p>Ayuda para generar botones con CSS</p></a>
+              <a href="https://www.clixsense.com/" target="_blank" title="ClixSense"><p>Valora tu tiempo</p></a>
+              <a href="http://dinero.astalaweb.net/" target="_blank" title="astalaweb"><p>Sigue valorando tu tiempo</p></a>
+              <a href="https://wwwhatsnew.com/2011/05/10/5-herramientas-para-crear-sitios-web-profesionales-en-html5/" target="_blank" title="whatsnew.com"><p>Herramientas para empezar con HTML5</p></a>
+              <a href="http://css3generator.com/" target="_blank" title="Generador CSS3"><p>De gran ayuda para ahorrar tiempo en diseño CSS</p></a>
+              <a href="https://norfipc.com/inf/javascript-como-cambiar-modificar-estilo-css-paginas-web.html#inicio" target="_blank" title="norfipc.com"><p>Comienza a darle uso a lo que sabes de JavaScript</p></a>
+              <a href="https://aprenderaprogramar.com/index.php?option=com_content&view=article&id=702:ique-es-y-que-estudiar-para-ser-programador-web-itinerario-de-formacion-plan-de-estudios-o-de-carrera&catid=39:orientacion-academica&Itemid=189" target="_blank" title="aprenderaprogramar.com"><p>Una guía para saber que pasos dar sin andarse por las ramas</p></a>
+              <a href="https://developers.google.com/web/fundamentals/design-and-ux/animations/css-vs-javascript?hl=es" target="_blank" title="Gran fuente de información"><p>Anim CSS vs Anim JS</p></a>
+              <a href="https://comunicacionabierta.net/blog/2017/06/incluir-fuente-tipografia-web/" target="_blank" title="Muy buena!"><p>Aparte de toda la información que condensa este sitio web !Tiene los útiles de Accesibilidad¡</p></a>
+              <a href="https://servidorgratuito.com/" target="_blank" title="Servidores Gratis"><p>Parece que lo que ofrece será reconocido</p></a>
+              <a href="https://clouding.io/" target="_blank" title="Clouding.io"><p>Servidores en la nube?</p></a>
+              <a href="http://jshint.com/" target="_blank" title="jshint.com"><p>No encuentras el error fatal en JavaScript?</p></a>
+              <a href="http://www.4rsoluciones.com/blog/angularjs-vs-polymer-cual-es-mas-conveniente/" target="_blank" title="Angular vs Polymer"><p>Discusión sobre Frameworks de JS</p></a>
+              <a href="https://code.google.com/" target="_blank" title="code.google"><p>Google Mola!</p></a>
+              <a href="http://www.googlefeud.com/" target="_blank" title="Feud o Freud?"><p>Con este buscador de google puedes entretenerte mientras te aburres</p></a>
+              <a href="https://socialblade.com" target="_blank" title="Analiza al youtuber de moda"><p>Investiga cosillas sobre perfiles de RRSS</p></a>
+              <a href="http://www.trabajofreelance.com/" target="_blank" title="Con un par"><p>Empieza tu freelance walk in life</p></a>
+              <a href="https://www.elconfidencial.com/tecnologia/2017-11-03/hackers-campeonato-europa-ciberseguridad-espana_1471555/" target="_blank" title="Motivación"><p>Semos los que somos</p></a>
+              <a href="http://mundohackerday.com/" target="_blank" title="MundoHacker"><p>Estate al día</p></a>
+              <a href="http://flexbox.help/" target="_blank" title="FlexBoxHelp"><p>Ayuda para jugar con Flex-Box</p></a>
+              <a href="http://www.framescollection.com/tunnelrats.html" target="_blank" title="FramesCollection"><p>El creador de esta web ha sido tocado por una mano divina</p></a>
+              <a href="http://blog.alejandromolero.com/medidas-estandar-css-media-queries/" target="_blank" title="Ayuda para diseño responisve"><p>Una guía de las medidas estandarizadas @mediaqueries</p></a>
+              <a href="http://overapi.com/" target="_blank" title="REcopilación de API's"><p></p></a>
+              <a href="" target="_blank" title=""><p></p></a>
+              <a href="" target="_blank" title=""><p></p></a>
+              <a href="" target="_blank" title=""><p></p></a>
+              <a href="" target="_blank" title=""><p></p></a>
+              <a href="" target="_blank" title=""><p></p></a>
+              <a href="" target="_blank" title=""><p></p></a>
+            </div>
+          </div>
+        </div>
+          
+<!-- 6546465465465465465 -->
+			</div>
+		</div>
+
+	<!-- Fixed bton -->
+	<div class="fixed-action-btn">
+		<a class="btn-floating btn-large resto"><i class="fas fa-cog fa-spin"></i></a>
+		<ul>
+			<li><a class="btn-floating anchorLink" href="#anchorTarget"><i class="fas fa-chevron-up"></i></a></li>
+			<li><a class="btn-floating" href="#footer"><i class="fas fa-chevron-down"></i></a></li>
+		</ul>
+	</div>
+	<!-- Fixed bton -->
+
+
+
+	<div class="parallax-container valign-wrapper">
+			<div class="container section">		
+				<h2 class="titulos center blue-text text-darken-1">Aviso</h2>
+				<div class="row center">
+					<h4 class="header col s12 blue-text text-lighten-2">Seguimos buscando contenido...</h4>
+				</div>
+				
+				<div class="row left">
+					<a href="https://www.pexels.com/photo/closeup-photo-of-black-and-blue-keyboard-1194713/" target="_blank">Photo by</a>
+					<a href="https://www.pexels.com/@martabranco" target="_blank" class="blue-text text-lighten-4">@martabranco</a>
+				</div>
+			</div>
+
+		<div class="parallax"><img src="img/pexels-photo-1010496.jpeg" title="Marta Branco" alt="Photo by Marta Branco from Pexels"></div>
+	</div>
+
+	<!-- <br><br> -->
+
+	<!-- <a class="tooltipped" data-position="right" data-tooltip="xml | XHTML" href="javascript:void(0);">Links con tooltip</a> -->
+	<!-- alt+0177 == ± 
+» => alt+175
+« => alt+174
+-->
+	<footer class="page-footer black">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Company Bio</h5>
+					<p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+						full time job. Any amount would help support and continue development on this project and is greatly
+						appreciated.</p>
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Mapa del sitio</h5>
+					<ul>
+						<li><a class="white-text" href="html.html">HTML</a></li>
+						<li><a class="white-text" href="css.html">CSS</a></li>
+						<li><a class="white-text" href="js.html">JS</a></li>
+						<li><a class="white-text" href="curiosidades.html">Curiosidades</a></li>
+						<li><a class="white-text" href="guias.html">Guías</a></li>
+						<li><a class="white-text" href="relacionado.html">Relacionado</a></li>
+					</ul>
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Connect</h5>
+					<ul>
+						<li><a class="white-text" href="#!">Link 1</a></li>
+						<li><a class="white-text" href="#!">Link 2</a></li>
+						<li><a class="white-text" href="#!">Link 3</a></li>
+						<li><a class="white-text" href="#!">Link 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				Made by&with <a class="red-text text-lighten-2" href="http://materializecss.com">Materialize</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--  Scripts-->
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+
+	<a id="footer"></a>
+</body>
+
+</html>

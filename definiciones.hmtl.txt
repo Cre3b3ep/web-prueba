@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+
+<head>
+	<!-- ↓ Metas primarios ↓ -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>DWB Inicio</title>
+
+	<!-- ↓ CSS  ↓ -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+	<!-- ↓ Favicons ↓ -->
+	<link rel="icon" type="image/png" href="img/fav1.png" sizes="64x64" />
+
+	<!-- ↓ Metas SEO ↓ -->
+	<meta name="description" content="Aprende html5, html, css3, css, javascript, ES6, ecmascript 6, ecmas, y encuentra las fuentes de todo desarrollador web." />
+	<meta name="keywords" content="html, css, javascript, html5, css3, ES6, ecmas6, Brendan Eich, Tim Berners-Lee, hcjp" />
+	<meta name="author" content="jBaton" />
+	<meta name="copyright" content="jBaton" />
+	<meta name="robots" content="index,follow" />
+
+	<!-- ↓ Fuentes ↓ -->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+
+</head>

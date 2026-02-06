@@ -1,0 +1,189 @@
+
+
+
+p{
+  font-size: 21pt; 
+  line-height: 133%;
+  word-spacing: 1.03mm;
+  cursor: default;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-family: "Hack";
+  text-shadow: #000 0px -1px 0.6px;
+  text-align:center;
+}
+h1,h2,h3,h4,h5,h6{
+  cursor: default;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-family: "Hack" 
+}
+
+pre, .pre {
+  font-size: 100%;
+  color: #558914db;
+  /* background-color:#07193d; */
+
+  background: #132134;
+  border-radius: 0.2rem;
+  font-family: 'Special Elite', sans-serif;
+  cursor: default;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  /* future version of deprecated 'word-wrap' */
+  padding-top: 1.2rem;
+  /* prevents text jump on Enter keypress */
+
+}
+
+/*---- ---- Sinestesia ---- ----*/
+
+
+#contenedor{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* background-color: rgba(224, 212, 101, 0.322); */
+  transition: all 2s ease-in-out;
+}
+
+body{
+    background: #012358;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+/*---- ---- Grupos letras ---- ----*/
+.c, .f, .i, .v, .w, .z{
+  color: #fff;
+}
+
+.card-content pre{
+  padding: 33px;
+}
+.card-content{
+  background-color: #333776;
+}
+
+.card{
+  background-color: #109871;
+}
+
+
+
+/*---- ----  Grupos letras ---- ----*/
+
+
+.a{
+  color: #09041f;
+}
+
+.u{
+  color:#10224e;
+}
+.j{
+  color: #0f166c;
+}
+.k{
+  color: #281a73;
+}
+.b{
+  color: #6099fe
+}
+
+.l{
+  color: #7caeff;
+}
+
+
+
+
+.q{
+  color: #341220;
+}
+
+
+.r{
+  color: #3d221d;
+}
+
+.s{
+  color: #af340e;
+}
+
+.x{
+  color:#aa7522
+}
+.y{
+  color: #e8a763;
+}
+.t{
+  color:#825e3a;
+}
+
+
+.p{
+  color:#6a553c
+}
+
+.n{
+  color:#815531;
+}
+
+
+.d{
+  color: #feaf2c;
+}
+
+.m{
+  color: #f4ff21;
+}
+.e, .o, .g{
+  color: #f8ff7f;
+}
+
+.h{
+  color: #655e51
+}
+
+
+.ocho{
+  color: rgb(0, 0, 121)
+}
+
+.dos{
+ color: rgb(70, 70, 233)
+}
+.tres{
+  color:rgba(6, 66, 6, 0.829);
+}
+.cinco{
+  color: rgb(56, 49, 4)
+}
+.siete{
+  color:rgb(255, 208, 0);
+}
+.nueve{
+  color: rgb(251, 147, 106);
+}
+/*---- ---- Grupos Números ---- ----*/
+.cero, .uno{
+  color: #fff;
+}
+
+.cuatro, .seis{
+  color: rgb(248, 255, 124)
+
+}
+/*---- ---- Grupos Números ---- ----*/
+
+
+
+
+
+
+
