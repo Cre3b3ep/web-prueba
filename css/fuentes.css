@@ -1,0 +1,125 @@
+/*
+ * Fuentes e iconos servidos desde la propia web (sin Google Fonts ni CDNs).
+ * Los archivos están en /fonts y sus licencias en /fonts/licencias.
+ * Los de iconos están recortados a los glifos que usa el sitio: si añades
+ * un icono nuevo hay que regenerar el subset (ver herramientas/subset_iconos.py).
+ */
+
+/* ---- Texto ---- */
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/special-elite-latin-400-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/special-elite-latin-ext-400-normal.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/orbitron-latin-400-normal.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Hack';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/hack-regular-subset.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Hack';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/hack-bold-subset.woff2) format('woff2');
+}
+
+/* ---- Material Icons (subset: menu, home, open_in_new, check_box,
+   check_box_outline_blank, arrow_drop_down, developer_board) ---- */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../fonts/material-icons-subset.woff2) format('woff2');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- Font Awesome 5 Free (subset de los iconos usados) ---- */
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../fonts/fa-brands-subset.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(../fonts/fa-solid-subset.woff2) format('woff2');
+}
+.fas,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fab { font-family: 'Font Awesome 5 Brands'; font-weight: 400; }
+.fas { font-family: 'Font Awesome 5 Free'; font-weight: 900; }
+.fa-1x { font-size: 1em; }
+.fa-3x { font-size: 3em; }
+.fa-10x { font-size: 10em; }
+.fa-spin { animation: fa-spin 2s infinite linear; }
+@keyframes fa-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fa-spin { animation: none; }
+}
+
+.fa-css3:before { content: "\f13c"; }
+.fa-css3-alt:before { content: "\f38b"; }
+.fa-facebook-f:before { content: "\f39e"; }
+.fa-html5:before { content: "\f13b"; }
+.fa-java:before { content: "\f4e4"; }
+.fa-js:before { content: "\f3b8"; }
+.fa-node-js:before { content: "\f3d3"; }
+.fa-php:before { content: "\f457"; }
+.fa-soundcloud:before { content: "\f1be"; }
+.fa-telegram:before { content: "\f2c6"; }
+.fa-twitter:before { content: "\f099"; }
+.fa-youtube:before { content: "\f167"; }
+.fa-chevron-down:before { content: "\f078"; }
+.fa-chevron-up:before { content: "\f077"; }
+.fa-cog:before { content: "\f013"; }

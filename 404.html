@@ -7,10 +7,7 @@
     <title>DWB Inicio</title>
 
     <!-- ↓ CSS  ↓ -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="css/fuentes.css" type="text/css" rel="stylesheet" />
     <link href="css/materialize.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
 
@@ -31,20 +28,6 @@
     <meta name="robots" content="index,follow" />
 
     <!-- ↓ Fuentes ↓ -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Orbitron"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Special+Elite"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
 
     <!-- Scripts -->
   </head>
@@ -61,7 +44,7 @@
         </ul>
         <ul id="dropdown2" class="dropdown-content">
           <li><a class="center-align" href="css.html">Básico</a></li>
-          <li><a class="center-align" href="css3.html">CSS3</a></li>
+          <li><a class="pendiente center-align" aria-disabled="true">CSS3</a></li>
           <li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
         </ul>
         <ul id="dropdown1" class="dropdown-content">
@@ -71,8 +54,8 @@
         </ul>
 
         <ul id="dropdown4" class="dropdown-content">
-          <li><a class="center-align" href="php.html">Básico</a></li>
-          <li><a class="center-align" href="php7.html">PHP7</a></li>
+          <li><a class="pendiente center-align" aria-disabled="true">Básico</a></li>
+          <li><a class="pendiente center-align" aria-disabled="true">PHP7</a></li>
           <li>
             <a
               class="center-align"
@@ -114,7 +97,7 @@
               <li><a class="resto" href="relacionando.html">Relacionado</a></li>
             </ul>
             <a href="#" class="sidenav-trigger" data-target="menu-lateral">
-              <i class="material-icons">menu</i></a
+              <i aria-hidden="true" class="material-icons">menu</i></a
             >
 
             <!-- Fin Logo -->
@@ -138,43 +121,43 @@
                     <img src="img/dedojpeg.jpg" alt="Fondo menú móvil" />
                   </div>
                   <a href="index.html"
-                    ><i class="material-icons white-text">home</i>
+                     aria-label="Inicio"><i aria-hidden="true" class="material-icons white-text">home</i>
                   </a>
                 </div>
               </li>
               <li>
                 <a href="html.html">
-                  <i class="material-icons">check_box_outline_blank</i>
+                  <i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
                   <p>HTML</p>
                 </a>
               </li>
               <li>
                 <a href="css.html">
-                  <i class="material-icons">check_box_outline_blank</i>
+                  <i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
                   <p>CSS</p>
                 </a>
               </li>
               <li>
                 <a href="js.html">
-                  <i class="material-icons">check_box_outline_blank</i>
+                  <i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
                   <p>JavaScript</p>
                 </a>
               </li>
               <li>
-                <a href="php.html">
-                  <i class="material-icons">check_box_outline_blank</i>
+                <a aria-disabled="true" class="pendiente">
+                  <i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
                   <p>PHP</p>
                 </a>
               </li>
               <li>
                 <a href="contacto.html">
-                  <i class="material-icons">check_box_outline_blank</i>
+                  <i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
                   <p>Escribeme</p>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i class="material-icons">check_box_outline_blank</i>
+                  <i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
                   <p>Comprende las Cookies</p>
                 </a>
               </li>
@@ -211,10 +194,10 @@
               <a class="white-text html" href="html.html">HTML,</a>
               <a class="white-text css" href="css.html">CSS,</a>
               <a class="white-text js" href="js.html">JS,</a>
-              <a class="white-text php" href="php.html">PHP,</a>
-              <a class="white-text nodeh" href="php.html">Nodejs,</a>
+              <a class="pendiente white-text php" aria-disabled="true">PHP,</a>
+              <a class="pendiente white-text nodeh" aria-disabled="true">Nodejs,</a>
               <a class="white-text resto" href="guias.html">Guías,</a>
-              <a class="white-text resto" href="relacionado.html"
+              <a class="white-text resto" href="relacionando.html"
                 >Relacionado.</a
               >
             </div>
@@ -236,28 +219,28 @@
                 href="https://twitter.com/sinarkista"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><i class="fab fa-twitter fa-3x"></i
+                 aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-3x"></i
               ></a>
               <a
                 class="blue-text text-darken-3 js"
                 href="https://www.facebook.com/facundohetoro"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><i class="fab fa-facebook-f fa-3x"></i
+                 aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f fa-3x"></i
               ></a>
               <a
                 class="red-text js"
                 href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><i class="fab fa-youtube fa-3x"></i
+                 aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube fa-3x"></i
               ></a>
               <a
                 class="orange-text js"
                 href="https://soundcloud.com/puro3"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><i class="fab fa-soundcloud fa-3x"></i
+                 aria-label="SoundCloud"><i aria-hidden="true" class="fab fa-soundcloud fa-3x"></i
               ></a>
             </div>
             <div class="col l2 s12 center">
@@ -358,32 +341,32 @@
         <!-- Fixed bton -->
         <div class="fixed-action-btn">
           <a class="btn-floating btn-large resto">
-            <i class="fas fa-cog fa-spin"></i>
+            <i aria-hidden="true" class="fas fa-cog fa-spin"></i>
           </a>
           <ul>
             <li>
               <a class="btn-floating resto anchorLink" href="#anchorTarget"
-                ><i class="fas fa-chevron-up"></i
+                 aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i
               ></a>
             </li>
             <li>
               <a class="btn-floating resto red" href="html.html"
-                ><i class="fab fa-html5"></i
+                 aria-label="HTML"><i aria-hidden="true" class="fab fa-html5"></i
               ></a>
             </li>
             <li>
               <a class="btn-floating resto blue" href="css.html"
-                ><i class="fab fa-css3-alt"></i
+                 aria-label="CSS"><i aria-hidden="true" class="fab fa-css3-alt"></i
               ></a>
             </li>
             <li>
               <a class="btn-floating resto yellow" href="js.html"
-                ><i class="fab fa-js"></i
+                 aria-label="JavaScript"><i aria-hidden="true" class="fab fa-js"></i
               ></a>
             </li>
             <li>
               <a class="btn-floating resto" href="#footer"
-                ><i class="fas fa-chevron-down"></i
+                 aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i
               ></a>
             </li>
           </ul>
@@ -393,8 +376,6 @@
       <!-- Fin del Pié de Página Der -->
     </div>
     <!--  Scripts; Si se cambia este orden puede que algo falle-->
-    <!-- 1 -->
-    <script src="js/jquery.min.js"></script>
     <!-- 2 -->
     <script src="js/materialize.js"></script>
     <!-- 3 -->

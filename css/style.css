@@ -1,3 +1,20 @@
+/* Desplazamiento suave hacia las anclas (antes con jQuery) */
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Enlaces a páginas que todavía no existen: se ven, pero no llevan a un 404 */
+a.pendiente,
+a.pendiente:hover {
+  cursor: not-allowed;
+  opacity: .55;
+}
+
 a,
 nav,
 nav ul a {
@@ -68,7 +85,7 @@ pre {
 
 #dropdown1 li a:hover {
   background-color: #ffd900 !important;
-  color: #fff
+  color: #000 /* blanco sobre amarillo no se lee (contraste 1.4:1) */
 }
 
 #dropdown4 li a:hover {
@@ -137,7 +154,7 @@ pre {
 }
 .js:hover {
   background-color : #ffd000 !important ;
-  color : #fff !important;
+  color : #000 !important; /* contraste AA sobre amarillo */
 }
 .fondo_tit{
   background-color: hsla(51, 66%, 6%, 0.111);

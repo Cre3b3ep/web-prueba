@@ -17,3 +17,7 @@ Thumbs.db
 # Archivos de configuración personales
 *.swp
 *.swo
+# Paquetes descargados para regenerar los iconos (herramientas/subset_iconos.py)
+herramientas/material-icons/
+herramientas/fontawesome/
+*.tgz
