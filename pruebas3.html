@@ -8,7 +8,7 @@
 	<title>DWB Inicio</title>
 
 	<!-- ↓ CSS  ↓ -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/fuentes.css" type="text/css" rel="stylesheet" />
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 
@@ -21,23 +21,15 @@
 	<meta name="keywords" content="html, css, javascript, php, html5, css3, ES6, ecmas6, Brendan Eich, Tim Berners-Lee, hcjp" />
 	<meta name="author" content="BJ" />
 	<meta name="copyright" content="DwBorja" />
-	<meta name="robots" content="index,follow" />
+	<meta name="robots" content="noindex,follow" />
 
 	<!-- ↓ Fuentes ↓ -->
-	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-	 <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-	 crossorigin="anonymous">
 
 	<!-- Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script>
-			$(document).ready(function(){anchor.init()}),anchor={init:function(){$("a.anchorLink").click(function(){return elementClick=$(this).attr("href"),destination=$(elementClick).offset().top,$("html:not(:animated),body:not(:animated)").animate({scrollTop:destination},666),!1})}};
-			 </script>
 
 
 </head>
-<body onload="fechas(),mueveReloj();">
+<body>
 	<div id="contenedor">
 		<a id="anchorTarget"></a> <!-- Ancla -->
 		<!-- Navegador movil vertical -->
@@ -50,7 +42,7 @@
 
 			<ul id="dropdown2" class="dropdown-content">
 				<li><a class="center-align" href="css.html">CSS</a></li>
-				<li><a class="center-align" href="css3.html">CSS 3</a></li>
+				<li><a class="pendiente center-align" aria-disabled="true">CSS 3</a></li>
 				<li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
 			</ul>
 			<ul id="dropdown1" class="dropdown-content">
@@ -60,8 +52,8 @@
 			</ul>
 
 			<ul id="dropdown4" class="dropdown-content">
-				<li><a class="center-align" href="php.html">PHP</a></li>
-				<li><a class="center-align" href="php7.html">PHP 7</a></li>
+				<li><a class="pendiente center-align" aria-disabled="true">PHP</a></li>
+				<li><a class="pendiente center-align" aria-disabled="true">PHP 7</a></li>
 				<li><a class="center-align" href="https://openwebinars.net/blog/los-10-mejores-frameworks-php-que-solicitan-las-empresas/">FrameWorks</a></li>
 			</ul>
 		</div>
@@ -78,8 +70,8 @@
 					<li><a class="resto" href="relacionando.html">Relacionado</a></li>
 				</ul>
 
-				<a href="#" class="sidenav-trigger" data-target="menu-lateral">
-					<i class="material-icons">menu</i></a>
+				<a href="#" class="sidenav-trigger" data-target="menu-lateral" aria-label="Abrir menú">
+					<i aria-hidden="true" class="material-icons">menu</i></a>
 
 				<div id="logo">
 					<a class="tooltipped" data-position="left" data-tooltip="Click! => Inicio" href="index.html">
@@ -97,43 +89,43 @@
 							<div class="background">
 								<img src="img/22.png" alt="fondo menú lateral" class="">
 							</div>
-							<a href="index.html"><i class="material-icons white-text">home</i>
+							<a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons white-text">home</i>
 							</a>
 						</div>
 					</li>
 					<li>
 						<a href="html.html">
-							<i class="material-icons">check_box_outline_blank</i>
+							<i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
 							<p>HTML</p>
 						</a>
 					</li>
 					<li>
 						<a href="css.html">
-							<i class="material-icons">check_box_outline_blank</i>
+							<i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
 							<p>CSS</p>
 						</a>
 					</li>
 					<li>
 						<a href="js.html">
-							<i class="material-icons">check_box_outline_blank</i>
+							<i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
 							<p>JavaScript</p>
 						</a>
 					</li>
 					<li>
-						<a href="php.html">
-							<i class="material-icons">check_box_outline_blank</i>
+						<a aria-disabled="true" class="pendiente">
+							<i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
 							<p>PHP</p>
 						</a>
 					</li>
 					<li>
 						<a href="contacto.html">
-							<i class="material-icons">check_box_outline_blank</i>
+							<i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
 							<p>Escribeme</p>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<i class="material-icons">check_box_outline_blank</i>
+							<i aria-hidden="true" class="material-icons">check_box_outline_blank</i>
 							<p>Comprende las Cookies</p>
 						</a>
 					</li>
@@ -160,8 +152,8 @@
 					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 					<div class="col s4 bottom left">
-						<a target="_blank" href="https://www.pexels.com/photo/close-up-of-computer-keyboard-249203/" class="red-text text-darken-4">Pexel	por</a>
-						<a target="_blank" href="https://www.pexels.com/@maxderoin" class="red-text text-lighten-4">@maxderoin<i class="tiny material-icons red-text">open_in_new</i></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.pexels.com/photo/close-up-of-computer-keyboard-249203/" class="red-text text-darken-4">Pexel	por</a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.pexels.com/@maxderoin" class="red-text text-lighten-4">@maxderoin<i aria-hidden="true" class="tiny material-icons red-text">open_in_new</i></a>
 				  </div>
 				</div>
 			</div>
@@ -178,11 +170,11 @@
 					<div class="col s12 center">
 						<h3><i class="redHtml">HTML</i></h3>
 						<p class="left-align kolo">Hace ya <span id="fecha"></span>
-							<span id="segundos"></span>en el <a target="_blank" href="https://home.cern/" class="tooltipped" data-position="top"
-							 data-tooltip="Conseil Européen pour la Recherche Nucléaire"><abbr title="Organización Europea para la Investigación Nuclear">CERN</abbr><sup><i class="tiny material-icons">open_in_new</i></sup>
+							<span id="segundos"></span>en el <a target="_blank" rel="noopener noreferrer" href="https://home.cern/" class="tooltipped" data-position="top"
+							 data-tooltip="Conseil Européen pour la Recherche Nucléaire"><abbr title="Organización Europea para la Investigación Nuclear">CERN</abbr><sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup>
 							</a>
-							a un ingeniero llamado <a href="https://www.w3.org/People/Berners-Lee/" target="_blank" class="tooltipped"
-							 data-position="top" data-tooltip="w3.org/People/Berners-Lee">Tim Berners-Lee<sup><i class="tiny material-icons">open_in_new</i></sup></a>
+							a un ingeniero llamado <a href="https://www.w3.org/People/Berners-Lee/" target="_blank" rel="noopener noreferrer" class="tooltipped"
+							 data-position="top" data-tooltip="w3.org/People/Berners-Lee">Tim Berners-Lee<sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup></a>
 							se le ocurrió crear un sistema para compartir archivos en línea, estableciendo la primera comunicación entre un
 							"cliente" y un "servidor" a través de <span class="tooltipped black-text" data-position="top" data-tooltip="HyperText Transfer Protocol">
 								<abbr title="Protocolo de transferencia de hipertexto"><b>HTTP</b></abbr> </span> bautizando a su creación bajo las siglas<span class="black-text tooltipped" data-position="top"
@@ -193,9 +185,9 @@
 							<p>El hombre ingenuo considera como real lo que puede percibir con los sentidos, y lo que no se le presenta como percepción (Dios, el alma, el conocimiento, etc.) se lo representa como algo análogo a lo que se percibe.</p> <br> <p>Si el realismo ingenuo quiere fundar una ciencia, sólo puede concebirla como una descripxión extacta del contenido de la percepción. Los conceptos le son solo medios para su fin. Existen para crear imágenes reflejas de las percepciones. Carecen de sentido para las cosas mismas. El realista ingenuo sólo considera reales los tulipanes individuales que se ven, o que podrían ver; la idea misma del tuli`´an la considera una abstracción, la imagen mental irreal que el alma se ha fomrado de las características comunes a todos los tulipanes.</p>
 						<article>
 							<h4>HTML <i>5</i> es la última versión.</h4>
-							<p class="left-align kolo">Publicada y estandarizada por el <a target="_blank" href="https://www.w3.org/TR/html52/"
+							<p class="left-align kolo">Publicada y estandarizada por el <a target="_blank" rel="noopener noreferrer" href="https://www.w3.org/TR/html52/"
 								 class="tooltipped" data-position="top" data-tooltip="w3.org/TR/html52">World
-									Wide Web Consortium<sup><i class="tiny material-icons">open_in_new</i></sup></a><br>Conociendo a fondo el uso
+									Wide Web Consortium<sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup></a><br>Conociendo a fondo el uso
 								y funcionamiento de HTML se comprenden mejor los cambios
 								realizados en las versiones posteriores. <br> HTML5 especifica:</p>
 							<ol class="left-align">
@@ -204,14 +196,14 @@
 										a los desarrolladores.</p>
 								</li>
 								<li>
-									<p>Una mejora en su <a class="tooltipped" data-position="top" data-tooltip="Verificación de formularios" href="seg_html5.html">seguridad.</a></p>
+									<p>Una mejora en su <a class="pendiente tooltipped" data-position="top" data-tooltip="Verificación de formularios" aria-disabled="true">seguridad.</a></p>
 								</li>
 								<li>
 									<p>Corrección de errores y eliminación de funcionalidades obsoletas.</p>
 								</li>
 								<li>
 									<p><a class="tooltipped" data-position="top" data-tooltip=".w3schools.com/html/html5_geolocation.asp" href="https://www.w3schools.com/html/html5_geolocation.asp">Diferentes
-											API's<sup><i class="material-icons tiny">open_in_new</i></sup></a></p>
+											API's<sup><i aria-hidden="true" class="material-icons tiny">open_in_new</i></sup></a></p>
 								</li>
 								<li>
 									<p><a class="tooltipped" data-position="top" data-tooltip="Recopilación de etiquetas HTML5 semánticas" href="accesibilidad.html">Accesibilidad</a>,
@@ -244,12 +236,12 @@
 						<h4 class="header col s12 blue-text text-lighten-2">Hoja de Estilos en Cascada</h4>
 					</div>
 					<div class="row center">
-						<a href="css3.html" aria-label="Más información sobre css" class="btn btn-large blue waves-effect waves-light css right">CSS
+						<a aria-disabled="true" aria-label="Más información sobre css" class="pendiente btn btn-large blue waves-effect waves-light css right">CSS
 							3.1!</a>
 					</div>
-					<a href="https://www.pexels.com/photo/closeup-photo-of-black-and-blue-keyboard-1194713/" target="_blank">Pexel
+					<a href="https://www.pexels.com/photo/closeup-photo-of-black-and-blue-keyboard-1194713/" target="_blank" rel="noopener noreferrer">Pexel
 						por</a>
-					<a href="https://www.pexels.com/@martabranco" target="_blank" class="blue-text text-lighten-4">@martabranco</a><i
+					<a href="https://www.pexels.com/@martabranco" target="_blank" rel="noopener noreferrer" class="blue-text text-lighten-4">@martabranco</a><i aria-hidden="true"
 					 class="material-icons tiny cyan-text">open_in_new</i>
 				</div>
 			</div>
@@ -262,7 +254,7 @@
 
 					<div class="col s12">
 						<h3 class="blue-text center">CSS</h3>
-						<p class="kolo"><i>"C<b>ascade..."</b></i> Cascada, la <a href="sint_css.html" class="tooltipped" data-position="top"
+						<p class="kolo"><i>"C<b>ascade..."</b></i> Cascada, la <a aria-disabled="true" class="pendiente tooltipped" data-position="top"
 							 data-tooltip="Ver sintaxis de CSS">sintaxis</a> de CSS produce un "efecto cascada", cuando es escrito de modo
 							externo en un archivo con la extensión .css, el cual es llamado desde un "doc".html con la etiqueta
 							<a class="tooltipped" data-position="top" data-tooltip="+ Sobre los link en html" href="links.html">&lt;link></a>
@@ -294,7 +286,7 @@
 							proporcionamos al <span class="subrr">ELEMENTO</span> o los elementos, para <b>Formar</b> una estructura
 							visualmente "firme" como dándole carácter... <br><b>El estilo, vamos!</b></p>
 							<p data-height="265" data-theme-id="dark" data-slug-hash="PdxJzj" data-default-tab="css,result" data-user="jBaton" data-pen-title="Estilos simples de CSS" class="codepen">See the Pen <a href="https://codepen.io/jBaton/pen/PdxJzj/">Estilos simples de CSS</a> by jaronJabaton (<a href="https://codepen.io/jBaton">@jBaton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-							<script async src="https://static.codepen.io/assets/embed/ei.js"></script><br><br><br>
+<br><br><br>
 						<div class="col s12">
 							<p class="kolo"><i>"S<b>heets..."</b></i> hojas. Es en una o varias "hojas de estilos en cascada" donde vamos a indicar lo
 								necesario para que nuestra estructura html sea más vistosa! <br> Antes de CSS los estilos se aplicaban dentro
@@ -334,7 +326,7 @@
 								<p> Anunciatem O Fortuna, Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum molestias repellendus in voluptates tempore  velutadd</p>
 							</div>
 						</div>
-						<p>En <a href="met_css.html" class="tooltipped" data-position="top" data-tooltip="Metodos para incluir CSS">este</a> apartado, podrás ver los distintos métodos más a fondo.</p>
+						<p>En <a aria-disabled="true" class="pendiente tooltipped" data-position="top" data-tooltip="Metodos para incluir CSS">este</a> apartado, podrás ver los distintos métodos más a fondo.</p>
 					</div>
 					<!-- Fin CSS -->					
 			</section>
@@ -353,9 +345,9 @@
 					<div class="row center">
 						<a href="es6.html" aria-label="Más información sobre javascript" class="btn btn-large yellow waves-effect waves-amber js left black-text">EcmaSCRIPT 6!</a>
 					</div>
-					<a href="https://www.pexels.com/photo/blur-blurred-blurry-dark-572665/" target="_blank" class="yellow-text">Pexel
+					<a href="https://www.pexels.com/photo/blur-blurred-blurry-dark-572665/" target="_blank" rel="noopener noreferrer" class="yellow-text">Pexel
 						por</a>
-					<a href="https://www.pexels.com/@wesley-woodard-177495" target="_blank" class="yellow-text text-darken-2">@wesleywoodard</a>
+					<a href="https://www.pexels.com/@wesley-woodard-177495" target="_blank" rel="noopener noreferrer" class="yellow-text text-darken-2">@wesleywoodard</a>
 				</div>
 			</div>
 			<div class="parallax">
@@ -378,12 +370,12 @@
 								<strong>El sistema nervioso, impulsos eléctricos o cómo éstos hacen funcionar el sistema nervioso.</strong>
 							</p>
 						</div>					
-							<p>Diseñado por <a target="_blank" href="https://www.google.com/search?q=+Netscape+Communications+Corp&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b-ab">Netscape Communications Corp</a> y <a target="_blank" href="https://www.google.com/search?q=Mozilla+Fundation&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b">Mozilla Foundation</a>. <em>Creado por <a target="_blank" href="https://github.com/BrendanEich">Brendan Eich</a> en 10 días, seguro que de resaca. </em><a target="_blank" href="https://brendaneich.com/">B. Eich </a>en <a target="_blank" href="https://www.youtube.com/watch?v=zlcnOr81lPc">TED<sup>X</sup></a></p>
-							<p>Aquí puedes ver un ejemplo de las posibilidad de unir estos 3 lenguajes, es decir, los tres métodos más usados para el diseño de paginas web <a target="_blank" href="https://es.wikipedia.org/wiki/Front-end_y_back-end">(FrontEnd)</a></p><br>
-							<a target="_blank" href="https://codepen.io/akm2/pen/rHIsa">Ver en Codepen</a>
-							<div class="cp_embed_wrapper"><iframe id="cp_embed_rHIsa" src="https://codepen.io/akm2/embed/preview/rHIsa?height=265&amp;theme-id=0&amp;slug-hash=rHIsa&amp;default-tab=js%2Cresult&amp;user=akm2&amp;embed-version=2&amp;pen-title=Gravity%20Points&amp;preview=true" name="CodePen Embed" title="Gravity Points" class="cp_embed_iframe " style="width: 100%; overflow: hidden;" height="265"></iframe></div>
-							<script async="" src="https://static.codepen.io/assets/embed/ei.js"></script>
-							<a target="_blank" href="https://codepen.io/akm2"><small>Autor:<cite> @akm2</cite></small></a><br>
+							<p>Diseñado por <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=+Netscape+Communications+Corp&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b-ab">Netscape Communications Corp</a> y <a target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=Mozilla+Fundation&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-b">Mozilla Foundation</a>. <em>Creado por <a target="_blank" rel="noopener noreferrer" href="https://github.com/BrendanEich">Brendan Eich</a> en 10 días, seguro que de resaca. </em><a target="_blank" rel="noopener noreferrer" href="https://brendaneich.com/">B. Eich </a>en <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=zlcnOr81lPc">TED<sup>X</sup></a></p>
+							<p>Aquí puedes ver un ejemplo de las posibilidad de unir estos 3 lenguajes, es decir, los tres métodos más usados para el diseño de paginas web <a target="_blank" rel="noopener noreferrer" href="https://es.wikipedia.org/wiki/Front-end_y_back-end">(FrontEnd)</a></p><br>
+							<a target="_blank" rel="noopener noreferrer" href="https://codepen.io/akm2/pen/rHIsa">Ver en Codepen</a>
+							<p><a href="https://codepen.io/akm2/pen/rHIsa" target="_blank" rel="noopener noreferrer">Gravity Points</a></p>
+
+							<a target="_blank" rel="noopener noreferrer" href="https://codepen.io/akm2"><small>Autor:<cite> @akm2</cite></small></a><br>
 						<p class="left-align light kolo">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id
 							nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies
 							eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et
@@ -414,11 +406,11 @@
 						<h4 class="header col s12 blue-text text-lighten-4">Preprocesador de hipertexto</h4>
 					</div>
 					<div class="row center">
-						<a href="php.html" aria-label="Más información sobre php" class="btn btn-large phpcolo waves-effect waves-light php btnPhp right">Empieza!</a>
+						<a aria-disabled="true" aria-label="Más información sobre php" class="pendiente btn btn-large phpcolo waves-effect waves-light php btnPhp right">Empieza!</a>
 					</div>
-					<a href="https://www.pexels.com/photo/apple-magic-keyboard-1309766/" target="_blank" class="purple-text">Pexel
+					<a href="https://www.pexels.com/photo/apple-magic-keyboard-1309766/" target="_blank" rel="noopener noreferrer" class="purple-text">Pexel
 						por</a>
-					<a href="https://www.pexels.com/@shottrotter" target="_blank" class="pink-text text-lighten-4">@shottrotter</a>
+					<a href="https://www.pexels.com/@shottrotter" target="_blank" rel="noopener noreferrer" class="pink-text text-lighten-4">@shottrotter</a>
 				</div>
 			</div>
 			<div class="parallax">
@@ -468,11 +460,11 @@
 						<h4 class="header col s12 lime-text text-lighten-1">Interprete de JavaScript</h4>
 					</div>
 					<div class="row center">
-						<a href="php.html" aria-label="Más información sobre node" class="btn btn-large waves-effect waves-light node">Empieza!</a>
+						<a aria-disabled="true" aria-label="Más información sobre node" class="pendiente btn btn-large waves-effect waves-light node">Empieza!</a>
 					</div>
-					<a href="https://www.pexels.com/photo/apple-magic-keyboard-1309766/" target="_blank" class="purple-text">Pexel
+					<a href="https://www.pexels.com/photo/apple-magic-keyboard-1309766/" target="_blank" rel="noopener noreferrer" class="purple-text">Pexel
 						por</a>
-					<a href="https://www.pexels.com/@shottrotter" target="_blank" class="pink-text text-lighten-4">@shottrotter</a>
+					<a href="https://www.pexels.com/@shottrotter" target="_blank" rel="noopener noreferrer" class="pink-text text-lighten-4">@shottrotter</a>
 				</div>
 			</div>
 			<div class="parallax">
@@ -527,16 +519,16 @@
 					<!-- Fixed bton -->
 					<div class="fixed-action-btn">
 						<a class="btn-floating btn-large resto">
-							<i class="fas fa-cog fa-spin"></i>
+							<i aria-hidden="true" class="fas fa-cog fa-spin"></i>
 						</a>
 						<ul>
-							<li><a class="btn-floating resto anchorLink" href="#anchorTarget"><i class="fas fa-chevron-up"></i></a></li>
-							<li><a class="btn-floating resto red" href="#html"><i class="fab fa-html5"></i></a></li>
-							<li><a class="btn-floating resto blue" href="#css"><i class="fab fa-css3-alt"></i></a></li>
-							<li><a class="btn-floating resto yellow" href="#js"><i class="fab fa-js"></i></a></li>
-							<li><a class="btn-floating resto deep-purple" href="#php"><i class="fab fa-php"></i></a></li>
-							<li><a class="btn-floating resto lime" href="#node"><i class="fab fa-node-js""></i></a></li>
-							<li><a class="btn-floating resto" href="#footer"><i class="fas fa-chevron-down"></i></a></li>
+							<li><a class="btn-floating resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
+							<li><a class="btn-floating resto red" href="#html" aria-label="HTML"><i aria-hidden="true" class="fab fa-html5"></i></a></li>
+							<li><a class="btn-floating resto blue" href="#css" aria-label="CSS"><i aria-hidden="true" class="fab fa-css3-alt"></i></a></li>
+							<li><a class="btn-floating resto yellow" href="#js" aria-label="JavaScript"><i aria-hidden="true" class="fab fa-js"></i></a></li>
+							<li><a class="btn-floating resto deep-purple" href="#php"><i aria-hidden="true" class="fab fa-php"></i></a></li>
+							<li><a class="btn-floating resto lime" href="#node"><i aria-hidden="true" class="fab fa-node-js""></i></a></li>
+							<li><a class="btn-floating resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
 						</ul>
 					</div>
 					<!-- Fixed bton -->
@@ -549,9 +541,9 @@
 							<li><a class="white-text" href="html.html">HTML</a></li>
 							<li><a class="white-text" href="css.html">CSS</a></li>
 							<li><a class="white-text" href="js.html">JS</a></li>
-							<li><a class="white-text" href="curiosidades.html">Curiosidades</a></li>
+							<li><a class="pendiente white-text" aria-disabled="true">Curiosidades</a></li>
 							<li><a class="white-text" href="guias.html">Guías</a></li>
-							<li><a class="white-text" href="relacionado.html">Relacionado</a></li>
+							<li><a class="white-text" href="relacionando.html">Relacionado</a></li>
 						</ul>
 					</div>
 

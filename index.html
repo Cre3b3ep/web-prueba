@@ -8,7 +8,7 @@
 	<title>DWB Inicio</title>
 
 	<!-- ↓ CSS  ↓ -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/fuentes.css" type="text/css" rel="stylesheet" />
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 
@@ -25,15 +25,10 @@
 	<meta name="robots" content="index,follow" />
 
 	<!-- ↓ Fuentes ↓ -->
-	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<script data-ad-client="ca-pub-8680199340451612" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 </head>
 
-<body onload="fechas(),mueveReloj();">
+<body>
 	<div id="contenedor">
 		<a id="anchorTarget"></a> <!-- Ancla -->
 		<!-- Opciones menú H -->
@@ -45,7 +40,7 @@
 			</ul>
 			<ul id="dropdown2" class="dropdown-content">
 				<li><a class="center-align" href="css.html">Básico</a></li>
-				<li><a class="center-align" href="css3.html">CSS3</a></li>
+				<li><a class="pendiente center-align" aria-disabled="true">CSS3</a></li>
 				<li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
 			</ul>
 			<ul id="dropdown1" class="dropdown-content">
@@ -67,8 +62,8 @@
 						<li><a title="Guías según lenguaje" class="resto" href="guias.html">Guías</a></li>
 						<li><a class="resto" href="relacionando.html">Relacionado</a></li>
 					</ul>
-					<a href="#" class="sidenav-trigger" data-target="menu-lateral">
-						<i class="material-icons">menu</i></a>
+					<a href="#" class="sidenav-trigger" data-target="menu-lateral" aria-label="Abrir menú">
+						<i aria-hidden="true" class="material-icons">menu</i></a>
 
 					<!-- Fin Logo -->
 					<div id="logo">
@@ -82,38 +77,38 @@
 					<ul id="menu-lateral" class="sidenav purpur">
 						<li>
 							<div class="user-view">
-								<a href="index.html"><i class="material-icons grey-text text-lighten-2">home</i></a>
+								<a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons grey-text text-lighten-2">home</i></a>
 								<div class="background">
 									<img src="img/dedojpeg.jpg" alt="Fondo menú móvil">
 								</div>
 							</div>
 						</li>
 						<li>
-							<a href="html.html" class="red-text text-accent-4 html"><i
+							<a href="html.html" class="red-text text-accent-4 html"><i aria-hidden="true"
 									class="material-icons red-text text-accent-4 html">check_box_outline_blank</i>HTML</a>
 						</li>
 						<li>
-							<a href="css.html" class="blue-text text-accent-4 css"><i
+							<a href="css.html" class="blue-text text-accent-4 css"><i aria-hidden="true"
 									class="material-icons blue-text text-accent-4">check_box_outline_blank</i>CSS</a>
 						</li>
 						<li>
-							<a href="js.html" class="amber-text text-accent-4 js"><i
+							<a href="js.html" class="amber-text text-accent-4 js"><i aria-hidden="true"
 									class="material-icons amber-text text-accent-4">check_box_outline_blank</i>JavaScript</a>
 						</li>
 						<li>
-							<a href="guias.html" class="cyan-text text-accent-4 resto"><i
+							<a href="guias.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true"
 									class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Guías</a>
 						</li>
 						<li>
-							<a href="relacionando.html" class="cyan-text text-accent-4 resto"><i
+							<a href="relacionando.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true"
 									class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Relacionado</a>
 						</li>
 						<li>
-							<a href="tests.html" class="cyan-text text-accent-4 resto"><i
+							<a aria-disabled="true" class="pendiente cyan-text text-accent-4 resto"><i aria-hidden="true"
 									class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>¿Cuánto sabes?</a>
 						</li>
 						<li>
-							<a href="contacto.html" class="indigo-text text-lighten-2"><i
+							<a href="contacto.html" class="indigo-text text-lighten-2"><i aria-hidden="true"
 									class="fab fa-telegram indigo-text text-lighten-2"></i>Contacta</a>
 						</li>
 					</ul>
@@ -126,14 +121,14 @@
 		<!-- Fixed bton -->
 		<div class="fixed-action-btn">
 			<a class="btn-floating btn-large resto">
-				<i class="fas fa-cog fa-spin"></i>
+				<i aria-hidden="true" class="fas fa-cog fa-spin"></i>
 			</a>
 			<ul>
-				<li><a class="btn-floating resto anchorLink" href="#anchorTarget"><i class="fas fa-chevron-up"></i></a></li>
-				<li><a class="btn-floating resto red" href="#html"><i class="fab fa-html5"></i></a></li>
-				<li><a class="btn-floating resto blue" href="#css"><i class="fab fa-css3-alt"></i></a></li>
-				<li><a class="btn-floating resto yellow" href="#js"><i class="fab fa-js"></i></a></li>
-				<li><a class="btn-floating resto" href="#footer"><i class="fas fa-chevron-down"></i></a></li>
+				<li><a class="btn-floating resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
+				<li><a class="btn-floating resto red" href="#html" aria-label="HTML"><i aria-hidden="true" class="fab fa-html5"></i></a></li>
+				<li><a class="btn-floating resto blue" href="#css" aria-label="CSS"><i aria-hidden="true" class="fab fa-css3-alt"></i></a></li>
+				<li><a class="btn-floating resto yellow" href="#js" aria-label="JavaScript"><i aria-hidden="true" class="fab fa-js"></i></a></li>
+				<li><a class="btn-floating resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
 			</ul>
 		</div>
 		<!-- Fin Fixed bton -->
@@ -150,7 +145,7 @@
 
 					<div class="col s12 m10 l12">
 						<span class="sombraBtns"><a href="html5.html" aria-label="Más sobre html"
-								class="btn red darken-2 btn-large waves-effect waves-red html resalto"><i
+								class="btn red darken-2 btn-large waves-effect waves-red html resalto"><i aria-hidden="true"
 									class="fab fa-html5"></i></a></span>
 					</div>
 					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -159,7 +154,7 @@
 							href="https://www.pexels.com/photo/black-lighted-gaming-keyboard-841228/"
 							class="red-text text-darken-3">Pexel por</a>
 						<a target="_blank" rel="noopener noreferrer" href="https://www.pexels.com/@karoldach"
-							class="red-text text-lighten-4">@karoldach<i class="tiny material-icons red-text">open_in_new</i></a>
+							class="red-text text-lighten-4">@karoldach<i aria-hidden="true" class="tiny material-icons red-text">open_in_new</i></a>
 					</div>
 
 				</div>
@@ -185,11 +180,11 @@
 							<span id="segundos"></span>en el <a target="_blank" rel="noopener noreferrer" href="https://home.cern/"
 								class="tooltipped afuera" data-position="top"
 								data-tooltip="Conseil Européen pour la Recherche Nucléaire"><abbr
-									title="Organización Europea para la Investigación Nuclear">CERN</abbr><sup><i
+									title="Organización Europea para la Investigación Nuclear">CERN</abbr><sup><i aria-hidden="true"
 										class="tiny material-icons">open_in_new</i></sup></a>, a un ingeniero llamado<br> <a
 								href="https://www.w3.org/People/Berners-Lee/" target="_blank" rel="noopener noreferrer"
 								class="tooltipped afuera" data-position="top" data-tooltip="w3.org/People/Berners-Lee">Tim
-								Berners-Lee<sup><i class="tiny material-icons">open_in_new</i></sup></a>
+								Berners-Lee<sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup></a>
 							se le ocurrió crear un sistema para compartir archivos en línea, estableciendo la primera comunicación
 							entre un
 							<a href="https://es.wikipedia.org/wiki/Cliente_(inform%C3%A1tica)" title="Wiki definición"
@@ -208,11 +203,11 @@
 							estandarizar
 							en octubre de ese año.</p>
 						<article>
-							<h4 class="center">La última versión más utilizada es HTML <i class="fab fa-html5"></i></h4>
+							<h4 class="center">La última versión más utilizada es HTML <i aria-hidden="true" class="fab fa-html5"></i></h4>
 							<p class="left-align kolo">Publicada y estandarizada por el <a target="_blank" rel="noopener noreferrer"
 									href="https://www.w3.org/TR/html52/" class="tooltipped afuera" data-position="top"
 									data-tooltip="w3.org/TR/html52">World
-									Wide Web Consortium<sup><i class="tiny material-icons">open_in_new</i></sup></a>.<br> &emsp;Conociendo
+									Wide Web Consortium<sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup></a>.<br> &emsp;Conociendo
 								a fondo el uso
 								y funcionamiento de HTML se comprenden mejor los cambios
 								realizados en las versiones posteriores.<br><br>HTML5 especifica:</p>
@@ -223,8 +218,8 @@
 										a los desarrolladores.</p>
 								</li>
 								<li>
-									<p>Una mejora en su <a class="tooltipped" data-position="top"
-											data-tooltip="Verificación de formularios" href="seg_html5.html">seguridad</a>.</p>
+									<p>Una mejora en su <a class="pendiente tooltipped" data-position="top"
+											data-tooltip="Verificación de formularios" aria-disabled="true">seguridad</a>.</p>
 								</li>
 								<li>
 									<p>Corrección de errores y eliminación de funcionalidades obsoletas.</p>
@@ -234,7 +229,7 @@
 											data-tooltip=".w3schools.com/html/html5_geolocation.asp"
 											href="https://www.w3schools.com/html/html5_geolocation.asp" target="_blank"
 											rel="noopener noreferrer">Diferentes
-											API's<sup><i class="material-icons tiny">open_in_new</i></sup></a></p>
+											API's<sup><i aria-hidden="true" class="material-icons tiny">open_in_new</i></sup></a></p>
 								</li>
 								<li>
 									<p><a class="tooltipped" data-position="top" data-tooltip="Recopilación de etiquetas HTML5 semánticas"
@@ -250,40 +245,26 @@
 					<div class="container center">
 						<div class="row">
 							<div class="card section card-action s5 m5 l5">
-								<div class="amzn-ad-image-holder">
-									<a rel="nofollow"
-										href="https://www.amazon.es/dp/8441539391/ref=as_sl_pc_qf_sp_asin_til?tag=jbaton-21&linkCode=w00&linkId=48f8b0f04af2b2d95f639047cf280b6f&creativeASIN=8441539391"
-										target="_blank">
-										<img src="https://m.media-amazon.com/images/I/51PMtvya+JL._AC_AC_SR98,95_.jpg" id="prod-image"
-											title="Link de Amazon afiliados, me ayudarás mientras te formas">
-									</a>
-								</div>
-
 								<div class="amzn-ad-prod-detail">
 									<div id="title">
-										<a rel="nofollow" id="titlehref"
+										<a rel="nofollow sponsored noopener noreferrer" id="titlehref"
 											href="https://www.amazon.es/dp/8441539391/ref=as_sl_pc_qf_sp_asin_til?tag=jbaton-21&linkCode=w00&linkId=48f8b0f04af2b2d95f639047cf280b6f&creativeASIN=8441539391"
 											style="color:#0066c0;" target="_blank" title=" Comprar en Amazon, aportando al creador del
 											contenido">Curso de Desarrollo Web: HTML, CSS y JavaScript. Edición 2018 (Manuales
 											Imprescindibles)</a>
 									</div>
-									<script>
-										checktext();
-										encodehtml("Curso de Desarrollo Web: HTML, CSS y JavaScript. Edición 2018 (Manuales Imprescindibles)");
-									</script>
 								</div>
 								<div class="amzn-ad-price-block">
-									<a rel="nofollow"
+									<a rel="nofollow sponsored noopener noreferrer"
 										href="https://www.amazon.es/dp/8441539391/ref=as_sl_pc_qf_sp_asin_til?tag=jbaton-21&linkCode=w00&linkId=48f8b0f04af2b2d95f639047cf280b6f&creativeASIN=8441539391"
 										target="_blank">
 										<span class="price" style="color:#333333;">EUR 26,60</span></a>
 								</div>
 								<div class="amzn-ad-primary-btn logo">
-									<a rel="nofollow"
+									<a rel="nofollow sponsored noopener noreferrer"
 										href="https://www.amazon.es/dp/8441539391/ref=as_sl_pc_qf_sp_asin_til?tag=jbaton-21&linkCode=w00&linkId=48f8b0f04af2b2d95f639047cf280b6f&creativeASIN=8441539391"
 										target="_blank">
-										<span style="background-image:url(//wms-eu.amazon-adsystem.com/panda/20070822/US/img/cart.gif)"
-											class="shop" id="amzn_assoc_shop_now">Comprar ahora</span>
+										<span class="shop" id="amzn_assoc_shop_now">Comprar ahora</span>
 									</a>
 								</div>
 
@@ -308,8 +289,8 @@
 					</div>
 
 					<div class="col s12 m10 l12">
-						<span class="sombraBtns"><a href="css3.html" aria-label="Más sobre css"
-								class="btn blue waves-effect btn-large waves-light css resalto"><i class="fab fa-css3"></i></a></span>
+						<span class="sombraBtns"><a aria-disabled="true" aria-label="Más sobre css"
+								class="pendiente btn blue waves-effect btn-large waves-light css resalto"><i aria-hidden="true" class="fab fa-css3"></i></a></span>
 					</div>
 
 					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -318,7 +299,7 @@
 						<a href="https://www.pexels.com/photo/close-up-shot-of-black-computer-keyboard-1010496/" target="_blank"
 							rel="noopener noreferrer">Pexel por</a>
 						<a href="https://www.pexels.com/@iseeghoststoo" target="_blank" rel="noopener noreferrer"
-							class="blue-text text-lighten-4">@iseeghoststoo<i
+							class="blue-text text-lighten-4">@iseeghoststoo<i aria-hidden="true"
 								class="material-icons tiny cyan-text">open_in_new</i></a>
 					</div>
 
@@ -339,7 +320,7 @@
 							<span class="cyan-text">S</span>sheets</h2>
 						<h3 class="center titSemantik">Es el lenguaje usado para dar estilos a la estructura de un sitio
 							web...<br><br><span class="aportaciones">CSS es el alma del conjunto</span> <sub>jBaton.</sub></h3><br>
-						<p class="kolo"><i>"C<b>ascade..."</b></i> Cascada, la <a href="sint_css.html" class="tooltipped"
+						<p class="kolo"><i>"C<b>ascade..."</b></i> Cascada, la <a aria-disabled="true" class="pendiente tooltipped"
 								data-position="top" data-tooltip="Ver sintaxis de CSS">sintaxis</a> de CSS produce un "efecto cascada",
 							cuando es escrito de modo
 							externo en un archivo con la extensión .css, el cual es llamado desde un "doc".html con la etiqueta
@@ -357,7 +338,7 @@
 						<!-- <a href="#!"></a> -->
 						<div class="col m8 s12">
 							<div class="card">
-								<pre><span class="white-text">/*</span> La sintaxis en CSS, aparte de estar programado en Inglés, es sencilla. Invocas un elemento, encierras dentro uno o más <a href="atr_css.html" class="tooltipped" data-position="top" data-tooltip="Lista de atributos CSS">atributos</a> con sus respectivos valores separados por ";" y por ordenar mejor el código, dando un salto de línea. <br> Mirando el ejemplo de la izquierda: <br> <span class="white-text">*/</span> <br><span class="red-text text-darken-4">ELEMENTO</span> <span class="white-text">=></span> <span class="white-text">(</span><span class="red-text text-darken-4">body, html, pre, h1... h6, nav, div...</span> <span class="white-text">)</span> <br><span class="white-text">/*</span> Los elementos serán nuestro modo de especificar donde exactamente queremos el estilo.<span class="white-text">*/</span> <br><span class="green-text">ATRIBUTO </span> <span class="white-text">=></span> <span class="white-text">(</span>margin, padding, color, position, background... <span class="white-text">)</span> <br><span class="white-text">/*</span> Con los atributos indicamos qué es lo que queremos modificar. Su tamaño, color, posición y mucho más.<span class="white-text">*/</span><br> <span class="valor">VALOR</span> <span class="white-text">=></span> <span class="white-text">(</span><span class="valor">0, 87.5<span class="red-text">%</span>, #e83e8c</span><span class="white-text">)</span> <br><span class="white-text">/*</span> Los valores son muy variados, desde colores rgb, rgba, en hexadecimal unidades de medida absolutas, relativas, etc...<span class="white-text">*/</span> <br><span class="grey-text"><i>Quedando algo así:</i></span> <br> <span class="red-text text-accent-4">ELEMENTO</span> <span class="white-text">{</span> <br> <span class="green-text">ATRIBUTO</span>:<span class="valor">VALOR</span>; <br> <span class="white-text">}</span></pre>
+								<pre><span class="white-text">/*</span> La sintaxis en CSS, aparte de estar programado en Inglés, es sencilla. Invocas un elemento, encierras dentro uno o más <a aria-disabled="true" class="pendiente tooltipped" data-position="top" data-tooltip="Lista de atributos CSS">atributos</a> con sus respectivos valores separados por ";" y por ordenar mejor el código, dando un salto de línea. <br> Mirando el ejemplo de la izquierda: <br> <span class="white-text">*/</span> <br><span class="red-text text-darken-4">ELEMENTO</span> <span class="white-text">=></span> <span class="white-text">(</span><span class="red-text text-darken-4">body, html, pre, h1... h6, nav, div...</span> <span class="white-text">)</span> <br><span class="white-text">/*</span> Los elementos serán nuestro modo de especificar donde exactamente queremos el estilo.<span class="white-text">*/</span> <br><span class="green-text">ATRIBUTO </span> <span class="white-text">=></span> <span class="white-text">(</span>margin, padding, color, position, background... <span class="white-text">)</span> <br><span class="white-text">/*</span> Con los atributos indicamos qué es lo que queremos modificar. Su tamaño, color, posición y mucho más.<span class="white-text">*/</span><br> <span class="valor">VALOR</span> <span class="white-text">=></span> <span class="white-text">(</span><span class="valor">0, 87.5<span class="red-text">%</span>, #e83e8c</span><span class="white-text">)</span> <br><span class="white-text">/*</span> Los valores son muy variados, desde colores rgb, rgba, en hexadecimal unidades de medida absolutas, relativas, etc...<span class="white-text">*/</span> <br><span class="grey-text"><i>Quedando algo así:</i></span> <br> <span class="red-text text-accent-4">ELEMENTO</span> <span class="white-text">{</span> <br> <span class="green-text">ATRIBUTO</span>:<span class="valor">VALOR</span>; <br> <span class="white-text">}</span></pre>
 							</div>
 						</div>
 						<p>Psst! efecto <span class="subrr aportaciones">ELEMENTO:hover{color:#000}</span> en este ↓ "espacio en
@@ -380,7 +361,7 @@
 								data-user="jBaton" data-pen-title="Estilos simples de CSS" data-preview="true" class="codepen">See the
 								Pen <a href="https://codepen.io/jBaton/pen/PdxJzj/">Estilos simples de CSS</a> by jaronJabaton (<a
 									href="https://codepen.io/jBaton">@jBaton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-							<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 							<br><br><br>
 							<div class="col s12">
 								<p class="kolo"><i>"S<b>heets..."</b></i> Hojas. Es en una o varias "hojas de estilos en cascada" donde
@@ -426,36 +407,36 @@
 						<div class="col s12 m10 l3	">
 							<div class="card-action collection-header transparent">
 								<div class="col s12 red">
-									<i class="material-icons left">developer_board</i><span class="pKlein">Herramientas CSS</span>
+									<i aria-hidden="true" class="material-icons left">developer_board</i><span class="pKlein">Herramientas CSS</span>
 								</div>
 								<ul>
 									<li><br><br></li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://cssgradient.io/" target="_blank"
-											rel="noopener noreferrer"> Generar gradientes</a><i class="material-icons tiny">open_in_new</i>
+											rel="noopener noreferrer"> Generar gradientes</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i>
 									</li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://uigradients.com/#Argon" target="_blank"
-											rel="noopener noreferrer"> Ver gradientes</a><i class="material-icons tiny">open_in_new</i></li>
+											rel="noopener noreferrer"> Ver gradientes</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i></li>
 									<li class="afuera"><a title="Nueva pestaña"
 											href="https://color.hailpixel.com/#26190D,C78B57,1C0D26,C1ABE3,1F3B5C,E0A3A3" target="_blank"
-											rel="noopener noreferrer"> Paleta de colores</a><i class="material-icons tiny">open_in_new</i>
+											rel="noopener noreferrer"> Paleta de colores</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i>
 									</li>
 									<li class="afuera"><a title="Nueva pestaña"
 											href="https://www.hostingatope.com/tutorial-aprender-css-basico-manual-pdf/" target="_blank"
-											rel="noopener noreferrer"> Guía de CSS</a><i class="material-icons tiny">open_in_new</i></li>
+											rel="noopener noreferrer"> Guía de CSS</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i></li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://lorempixel.com/" target="_blank"
-											rel="noopener noreferrer"> LoremPixel</a><i class="material-icons tiny">open_in_new</i></li>
+											rel="noopener noreferrer"> LoremPixel</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i></li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://material.io/tools/icons/?style=baseline"
-											target="_blank" rel="noopener noreferrer"> Material Icons</a><i
+											target="_blank" rel="noopener noreferrer"> Material Icons</a><i aria-hidden="true"
 											class="material-icons tiny">open_in_new</i></li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://colorhunt.co/palette/132369" target="_blank"
-											rel="noopener noreferrer"> Colores</a><i class="material-icons tiny">open_in_new</i></li>
+											rel="noopener noreferrer"> Colores</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i></li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://csscompressor.com/" target="_blank"
-											rel="noopener noreferrer"> Minificar CSS</a><i class="material-icons tiny">open_in_new</i></li>
+											rel="noopener noreferrer"> Minificar CSS</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col s12 m11 l9">
-							<p><a href="met_css.html" class="tooltipped" data-position="top"
+							<p><a aria-disabled="true" class="pendiente tooltipped" data-position="top"
 									data-tooltip="Métodos para incluir CSS">Aquí</a>, podrás ver los distintos métodos más a fondo.</p>
 						</div>
 						<div class="col s12 m11 l9">
@@ -463,34 +444,13 @@
 								no tenga solo lineas de texto e hipertexto.</p>
 							<a href="css.html" class="btn transparent css black-text">CSS</a>
 							<a href="fw-css.html" class="btn transparent css black-text">FrameWorks de CSS</a>
-							<a href="css3.html" class="btn transparent css black-text">CSS<sub><i
+							<a aria-disabled="true" class="pendiente btn transparent css black-text">CSS<sub><i aria-hidden="true"
 										class="fab fa-css3-alt"></i></sub></a>
-							<a href="cssyjs.html" class="btn disabled transparent css black-text">Funciones con CSS</a>
+							<a aria-disabled="true" class="pendiente btn disabled transparent css black-text">Funciones con CSS</a>
 						</div>
 					</div>
 				</div>
 
-				<!-- publicidad -->
-				<aside>
-					<div class="container center">
-						<div class="row">
-							<div class="card section card-action s5 m5 l5">
-								<p>Publicidad</p>
-								<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-ed+5p-2-bb+pw"
-     data-ad-client="ca-pub-8680199340451612"
-     data-ad-slot="1835737023"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-							</div>
-						</div>
-					</div>
-				</aside>
-				<!-- publicidad -->
 
 			</section>
 		</div>
@@ -509,7 +469,7 @@
 
 					<div class="col s12 m10 l12">
 						<span class="sombraBtns"><a href="es6.html" aria-label="Más sobre javascript"
-								class="resalto btn yellow waves-effect btn-large waves-amber js"><i class="fab fa-js"></i></a></span>
+								class="resalto btn yellow waves-effect btn-large waves-amber js"><i aria-hidden="true" class="fab fa-js"></i></a></span>
 					</div>
 
 					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -518,7 +478,7 @@
 							rel="noopener noreferrer" class="yellow-text">Pexel
 							por</a>
 						<a href="https://www.pexels.com/@wesley-woodard-177495" target="_blank" rel="noopener noreferrer"
-							class="amber-text text-darken-2">@wesleywoodard<i
+							class="amber-text text-darken-2">@wesleywoodard<i aria-hidden="true"
 								class="material-icons tiny yellow-text">open_in_new</i></a>
 					</div>
 
@@ -544,25 +504,25 @@
 							estructura HTML de un sitio web...<br><br><span class="aportaciones">JavaScript es el espíritu del
 								conjunto</span> <sub>jBaton.</sub></h3><br>
 						<p class="kolo">JavaScript puede hacer que nuestro estilo CSS "cobre vida", que nuestro HTML tenga cierta
-							"inteligencia" al poder programar con <a href="scripts.html" class="tooltipped" data-position="top"
+							"inteligencia" al poder programar con <a aria-disabled="true" class="pendiente tooltipped" data-position="top"
 								data-tooltip="¿Qué es un Script?">Scripts</a> acciones y métodos, como por ejemplo la <a
-								href="val_form.html" class="tooltipped" data-position="top" data-tooltip="Mira cómo">validación de
-								formularios</a>, <a href="crea_cookies.html" class="tooltipped" data-position="left"
+								aria-disabled="true" class="pendiente tooltipped" data-position="top" data-tooltip="Mira cómo">validación de
+								formularios</a>, <a aria-disabled="true" class="pendiente tooltipped" data-position="left"
 								data-tooltip="Cómo crear Cookies"> la creación de Cookies</a> y un larguísimo etc.</p>
 						<p class="kolo">Se diseña en <a href="https://es.wikipedia.org/wiki/Netscape_Communications_Corporation"
 								target="_blank" rel="noopener noreferrer" class="tooltipped afuera" data-position="top"
-								data-tooltip="Más en la WikiPedia">Netscape Communications Corp<i
+								data-tooltip="Más en la WikiPedia">Netscape Communications Corp<i aria-hidden="true"
 									class="tiny material-icons ">open_in_new</i></a>. La persona más relevante en el proyecto es <a
 								href="https://github.com/BrendanEich" target="_blank" rel="noopener noreferrer"
-								class="tooltipped afuera" data-position="top" data-tooltip="Brendan Eich en GitHub">Brendan Eich<i
+								class="tooltipped afuera" data-position="top" data-tooltip="Brendan Eich en GitHub">Brendan Eich<i aria-hidden="true"
 									class="tiny material-icons ">open_in_new</i></a>. Ex <abbr class="tooltipped"
 								data-tooltip="Director Ejecutivo" data-position="top" title="Chief Executive Officer">CEO</abbr> de <a
 								href="https://www.mozilla.org/es-ES/firefox/" target="_blank" rel="noopener noreferrer"
-								class="afuera tooltipped" data-position="top" data-tooltip="Lee sobre firefox">Mozilla Corp<i
+								class="afuera tooltipped" data-position="top" data-tooltip="Lee sobre firefox">Mozilla Corp<i aria-hidden="true"
 									class="tiny material-icons">open_in_new</i></a>. Y actual CEO de Brave Software. Ha creado su propio
-							navegador... <a href="https://brave.com/boj118" target="_blank" rel="noopener noreferrer"
+							navegador... <a href="https://brave.com/boj118" target="_blank" rel="noopener noreferrer sponsored"
 								class="tooltipped afuera" data-position="top"
-								data-tooltip='"Brave is on a mission to fix the web."'><span class="orange-text "><b>Brave!<i
+								data-tooltip='"Brave is on a mission to fix the web."'><span class="orange-text "><b>Brave!<i aria-hidden="true"
 											class="material-icons tiny">open_in_new</i></b></span></a>. Al parecer es bastante potente, tengo
 							entendido que está creado mayormente con <abbr title="JavaScript">JS</abbr> y con unos principios
 							realmente interesantes (recomiendo una investigación a fondo y su prueba, la verdad que es rápido y parece
@@ -592,12 +552,12 @@
 									"conexión" directa con <a
 										href="https://www.google.com/search?q=java&ie=utf-8&oe=utf-8&client=firefox-b-ab" target="_blank"
 										rel="noopener noreferrer" class="tooltipped" data-position="right"
-										data-tooltip="Resultados de Java en google"><span class="red-text">Java</span><sub><i
-												class="fab fa-java cyan-text medium"></i></sub><sup><i
+										data-tooltip="Resultados de Java en google"><span class="red-text">Java</span><sub><i aria-hidden="true"
+												class="fab fa-java cyan-text medium"></i></sub><sup><i aria-hidden="true"
 												class="tiny material-icons">open_in_new</i></sup></a> ya que son lenguajes diferentes, <span
-										class="amber-text">J</span>ava<span class="amber-text">S</span>cript <i
+										class="amber-text">J</span>ava<span class="amber-text">S</span>cript <i aria-hidden="true"
 										class="fab fa-js medium amber-text"></i> puede ser escrito dentro de un documento.html y de modo
-									externo. Mientras que <span class="red-text">Java</span><i class="fab fa-java cyan-text medium"></i>
+									externo. Mientras que <span class="red-text">Java</span><i aria-hidden="true" class="fab fa-java cyan-text medium"></i>
 									necesita de un entorno para ser desarrollado en condiciones.
 								</p><br>
 							</div>
@@ -608,35 +568,13 @@
 						<div class="card transparent">
 							<div class="card-content">
 								<p><span class="card-title center">3 Formas de incluir JavaScript</span></p>
-								<pre>&lt;!-- 1<sup>º</sup> Sobre un elemento HTML --><br><span class="white-text">&lt;</span><span class="red-text">body</span><span class="orange-text"> onload</span><span class="white-text">=</span><span class="green-text">"</span><a href="eventosjs.hmtl" class="tooltipped" data-position="top" data-tooltip="Eventos de JavaScript"><span class="light-blue-text deco">eventos</span></a><span class="green-text">(),</span><span class="light-blue-text">soyUnEventodeJs</span><span class="green-text">();</span><span class="green-text">"</span><span class="white-text">></span><br><br>&lt;!-- 2<sup>º</sup> Dentro del doc.html --><br><span class="white-text">&lt;</span><span class="red-text">script</span><span class="white-text">></span><br><span class="yellow-text">alert</span><span class="white-text">(</span><span class="green-text">"Hola, soy un <a href="metodosjs.html" class="deco tooltipped" data-position="top" data-tooltip="Métodos de JavaScript"><span class="green-text">método</span></a> de JS"</span><span class="white-text">);</span><br><span class="white-text">&lt;/</span><span class="red-text">script</span><span class="white-text">></span><br><br>&lt;!-- 3<sup>º</sup> Llamando a un archivo.js --><br><span class="white-text">&lt;</span><span class="red-text">script</span> <span class="purple-text">src</span><span class="white-text">=</span><span class="green-text">"js/archivo.js"</span><span class="white-text">>&lt;/</span><span class="red-text">script</span><span class="white-text">></span></pre>
+								<pre>&lt;!-- 1<sup>º</sup> Sobre un elemento HTML --><br><span class="white-text">&lt;</span><span class="red-text">body</span><span class="orange-text"> onload</span><span class="white-text">=</span><span class="green-text">"</span><a aria-disabled="true" class="pendiente tooltipped" data-position="top" data-tooltip="Eventos de JavaScript"><span class="light-blue-text deco">eventos</span></a><span class="green-text">(),</span><span class="light-blue-text">soyUnEventodeJs</span><span class="green-text">();</span><span class="green-text">"</span><span class="white-text">></span><br><br>&lt;!-- 2<sup>º</sup> Dentro del doc.html --><br><span class="white-text">&lt;</span><span class="red-text">script</span><span class="white-text">></span><br><span class="yellow-text">alert</span><span class="white-text">(</span><span class="green-text">"Hola, soy un <a aria-disabled="true" class="pendiente deco tooltipped" data-position="top" data-tooltip="Métodos de JavaScript"><span class="green-text">método</span></a> de JS"</span><span class="white-text">);</span><br><span class="white-text">&lt;/</span><span class="red-text">script</span><span class="white-text">></span><br><br>&lt;!-- 3<sup>º</sup> Llamando a un archivo.js --><br><span class="white-text">&lt;</span><span class="red-text">script</span> <span class="purple-text">src</span><span class="white-text">=</span><span class="green-text">"js/archivo.js"</span><span class="white-text">>&lt;/</span><span class="red-text">script</span><span class="white-text">></span></pre>
 							</div>
 						</div>
 					</div>
 
 				</div>
 
-				<!-- publicidad -->
-				<aside>
-					<div class="container center">
-						<div class="row">
-							<div class="card section card-action s5 m5 l5">
-								<p>Publicidad</p>
-								<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Horizontal simple -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8680199340451612"
-     data-ad-slot="3026665230"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-							</div>
-						</div>
-					</div>
-				</aside>
-				<!-- publicidad -->
 
 			</section>
 		</div>
@@ -666,7 +604,7 @@
 						<a class="white-text css" href="css.html">CSS,</a>
 						<a class="white-text js" href="js.html">JS,</a>
 						<a class="white-text resto" href="guias.html">Guías,</a>
-						<a class="white-text resto" href="relacionado.html">Relacionado.</a>
+						<a class="white-text resto" href="relacionando.html">Relacionado.</a>
 					</div>
 					<div class="col l2 s5 center">
 						<p class="blue-text center">Contacto</p>
@@ -674,9 +612,8 @@
 						<ul>
 							<li><a class="white-text css"
 									href="https://twitter.com/messages/compose?recipient_id=3364552791&ref_src=twsrc%5Etfw"
-									target="_blank" rel="noopener no referrer" data-lang="es" data-screen-name="@Sinarkista"
-									data-show-count="false"><i class="fab fa-twitter fa-1x"></i></a>
-								<script async src="https://platform.twitter.com/widgets.js"></script>
+									target="_blank" rel="noopener noreferrer" data-lang="es" data-screen-name="@Sinarkista"
+									data-show-count="false" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-1x"></i></a>
 							</li>
 							<li><a class="white-text css" href="#!">Link 2</a></li>
 							<li><a class="white-text css" href="#!">Link 3</a></li>
@@ -687,14 +624,13 @@
 						<p class="yellow-text center">RRSS</p>
 						<hr class="deep-purple-text">
 						<a class="cyan-text js" href="https://twitter.com/Sinarkista?ref_src=twsrc%5Etfw" target="_blank"
-							rel="noopener noreferrer" data-show-screen-name="false" data-lang="es" data-show-count="false"><i
+							rel="noopener noreferrer" data-show-screen-name="false" data-lang="es" data-show-count="false" aria-label="Twitter"><i aria-hidden="true"
 								class="fab fa-twitter fa-3x"></i></a>
-						<script async src="https://platform.twitter.com/widgets.js"></script>
 						<a class="blue-text text-darken-3 js" href="https://www.facebook.com/facundohetoro" target="_blank"
-							rel="noopener noreferrer"><i class="fab fa-facebook-f fa-3x"></i></a>
+							rel="noopener noreferrer" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f fa-3x"></i></a>
 						<a class="red-text js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank"
-							rel="noopener noreferrer"><i class="fab fa-youtube fa-3x"></i></a>
-						<a class="orange-text js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer"><i
+							rel="noopener noreferrer" aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube fa-3x"></i></a>
+						<a class="orange-text js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i aria-hidden="true"
 								class="fab fa-soundcloud fa-3x"></i></a>
 					</div>
 					<div class="col l2 s12 center">
@@ -740,19 +676,19 @@
 					<div class="col l12 s12 m12 reduce">
 						<p class="resenyas grey-text text-darken-2">Hecho con la ayuda de
 							<a href="https://materializecss.com/about.html" target="_blank" rel="noopener noreferrer">
-								<img id="materializecss" class="responsive-img" onmouseover="matterialize();"
+								<img id="materializecss" class="responsive-img" data-hover-src="img/materialize-teal.png"
 									src="img/materialize-grey.png" title="Materializecss" alt="Logo de Materializecss">
 							</a>
 							<a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">
-								<img id="fonts" class="responsive-img" onmouseover="gofonts();" src="img/gf.png" alt="Google Fonts"
+								<img id="fonts" class="responsive-img" data-hover-src="img/gf1.png" src="img/gf.png" alt="Google Fonts"
 									title="GoogleFonts">
 							</a>
 							<a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">
-								<img id="fawesome" class="responsive-img" onmouseover="fawesome();" src="img/fntaw.png"
+								<img id="fawesome" class="responsive-img" data-hover-src="img/fntaw1.png" src="img/fntaw.png"
 									alt="FontAwesome" title="FontAwesome">
 							</a>
 							<a href="https://material.io/tools/icons/?style=baseline" target="_blank" rel="noopener noreferrer">
-								<img id="mati" class="responsive-img" onmouseover="mati();" src="img/mati.png" alt="MaterialIcons"
+								<img id="mati" class="responsive-img" data-hover-src="img/mati1.png" src="img/mati.png" alt="MaterialIcons"
 									title="MaterialIcons">
 							</a>
 						</p>
@@ -763,29 +699,12 @@
 		<!-- Fin del Pié de Página Der -->
 	</div>
 	<!--  Scripts; Si se cambia este orden puede que algo falle-->
-	<!-- 1 -->
-	<script src="js/jquery.min.js"></script>
 	<!-- 2 -->
 	<script src="js/materialize.js"></script>
 	<!-- 3 -->
 	<script src="js/init.js"></script>
 	<!-- 4 -->
 	<script src="js/funk.js"></script>
-	<!-- 5 -->
-	<script>
-		$(document).ready(function () {
-			anchor.init()
-		}), anchor = {
-			init: function () {
-				$("a.anchorLink").click(function () {
-					return elementClick = $(this).attr("href"), destination = $(elementClick).offset().top, $(
-						"html:not(:animated),body:not(:animated)").animate({
-						scrollTop: destination
-					}, 666), !1
-				})
-			}
-		};
-	</script>
 </body>
 
 </html>

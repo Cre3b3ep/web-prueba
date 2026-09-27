@@ -8,7 +8,7 @@
 	<title>HTML5</title>
 
 	<!-- ↓ CSS  ↓ -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/fuentes.css" type="text/css" rel="stylesheet" />
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 
@@ -23,10 +23,6 @@
 	<meta name="robots" content="index, follow" />
 
 	<!-- ↓ Fuentes ↓ -->
-	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-	 crossorigin="anonymous">
 </head>
 
 <body>
@@ -41,7 +37,7 @@
 			</ul>
 			<ul id="dropdown2" class="dropdown-content">
 				<li><a class="center-align" href="css.html">Básico</a></li>
-				<li><a class="center-align" href="css3.html">CSS3</a></li>
+				<li><a class="pendiente center-align" aria-disabled="true">CSS3</a></li>
 				<li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
 			</ul>
 			<ul id="dropdown1" class="dropdown-content">
@@ -57,14 +53,14 @@
 			<nav class="white">
 				<div class="nav-wrapper container">
 					<ul class="right hide-on-med-and-down">
-						<li><a class="dropdown-trigger yaen html red-text text-accent-4" href="javascript:void(0);" data-target="dropdown3">HTML <i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a class="dropdown-trigger yaen html red-text text-accent-4" href="javascript:void(0);" data-target="dropdown3">HTML <i aria-hidden="true" class="material-icons right">arrow_drop_down</i></a></li>
 						<li><a class="dropdown-trigger css" href="javascript:void(0);" data-target="dropdown2">CSS</a></li>
 						<li><a class="dropdown-trigger js" href="javascript:void(0);" data-target="dropdown1">JavaScript</a></li>
 						<li><a title="Guías según lenguaje" class="resto" href="guias.html">Guías</a></li>
 						<li><a class="resto" href="relacionando.html">Relacionado</a></li>
 					</ul>
-					<a href="javascript:void(0);" class="sidenav-trigger" data-target="menu-lateral">
-						<i class="material-icons">menu</i></a>
+					<a href="javascript:void(0);" class="sidenav-trigger" data-target="menu-lateral" aria-label="Abrir menú">
+						<i aria-hidden="true" class="material-icons">menu</i></a>
 
 					<!-- Logo -->
 					<div id="logo">
@@ -78,33 +74,33 @@
 					<ul id="menu-lateral" class="sidenav purpur">
 						<li>
 							<div class="user-view">
-								<a href="index.html"><i class="material-icons grey-text text-lighten-2">home</i></a>
+								<a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons grey-text text-lighten-2">home</i></a>
 								<div class="background">
 									<img src="img/dedojpeg.jpg" alt="Fondo menú móvil">
 								</div>
 							</div>
 						</li>
 						<li>
-							<a href="html.html" class="red-text text-accent-4 html"><i class="material-icons red-text text-accent-4 html">check_box</i>HTML</a>
+							<a href="html.html" class="red-text text-accent-4 html"><i aria-hidden="true" class="material-icons red-text text-accent-4 html">check_box</i>HTML</a>
 						</li>
 						<li>
-							<a href="css.html" class="blue-text text-accent-4 css"><i class="material-icons blue-text text-accent-4">check_box_outline_blank</i>CSS</a>
+							<a href="css.html" class="blue-text text-accent-4 css"><i aria-hidden="true" class="material-icons blue-text text-accent-4">check_box_outline_blank</i>CSS</a>
 						</li>
 						<li>
-							<a href="js.html" class="amber-text text-accent-4 js"><i class="material-icons amber-text text-accent-4">check_box_outline_blank</i>JavaScript</a>
+							<a href="js.html" class="amber-text text-accent-4 js"><i aria-hidden="true" class="material-icons amber-text text-accent-4">check_box_outline_blank</i>JavaScript</a>
 						</li>
 						<li>
-							<a href="guias.html" class="cyan-text text-accent-4 resto"><i class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Guías</a>
+							<a href="guias.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Guías</a>
 						</li>
 						<li>
-							<a href="relacionando.html" class="cyan-text text-accent-4 resto"><i class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Relacionado</a>
+							<a href="relacionando.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Relacionado</a>
 						</li>
 						<li>
-							<a href="tests.html" class="cyan-text text-accent-4 resto"><i class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>¿Cuánto
+							<a aria-disabled="true" class="pendiente cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>¿Cuánto
 								sabes?</a>
 						</li>
 						<li>
-							<a href="contacto.html" class="indigo-text text-lighten-2"><i class="fab fa-telegram indigo-text text-lighten-2"></i>Contacta</a>
+							<a href="contacto.html" class="indigo-text text-lighten-2"><i aria-hidden="true" class="fab fa-telegram indigo-text text-lighten-2"></i>Contacta</a>
 						</li>
 					</ul>
 					<!-- Fin nav movil -->
@@ -115,10 +111,10 @@
 
 		<!-- Fixed bton -->
 		<div class="fixed-action-btn">
-			<a class="btn-floating btn-large resto"><i class="fas fa-cog fa-spin"></i></a>
+			<a class="btn-floating btn-large resto"><i aria-hidden="true" class="fas fa-cog fa-spin"></i></a>
 			<ul>
-				<li><a class="btn-floating resto anchorLink" href="#anchorTarget"><i class="fas fa-chevron-up"></i></a></li>
-				<li><a class="btn-floating resto" href="#footer"><i class="fas fa-chevron-down"></i></a></li>
+				<li><a class="btn-floating resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
+				<li><a class="btn-floating resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
 			</ul>
 		</div>
 		<!-- Fin Fixed bton -->
@@ -131,7 +127,7 @@
 						<h2 class="white-text resalto titulos">y su relación con la web semántica. </h2>
 					<div class="row center">
 						<a href="practicahtml.html" aria-label="Más información sobre html" class="btn btn-large red waves-effect waves-light html">Practica
-							HTML<sub><i class="fab fa-html5"></i></sub></a>
+							HTML<sub><i aria-hidden="true" class="fab fa-html5"></i></sub></a>
 					</div>
 					<br><br><br><br><br><br><br>
 					<a href="https://www.pexels.com/photo/red-volkswagen-t1-die-cast-toy-on-white-surface-1091470/" target="_blank" rel="noopener noreferrer" class="red-text text-accent-4">Pexel
@@ -150,7 +146,7 @@
 
 					<div class="col s12">
 						<h2 class="red-text text-accent-4 center">¿Ventajas de HTML5?</h2>
-						<i class="red-text center text-accent-4 fab left fa-html5 fa-10x"></i>
+						<i aria-hidden="true" class="red-text center text-accent-4 fab left fa-html5 fa-10x"></i>
 						<p class="kolo">Nos resultará más <span class="subrr">fácil, visualmente,</span> a la hora de <span class="subrr">construir</span> un sitio web, <span class="subrr">dividiendo</span> el
 							documento en <span class="subrr">apartados más claros</span>. Con nombres como "header", "body", "footer", parece que la cosa empieza a
 							tener "Piés y Cabeza". A la hora de <span class="subrr">estructurar</span> líneas de colores de código podemos separar por relevancia o
@@ -161,14 +157,14 @@
 							puede ser visualizada, podemos añadir un texto que solo será visto, leido o escuchado en caso de un error de
 							carga. Lo logramos con las nuevas etiquetas y nuevos atributos que nos ofrece HTML5. Hay muchisimas ventajas
 							enfocadas a permitir el mismo acceso a todo el mundo.</p><br>
-						<blockquote>La versión <i class="red-text text-accent-4 fab fa-html5"></i> del lenguaje de marcas hipertextuales
+						<blockquote>La versión <i aria-hidden="true" class="red-text text-accent-4 fab fa-html5"></i> del lenguaje de marcas hipertextuales
 							está enfocada a "ordenar" la disposición de los elementos html y darles un "significado más 'humano'".</blockquote>
 						<h3 class="red-text text-accent-4 center titulos">Ejemplo de una estructura HTML5 recomendada.</h3>
 					</div>
 
 					<div class="col s12">
 						<p data-height="333" data-theme-id="dark" data-slug-hash="bjwRPM" data-default-tab="html,result" data-user="jBaton" data-pen-title="Estructura HTML5" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jBaton/pen/bjwRPM/">Estructura HTML5</a> by jaronJabaton (<a href="https://codepen.io/jBaton">@jBaton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-						<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 						<h4 class="center red-text text-accent-4">Vista en el editor</h4>
 						<pre><code>...<br><span class="white-text">&lt;</span><span class="red-text">header</span><span class="white-text">></span> &lt;!-- La Cabecera--><br><span class="white-text">&lt;</span><span class="red-text">nav</span><span class="white-text">></span><span class="white-text">&lt;/</span><span class="red-text">nav</span><span class="white-text">></span> &lt;!-- El Menú de Navegación --><br><span class="white-text">&lt;/</span><span class="red-text">header</span><span class="white-text">></span><br><span class="white-text">&lt;</span><span class="red-text">main</span><span class="white-text">></span> &lt;!-- Indicamos que dentro de "main" estará el contenido principal --><br><span class="white-text">&lt;</span><span class="red-text">section</span><span class="white-text">></span> &lt;!-- Una Sección --><br><span class="white-text">&lt;</span><span class="red-text">article</span><span class="white-text">>&lt;/</span><span class="red-text">article</span><span class="white-text">></span> &lt;!-- Artículo dentro de la sección o viceversa --><br><span class="white-text">&lt;/</span><span class="red-text">section</span><span class="white-text">></span><br> <span class="white-text">&lt;/</span><span class="red-text">main</span><span class="white-text">></span> &lt;!-- fin etiqueta main --><br><span class="white-text">&lt;</span><span class="red-text">aside</span><span class="white-text">>&lt;/</span><span class="red-text">aside</span><span class="white-text">></span> &lt;!-- Espacio reservado para contenido no relacionado directamente con el sitio --><br><span class="white-text">&lt;</span><span class="red-text">footer</span><span class="white-text">>&lt;/</span><span class="red-text">footer</span><span class="white-text">></span> &lt;!-- Pié de página --><br><br> &lt;!-- Todo debería estar contenido por una etiqueta. O bien un... --><br><span class="white-text">&lt;</span><span class="red-text">div</span> <span class="blue-text">id</span><span class="white-text">=</span><span class="green-text">"contenedor"</span><span class="white-text">>&lt;/</span><span class="red-text">div</span><span class="white-text">></span> &lt;!-- Tu le darás las propiedades pertinentes con CSS --><br> &lt;!-- O un... --> <br><span class="white-text">&lt;</span><span class="red-text">div</span><span class="orange-text"> class</span><span class="white-text">=</span><span class="green-text">"container"</span><span class="white-text">>&lt;/</span><span class="red-text">div</span><span class="white-text">></span><br>...</code></pre>
 					</div>
@@ -185,15 +181,15 @@
 						<div class="col s12 m6 l6">
 							<ol>
 								<li>Bloc de notas<img class="materialboxed" data-caption="En la opción nombre con solo poner la extensión html después del punto habrémos generado un archivo.html usando el Bloc de Notas" width="150" src="img/ejemplo1.jpg" alt="captura de pantalla/guardando archivo.html"></li>
-								<li><a href="subt.html" class="tooltipped" data-position="top" data-tooltip="Cómo descargar, instalar y configurar ST3">SublimeText</a>
+								<li><a aria-disabled="true" class="pendiente tooltipped" data-position="top" data-tooltip="Cómo descargar, instalar y configurar ST3">SublimeText</a>
 									<img class="materialboxed" data-caption="Al utilizar SublimeText, versión 3 en éste caso, no hará falta especificar el formato del archivo al guardar, sino antes de crearlo, gracias al editor." width="150" src="img/ejemplo2.jpg" alt="Caputra de pantalla guardando con sublime text 3"></li>
 							</ol>
 						</div>
 						<div class="col s12 m6 l6">
 							<ol>
-								<li><a href="vsc.html" class="tooltipped" data-position="top" data-tooltip="Cómo descargar, instalar y configurar VSC">VS Code</a>
+								<li><a aria-disabled="true" class="pendiente tooltipped" data-position="top" data-tooltip="Cómo descargar, instalar y configurar VSC">VS Code</a>
 									<img class="materialboxed" data-caption="De manera muy similar con Visual Studio Code" width="150" src="img/ejemplo3.jpg" alt="captura de pantalla guardando con visual studio code"></li>
-								<li><a href="listaedit.html" class="tooltipped" data-position="top" data-tooltip="Vistazo a algunos editores de texto">Entre otros!</a></li>
+								<li><a aria-disabled="true" class="pendiente tooltipped" data-position="top" data-tooltip="Vistazo a algunos editores de texto">Entre otros!</a></li>
 							</ol>
 							<a href="https://atom.io/" target="_blank" rel="noopener noreferrer" class="html tooltipped" data-position="bottom" data-tooltip="Página Oficial"><img src="img/atom1.png" alt=""></a>								
 							<a href="https://notepad-plus-plus.org/download/v7.5.9.html" target="_blank" rel="noopener noreferrer" class="html tooltipped" data-position="bottom" data-tooltip="Página Oficial"><img src="img/notepad++1.png" alt=""></a>
@@ -207,11 +203,11 @@
 						<div class="col s12">
 							<h3 class="red-text text-accent-4 center">LENGUAJE DE MARCAS</h3><br>
 							<blockquote class="aportaciones">El método que usa el Ser Humano para escribir algo y que ésto sea "legible" por una máquina. Usamos "marcas" o elementos que especifican (a la máquina) lo que escribimos dentro de ellas. Sin estas "marcas" la máquina no entendería nada, bueno si, presentaría en color negro sobre fondo blanco un texto simple.</blockquote><br>
-							<p class="kolo">Para entender mejor que son exactamente las marcas que HTML pone a nuestra disposición, tendríamos que <a href="fundamentospro.html" class="tooltipped" data-position="top" data-tooltip="Fundamentos de programación">comprender lo básico de la programación</a>. Cuando escribimos código HTML, estamos programando, pero sobre un programa, es decir, nosotros usamos la etiqueta &lt;h1> que previamente a recibido unos parámetros o valores. En la mayoria de los casos &lt;h1> tiene, entre otros, un tamaño de fuente de entre 30 y 33 píxeles. Dependiendo del tipo de fuente, el zoom del explorador y unas cuantas cosas más, estos valores son, o no, alterados, pero si no, estos píxeles serían la, digamos por defecto, medida absoluta dada para la etiqueta &lt;h1>. "Por defecto" querría decir que están siendo dadas unas especificaciones a la etiqueta desde algúna parte... (dentro de la codificación <a title="Resultados en Google" target="_blank" rel="noopener noreferrer" class="tooltipped afuera" data-position="top" data-tooltip="American Standard Code for Information Interchange" href="https://www.google.com/search?q=.ascii"> <abbr title="Código Estándar Estadounidense para el Intercambio de Información">ASCII</abbr><i class="material-icons tiny">open_in_new</i></a>)</p>
+							<p class="kolo">Para entender mejor que son exactamente las marcas que HTML pone a nuestra disposición, tendríamos que <a href="fundamentospro.html" class="tooltipped" data-position="top" data-tooltip="Fundamentos de programación">comprender lo básico de la programación</a>. Cuando escribimos código HTML, estamos programando, pero sobre un programa, es decir, nosotros usamos la etiqueta &lt;h1> que previamente a recibido unos parámetros o valores. En la mayoria de los casos &lt;h1> tiene, entre otros, un tamaño de fuente de entre 30 y 33 píxeles. Dependiendo del tipo de fuente, el zoom del explorador y unas cuantas cosas más, estos valores son, o no, alterados, pero si no, estos píxeles serían la, digamos por defecto, medida absoluta dada para la etiqueta &lt;h1>. "Por defecto" querría decir que están siendo dadas unas especificaciones a la etiqueta desde algúna parte... (dentro de la codificación <a title="Resultados en Google" target="_blank" rel="noopener noreferrer" class="tooltipped afuera" data-position="top" data-tooltip="American Standard Code for Information Interchange" href="https://www.google.com/search?q=.ascii"> <abbr title="Código Estándar Estadounidense para el Intercambio de Información">ASCII</abbr><i aria-hidden="true" class="material-icons tiny">open_in_new</i></a>)</p>
 							<p class="kolo">Podemos aprovecharnos de ello o podemos modificar todo a partir de css, indicando que la etiqueta &lt;h1>, por ejemplo, tenga un <span class="tooltipped green-text grey darken-4" data-position="top" data-tooltip='"tamaño-fuente: 33px;"'>"font-size<span class="white-text">:</span><span class="valor">33</span><span class="white-text"><span class="red-text">px</span>;</span>"</span></p>
 							<h4 class="red-text text-accent-4 center tooltipped" data-position="top" data-tooltip="Esto es un H4">¿H1, H2... H6?</h4>
 							<p class="kolo">Antes de seguir, veamos la utilidad de estas etiquetas... no solo como elemento gráfico para los lectores, los motores de busqueda entienden, que lo que venga después de una etiqueta &lt;h1> tendrá más importancia que lo que venga después de un &lt;h2>. Además de esto, les sirve para reconocer la temática de la web, lo que termina en nuestros interéses a la hora del posicionamiento web y de la indexación en los motores de busqueda.</p>
-							<p class="kolo">El validador de W<sup>3</sup>C<a title="W3C Validator" class="afuera" href="https://validator.w3.org/#validate_by_input"> aquí<i class="material-icons tiny">open_in_new</i></a> nos muestra un "árbol" de los títulos y aconseja seguir un orden, de arriba-importante a abajo-menos importante.</p> <img class="materialboxed" data-caption="Resultado mostrado con el validador del W3C" width="150" src="img/heading_lvl.jpg" alt="captura de pantalla guardando con visual studio code"><br>
+							<p class="kolo">El validador de W<sup>3</sup>C<a title="W3C Validator" class="afuera" href="https://validator.w3.org/#validate_by_input"> aquí<i aria-hidden="true" class="material-icons tiny">open_in_new</i></a> nos muestra un "árbol" de los títulos y aconseja seguir un orden, de arriba-importante a abajo-menos importante.</p> <img class="materialboxed" data-caption="Resultado mostrado con el validador del W3C" width="150" src="img/heading_lvl.jpg" alt="captura de pantalla guardando con visual studio code"><br>
 							<p>Sigue...</p>
 							<h2 class="red-text text-accent-4 center">&lt;blockquote cite="url..."></h2>
 							<blockquote cite="https://www.w3schools.com/TAGS/tag_blockquote.asp"> <q class="subrr">Esta etiqueta especifica
@@ -243,7 +239,7 @@
 				<a class="white-text css" href="css.html">CSS,</a>
 				<a class="white-text js" href="js.html">JS,</a>
 				<a class="white-text resto" href="guias.html">Guías,</a>
-				<a class="white-text resto" href="relacionado.html">Relacionado.</a>
+				<a class="white-text resto" href="relacionando.html">Relacionado.</a>
 		</div>					
 		<div class="col l2 s5 center">
 			<p class="blue-text center">Contacto</p>
@@ -258,10 +254,10 @@
 		<div class="col l2 s7 center">
 				<p class="yellow-text center">RRSS</p>
 				<hr class="deep-purple-text">
-					<a class="cyan-text js" href="https://twitter.com/sinarkista" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-3x"></i></a>
-					<a class="blue-text text-darken-3 js" href="https://www.facebook.com/facundohetoro" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f fa-3x"></i></a>
-					<a class="red-text js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube fa-3x"></i></a>
-					<a class="orange-text js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer"><i class="fab fa-soundcloud fa-3x"></i></a>
+					<a class="cyan-text js" href="https://twitter.com/sinarkista" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-3x"></i></a>
+					<a class="blue-text text-darken-3 js" href="https://www.facebook.com/facundohetoro" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f fa-3x"></i></a>
+					<a class="red-text js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube fa-3x"></i></a>
+					<a class="orange-text js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i aria-hidden="true" class="fab fa-soundcloud fa-3x"></i></a>
 			</div>
 			<div class="col l2 s12 center">
 					<p class="deep-purple-text center">Cookies</p>
@@ -296,16 +292,16 @@
 						<div class="col l12 s12 m12 reduce">
 							<p class="resenyas grey-text text-darken-2">Hecho con la ayuda de 
 								<a href="https://materializecss.com/about.html" target="_blank" rel="noopener noreferrer">
-									<img id="materializecss" class="responsive-img" onmouseover="matterialize();" src="img/materialize-grey.png" title="Materializecss" alt="Logo de Materializecss">
+									<img id="materializecss" class="responsive-img" data-hover-src="img/materialize-teal.png" src="img/materialize-grey.png" title="Materializecss" alt="Logo de Materializecss">
 								</a>
 									<a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">
-										<img id="fonts" class="responsive-img" onmouseover="gofonts();" src="img/gf.png" alt="Google Fonts" title="GoogleFonts">
+										<img id="fonts" class="responsive-img" data-hover-src="img/gf1.png" src="img/gf.png" alt="Google Fonts" title="GoogleFonts">
 									</a>
 								<a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">
-									<img id="fawesome" class="responsive-img" onmouseover="fawesome();" src="img/fntaw.png" alt="FontAwesome" title="FontAwesome">
+									<img id="fawesome" class="responsive-img" data-hover-src="img/fntaw1.png" src="img/fntaw.png" alt="FontAwesome" title="FontAwesome">
 								</a>
 									<a href="https://material.io/tools/icons/?style=baseline" target="_blank" rel="noopener noreferrer">
-										<img id="mati" class="responsive-img" onmouseover="mati();" src="img/mati.png" alt="MaterialIcons" title="MaterialIcons">
+										<img id="mati" class="responsive-img" data-hover-src="img/mati1.png" src="img/mati.png" alt="MaterialIcons" title="MaterialIcons">
 									</a>
 							</p>
 						</div>
@@ -316,13 +312,9 @@
 
 	</div>
 <!--  Scripts; Si se cambia este orden puede que algo falle-->
-<!-- 1 -->	<script src="js/jquery.min.js"></script>
 <!-- 2 -->	<script src="js/materialize.js"></script>
 <!-- 3 -->	<script src="js/init.js"></script>
 <!-- 4 -->	<script src="js/funk.js"></script>
-<!-- 5 -->	<script>
-							$(document).ready(function(){anchor.init()}),anchor={init:function(){$("a.anchorLink").click(function(){return elementClick=$(this).attr("href"),destination=$(elementClick).offset().top,$("html:not(:animated),body:not(:animated)").animate({scrollTop:destination},666),!1})}};
-						</script>
 </body>
 
 </html>

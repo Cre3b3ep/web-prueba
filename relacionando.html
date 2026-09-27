@@ -8,7 +8,7 @@
 	<title>Documentos Relacionados</title>
 
 	<!-- ↓ CSS  ↓ -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/fuentes.css" type="text/css" rel="stylesheet" />
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 
@@ -23,10 +23,6 @@
 	<meta name="robots" content="noindex,nofollow" />
 
 	<!-- ↓ Fuentes ↓ -->
-	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-	 crossorigin="anonymous">
 
 </head>
 <body>
@@ -41,7 +37,7 @@
           </ul>
           <ul id="dropdown2" class="dropdown-content">
             <li><a class="center-align" href="css.html">Básico</a></li>
-            <li><a class="center-align" href="css3.html">CSS3</a></li>
+            <li><a class="pendiente center-align" aria-disabled="true">CSS3</a></li>
             <li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
           </ul>
           <ul id="dropdown1" class="dropdown-content">
@@ -63,8 +59,8 @@
               <li><a title="Guías según lenguaje" class="resto" href="guias.html">Guías</a></li>
               <li><a class="resto" href="relacionando.html">Relacionado</a></li>
             </ul>
-            <a href="#" class="sidenav-trigger" data-target="menu-lateral">
-              <i class="material-icons">menu</i></a>
+            <a href="#" class="sidenav-trigger" data-target="menu-lateral" aria-label="Abrir menú">
+              <i aria-hidden="true" class="material-icons">menu</i></a>
     
     <!-- Fin Logo -->
             <div id="logo">
@@ -78,32 +74,32 @@
     <ul id="menu-lateral" class="sidenav purpur">
       <li>
         <div class="user-view">
-            <a href="index.html"><i class="material-icons grey-text text-lighten-2">home</i></a>
+            <a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons grey-text text-lighten-2">home</i></a>
           <div class="background">
             <img src="img/dedojpeg.jpg" alt="Fondo menú móvil">
           </div>							
         </div>
       </li>
       <li>
-        <a href="html.html" class="red-text text-accent-4 html"><i class="material-icons red-text text-accent-4 html">check_box_outline_blank</i>HTML</a>
+        <a href="html.html" class="red-text text-accent-4 html"><i aria-hidden="true" class="material-icons red-text text-accent-4 html">check_box_outline_blank</i>HTML</a>
       </li>
       <li>
-        <a href="css.html" class="blue-text text-accent-4 css"><i class="material-icons blue-text text-accent-4">check_box_outline_blank</i>CSS</a>
+        <a href="css.html" class="blue-text text-accent-4 css"><i aria-hidden="true" class="material-icons blue-text text-accent-4">check_box_outline_blank</i>CSS</a>
       </li>
       <li>
-        <a href="js.html" class="amber-text text-accent-4 js"><i class="material-icons amber-text text-accent-4">check_box_outline_blank</i>JavaScript</a>
+        <a href="js.html" class="amber-text text-accent-4 js"><i aria-hidden="true" class="material-icons amber-text text-accent-4">check_box_outline_blank</i>JavaScript</a>
       </li>
       <li>
-        <a href="guias.html" class="cyan-text text-accent-4 resto"><i class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Guías</a>
+        <a href="guias.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Guías</a>
       </li>
       <li>
-        <a href="relacionando.html" class="cyan-text text-accent-4 resto"><i class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Relacionado</a>
+        <a href="relacionando.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Relacionado</a>
       </li>
       <li>
-          <a href="tests.html" class="cyan-text text-accent-4 resto"><i class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>¿Cuánto sabes?</a>
+          <a aria-disabled="true" class="pendiente cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>¿Cuánto sabes?</a>
         </li>
       <li>
-        <a href="contacto.html" class="indigo-text text-lighten-2"><i class="fab fa-telegram indigo-text text-lighten-2"></i>Contacta</a>
+        <a href="contacto.html" class="indigo-text text-lighten-2"><i aria-hidden="true" class="fab fa-telegram indigo-text text-lighten-2"></i>Contacta</a>
       </li>
     </ul>
     <!-- Fin nav movil -->
@@ -113,10 +109,10 @@
 			</header>
 			<!-- Fixed bton -->
 	<div class="fixed-action-btn">
-			<a class="btn-floating btn-large resto"><i class="fas fa-cog fa-spin"></i></a>
+			<a class="btn-floating btn-large resto"><i aria-hidden="true" class="fas fa-cog fa-spin"></i></a>
 			<ul>
-				<li><a class="btn-floating resto anchorLink" href="#anchorTarget"><i class="fas fa-chevron-up"></i></a></li>
-				<li><a class="btn-floating resto" href="#footer"><i class="fas fa-chevron-down"></i></a></li>
+				<li><a class="btn-floating resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
+				<li><a class="btn-floating resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
 			</ul>
 		</div>
 	<!-- Fin Fixed bton -->
@@ -131,12 +127,12 @@
 					</div>
 
 					<div class="col s12 m10 l12">
-						<span class="sombraBtns"><a href="html5.html" aria-label="Más sobre html" class="btn red darken-2 btn-large waves-effect waves-red html resalto"><i class="fab fa-html5"></i></a></span>
+						<span class="sombraBtns"><a href="html5.html" aria-label="Más sobre html" class="btn red darken-2 btn-large waves-effect waves-red html resalto"><i aria-hidden="true" class="fab fa-html5"></i></a></span>
 					</div>
 					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 					<div class="right afuera">
 						<a target="_blank" rel="noopener noreferrer" href="https://www.pexels.com/photo/black-lighted-gaming-keyboard-841228/" class="red-text text-darken-3">Pexel por</a>
-						<a target="_blank" rel="noopener noreferrer" href="https://www.pexels.com/@karoldach" class="red-text text-lighten-4">@karoldach<i class="tiny material-icons red-text">open_in_new</i></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.pexels.com/@karoldach" class="red-text text-lighten-4">@karoldach<i aria-hidden="true" class="tiny material-icons red-text">open_in_new</i></a>
 				  </div>
 
 				</div>
@@ -157,8 +153,8 @@
 						<h3 class="center titSemantik">El lenguaje usado para estructurar un sitio web...<br><br><span class="aportaciones">HTML es el cuerpo del conjunto</span> <sub>jBaton.</sub></h3><br>
 						<p class="left-align kolo">Donde apoyamos otros recursos para implementar funcionalidades, animaciones e interacción.<br> &emsp; Hace ya <span id="fecha"></span>
 							<span id="segundos"></span>en el <a target="_blank" rel="noopener noreferrer" href="https://home.cern/" class="tooltipped afuera" data-position="top"
-							 data-tooltip="Conseil Européen pour la Recherche Nucléaire"><abbr title="Organización Europea para la Investigación Nuclear">CERN</abbr><sup><i class="tiny material-icons">open_in_new</i></sup></a>, a un ingeniero llamado<br> <a href="https://www.w3.org/People/Berners-Lee/" target="_blank" rel="noopener noreferrer" class="tooltipped afuera"
-							 data-position="top" data-tooltip="w3.org/People/Berners-Lee">Tim Berners-Lee<sup><i class="tiny material-icons">open_in_new</i></sup></a>
+							 data-tooltip="Conseil Européen pour la Recherche Nucléaire"><abbr title="Organización Europea para la Investigación Nuclear">CERN</abbr><sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup></a>, a un ingeniero llamado<br> <a href="https://www.w3.org/People/Berners-Lee/" target="_blank" rel="noopener noreferrer" class="tooltipped afuera"
+							 data-position="top" data-tooltip="w3.org/People/Berners-Lee">Tim Berners-Lee<sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup></a>
 							se le ocurrió crear un sistema para compartir archivos en línea, estableciendo la primera comunicación entre un
 							<a href="https://es.wikipedia.org/wiki/Cliente_(inform%C3%A1tica)" title="Wiki definición" class="tooltipped" data-position="top" data-tooltip="El que pide">"cliente"</a>  y un <a href="https://es.wikipedia.org/wiki/Servidor_inform%C3%A1tico" title="Wiki definición" class="tooltipped" data-position="top" data-tooltip="El que ofrece">"servidor"</a> a través de <span class="tooltipped black-text" data-position="top" data-tooltip="HyperText Transfer Protocol">
 								<abbr title="Protocolo de transferencia de hipertexto"><b>HTTP</b></abbr>. </span> Bautizando a su creación bajo las siglas<span class="black-text tooltipped" data-position="top"
@@ -167,10 +163,10 @@
 							se establece, pero durante ese plazo de 7 años se dio a conocer al Mundo y gracias a él se pudo estandarizar
 							en octubre de ese año.</p>
 						<article>
-							<h4 class="center">La última versión más utilizada es HTML <i class="fab fa-html5"></i></h4>
+							<h4 class="center">La última versión más utilizada es HTML <i aria-hidden="true" class="fab fa-html5"></i></h4>
 							<p class="left-align kolo">Publicada y estandarizada por el <a target="_blank" rel="noopener noreferrer" href="https://www.w3.org/TR/html52/"
 								 class="tooltipped afuera" data-position="top" data-tooltip="w3.org/TR/html52">World
-									Wide Web Consortium<sup><i class="tiny material-icons">open_in_new</i></sup></a>.<br> &emsp;Conociendo a fondo el uso
+									Wide Web Consortium<sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup></a>.<br> &emsp;Conociendo a fondo el uso
 								y funcionamiento de HTML se comprenden mejor los cambios
 								realizados en las versiones posteriores.<br><br>HTML5 especifica:</p>
 							<ol class="left-align">
@@ -179,14 +175,14 @@
 										a los desarrolladores.</p>
 								</li>
 								<li>
-									<p>Una mejora en su <a class="tooltipped" data-position="top" data-tooltip="Verificación de formularios" href="seg_html5.html">seguridad</a>.</p>
+									<p>Una mejora en su <a class="pendiente tooltipped" data-position="top" data-tooltip="Verificación de formularios" aria-disabled="true">seguridad</a>.</p>
 								</li>
 								<li>
 									<p>Corrección de errores y eliminación de funcionalidades obsoletas.</p>
 								</li>
 								<li>
 									<p><a class="tooltipped afuera" data-position="top" data-tooltip=".w3schools.com/html/html5_geolocation.asp" href="https://www.w3schools.com/html/html5_geolocation.asp" target="_blank" rel="noopener noreferrer">Diferentes
-											API's<sup><i class="material-icons tiny">open_in_new</i></sup></a></p>
+											API's<sup><i aria-hidden="true" class="material-icons tiny">open_in_new</i></sup></a></p>
 								</li>
 								<li>
 									<p><a class="tooltipped" data-position="top" data-tooltip="Recopilación de etiquetas HTML5 semánticas" href="accesibilidad.html">Accesibilidad</a>,
@@ -227,13 +223,13 @@
         <a class="white-text css" href="css.html">CSS,</a>
         <a class="white-text js" href="js.html">JS,</a>
         <a class="white-text resto" href="guias.html">Guías,</a>
-        <a class="white-text resto" href="relacionado.html">Relacionado.</a>
+        <a class="white-text resto" href="relacionando.html">Relacionado.</a>
     </div>					
     <div class="col l2 s5 center">
       <p class="blue-text center">Contacto</p>
       <hr class="yellow-text">
       <ul>
-        <li><a class="white-text css" href="https://twitter.com/messages/compose?recipient_id=3364552791&ref_src=twsrc%5Etfw" target="_blank" rel="noopener no referrer" data-lang="es" data-screen-name="@Sinarkista" data-show-count="false"><i class="fab fa-twitter fa-1x"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+        <li><a class="white-text css" href="https://twitter.com/messages/compose?recipient_id=3364552791&ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer" data-lang="es" data-screen-name="@Sinarkista" data-show-count="false" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-1x"></i></a></li>
         <li><a class="white-text css" href="#!">Link 2</a></li>
         <li><a class="white-text css" href="#!">Link 3</a></li>
         <li><a class="white-text css" href="#!">Link 4</a></li>
@@ -242,10 +238,10 @@
     <div class="col l2 s7 center">
         <p class="yellow-text center">RRSS</p>
         <hr class="deep-purple-text">
-          <a class="cyan-text js" href="https://twitter.com/Sinarkista?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer" data-show-screen-name="false" data-lang="es" data-show-count="false"><i class="fab fa-twitter fa-3x"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <a class="blue-text text-darken-3 js" href="https://www.facebook.com/facundohetoro" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f fa-3x"></i></a>
-          <a class="red-text js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube fa-3x"></i></a>
-          <a class="orange-text js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer"><i class="fab fa-soundcloud fa-3x"></i></a>
+          <a class="cyan-text js" href="https://twitter.com/Sinarkista?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer" data-show-screen-name="false" data-lang="es" data-show-count="false" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-3x"></i></a>
+          <a class="blue-text text-darken-3 js" href="https://www.facebook.com/facundohetoro" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f fa-3x"></i></a>
+          <a class="red-text js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube fa-3x"></i></a>
+          <a class="orange-text js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i aria-hidden="true" class="fab fa-soundcloud fa-3x"></i></a>
       </div>
       <div class="col l2 s12 center">
           <p class="deep-purple-text center">Cookies</p>
@@ -281,16 +277,16 @@
             <div class="col l12 s12 m12 reduce">
               <p class="resenyas grey-text text-darken-2">Hecho con la ayuda de 
                 <a href="https://materializecss.com/about.html" target="_blank" rel="noopener noreferrer">
-                  <img id="materializecss" class="responsive-img" onmouseover="matterialize();" src="img/materialize-grey.png" title="Materializecss" alt="Logo de Materializecss">
+                  <img id="materializecss" class="responsive-img" data-hover-src="img/materialize-teal.png" src="img/materialize-grey.png" title="Materializecss" alt="Logo de Materializecss">
                 </a>
                   <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">
-                    <img id="fonts" class="responsive-img" onmouseover="gofonts();" src="img/gf.png" alt="Google Fonts" title="GoogleFonts">
+                    <img id="fonts" class="responsive-img" data-hover-src="img/gf1.png" src="img/gf.png" alt="Google Fonts" title="GoogleFonts">
                   </a>
                 <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">
-                  <img id="fawesome" class="responsive-img" onmouseover="fawesome();" src="img/fntaw.png" alt="FontAwesome" title="FontAwesome">
+                  <img id="fawesome" class="responsive-img" data-hover-src="img/fntaw1.png" src="img/fntaw.png" alt="FontAwesome" title="FontAwesome">
                 </a>
                   <a href="https://material.io/tools/icons/?style=baseline" target="_blank" rel="noopener noreferrer">
-                    <img id="mati" class="responsive-img" onmouseover="mati();" src="img/mati.png" alt="MaterialIcons" title="MaterialIcons">
+                    <img id="mati" class="responsive-img" data-hover-src="img/mati1.png" src="img/mati.png" alt="MaterialIcons" title="MaterialIcons">
                   </a>
               </p>
             </div>
@@ -300,12 +296,8 @@
 <!-- Fin del Pié de Página Der -->
 </div>
 <!--  Scripts; Si se cambia este orden puede que algo falle-->
-<!-- 1 -->	<script src="js/jquery.min.js"></script>
 <!-- 2 -->	<script src="js/materialize.js"></script>
 <!-- 3 -->	<script src="js/init.js"></script>
 <!-- 4 -->	<script src="js/funk.js"></script>
-<!-- 5 -->	<script>
-        $(document).ready(function(){anchor.init()}),anchor={init:function(){$("a.anchorLink").click(function(){return elementClick=$(this).attr("href"),destination=$(elementClick).offset().top,$("html:not(:animated),body:not(:animated)").animate({scrollTop:destination},666),!1})}};
-      </script>
 </body>
 </html>
