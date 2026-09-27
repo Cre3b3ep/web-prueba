@@ -21,3 +21,12 @@ Thumbs.db
 herramientas/material-icons/
 herramientas/fontawesome/
 *.tgz
+
+# Seguridad y privacidad
+.env*
+secrets/
+config/private/
+*.key
+*.pem
+*.db
+*.sqlite
