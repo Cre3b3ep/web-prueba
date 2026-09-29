@@ -1,0 +1,17 @@
+{
+  "name": "web-prueba",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DWB: apuntes de HTML, CSS y JavaScript + diario de aprendizaje",
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6"
+  }
+}

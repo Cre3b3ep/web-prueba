@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Etiquetas del diario
+seccion: diario
+permalink: /diario/etiquetas/
+eleventyExcludeFromCollections: true
+---
+<h1 class="center">Etiquetas</h1>
+<p class="center"><a href="/diario/">← Diario</a></p>
+
+{% for etiqueta in collections.etiquetasDiario %}
+<section class="grupo-etiqueta" id="{{ etiqueta | slugify }}">
+	<h2>{{ etiqueta }}</h2>
+	<ul>
+		{%- for entrada in collections[etiqueta] | reverse %}
+		<li><time datetime="{{ entrada.date | fechaISO }}">{{ entrada.date | fecha }}</time> <a href="{{ entrada.url }}">{{ entrada.data.title }}</a></li>
+		{%- endfor %}
+	</ul>
+</section>
+{% else %}
+<p class="center">Todavía no hay etiquetas.</p>
+{% endfor %}

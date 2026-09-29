@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+title: Diario
+seccion: diario
+descripcion: Diario de aprendizaje de jBaton
+permalink: /diario/
+eleventyExcludeFromCollections: true
+---
+{%- set entradas = (collections.diario or []) | reverse %}
+<h1 class="center">Diario</h1>
+<p class="center"><a href="/diario/etiquetas/">Etiquetas</a></p>
+
+{% if entradas.length %}
+<ol class="lista-entradas" reversed>
+	{%- for entrada in entradas %}
+	<li>
+		<time datetime="{{ entrada.date | fechaISO }}">{{ entrada.date | fecha }}</time>
+		<a href="{{ entrada.url }}">{{ entrada.data.title }}</a>
+		{%- for t in entrada.data.tags | etiquetasVisibles %} <span class="chip">{{ t }}</span>{% endfor %}
+	</li>
+	{%- endfor %}
+</ol>
+{% else %}
+<p class="center">Todavía no hay entradas.</p>
+{% endif %}
