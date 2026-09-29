@@ -16,6 +16,7 @@ eleventyExcludeFromCollections: true
 	<li>
 		<time datetime="{{ entrada.date | fechaISO }}">{{ entrada.date | fecha }}</time>
 		<a href="{{ entrada.url }}">{{ entrada.data.title }}</a>
+		<span class="autor autor-{{ entrada.data.autor | slugify }}">{{ entrada.data.autor }}</span>
 		{%- for t in entrada.data.tags | etiquetasVisibles %} <span class="chip">{{ t }}</span>{% endfor %}
 	</li>
 	{%- endfor %}

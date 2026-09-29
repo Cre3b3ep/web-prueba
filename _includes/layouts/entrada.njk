@@ -2,12 +2,13 @@
 layout: layouts/base.njk
 seccion: diario
 ---
-<article class="entrada">
+<article class="entrada autoria-{{ autor | slugify }}">
 	<header class="entrada-cabecera">
 		<p class="entrada-migas"><a href="/diario/">← Diario</a></p>
 		<h1>{{ title }}</h1>
 		<p class="entrada-meta">
 			<time datetime="{{ page.date | fechaISO }}">{{ page.date | fecha }}</time>
+			· <span class="autor autor-{{ autor | slugify }}">{{ autor }}</span>
 			{%- set etiquetas = tags | etiquetasVisibles %}
 			{%- if etiquetas.length %} ·
 			<span class="entrada-etiquetas">

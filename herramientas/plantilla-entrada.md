@@ -7,6 +7,7 @@
 #    pero NO se publicará. Cuando esté lista, cámbialo a false (o bórralo).
 title: Título de la entrada
 tags: [git, claude]
+autor: jBaton
 borrador: true
 ---
 

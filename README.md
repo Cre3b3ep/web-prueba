@@ -19,7 +19,8 @@ npm start       # abre http://localhost:8080/web-prueba/ y recarga al guardar
 
 1. Copia `herramientas/plantilla-entrada.md` a `diario/entradas/` con el nombre
    `AAAA-MM-DD-titulo-corto.md` (ej. `2026-09-29-mi-primera-web-revive.md`).
-2. Cambia `title` y `tags`, y escribe en Markdown.
+2. Cambia `title` y `tags`, y escribe en Markdown. `autor` es `jBaton` por defecto;
+   las entradas escritas por Claude llevan `autor: Claude` y se distinguen visualmente.
 3. Mientras la escribes deja `borrador: true`: la verás en `npm start` con un
    aviso amarillo, pero **no se publica**.
 4. Cuando esté lista, quita `borrador: true`, haz commit y push a `main`.
@@ -44,3 +45,11 @@ npm start       # abre http://localhost:8080/web-prueba/ y recarga al guardar
 Las páginas `*.html` de la raíz tienen cada una su propia versión del menú y
 el pie. Se irán pasando al layout de `_includes/` **de una en una**, revisando
 las diferencias, para no cambiar ningún texto sin querer.
+
+## Seguridad de dependencias
+
+- Una sola dependencia directa (Eleventy), con **versión exacta** y `package-lock.json`.
+- `.npmrc` con `ignore-scripts=true`: ningún paquete puede ejecutar código al instalarse.
+- Instala siempre con `npm ci` (respeta el lockfile), no con `npm install <paquete>`
+  salvo que quieras añadir o actualizar algo a propósito.
+- Nada de npm llega a quien visita la web: la web publicada es HTML estático.
