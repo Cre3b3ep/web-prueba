@@ -4,5 +4,7 @@
 export default {
   layout: "layouts/entrada.njk",
   tags: ["diario"],
+  // Quién la escribe: "jBaton" por defecto. Las entradas de Claude llevan `autor: Claude`.
+  autor: "jBaton",
   permalink: "/diario/{{ page.fileSlug }}/",
 };

@@ -49,3 +49,47 @@ nav a[aria-current="page"] {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* Autoría: persona o IA, siempre visible */
+.autor {
+  border-radius: 1rem;
+  font-size: .8em;
+  padding: .1rem .6rem;
+  white-space: nowrap;
+}
+.autor-jbaton {
+  background: #e0f2f1;
+  color: #00574b;
+}
+.autor-claude {
+  background: #ede7f6;
+  color: #3f1d8a;
+}
+.autoria-claude .entrada-cuerpo {
+  border-left: 4px solid #b39ddb;
+  padding-left: 1rem;
+}
+.firma {
+  font-style: italic;
+  text-align: right !important;
+}
+
+/* Materialize quita las viñetas a todas las listas: las recuperamos en el texto */
+.entrada-cuerpo ul {
+  padding-left: 1.5rem;
+}
+.entrada-cuerpo ul li {
+  list-style-type: disc;
+}
+.entrada-cuerpo ol li {
+  list-style-type: decimal;
+}
+/* Código en línea distinguible del texto */
+.entrada-cuerpo :not(pre) > code {
+  background: #f1f1f1;
+  border-radius: .2rem;
+  color: #6a1b4d;
+  font-family: 'Hack', monospace;
+  font-size: .9em;
+  padding: .05rem .3rem;
+}
