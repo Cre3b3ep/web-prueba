@@ -1,0 +1,69 @@
+		<a id="anchorTarget"></a>
+		<div id="nav_dropdowns">
+			<ul id="dropdown3" class="dropdown-content">
+				<li><a class="center-align" href="/html.html">Básico</a></li>
+				<li><a class="center-align" href="/html5.html">HTML5</a></li>
+				<li><a class="center-align" href="/fw-html.html">Útiles</a></li>
+			</ul>
+			<ul id="dropdown2" class="dropdown-content">
+				<li><a class="center-align" href="/css.html">Básico</a></li>
+				<li><a class="pendiente center-align" aria-disabled="true">CSS3</a></li>
+				<li><a class="center-align" href="/fw-css.html">FrameWorks</a></li>
+			</ul>
+			<ul id="dropdown1" class="dropdown-content">
+				<li><a class="center-align" href="/js.html">Báscio</a></li>
+				<li><a class="center-align" href="/es6.html">ES6</a></li>
+				<li><a class="center-align" href="/fw-js.html">FrameWorkss</a></li>
+			</ul>
+		</div>
+
+		<header>
+			<nav class="white">
+				<div class="nav-wrapper container">
+					<ul class="right hide-on-med-and-down">
+						<li><a class="dropdown-trigger html" href="#!" data-target="dropdown3">HTML</a></li>
+						<li><a class="dropdown-trigger css" href="#!" data-target="dropdown2">CSS</a></li>
+						<li><a class="dropdown-trigger js" href="#!" data-target="dropdown1">JavaScript</a></li>
+						<li><a title="Guías según lenguaje" class="resto" href="/guias.html">Guías</a></li>
+						<li><a class="resto" href="/relacionando.html">Relacionado</a></li>
+						<li><a class="resto" href="/diario/"{% if seccion == "diario" %} aria-current="page"{% endif %}>Diario</a></li>
+					</ul>
+					<a href="#" class="sidenav-trigger" data-target="menu-lateral" aria-label="Abrir menú">
+						<i aria-hidden="true" class="material-icons">menu</i></a>
+
+					<div id="logo">
+						<a class="tooltipped" data-position="left" data-tooltip="Click! => Inicio" href="/index.html">
+							<img src="/img/fav1.png" class="responsive-img" alt="Logo">
+						</a>
+					</div>
+
+					<ul id="menu-lateral" class="sidenav purpur">
+						<li>
+							<div class="user-view">
+								<a href="/index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons grey-text text-lighten-2">home</i></a>
+								<div class="background">
+									<img src="/img/dedojpeg.jpg" alt="Fondo menú móvil">
+								</div>
+							</div>
+						</li>
+						<li><a href="/html.html" class="red-text text-accent-4 html"><i aria-hidden="true" class="material-icons red-text text-accent-4 html">check_box_outline_blank</i>HTML</a></li>
+						<li><a href="/css.html" class="blue-text text-accent-4 css"><i aria-hidden="true" class="material-icons blue-text text-accent-4">check_box_outline_blank</i>CSS</a></li>
+						<li><a href="/js.html" class="amber-text text-accent-4 js"><i aria-hidden="true" class="material-icons amber-text text-accent-4">check_box_outline_blank</i>JavaScript</a></li>
+						<li><a href="/guias.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Guías</a></li>
+						<li><a href="/relacionando.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Relacionado</a></li>
+						<li><a href="/diario/" class="cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Diario</a></li>
+						<li><a href="/contacto.html" class="indigo-text text-lighten-2"><i aria-hidden="true" class="fab fa-telegram indigo-text text-lighten-2"></i>Contacta</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="fixed-action-btn">
+			<a class="btn-floating btn-large resto">
+				<i aria-hidden="true" class="fas fa-cog fa-spin"></i>
+			</a>
+			<ul>
+				<li><a class="btn-floating resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
+				<li><a class="btn-floating resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
+			</ul>
+		</div>

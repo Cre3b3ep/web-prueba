@@ -30,3 +30,7 @@ config/private/
 *.pem
 *.db
 *.sqlite
+
+# Eleventy
+node_modules/
+_site/

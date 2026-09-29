@@ -1,0 +1,6 @@
+# Archivos del repo que NO forman parte de la web publicada
+README.md
+herramientas/
+node_modules/
+.github/
+_site/

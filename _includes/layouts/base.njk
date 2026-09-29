@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>{{ title }}{% if title != "DWB" %} · DWB{% endif %}</title>
+	{% if descripcion %}<meta name="description" content="{{ descripcion }}" />{% endif %}
+	<meta name="author" content="jBaton" />
+	<meta name="robots" content="{{ 'noindex,follow' if borrador else 'index,follow' }}" />
+
+	<link href="/css/fuentes.css" type="text/css" rel="stylesheet" />
+	<link href="/css/materialize.css" type="text/css" rel="stylesheet" />
+	<link href="/css/style.css" type="text/css" rel="stylesheet" />
+	<link href="/css/diario.css" type="text/css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="/img/fav1.png" sizes="64x64" />
+</head>
+
+<body>
+	<div id="contenedor">
+{% include "partials/menu.njk" %}
+
+		<main id="contenido" class="container section">
+			{% if borrador %}<p class="aviso-borrador" role="note">Borrador: esta página no se publica.</p>{% endif %}
+{{ content | safe }}
+		</main>
+
+{% include "partials/pie.njk" %}
+	</div>
+
+	<script src="/js/materialize.js"></script>
+	<script src="/js/init.js"></script>
+	<script src="/js/funk.js"></script>
+</body>
+
+</html>

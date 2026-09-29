@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+seccion: diario
+---
+<article class="entrada">
+	<header class="entrada-cabecera">
+		<p class="entrada-migas"><a href="/diario/">← Diario</a></p>
+		<h1>{{ title }}</h1>
+		<p class="entrada-meta">
+			<time datetime="{{ page.date | fechaISO }}">{{ page.date | fecha }}</time>
+			{%- set etiquetas = tags | etiquetasVisibles %}
+			{%- if etiquetas.length %} ·
+			<span class="entrada-etiquetas">
+				{%- for t in etiquetas %}<a class="chip" href="/diario/etiquetas/#{{ t | slugify }}">{{ t }}</a>{% endfor -%}
+			</span>
+			{%- endif %}
+		</p>
+	</header>
+
+	<div class="entrada-cuerpo">
+{{ content | safe }}
+	</div>
+</article>
