@@ -280,3 +280,8 @@ pre {
     font-size: 2.8em;
   }
 }
+
+/* Parallax cuya foto ya no existe: fondo plano oscuro (los títulos de color se leen bien encima) */
+.parallax-container.fondo-plano {
+  background-color: #1c2331;
+}
