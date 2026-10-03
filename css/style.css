@@ -825,12 +825,28 @@ pre {
     padding: 0 0 var(--esp-4);
     position: fixed;
     transform: translateX(-105%);
-    transition: transform var(--transicion);
+    transition: transform var(--transicion), visibility var(--transicion);
+    /* cerrado también es invisible para el teclado (Tab no entra) */
+    visibility: hidden;
     width: var(--ancho-menu-lateral);
-    z-index: var(--z-menu);
+    z-index: calc(var(--z-menu) + 1);
   }
   .menu-lateral[data-abierto] {
     transform: none;
+    /* al abrir, visible al instante (si no, el JS no puede darle el foco);
+       al cerrar, la regla de arriba espera a que acabe el deslizamiento */
+    transition: transform var(--transicion), visibility 0s;
+    visibility: visible;
+  }
+  /* Capa oscura detrás del menú abierto (la crea js/ui.js) */
+  .menu-capa {
+    background: rgba(0, 0, 0, .5);
+    inset: 0;
+    position: fixed;
+    z-index: var(--z-menu);
+  }
+  .menu-capa[hidden] {
+    display: none;
   }
   .menu-lateral a {
     align-items: center;
@@ -909,6 +925,13 @@ pre {
     height: 100%;
     object-fit: cover;
     width: 100%;
+  }
+  /* Parallax (lo activa js/ui.js): la foto sobresale un 20 % por arriba y
+     por abajo, y el JS la desplaza dentro de ese margen con --parallax */
+  .banner[data-parallax] .banner-imagen {
+    inset: -20% 0;
+    transform: translate3d(0, var(--parallax, 0px), 0);
+    will-change: transform;
   }
 
   /* --- Pie */
@@ -994,10 +1017,20 @@ pre {
   .visor::backdrop {
     background: rgba(0, 0, 0, .8);
   }
+  .visor figure {
+    margin: 0;
+  }
   .visor img {
     cursor: zoom-out;
-    max-height: 90dvh;
+    display: block;
+    max-height: 85dvh;
     object-fit: contain;
+  }
+  .visor figcaption {
+    color: var(--color-texto-claro);
+    font-family: var(--fuente-display);
+    padding-top: var(--esp-2);
+    text-align: center;
   }
 }
 
