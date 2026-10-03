@@ -5,8 +5,8 @@ seccion: diario
 permalink: /diario/etiquetas/
 eleventyExcludeFromCollections: true
 ---
-<h1 class="center">Etiquetas</h1>
-<p class="center"><a href="/diario/">← Diario</a></p>
+<h1 class="texto-centro">Etiquetas</h1>
+<p class="texto-centro"><a href="/diario/">← Diario</a></p>
 
 {% for etiqueta in collections.etiquetasDiario %}
 <section class="grupo-etiqueta" id="{{ etiqueta | slugify }}">
@@ -18,5 +18,5 @@ eleventyExcludeFromCollections: true
 	</ul>
 </section>
 {% else %}
-<p class="center">Todavía no hay etiquetas.</p>
+<p class="texto-centro">Todavía no hay etiquetas.</p>
 {% endfor %}

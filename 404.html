@@ -8,7 +8,6 @@
 
     <!-- ↓ CSS  ↓ -->
     <link href="css/fuentes.css" type="text/css" rel="stylesheet" />
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
 
     <!-- ↓ Favicons ↓ -->
@@ -37,28 +36,28 @@
       <!-- Ancla -->
       <!-- Opciones menú H -->
       <div id="nav_dropdowns">
-        <ul id="dropdown3" class="dropdown-content">
-          <li><a class="center-align" href="html.html">Básico</a></li>
-          <li><a class="center-align" href="html5.html">HTML5</a></li>
-          <li><a class="center-align" href="fw-html.html">Útiles</a></li>
+        <ul id="dropdown3" class="desplegable">
+          <li><a class="texto-centro" href="html.html">Básico</a></li>
+          <li><a class="texto-centro" href="html5.html">HTML5</a></li>
+          <li><a class="texto-centro" href="fw-html.html">Útiles</a></li>
         </ul>
-        <ul id="dropdown2" class="dropdown-content">
-          <li><a class="center-align" href="css.html">Básico</a></li>
-          <li><a class="pendiente center-align" aria-disabled="true">CSS3</a></li>
-          <li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
+        <ul id="dropdown2" class="desplegable">
+          <li><a class="texto-centro" href="css.html">Básico</a></li>
+          <li><a class="pendiente texto-centro" aria-disabled="true">CSS3</a></li>
+          <li><a class="texto-centro" href="fw-css.html">FrameWorks</a></li>
         </ul>
-        <ul id="dropdown1" class="dropdown-content">
-          <li><a class="center-align" href="js.html">Báscio</a></li>
-          <li><a class="center-align" href="es6.html">ES6</a></li>
-          <li><a class="center-align" href="fw-js.html">FrameWorkss</a></li>
+        <ul id="dropdown1" class="desplegable">
+          <li><a class="texto-centro" href="js.html">Báscio</a></li>
+          <li><a class="texto-centro" href="es6.html">ES6</a></li>
+          <li><a class="texto-centro" href="fw-js.html">FrameWorkss</a></li>
         </ul>
 
-        <ul id="dropdown4" class="dropdown-content">
-          <li><a class="pendiente center-align" aria-disabled="true">Básico</a></li>
-          <li><a class="pendiente center-align" aria-disabled="true">PHP7</a></li>
+        <ul id="dropdown4" class="desplegable">
+          <li><a class="pendiente texto-centro" aria-disabled="true">Básico</a></li>
+          <li><a class="pendiente texto-centro" aria-disabled="true">PHP7</a></li>
           <li>
             <a
-              class="center-align"
+              class="texto-centro"
               href="https://openwebinars.net/blog/los-10-mejores-frameworks-php-que-solicitan-las-empresas/"
               >FrameWorks</a
             >
@@ -69,12 +68,12 @@
 
       <!-- Navegador horizontal -->
       <header>
-        <nav class="white">
-          <div class="nav-wrapper container">
-            <ul class="right hide-on-med-and-down">
+        <nav>
+          <div class="barra container">
+            <ul class="solo-escritorio">
               <li>
                 <a
-                  class="dropdown-trigger html"
+                  class="desplegable-boton html"
                   href="javascript:void(0);"
                   data-target="dropdown3"
                   >HTML</a
@@ -82,46 +81,46 @@
               </li>
               <li>
                 <a
-                  class="dropdown-trigger css"
+                  class="desplegable-boton css"
                   href="#!"
                   data-target="dropdown2"
                   >CSS</a
                 >
               </li>
               <li>
-                <a class="dropdown-trigger js" href="#!" data-target="dropdown1"
+                <a class="desplegable-boton js" href="#!" data-target="dropdown1"
                   >JavaScript</a
                 >
               </li>
               <li><a class="resto" href="guias.html">Guías</a></li>
               <li><a class="resto" href="relacionando.html">Relacionado</a></li>
             </ul>
-            <a href="#" class="sidenav-trigger" data-target="menu-lateral">
+            <a href="#" class="menu-boton" data-target="menu-lateral">
               <i aria-hidden="true" class="material-icons">menu</i></a
             >
 
             <!-- Fin Logo -->
             <div id="logo">
               <a
-                class="tooltipped"
+               
                 data-position="left"
                 data-tooltip="Click! => Inicio"
                 href="index.html"
               >
-                <img src="img/fav1.png" class="responsive-img" alt="Logo" />
+                <img src="img/fav1.png" alt="Logo" />
               </a>
             </div>
             <!-- Fin Logo -->
 
             <!-- nav movil -->
-            <ul id="menu-lateral" class="sidenav">
+            <ul id="menu-lateral" class="menu-lateral">
               <li>
-                <div class="user-view">
-                  <div class="background">
+                <div class="menu-lateral-cabecera">
+                  <div class="menu-lateral-fondo">
                     <img src="img/dedojpeg.jpg" alt="Fondo menú móvil" />
                   </div>
                   <a href="index.html"
-                     aria-label="Inicio"><i aria-hidden="true" class="material-icons white-text">home</i>
+                     aria-label="Inicio"><i aria-hidden="true" class="material-icons texto-claro">home</i>
                   </a>
                 </div>
               </li>
@@ -169,98 +168,98 @@
       </header>
 
       <!-- Pié de página -->
-      <footer class="page-footer black">
+      <footer class="pie">
         <a id="footer"></a>
         <div class="container">
-          <div class="row">
-            <div class="col l11 s12">
-              <h1 class="grey-text center">Error 404</h1>
-              <hr class="grey-text" />
-              <p class="kolo grey-text center">
+          <div class="grid grid--compacta">
+            <div class="grid-completa">
+              <h1 class="texto-suave texto-centro">Error 404</h1>
+              <hr class="texto-suave" />
+              <p class="kolo texto-suave texto-centro">
                 Hola, has llegado aquí! no sé si es bueno o malo, en cualquier
                 caso tienes las opciones de navegación más importantes para que
                 salgas de ésta página, que no contiene nada.
               </p>
-              <h2 class="grey-text center">Lo más Probable</h2>
-              <hr class="grey-text" />
-              <p class="kolo grey-text center">
+              <h2 class="texto-suave texto-centro">Lo más Probable</h2>
+              <hr class="texto-suave" />
+              <p class="kolo texto-suave texto-centro">
                 Es que hayas llegado a una página en proceso... Puede que en
                 unos días esté disponible. Disculpa la molestia.
               </p>
             </div>
-            <div class="col l2 s12 center">
-              <p class="red-text center">Mapa del sitio</p>
-              <hr class="blue-text" />
-              <a class="white-text html" href="html.html">HTML,</a>
-              <a class="white-text css" href="css.html">CSS,</a>
-              <a class="white-text js" href="js.html">JS,</a>
-              <a class="pendiente white-text php" aria-disabled="true">PHP,</a>
-              <a class="pendiente white-text nodeh" aria-disabled="true">Nodejs,</a>
-              <a class="white-text resto" href="guias.html">Guías,</a>
-              <a class="white-text resto" href="relacionando.html"
+            <div class="texto-centro">
+              <p class="texto-html texto-centro">Mapa del sitio</p>
+              <hr class="texto-css" />
+              <a class="texto-claro html" href="html.html">HTML,</a>
+              <a class="texto-claro css" href="css.html">CSS,</a>
+              <a class="texto-claro js" href="js.html">JS,</a>
+              <a class="pendiente texto-claro php" aria-disabled="true">PHP,</a>
+              <a class="pendiente texto-claro nodeh" aria-disabled="true">Nodejs,</a>
+              <a class="texto-claro resto" href="guias.html">Guías,</a>
+              <a class="texto-claro resto" href="relacionando.html"
                 >Relacionado.</a
               >
             </div>
-            <div class="col l2 s5 center">
-              <p class="blue-text center">Contacto</p>
-              <hr class="yellow-text" />
+            <div class="texto-centro">
+              <p class="texto-css texto-centro">Contacto</p>
+              <hr class="texto-js" />
               <ul>
-                <li><a class="white-text css" href="#!">Link 1</a></li>
-                <li><a class="white-text css" href="#!">Link 2</a></li>
-                <li><a class="white-text css" href="#!">Link 3</a></li>
-                <li><a class="white-text css" href="#!">Link 4</a></li>
+                <li><a class="texto-claro css" href="#!">Link 1</a></li>
+                <li><a class="texto-claro css" href="#!">Link 2</a></li>
+                <li><a class="texto-claro css" href="#!">Link 3</a></li>
+                <li><a class="texto-claro css" href="#!">Link 4</a></li>
               </ul>
             </div>
-            <div class="col l2 s7 center">
-              <p class="yellow-text center">RRSS</p>
-              <hr class="deep-purple-text" />
+            <div class="texto-centro">
+              <p class="texto-js texto-centro">RRSS</p>
+              <hr class="texto-php" />
               <a
-                class="cyan-text js"
+                class="texto-acento js"
                 href="https://twitter.com/sinarkista"
                 target="_blank"
                 rel="noopener noreferrer"
                  aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-3x"></i
               ></a>
               <a
-                class="blue-text text-darken-3 js"
+                class="texto-css js"
                 href="https://www.facebook.com/facundohetoro"
                 target="_blank"
                 rel="noopener noreferrer"
                  aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f fa-3x"></i
               ></a>
               <a
-                class="red-text js"
+                class="texto-html js"
                 href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg"
                 target="_blank"
                 rel="noopener noreferrer"
                  aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube fa-3x"></i
               ></a>
               <a
-                class="orange-text js"
+                class="texto-js js"
                 href="https://soundcloud.com/puro3"
                 target="_blank"
                 rel="noopener noreferrer"
                  aria-label="SoundCloud"><i aria-hidden="true" class="fab fa-soundcloud fa-3x"></i
               ></a>
             </div>
-            <div class="col l2 s12 center">
-              <p class="deep-purple-text center">Cookies</p>
-              <hr class="lime-text text-accent-3" />
+            <div class="texto-centro">
+              <p class="texto-php texto-centro">Cookies</p>
+              <hr class="texto-acento" />
               <ul>
-                <li><a class="white-text php" href="#!">Cookie 1</a></li>
-                <li><a class="white-text php" href="#!">Cookie 2</a></li>
-                <li><a class="white-text php" href="#!">Cookie 3</a></li>
-                <li><a class="white-text php" href="#!">Cookie 4</a></li>
+                <li><a class="texto-claro php" href="#!">Cookie 1</a></li>
+                <li><a class="texto-claro php" href="#!">Cookie 2</a></li>
+                <li><a class="texto-claro php" href="#!">Cookie 3</a></li>
+                <li><a class="texto-claro php" href="#!">Cookie 4</a></li>
               </ul>
             </div>
-            <div class="col l2 s5 center">
-              <p class="lime-text text-accent-3 center">Fuentes</p>
+            <div class="texto-centro">
+              <p class="texto-acento texto-centro">Fuentes</p>
               <hr class="resto" />
               <ul>
                 <li>
                   <a
                     title="Google Developers"
-                    class="white-text nodeh"
+                    class="texto-claro nodeh"
                     href="https://developers.google.com/products/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -270,7 +269,7 @@
                 <li>
                   <a
                     title="Microsoft Desarrolladores"
-                    class="white-text nodeh"
+                    class="texto-claro nodeh"
                     href="https://msdn.microsoft.com/es-es"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -280,7 +279,7 @@
                 <li>
                   <a
                     title="Mozzila Developer"
-                    class="white-text nodeh"
+                    class="texto-claro nodeh"
                     href="https://developer.mozilla.org/es/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -290,7 +289,7 @@
                 <li>
                   <a
                     title="W3C Schools"
-                    class="white-text nodeh"
+                    class="texto-claro nodeh"
                     href="https://www.w3schools.com/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -299,14 +298,14 @@
                 </li>
               </ul>
             </div>
-            <div class="col l2 s7 center">
-              <p class="center sidenav-trigger">Blogs</p>
-              <hr class="red-text text-accent-3" />
+            <div class="texto-centro">
+              <p class="texto-centro menu-boton">Blogs</p>
+              <hr class="texto-html" />
               <ul>
                 <li>
                   <a
                     title="César Jodra"
-                    class="white-text resto"
+                    class="texto-claro resto"
                     href="https://cesarjodra.wordpress.com/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -316,7 +315,7 @@
                 <li>
                   <a
                     title="Javier Gosende"
-                    class="white-text resto"
+                    class="texto-claro resto"
                     href="https://www.javiergosende.com/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -326,7 +325,7 @@
                 <li>
                   <a
                     title="Romuald Fons"
-                    class="white-text resto"
+                    class="texto-claro resto"
                     href="https://romualdfons.com/que-es-el-seo/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -339,33 +338,33 @@
         </div>
 
         <!-- Fixed bton -->
-        <div class="fixed-action-btn">
-          <a class="btn-floating btn-large resto">
+        <div class="botonera-flotante">
+          <a class="btn btn--redondo btn--grande resto">
             <i aria-hidden="true" class="fas fa-cog fa-spin"></i>
           </a>
           <ul>
             <li>
-              <a class="btn-floating resto anchorLink" href="#anchorTarget"
+              <a class="btn btn--redondo resto anchorLink" href="#anchorTarget"
                  aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i
               ></a>
             </li>
             <li>
-              <a class="btn-floating resto red" href="html.html"
+              <a class="btn btn--redondo resto fondo-html" href="html.html"
                  aria-label="HTML"><i aria-hidden="true" class="fab fa-html5"></i
               ></a>
             </li>
             <li>
-              <a class="btn-floating resto blue" href="css.html"
+              <a class="btn btn--redondo resto fondo-css" href="css.html"
                  aria-label="CSS"><i aria-hidden="true" class="fab fa-css3-alt"></i
               ></a>
             </li>
             <li>
-              <a class="btn-floating resto yellow" href="js.html"
+              <a class="btn btn--redondo resto fondo-js" href="js.html"
                  aria-label="JavaScript"><i aria-hidden="true" class="fab fa-js"></i
               ></a>
             </li>
             <li>
-              <a class="btn-floating resto" href="#footer"
+              <a class="btn btn--redondo resto" href="#footer"
                  aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i
               ></a>
             </li>
@@ -377,9 +376,8 @@
     </div>
     <!--  Scripts; Si se cambia este orden puede que algo falle-->
     <!-- 2 -->
-    <script src="js/materialize.js"></script>
     <!-- 3 -->
-    <script src="js/init.js"></script>
+	<script src="js/ui.js"></script>
   </body>
 </html>
 <!-- Añadiendo en .htaccess la siguiente línea:
