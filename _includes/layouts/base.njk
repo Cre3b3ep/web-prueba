@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>{{ title }}{% if title != "DWB" %} · DWB{% endif %}</title>
 	{% if descripcion %}<meta name="description" content="{{ descripcion }}" />{% endif %}
-	<meta name="author" content="jBaton" />
-	<meta name="robots" content="{{ 'noindex,follow' if borrador else 'index,follow' }}" />
+	<meta name="author" content="{{ sitio.autor }}" />
+	<meta name="robots" content="{{ 'noindex,follow' if (borrador or noindex) else 'index,follow' }}" />
 
 	<link href="/css/fuentes.css" type="text/css" rel="stylesheet" />
 	<link href="/css/style.css" type="text/css" rel="stylesheet" />
@@ -18,7 +18,8 @@
 	<div id="contenedor">
 {% include "partials/menu.njk" %}
 
-		<main id="contenido" class="container section">
+		{#- anchoCompleto: true → sin .container (páginas con banners de lado a lado) #}
+		<main id="contenido"{% if not anchoCompleto %} class="container section"{% endif %}>
 			{% if borrador %}<p class="aviso-borrador" role="note">Borrador: esta página no se publica.</p>{% endif %}
 {{ content | safe }}
 		</main>

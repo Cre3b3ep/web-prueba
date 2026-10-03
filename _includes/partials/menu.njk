@@ -64,6 +64,10 @@
 			</a>
 			<ul>
 				<li><a class="btn btn--redondo resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
+				{#- Atajos propios de la página: front matter `atajos` (ver index.html) #}
+				{%- for a in atajos %}
+				<li><a class="btn btn--redondo resto {{ a.clase }}" href="{{ a.href }}" aria-label="{{ a.etiqueta }}"><i aria-hidden="true" class="{{ a.icono }}"></i></a></li>
+				{%- endfor %}
 				<li><a class="btn btn--redondo resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
 			</ul>
 		</div>

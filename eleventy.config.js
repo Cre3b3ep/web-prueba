@@ -2,14 +2,13 @@ import { HtmlBasePlugin } from "@11ty/eleventy";
 
 // Configuración de Eleventy (https://www.11ty.dev/docs/config/)
 //
-// Estrategia de migración ("estrangulador"):
-//  - Las páginas antiguas (*.html de la raíz) se copian TAL CUAL, sin procesar.
-//  - Lo nuevo (diario, sección de IA) se escribe en Markdown/Nunjucks y usa
-//    el layout compartido de _includes/layouts/.
-//  - Las páginas antiguas se irán pasando al layout de una en una.
+// Todas las páginas usan el layout compartido de _includes/layouts/:
+//  - Las páginas sueltas de la raíz (*.html) son plantillas Nunjucks: sólo
+//    llevan su contenido y un front matter (título, URL...). El menú, la
+//    botonera y el pie salen de _includes/partials/.
+//  - Lo nuevo (diario, sección de IA) se escribe en Markdown/Nunjucks.
 export default function (eleventyConfig) {
   // --- Archivos que se publican sin transformar
-  eleventyConfig.addPassthroughCopy("*.html");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("img");
@@ -52,8 +51,8 @@ export default function (eleventyConfig) {
   });
 
   return {
-    // Sólo Markdown y Nunjucks son plantillas: los .html antiguos no se tocan
-    templateFormats: ["md", "njk"],
+    // .html también: se procesan con Nunjucks (htmlTemplateEngine)
+    templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     // En GitHub Pages la web vive en /web-prueba/. Con dominio propio sería "/".
