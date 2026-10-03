@@ -9,7 +9,6 @@
 
 	<!-- ↓ CSS  ↓ -->
 	<link href="css/fuentes.css" type="text/css" rel="stylesheet" />
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 
 	<!-- ↓ Favicons ↓ -->
@@ -30,61 +29,61 @@
 
 <body><a id="anchorTarget"></a>
 	<div id="navegación_lateral_del_movil">
-		<ul id="dropdown1" class="dropdown-content">
+		<ul id="dropdown1" class="desplegable">
 			<li><a href="js.html">Solo JS</a></li>
 			<li><a href="es6.html">JS ES6</a></li>
 			<li><a href="fw-js.html">FrameWorkss</a></li>
 		</ul>
 
-		<ul id="dropdown2" class="dropdown-content">
+		<ul id="dropdown2" class="desplegable">
 			<li><a href="css.html">Solo CSS</a></li>
 			<li><a aria-disabled="true" class="pendiente">CSS 3</a></li>
 			<li><a href="fw-css.html">FrameWorks</a></li>
 		</ul>
 
-		<ul id="dropdown3" class="dropdown-content">
+		<ul id="dropdown3" class="desplegable">
 			<li><a href="html.html">Solo HTML</a></li>
 			<li><a href="html5.html">HTML+5</a></li>
 			<li><a href="fw-html.html">FrameWorks</a></li>
 		</ul>
 
-		<ul id="dropdown4" class="dropdown-content">
+		<ul id="dropdown4" class="desplegable">
 			<li><a aria-disabled="true" class="pendiente">Solo PHP</a></li>
 			<li><a aria-disabled="true" class="pendiente">PHP+Host</a></li>
 			<li><a href="https://openwebinars.net/blog/los-10-mejores-frameworks-php-que-solicitan-las-empresas/">FrameWorks</a></li>
 		</ul>
 	</div>
 
-	<nav class="white">
-		<div class="nav-wrapper container">			
+	<nav>
+		<div class="barra container">			
 		
-			<ul class="right hide-on-med-and-down">
-				<li><a class="dropdown-trigger html" href="#!" data-target="dropdown3">HTML</a></li>
-				<li><a class="dropdown-trigger css" href="#!" data-target="dropdown2">CSS</a></li>
-				<li><a class="dropdown-trigger js" href="#!" data-target="dropdown1">JavaScript</a></li>
-				<li><a class="dropdown-trigger php" href="#!" data-target="dropdown4">PHP</a></li>
+			<ul class="solo-escritorio">
+				<li><a class="desplegable-boton html" href="#!" data-target="dropdown3">HTML</a></li>
+				<li><a class="desplegable-boton css" href="#!" data-target="dropdown2">CSS</a></li>
+				<li><a class="desplegable-boton js" href="#!" data-target="dropdown1">JavaScript</a></li>
+				<li><a class="desplegable-boton php" href="#!" data-target="dropdown4">PHP</a></li>
 				<li><a class="resto" href="#">Guías</a></li>
-				<li><a class="resto teal white-text" href="#">Relacionado<i aria-hidden="true" class="material-icons left">arrow_drop_down</i></a></li>
+				<li><a class="resto fondo-acento texto-claro" href="#">Relacionado<i aria-hidden="true" class="material-icons flotar-izda">arrow_drop_down</i></a></li>
 			</ul>
 
-			<a href="#" class="sidenav-trigger" data-target="menu-lateral" aria-label="Abrir menú">
+			<a href="#" class="menu-boton" data-target="menu-lateral" aria-label="Abrir menú">
 				<i aria-hidden="true" class="material-icons">menu</i>
 			</a>
 			<div id="logo">
-					<a class="card-title" href="index.html">
-					<span class="red-text text-darken-4">H</span>
-					<span class="blue-text text-darken-4">C</span>
-					<span class="yellow-text text-darken-4">J</span>
-					<span class="deep-purple-text text-darken-4">P</span>
+					<a class="card-titulo" href="index.html">
+					<span class="texto-html">H</span>
+					<span class="texto-css">C</span>
+					<span class="texto-js">J</span>
+					<span class="texto-php">P</span>
 				</a>
 			</div> 
 			
-			<ul id="menu-lateral" class="sidenav">
+			<ul id="menu-lateral" class="menu-lateral">
 				<li>
-					<div class="user-view">
-						<div class="background">
+					<div class="menu-lateral-cabecera">
+						<div class="menu-lateral-fondo">
 						</div>
-						<a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons white-text">home</i>
+						<a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons texto-claro">home</i>
 						</a>
 					</div>
 				</li>
@@ -129,19 +128,19 @@
 	</nav>
 
 
-	<div id="index-banner" class="parallax-container fondo-plano">
-		<div class="section no-pad-bot">
+	<div id="index-banner" class="banner fondo-plano">
+		<div class="section">
 			<div class="container">
         <br><br>
-        <div class="right">
-        <div class="col s12">
-        <h1 class="titulos yellow-text text-accent-4">Recopilación de enlaces </h1></div>
+        <div class="grid flotar-dcha">
+        <div class="grid-completa">
+        <h1 class="titulos texto-js">Recopilación de enlaces </h1></div>
 
-        <div class="col s5">
-          <h4 class="header col s6 cyan-text text-lighten-4">agrupandose por temática... dales tiempo!</h4></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
-					<a href="https://www.google.com" aria-label="Más información sobre html" class="btn btn-small transparent waves-effect waves-light center google">Google!</a>
+        <div>
+          <h4 class="header texto-acento">agrupandose por temática... dales tiempo!</h4></div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<a href="https://www.google.com" aria-label="Más información sobre html" class="btn btn--pequeno fondo-transparente texto-centro google">Google!</a>
 
-        <div class="col s12 red">        
+        <div class="grid-completa fondo-html">        
         </div>
 				<!--  -->
       </div>
@@ -153,14 +152,14 @@
 	<div class="container">
 		<div class="section">
 			<!--   Icon Section   -->
-			<div class="row">
-          <div class="col s12">
-                  <div class="card-title">
+			<div>
+          <div>
+                  <div class="card-titulo">
                     <article class="pre">
                       <h1>Esta página se está actualizando! <br> Vuelve! y así lo corroboras.</h1>
                     </article>
                   </div>
-            <div class="card card-action center section">
+            <div class="card card-acciones texto-centro section">
               <a href="https://www.hijosdigitales.es/es/2017/02/haz-copias-de-seguridad-automaticas-de-tus-archivos-con-windows-10/" target="_blank" rel="noopener noreferrer" title="hijosdigitales.es"><p>Consejos y guía para realizar copias de seguridad en windows 10</p></a>
               <a href="https://www.genbeta.com/paso-a-paso/como-programar-tareas-en-windows-10" target="_blank" rel="noopener noreferrer" title="Genbeta"><p>Guía para el programador de tareas de windows</p></a>
               <a href="http://web.tursos.com/como-hacer-un-formulario-de-contacto-i-html-y-css/" target="_blank" rel="noopener noreferrer" title="WebTursos"><p>Ejemplo de formulario de contacto</p></a>
@@ -216,25 +215,25 @@
 		</div>
 
 	<!-- Fixed bton -->
-	<div class="fixed-action-btn">
-		<a class="btn-floating btn-large resto"><i aria-hidden="true" class="fas fa-cog fa-spin"></i></a>
+	<div class="botonera-flotante">
+		<a class="btn btn--redondo btn--grande resto"><i aria-hidden="true" class="fas fa-cog fa-spin"></i></a>
 		<ul>
-			<li><a class="btn-floating anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
-			<li><a class="btn-floating" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
+			<li><a class="btn btn--redondo anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
+			<li><a class="btn btn--redondo" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
 		</ul>
 	</div>
 	<!-- Fixed bton -->
 
 
 
-	<div class="parallax-container fondo-plano valign-wrapper">
+	<div class="banner fondo-plano">
 			<div class="container section">		
-				<h2 class="titulos center blue-text text-darken-1">Aviso</h2>
-				<div class="row center">
-					<h4 class="header col s12 blue-text text-lighten-2">Seguimos buscando contenido...</h4>
+				<h2 class="titulos texto-centro texto-css">Aviso</h2>
+				<div class="texto-centro">
+					<h4 class="header texto-css">Seguimos buscando contenido...</h4>
 				</div>
 				
-				<div class="row left">
+				<div class="flotar-izda">
 				</div>
 			</div>
 
@@ -247,48 +246,45 @@
 » => alt+175
 « => alt+174
 -->
-	<footer class="page-footer black">
+	<footer class="pie">
 		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">Company Bio</h5>
-					<p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+			<div class="grid grid--a-medida" style="--columnas: 6fr 3fr 3fr">
+				<div>
+					<h5 class="texto-claro">Company Bio</h5>
+					<p class="texto-suave">We are a team of college students working on this project like it's our
 						full time job. Any amount would help support and continue development on this project and is greatly
 						appreciated.</p>
 				</div>
-				<div class="col l3 s12">
-					<h5 class="white-text">Mapa del sitio</h5>
+				<div>
+					<h5 class="texto-claro">Mapa del sitio</h5>
 					<ul>
-						<li><a class="white-text" href="html.html">HTML</a></li>
-						<li><a class="white-text" href="css.html">CSS</a></li>
-						<li><a class="white-text" href="js.html">JS</a></li>
-						<li><a class="pendiente white-text" aria-disabled="true">Curiosidades</a></li>
-						<li><a class="white-text" href="guias.html">Guías</a></li>
-						<li><a class="white-text" href="relacionando.html">Relacionado</a></li>
+						<li><a class="texto-claro" href="html.html">HTML</a></li>
+						<li><a class="texto-claro" href="css.html">CSS</a></li>
+						<li><a class="texto-claro" href="js.html">JS</a></li>
+						<li><a class="pendiente texto-claro" aria-disabled="true">Curiosidades</a></li>
+						<li><a class="texto-claro" href="guias.html">Guías</a></li>
+						<li><a class="texto-claro" href="relacionando.html">Relacionado</a></li>
 					</ul>
 				</div>
-				<div class="col l3 s12">
-					<h5 class="white-text">Connect</h5>
+				<div>
+					<h5 class="texto-claro">Connect</h5>
 					<ul>
-						<li><a class="white-text" href="#!">Link 1</a></li>
-						<li><a class="white-text" href="#!">Link 2</a></li>
-						<li><a class="white-text" href="#!">Link 3</a></li>
-						<li><a class="white-text" href="#!">Link 4</a></li>
+						<li><a class="texto-claro" href="#!">Link 1</a></li>
+						<li><a class="texto-claro" href="#!">Link 2</a></li>
+						<li><a class="texto-claro" href="#!">Link 3</a></li>
+						<li><a class="texto-claro" href="#!">Link 4</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="footer-copyright">
+		<div class="pie-copyright">
 			<div class="container">
-				Made by&with <a class="red-text text-lighten-2" href="http://materializecss.com">Materialize</a>
 			</div>
 		</div>
 	</footer>
 
 
 	<!--  Scripts-->
-	<script src="js/materialize.js"></script>
-	<script src="js/init.js"></script>
 
 	<a id="footer"></a>
 </body>

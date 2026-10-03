@@ -9,7 +9,6 @@
 
 	<!-- ↓ CSS  ↓ -->
 	<link href="css/fuentes.css" type="text/css" rel="stylesheet" />
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 
 	<!-- ↓ Favicons ↓ -->
@@ -27,78 +26,78 @@
 </head>
 
 <body>
-	<div class="" id="contenedor">
+	<div id="contenedor">
 <!-- Ancla --> <a id="anchorTarget"></a>
 <!-- Opciones menú H -->
 		<div id="nav_dropdowns">
-			<ul id="dropdown3" class="dropdown-content">
-				<li><a class="center-align" href="html.html">Básico</a></li>
-				<li><a class="center-align" href="html5.html">HTML5</a></li>
-				<li><a class="center-align" href="fw-html.html">Útiles</a></li>
+			<ul id="dropdown3" class="desplegable">
+				<li><a class="texto-centro" href="html.html">Básico</a></li>
+				<li><a class="texto-centro" href="html5.html">HTML5</a></li>
+				<li><a class="texto-centro" href="fw-html.html">Útiles</a></li>
 			</ul>
-			<ul id="dropdown2" class="dropdown-content">
-				<li><a class="center-align yaen blue-text css text-darken-4" href="#yaEstasAquí">Básico</a></li>
-				<li><a class="pendiente center-align" aria-disabled="true">CSS3</a></li>
-				<li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
+			<ul id="dropdown2" class="desplegable">
+				<li><a class="texto-centro yaen texto-css css" href="#yaEstasAquí">Básico</a></li>
+				<li><a class="pendiente texto-centro" aria-disabled="true">CSS3</a></li>
+				<li><a class="texto-centro" href="fw-css.html">FrameWorks</a></li>
 			</ul>
-			<ul id="dropdown1" class="dropdown-content">
-				<li><a class="center-align" href="js.html">Báscio</a></li>
-				<li><a class="center-align" href="es6.html">ES6</a></li>
-				<li><a class="center-align" href="fw-js.html">FrameWorkss</a></li>
+			<ul id="dropdown1" class="desplegable">
+				<li><a class="texto-centro" href="js.html">Báscio</a></li>
+				<li><a class="texto-centro" href="es6.html">ES6</a></li>
+				<li><a class="texto-centro" href="fw-js.html">FrameWorkss</a></li>
 			</ul>
 		</div>
 <!-- Opciones menú H -->
 <!-- Navegador Horizontal -->
 <header>
-	<nav class="white">
-		<div class="nav-wrapper container">
-			<ul class="right hide-on-med-and-down">
-				<li><a class="dropdown-trigger html" href="javascript:void(0);" data-target="dropdown3">HTML</a></li>
-				<li><a class="dropdown-trigger yaen css blue-text text-darken-4" href="javascript:void(0);" data-target="dropdown2">CSS <i aria-hidden="true" class="material-icons right">arrow_drop_down</i></a></li>
-				<li><a class="dropdown-trigger js" href="javascript:void(0);" data-target="dropdown1">JavaScript</a></li>
+	<nav>
+		<div class="barra container">
+			<ul class="solo-escritorio">
+				<li><a class="desplegable-boton html" href="javascript:void(0);" data-target="dropdown3">HTML</a></li>
+				<li><a class="desplegable-boton yaen css texto-css" href="javascript:void(0);" data-target="dropdown2">CSS <i aria-hidden="true" class="material-icons flotar-dcha">arrow_drop_down</i></a></li>
+				<li><a class="desplegable-boton js" href="javascript:void(0);" data-target="dropdown1">JavaScript</a></li>
 				<li><a title="Guías según lenguaje" class="resto" href="guias.html">Guías</a></li>
 				<li><a class="resto" href="relacionando.html">Relacionado</a></li>
 			</ul>
-			<a href="javascript:void(0);" class="sidenav-trigger" data-target="menu-lateral" aria-label="Abrir menú"><i aria-hidden="true" class="material-icons">menu</i></a>
+			<a href="javascript:void(0);" class="menu-boton" data-target="menu-lateral" aria-label="Abrir menú"><i aria-hidden="true" class="material-icons">menu</i></a>
 
 <!-- Logo -->
 			<div id="logo">
-				<a class="tooltipped" data-position="left" data-tooltip="Click! => Inicio" href="index.html">
-					<img src="img/fav1.png" class="responsive-img" alt="Logo">
+				<a data-position="left" data-tooltip="Click! => Inicio" href="index.html">
+					<img src="img/fav1.png" alt="Logo">
 				</a>
 			</div>
 <!-- Fin Logo -->
 
 <!-- nav movil -->
-			<ul id="menu-lateral" class="sidenav purpur">
+			<ul id="menu-lateral" class="menu-lateral purpur">
 				<li>
-					<div class="user-view">
-						<a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons grey-text text-lighten-2">home</i></a>
-						<div class="background">
+					<div class="menu-lateral-cabecera">
+						<a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons texto-suave">home</i></a>
+						<div class="menu-lateral-fondo">
 							<img src="img/dedojpeg.jpg" alt="Fondo menú móvil">
 						</div>
 					</div>
 				</li>
 				<li>
-					<a href="html.html" class="red-text text-accent-4 html"><i aria-hidden="true" class="material-icons red-text text-accent-4 html">check_box_outline_blank</i>HTML</a>
+					<a href="html.html" class="texto-html html"><i aria-hidden="true" class="material-icons texto-html html">check_box_outline_blank</i>HTML</a>
 				</li>
 				<li>
-					<a href="css.html" class="blue-text text-accent-4 css"><i aria-hidden="true" class="material-icons blue-text text-accent-4">check_box</i>CSS</a>
+					<a href="css.html" class="texto-css css"><i aria-hidden="true" class="material-icons texto-css">check_box</i>CSS</a>
 				</li>
 				<li>
-					<a href="js.html" class="amber-text text-accent-4 js"><i aria-hidden="true" class="material-icons amber-text text-accent-4">check_box_outline_blank</i>JavaScript</a>
+					<a href="js.html" class="texto-js js"><i aria-hidden="true" class="material-icons texto-js">check_box_outline_blank</i>JavaScript</a>
 				</li>
 				<li>
-					<a href="guias.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Guías</a>
+					<a href="guias.html" class="texto-acento resto"><i aria-hidden="true" class="material-icons texto-acento">check_box_outline_blank</i>Guías</a>
 				</li>
 				<li>
-					<a href="relacionando.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Relacionado</a>
+					<a href="relacionando.html" class="texto-acento resto"><i aria-hidden="true" class="material-icons texto-acento">check_box_outline_blank</i>Relacionado</a>
 				</li>
 				<li>
-					<a aria-disabled="true" class="pendiente cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>¿Cuánto sabes?</a>
+					<a aria-disabled="true" class="pendiente texto-acento resto"><i aria-hidden="true" class="material-icons texto-acento">check_box_outline_blank</i>¿Cuánto sabes?</a>
 				</li>
 				<li>
-					<a href="contacto.html" class="indigo-text text-lighten-2"><i aria-hidden="true" class="fab fa-telegram indigo-text text-lighten-2"></i>Contacta</a>
+					<a href="contacto.html" class="texto-css"><i aria-hidden="true" class="fab fa-telegram texto-css"></i>Contacta</a>
 				</li>
 			</ul>
 <!-- Fin nav movil -->
@@ -108,38 +107,38 @@
 </header>
 
 <!-- Fixed bton -->
-	<div class="fixed-action-btn">
-		<a class="btn-floating btn-large resto"><i aria-hidden="true" class="fas fa-cog fa-spin"></i></a>
+	<div class="botonera-flotante">
+		<a class="btn btn--redondo btn--grande resto"><i aria-hidden="true" class="fas fa-cog fa-spin"></i></a>
 		<ul>
-			<li><a class="btn-floating resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
-			<li><a class="btn-floating resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
+			<li><a class="btn btn--redondo resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
+			<li><a class="btn btn--redondo resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
 		</ul>
 	</div>
 <!-- Fin Fixed bton -->
 
 <!-- Parallax CSS -->
-	<div id="index-banner" class="parallax-container">
-		<div class="section no-pad-bot">
-			<div class="container center">
+	<div id="index-banner" class="banner">
+		<div class="section">
+			<div class="container texto-centro">
 
-				<div class="col s12 m10 l12">				
-					<h1 class="titulos resalto center blue-text text-accent-4">CSS</h1>
-					<h2 class="resalto col s12 blue-text text-accent-2">Cascade Style Sheets</h2>
+				<div>				
+					<h1 class="titulos resalto texto-centro texto-css">CSS</h1>
+					<h2 class="resalto texto-css">Cascade Style Sheets</h2>
 				</div>
 
-				<div class="s12 m10 l12">
-					<span class="sombraBtns"><a aria-disabled="true" aria-label="Más información sobre css3" class="pendiente resalto btn btn-large blue waves-effect waves-light css">Practica CSS<sub><i aria-hidden="true" class="fab fa-css3-alt"></i></sub></a><span></span>
+				<div>
+					<span class="sombraBtns"><a aria-disabled="true" aria-label="Más información sobre css3" class="pendiente resalto btn btn--grande fondo-css css">Practica CSS<sub><i aria-hidden="true" class="fab fa-css3-alt"></i></sub></a><span></span>
 				</div>
 				<br><br><br><br><br><br><br><br><br><br><br>
 
-				<div class="right afuera">
-					<a href="https://www.pexels.com/photo/water-blue-ocean-dark-blue-37487/" target="_blank" rel="noopener noreferrer" class="blue-text text-lighten-4">Pexel por</a><a  href="https://www.pexels.com/@lisha-riabinina-5175" target="_blank" rel="noopener noreferrer" class="blue-text text-lighten-2">@LishaRiabinina</a>
+				<div class="flotar-dcha afuera">
+					<a href="https://www.pexels.com/photo/water-blue-ocean-dark-blue-37487/" target="_blank" rel="noopener noreferrer" class="texto-css">Pexel por</a><a  href="https://www.pexels.com/@lisha-riabinina-5175" target="_blank" rel="noopener noreferrer" class="texto-css">@LishaRiabinina</a>
 				</div>
 
 			</div>
 		</div>
 
-		<div class="parallax">
+		<div class="banner-imagen">
 			<img src="img/css_watter.jpg" title="Max DeRoin" alt="Imágen agua de mar">
 		</div>
 	</div>
@@ -147,51 +146,51 @@
 <!-- Sección CSS -->
 	<div class="container">
 		<section class="section">
-			<div class="row">
+			<div>
 
-				<div class="col s12">
-					<h2 class="blue-text text-darken-3 center titulos">Hoja de Estilos en Cascada</h2>
+				<div class="grid grid--2 grid--mixta">
+					<h2 class="texto-css texto-centro titulos">Hoja de Estilos en Cascada</h2>
 					<p class="kolo">Si cambiamos "hoja" por "archivo" y "cascada" por "orden jerárquico" obtendríamos => <b>Archivo de Estilos en orden jerárquico</b>. Esto puede facilitar la comprensión de:</p>
 					<ol>
 						<li>La sintaxis de CSS.</li>
 						<li>Y su funcionamiento.</li>
 					</ol>
 					<p class="kolo">Con esto, podríamos empezar por ver un par de ejemplos y comprenderlos.</p><br>
-					<h3 class="blue-text text-darken-3 center">Ejemplos sencillos de CSS</h3>
+					<h3 class="texto-css texto-centro">Ejemplos sencillos de CSS</h3>
 					<p class="kolo">Ejemplo 1: <br> Cambiar los valores de atributos: color, fuente, y tamaño a un párrafo "&lt;p>" con etiqueta/elemento y "class":</p>
 					
-					<div class="col l6 left">
-						<pre><span class="red-text">p</span> <span class="white-text">{<br>color:</span><span class="red-text"> #F33333</span><span class="white-text">;<br>font-family:</span><span class="amber-text"> 'Orbitron'</span><span class="white-text">,</span><span class="cyan-text"> sans-serif</span><span class="white-text">;<br>font-size:</span><span class="cyan-text"> 15</span><span  class="red-text">pt</span><span class="white-text">;}</span> <br><span class="pre">/* Al usar el selector "p" en css, estamos "diciendo" que todas las &lt;p> de HTML, tendrán estos valores, lo cual puede que no nos interese, puede que solo queramos modificar unas pocas líneas de texto, como es el caso. Para ello habrá que darle una clase específica a la &lt;p> que queramos modificar.</span><span class="pre"> Le damos la clase al párrafo en HTML así: </span><span class="white-text">&lt;p class="ejCss"></span> <br><span class="pre">y en CSS indicamos con el punto por delante, el nombre que le hemos dado a esta clase, con el punto, css entiende, que lo que venga después será una clase*/</span><br></span><span class="lime-text">.ejCss</span> <span class="white-text">{<br>color:</span><span class="red-text"> #F33333</span><span class="white-text">;<br>font-family:</span><span class="amber-text"> 'Orbitron'</span><span class="white-text">,</span><span class="cyan-text"> sans-serif</span><span class="white-text">;<br>font-size:</span><span class="cyan-text"> 15</span><span  class="red-text">pt</span><span class="white-text">;}</span></pre>
+					<div class="celda flotar-izda">
+						<pre><span class="texto-html">p</span> <span class="texto-claro">{<br>color:</span><span class="texto-html"> #F33333</span><span class="texto-claro">;<br>font-family:</span><span class="texto-js"> 'Orbitron'</span><span class="texto-claro">,</span><span class="texto-acento"> sans-serif</span><span class="texto-claro">;<br>font-size:</span><span class="texto-acento"> 15</span><span  class="texto-html">pt</span><span class="texto-claro">;}</span> <br><span class="pre">/* Al usar el selector "p" en css, estamos "diciendo" que todas las &lt;p> de HTML, tendrán estos valores, lo cual puede que no nos interese, puede que solo queramos modificar unas pocas líneas de texto, como es el caso. Para ello habrá que darle una clase específica a la &lt;p> que queramos modificar.</span><span class="pre"> Le damos la clase al párrafo en HTML así: </span><span class="texto-claro">&lt;p class="ejCss"></span> <br><span class="pre">y en CSS indicamos con el punto por delante, el nombre que le hemos dado a esta clase, con el punto, css entiende, que lo que venga después será una clase*/</span><br></span><span class="texto-acento">.ejCss</span> <span class="texto-claro">{<br>color:</span><span class="texto-html"> #F33333</span><span class="texto-claro">;<br>font-family:</span><span class="texto-js"> 'Orbitron'</span><span class="texto-claro">,</span><span class="texto-acento"> sans-serif</span><span class="texto-claro">;<br>font-size:</span><span class="texto-acento"> 15</span><span  class="texto-html">pt</span><span class="texto-claro">;}</span></pre>
 					</div>
 					
-					<div class="col l6 right">
-						<pre class="white"><span class="black-text">-- <span class="subrr">Vista previa en el explorador</span><br></span><br><span class="black-text">→↓ Párrafo sin modificar ↓←</span><br><span class="grey-text text-darken-3">Soy un párrafo HTML y seré modificado por un archivo.css de modo externo.</span><br><br><span class="black-text">→↓ Mismo párrafo modificado ↓←</span><br><span class="ejCss">Soy el mismo párrafo HTML y he sido modificado por un archivo.css de modo externo.</span><br><br><span class="black-text">--</span></pre>
+					<div class="celda flotar-dcha">
+						<pre class="fondo-claro"><span class="texto-oscuro">-- <span class="subrr">Vista previa en el explorador</span><br></span><br><span class="texto-oscuro">→↓ Párrafo sin modificar ↓←</span><br><span class="texto-suave">Soy un párrafo HTML y seré modificado por un archivo.css de modo externo.</span><br><br><span class="texto-oscuro">→↓ Mismo párrafo modificado ↓←</span><br><span class="ejCss">Soy el mismo párrafo HTML y he sido modificado por un archivo.css de modo externo.</span><br><br><span class="texto-oscuro">--</span></pre>
 					</div>
 				</div>
 				
-				<div class="col s12 left">
+				<div class="flotar-izda">
 					<p>Prueba a cambiar los valores. Dale al "Run Pen" y accede a Codepen.io para poder modifcarlos.</p>
 					<p data-height="333" data-theme-id="dark" data-slug-hash="rQNmVL" data-default-tab="html,result" data-user="jBaton" data-pen-title="Ej. de CSS 1" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/jBaton/pen/rQNmVL/">Ej. de CSS 1</a> by jaronJabaton (<a href="https://codepen.io/jBaton">@jBaton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 					<p>También puedes copiar el código, crear y vincular tus archivos y probar en tu entorno de trabajo. <br> Para ello:</p>
 					
-					<div class="s4 m12 l12 center">
+					<div class="texto-centro">
 						<ul class="lista1">
-							<li>1 Crea un archivo HTML<img class="materialboxed" data-caption="Guardando un documento con formato html desde VsCode"	width="150" src="img/ej1css.jpg" alt="Imágen ejemplo creación de archivo HTML"></li>
-							<li>2 Indica la codificación<img class="materialboxed" data-caption="Indicamos la Codificación"	width="150" src="img/ej2css.jpg" alt="Imágen ejemplo codificando html"></li>
-							<li>3 Llama al archivo CSS<img class="materialboxed" data-caption="Creando el recorrido hasta nuestro archivo css"	width="150" src="img/ej3css.jpg" alt="Imágen ejemplo llamada a CSS"></li>
+							<li>1 Crea un archivo HTML<img class="ampliable" data-caption="Guardando un documento con formato html desde VsCode"	width="150" src="img/ej1css.jpg" alt="Imágen ejemplo creación de archivo HTML"></li>
+							<li>2 Indica la codificación<img class="ampliable" data-caption="Indicamos la Codificación"	width="150" src="img/ej2css.jpg" alt="Imágen ejemplo codificando html"></li>
+							<li>3 Llama al archivo CSS<img class="ampliable" data-caption="Creando el recorrido hasta nuestro archivo css"	width="150" src="img/ej3css.jpg" alt="Imágen ejemplo llamada a CSS"></li>
 						</ul>
 						<ul class="lista1">
-							<li>4 Crea tus elementos<img class="materialboxed" data-caption="Creando elementos para practicar CSS"	width="150" src="img/ej4css.jpg" alt="Imágen ejemplo creando elementos HTML"></li>
-							<li>5 Declara las clases en CSS<img class="materialboxed" data-caption="un . para clases y solo el nombre para elementos estándar de HTML"	width="150" src="img/ej5css.jpg" alt="Imágen ejemplo llamada a CSS"></li>
-							<li>6 Juega un rato<img class="materialboxed" data-caption="Recibe 2 ordenes, una general de la cajaParrafos y una más precisa ¿cuál?"	width="150" src="img/preguntacss.jpg" alt="Imágen ejercicio a resolver"></li>
+							<li>4 Crea tus elementos<img class="ampliable" data-caption="Creando elementos para practicar CSS"	width="150" src="img/ej4css.jpg" alt="Imágen ejemplo creando elementos HTML"></li>
+							<li>5 Declara las clases en CSS<img class="ampliable" data-caption="un . para clases y solo el nombre para elementos estándar de HTML"	width="150" src="img/ej5css.jpg" alt="Imágen ejemplo llamada a CSS"></li>
+							<li>6 Juega un rato<img class="ampliable" data-caption="Recibe 2 ordenes, una general de la cajaParrafos y una más precisa ¿cuál?"	width="150" src="img/preguntacss.jpg" alt="Imágen ejercicio a resolver"></li>
 						</ul>
 					</div>
 
 						<p>Como habrás visto, a cajaParrafos, le sigue con un espacio, una "p" en nuestro archivo.css:<br>
-						<span class="grey darken-4"><span class="lime-text text-accent-3">.cajaParrafos <span class="red-text">p</span></span><span class="white-text">{} </span></span>, esto le dice al interprete los valores que deben tener todos los párrafos que estén dentro del div con "class='cajaParrafos'". Pero por qué es verde y no cian? Prueba a escribir sin la etiqueta "p", dentro de cajaParrafos.., cualquier elemento que no sea un párrafo tendrá un color (<span class="cyan-text">cian</span>) Resumiendo <span class="subrr">Para indicar elementos que estén dentro de otros elementos, debemos usar un orden de jerarquía, este orden va de externo a interno (lectura HTML) y de izquierda a derecha separado por espacios (escritura CSS)</span></p>
-						<pre class="white-text">&lt;<span class="red-text">div</span> <span class="lime-text text-accent-3">class</span>=<span class="yellow-text text-lighten-2">"cajaParrafos"</span>><br>	&lt;<span class="red-text">p</span>>Párrafo &lt;<span class="red-text">span</span> <span class="lime-text text-accent-3">class</span>=<span class="yellow-text text-lighten-2">"num1"</span>>1&lt;/<span class="red-text">span</span>>&lt;/<span class="red-text">p</span>>				<span class="lime-text text-accent-3">.cajaParrafos</span> <span class="red-text">p</span> <span class="lime-text text-accent-3">.num1</span>{<span class="orange-text">color</span>:<span class="amber-text">gold</span>}<br>&lt;/<span class="red-text">div</span>></pre>
-						<p>No por saber esto te dediques a crear Sandwiches! Recurrir a ello está bien si no encuentras otro modo de acceder a algún elemento, pero seguro que encuentras formas más simples y con vistas al mantenimiento futuro.<img class="materialboxed" data-caption="El uno ahora es dorado"	width="150" src="img/ej6css.jpg" alt="Ejemplo modificación css">
+						<span class="fondo-oscuro"><span class="texto-acento">.cajaParrafos <span class="texto-html">p</span></span><span class="texto-claro">{} </span></span>, esto le dice al interprete los valores que deben tener todos los párrafos que estén dentro del div con "class='cajaParrafos'". Pero por qué es verde y no cian? Prueba a escribir sin la etiqueta "p", dentro de cajaParrafos.., cualquier elemento que no sea un párrafo tendrá un color (<span class="texto-acento">cian</span>) Resumiendo <span class="subrr">Para indicar elementos que estén dentro de otros elementos, debemos usar un orden de jerarquía, este orden va de externo a interno (lectura HTML) y de izquierda a derecha separado por espacios (escritura CSS)</span></p>
+						<pre class="texto-claro">&lt;<span class="texto-html">div</span> <span class="texto-acento">class</span>=<span class="texto-js">"cajaParrafos"</span>><br>	&lt;<span class="texto-html">p</span>>Párrafo &lt;<span class="texto-html">span</span> <span class="texto-acento">class</span>=<span class="texto-js">"num1"</span>>1&lt;/<span class="texto-html">span</span>>&lt;/<span class="texto-html">p</span>>				<span class="texto-acento">.cajaParrafos</span> <span class="texto-html">p</span> <span class="texto-acento">.num1</span>{<span class="texto-js">color</span>:<span class="texto-js">gold</span>}<br>&lt;/<span class="texto-html">div</span>></pre>
+						<p>No por saber esto te dediques a crear Sandwiches! Recurrir a ello está bien si no encuentras otro modo de acceder a algún elemento, pero seguro que encuentras formas más simples y con vistas al mantenimiento futuro.<img class="ampliable" data-caption="El uno ahora es dorado"	width="150" src="img/ej6css.jpg" alt="Ejemplo modificación css">
 						</p>
 
 				</div>
@@ -203,79 +202,76 @@
 	
 
 	<!-- Pié de página -->
-<footer class="page-footer black">
+<footer class="pie">
 		<!-- Ancla --> <a id="footer"></a>
 		<div class="container">				
-			<div class="row">
-				<div class="col l2 s12 center">
-					<p class="red-text center">Mapa del sitio</p><hr class="blue-text">
-						<a class="white-text html" href="html.html">HTML,</a>
-						<a class="white-text css" href="css.html">CSS,</a>
-						<a class="white-text js" href="js.html">JS,</a>
-						<a class="white-text resto" href="guias.html">Guías,</a>
-						<a class="white-text resto" href="relacionando.html">Relacionado.</a>
+			<div class="grid grid--compacta">
+				<div class="texto-centro">
+					<p class="texto-html texto-centro">Mapa del sitio</p><hr class="texto-css">
+						<a class="texto-claro html" href="html.html">HTML,</a>
+						<a class="texto-claro css" href="css.html">CSS,</a>
+						<a class="texto-claro js" href="js.html">JS,</a>
+						<a class="texto-claro resto" href="guias.html">Guías,</a>
+						<a class="texto-claro resto" href="relacionando.html">Relacionado.</a>
 				</div>					
-				<div class="col l2 s5 center">
-					<p class="blue-text center">Contacto</p>
-					<hr class="yellow-text">
+				<div class="texto-centro">
+					<p class="texto-css texto-centro">Contacto</p>
+					<hr class="texto-js">
 					<ul>
-						<li><a class="white-text css" href="#!">Link 1</a></li>
-						<li><a class="white-text css" href="#!">Link 2</a></li>
-						<li><a class="white-text css" href="#!">Link 3</a></li>
-						<li><a class="white-text css" href="#!">Link 4</a></li>
+						<li><a class="texto-claro css" href="#!">Link 1</a></li>
+						<li><a class="texto-claro css" href="#!">Link 2</a></li>
+						<li><a class="texto-claro css" href="#!">Link 3</a></li>
+						<li><a class="texto-claro css" href="#!">Link 4</a></li>
 					</ul>
 				</div>
-				<div class="col l2 s7 center">
-						<p class="yellow-text center">RRSS</p>
-						<hr class="deep-purple-text">
-							<a class="cyan-text js" href="https://twitter.com/sinarkista" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-3x"></i></a>
-							<a class="blue-text text-darken-3 js" href="https://www.facebook.com/facundohetoro" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f fa-3x"></i></a>
-							<a class="red-text js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube fa-3x"></i></a>
-							<a class="orange-text js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i aria-hidden="true" class="fab fa-soundcloud fa-3x"></i></a>
+				<div class="texto-centro">
+						<p class="texto-js texto-centro">RRSS</p>
+						<hr class="texto-php">
+							<a class="texto-acento js" href="https://twitter.com/sinarkista" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-3x"></i></a>
+							<a class="texto-css js" href="https://www.facebook.com/facundohetoro" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f fa-3x"></i></a>
+							<a class="texto-html js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube fa-3x"></i></a>
+							<a class="texto-js js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i aria-hidden="true" class="fab fa-soundcloud fa-3x"></i></a>
 					</div>
-					<div class="col l2 s12 center">
-							<p class="deep-purple-text center">Cookies</p>
-							<hr class="lime-text text-accent-3">
+					<div class="texto-centro">
+							<p class="texto-php texto-centro">Cookies</p>
+							<hr class="texto-acento">
 							<ul>
-								<li><a class="white-text php" href="#!">Cookie 1</a></li>
-								<li><a class="white-text php" href="#!">Cookie 2</a></li>
-								<li><a class="white-text php" href="#!">Cookie 3</a></li>
-								<li><a class="white-text php" href="#!">Cookie 4</a></li>
+								<li><a class="texto-claro php" href="#!">Cookie 1</a></li>
+								<li><a class="texto-claro php" href="#!">Cookie 2</a></li>
+								<li><a class="texto-claro php" href="#!">Cookie 3</a></li>
+								<li><a class="texto-claro php" href="#!">Cookie 4</a></li>
 							</ul>
 						</div>
-						<div class="col l2 s5 center">
-								<p class="lime-text text-accent-3 center">Fuentes</p>
+						<div class="texto-centro">
+								<p class="texto-acento texto-centro">Fuentes</p>
 								<hr class="resto">
 								<ul>
-									<li><a title="Google Developers" class="white-text nodeh" href="https://developers.google.com/products/" target="_blank" rel="noopener noreferrer">Google</a></li>
-									<li><a title="Microsoft Desarrolladores" class="white-text nodeh" href="https://msdn.microsoft.com/es-es" target="_blank" rel="noopener noreferrer">Microsoft</a></li>
-									<li><a title="Mozzila Developer" class="white-text nodeh" href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">Mozilla</a></li>
-									<li><a title="W3C Schools" class="white-text nodeh" href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Cs</a></li>
+									<li><a title="Google Developers" class="texto-claro nodeh" href="https://developers.google.com/products/" target="_blank" rel="noopener noreferrer">Google</a></li>
+									<li><a title="Microsoft Desarrolladores" class="texto-claro nodeh" href="https://msdn.microsoft.com/es-es" target="_blank" rel="noopener noreferrer">Microsoft</a></li>
+									<li><a title="Mozzila Developer" class="texto-claro nodeh" href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">Mozilla</a></li>
+									<li><a title="W3C Schools" class="texto-claro nodeh" href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Cs</a></li>
 								</ul>
 							</div>
-							<div class="col l2 s7 center">
-									<p class="center sidenav-trigger">Blogs</p>
-									<hr class="red-text text-accent-3">
+							<div class="texto-centro">
+									<p class="texto-centro menu-boton">Blogs</p>
+									<hr class="texto-html">
 									<ul>
-										<li><a title="César Jodra" class="white-text resto" href="https://cesarjodra.wordpress.com/" target="_blank" rel="noopener noreferrer">César Jodra</a></li>
-										<li><a title="Javier Gosende" class="white-text resto" href="https://www.javiergosende.com/" target="_blank" rel="noopener noreferrer">Javier Gosende</a></li>
-										<li><a title="Romuald Fons" class="white-text resto" href="https://romualdfons.com/que-es-el-seo/" target="_blank" rel="noopener noreferrer">Romuald Fons</a></li>
+										<li><a title="César Jodra" class="texto-claro resto" href="https://cesarjodra.wordpress.com/" target="_blank" rel="noopener noreferrer">César Jodra</a></li>
+										<li><a title="Javier Gosende" class="texto-claro resto" href="https://www.javiergosende.com/" target="_blank" rel="noopener noreferrer">Javier Gosende</a></li>
+										<li><a title="Romuald Fons" class="texto-claro resto" href="https://romualdfons.com/que-es-el-seo/" target="_blank" rel="noopener noreferrer">Romuald Fons</a></li>
 									</ul>
 								</div>
 		
-								<div class="col l12 s12 m12 reduce">
-									<p class="resenyas grey-text text-darken-2">Hecho con la ayuda de 
-										<a href="https://materializecss.com/about.html" target="_blank" rel="noopener noreferrer">
-											<img id="materializecss" class="responsive-img" data-hover-src="img/materialize-teal.png" src="img/materialize-grey.png" title="Materializecss" alt="Logo de Materializecss">
-										</a>
+								<div class="grid-completa reduce">
+									<p class="resenyas texto-suave">Hecho con la ayuda de 
 											<a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">
-												<img id="fonts" class="responsive-img" data-hover-src="img/gf1.png" src="img/gf.png" alt="Google Fonts" title="GoogleFonts">
+												<img id="fonts" data-hover-src="img/gf1.png" src="img/gf.png" alt="Google Fonts" title="GoogleFonts">
 											</a>
 										<a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">
-											<img id="fawesome" class="responsive-img" data-hover-src="img/fntaw1.png" src="img/fntaw.png" alt="FontAwesome" title="FontAwesome">
+											<img id="fawesome" data-hover-src="img/fntaw1.png" src="img/fntaw.png" alt="FontAwesome" title="FontAwesome">
 										</a>
 											<a href="https://material.io/tools/icons/?style=baseline" target="_blank" rel="noopener noreferrer">
-												<img id="mati" class="responsive-img" data-hover-src="img/mati1.png" src="img/mati.png" alt="MaterialIcons" title="MaterialIcons">
+												<img id="mati" data-hover-src="img/mati1.png" src="img/mati.png" alt="MaterialIcons" title="MaterialIcons">
 											</a>
 									</p>
 								</div>
@@ -286,8 +282,6 @@
 		
 </div>
 	<!--  Scripts-->
-	<script src="js/materialize.js"></script>
-	<script src="js/init.js"></script>
 	<script src="js/funk.js"></script>
 
 </body>

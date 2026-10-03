@@ -9,7 +9,6 @@
 
 	<!-- ↓ CSS  ↓ -->
 	<link href="css/fuentes.css" type="text/css" rel="stylesheet" />
-	<link href="css/materialize.min.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 
 	<!-- ↓ Favicons ↓ -->
@@ -27,78 +26,78 @@
 </head>
 
 <body>
-    <div class="" id="contenedor">
+    <div id="contenedor">
   <!-- Ancla --> <a id="anchorTarget"></a>
   <!-- Opciones menú H -->
       <div id="nav_dropdowns">
-        <ul id="dropdown3" class="dropdown-content">
-          <li><a class="center-align" href="html.html">Básico</a></li>
-          <li><a class="center-align" href="html5.html">HTML5</a></li>
-          <li><a class="center-align" href="fw-html.html">Útiles</a></li>
+        <ul id="dropdown3" class="desplegable">
+          <li><a class="texto-centro" href="html.html">Básico</a></li>
+          <li><a class="texto-centro" href="html5.html">HTML5</a></li>
+          <li><a class="texto-centro" href="fw-html.html">Útiles</a></li>
         </ul>
-        <ul id="dropdown2" class="dropdown-content">
-          <li><a class="center-align" href="#yaEstasAquí">Básico</a></li>
-          <li><a class="pendiente center-align" aria-disabled="true">CSS3</a></li>
-          <li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
+        <ul id="dropdown2" class="desplegable">
+          <li><a class="texto-centro" href="#yaEstasAquí">Básico</a></li>
+          <li><a class="pendiente texto-centro" aria-disabled="true">CSS3</a></li>
+          <li><a class="texto-centro" href="fw-css.html">FrameWorks</a></li>
         </ul>
-        <ul id="dropdown1" class="dropdown-content">
-          <li><a class="center-align" href="js.html">Báscio</a></li>
-          <li><a class="center-align" href="es6.html">ES6</a></li>
-          <li><a class="center-align" href="fw-js.html">FrameWorkss</a></li>
+        <ul id="dropdown1" class="desplegable">
+          <li><a class="texto-centro" href="js.html">Báscio</a></li>
+          <li><a class="texto-centro" href="es6.html">ES6</a></li>
+          <li><a class="texto-centro" href="fw-js.html">FrameWorkss</a></li>
         </ul>
       </div>
   <!-- Opciones menú H -->
   <!-- Navegador Horizontal -->
   <header>
-    <nav class="white">
-      <div class="nav-wrapper container">
-        <ul class="right hide-on-med-and-down">
-          <li><a class="dropdown-trigger html" href="javascript:void(0);" data-target="dropdown3">HTML</a></li>
-          <li><a class="dropdown-trigger css" href="javascript:void(0);" data-target="dropdown2">CSS</a></li>
-          <li><a class="dropdown-trigger js" href="javascript:void(0);" data-target="dropdown1">JavaScript</a></li>
+    <nav>
+      <div class="barra container">
+        <ul class="solo-escritorio">
+          <li><a class="desplegable-boton html" href="javascript:void(0);" data-target="dropdown3">HTML</a></li>
+          <li><a class="desplegable-boton css" href="javascript:void(0);" data-target="dropdown2">CSS</a></li>
+          <li><a class="desplegable-boton js" href="javascript:void(0);" data-target="dropdown1">JavaScript</a></li>
           <li><a title="Guías según lenguaje" class="resto" href="guias.html">Guías</a></li>
           <li><a class="resto" href="relacionando.html">Relacionado</a></li>
         </ul>
-        <a href="javascript:void(0);" class="sidenav-trigger" data-target="menu-lateral" aria-label="Abrir menú"><i aria-hidden="true" class="material-icons">menu</i></a>
+        <a href="javascript:void(0);" class="menu-boton" data-target="menu-lateral" aria-label="Abrir menú"><i aria-hidden="true" class="material-icons">menu</i></a>
   
   <!-- Logo -->
         <div id="logo">
-          <a class="tooltipped" data-position="left" data-tooltip="Click! => Inicio" href="index.html">
-            <img src="img/fav1.png" class="responsive-img" alt="Logo">
+          <a data-position="left" data-tooltip="Click! => Inicio" href="index.html">
+            <img src="img/fav1.png" alt="Logo">
           </a>
         </div>
   <!-- Fin Logo -->
   
   <!-- nav movil -->
-        <ul id="menu-lateral" class="sidenav purpur">
+        <ul id="menu-lateral" class="menu-lateral purpur">
           <li>
-            <div class="user-view">
-              <a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons grey-text text-lighten-2">home</i></a>
-              <div class="background">
+            <div class="menu-lateral-cabecera">
+              <a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons texto-suave">home</i></a>
+              <div class="menu-lateral-fondo">
                 <img src="img/dedojpeg.jpg" alt="Fondo menú móvil">
               </div>
             </div>
           </li>
           <li>
-            <a href="html.html" class="red-text text-accent-4 html"><i aria-hidden="true" class="material-icons red-text text-accent-4 html">check_box_outline_blank</i>HTML</a>
+            <a href="html.html" class="texto-html html"><i aria-hidden="true" class="material-icons texto-html html">check_box_outline_blank</i>HTML</a>
           </li>
           <li>
-            <a href="css.html" class="blue-text text-accent-4 css"><i aria-hidden="true" class="material-icons blue-text text-accent-4">check_box</i>CSS</a>
+            <a href="css.html" class="texto-css css"><i aria-hidden="true" class="material-icons texto-css">check_box</i>CSS</a>
           </li>
           <li>
-            <a href="js.html" class="amber-text text-accent-4 js"><i aria-hidden="true" class="material-icons amber-text text-accent-4">check_box_outline_blank</i>JavaScript</a>
+            <a href="js.html" class="texto-js js"><i aria-hidden="true" class="material-icons texto-js">check_box_outline_blank</i>JavaScript</a>
           </li>
           <li>
-            <a href="guias.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Guías</a>
+            <a href="guias.html" class="texto-acento resto"><i aria-hidden="true" class="material-icons texto-acento">check_box_outline_blank</i>Guías</a>
           </li>
           <li>
-            <a href="relacionando.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Relacionado</a>
+            <a href="relacionando.html" class="texto-acento resto"><i aria-hidden="true" class="material-icons texto-acento">check_box_outline_blank</i>Relacionado</a>
           </li>
           <li>
-            <a aria-disabled="true" class="pendiente cyan-text text-accent-4 resto"><i aria-hidden="true" class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>¿Cuánto sabes?</a>
+            <a aria-disabled="true" class="pendiente texto-acento resto"><i aria-hidden="true" class="material-icons texto-acento">check_box_outline_blank</i>¿Cuánto sabes?</a>
           </li>
           <li>
-            <a href="contacto.html" class="indigo-text text-lighten-2"><i aria-hidden="true" class="fab fa-telegram indigo-text text-lighten-2"></i>Contacta</a>
+            <a href="contacto.html" class="texto-css"><i aria-hidden="true" class="fab fa-telegram texto-css"></i>Contacta</a>
           </li>
         </ul>
   <!-- Fin nav movil -->
@@ -108,34 +107,34 @@
   </header>
   
   <!-- Fixed bton -->
-    <div class="fixed-action-btn">
-      <a class="btn-floating btn-large resto"><i aria-hidden="true" class="fas fa-cog fa-spin"></i></a>
+    <div class="botonera-flotante">
+      <a class="btn btn--redondo btn--grande resto"><i aria-hidden="true" class="fas fa-cog fa-spin"></i></a>
       <ul>
-        <li><a class="btn-floating resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
-        <li><a class="btn-floating resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
+        <li><a class="btn btn--redondo resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
+        <li><a class="btn btn--redondo resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
       </ul>
     </div>
   <!-- Fin Fixed bton -->
   
   <!-- Parallax CSS -->
-    <div id="index-banner" class="parallax-container">
-      <div class="section no-pad-bot">
-        <div class="container center">
+    <div id="index-banner" class="banner">
+      <div class="section">
+        <div class="container texto-centro">
   
-          <div class="col s12 m10 l12">				
-            <h1 class="titulos resalto center blue-text text-accent-4">Formulario de contacto</h1><br><br><br><br>
-            <h2 class="resalto col s12 blue-text text-accent-2">Consejos, críticas y saludos.</h2>
+          <div>				
+            <h1 class="titulos resalto texto-centro texto-css">Formulario de contacto</h1><br><br><br><br>
+            <h2 class="resalto texto-css">Consejos, críticas y saludos.</h2>
           </div>
           <br><br><br><br><br><br><br>
   
-          <div class="right afuera">
-            <a href="https://www.pexels.com/photo/water-blue-ocean-dark-blue-37487/" target="_blank" rel="noopener noreferrer" class="blue-text text-lighten-4">Pexel por</a><a  href="https://www.pexels.com/@lisha-riabinina-5175" target="_blank" rel="noopener noreferrer" class="blue-text text-lighten-2">@LishaRiabinina</a>
+          <div class="flotar-dcha afuera">
+            <a href="https://www.pexels.com/photo/water-blue-ocean-dark-blue-37487/" target="_blank" rel="noopener noreferrer" class="texto-css">Pexel por</a><a  href="https://www.pexels.com/@lisha-riabinina-5175" target="_blank" rel="noopener noreferrer" class="texto-css">@LishaRiabinina</a>
           </div>
   
         </div>
       </div>
   
-      <div class="parallax">
+      <div class="banner-imagen">
         <img src="img/css_watter.jpg" title="Max DeRoin" alt="Imágen agua de mar">
       </div>
     </div>
@@ -143,8 +142,8 @@
 <!-- Formulario -->
     <div class="container">
       <section class="section">
-        <div class="row">
-          <div class="col s5">
+        <div>
+          <div>
          form 
         </div>
         </div>  
@@ -153,79 +152,76 @@
 <!-- Fin Formulario -->  
   
 <!-- Pié de página -->
-  <footer class="page-footer black">
+  <footer class="pie">
       <!-- Ancla --> <a id="footer"></a>
       <div class="container">				
-        <div class="row">
-          <div class="col l2 s12 center">
-            <p class="red-text center">Mapa del sitio</p><hr class="blue-text">
-              <a class="white-text html" href="html.html">HTML,</a>
-              <a class="white-text css" href="css.html">CSS,</a>
-              <a class="white-text js" href="js.html">JS,</a>
-              <a class="white-text resto" href="guias.html">Guías,</a>
-              <a class="white-text resto" href="relacionando.html">Relacionado.</a>
+        <div class="grid grid--compacta">
+          <div class="texto-centro">
+            <p class="texto-html texto-centro">Mapa del sitio</p><hr class="texto-css">
+              <a class="texto-claro html" href="html.html">HTML,</a>
+              <a class="texto-claro css" href="css.html">CSS,</a>
+              <a class="texto-claro js" href="js.html">JS,</a>
+              <a class="texto-claro resto" href="guias.html">Guías,</a>
+              <a class="texto-claro resto" href="relacionando.html">Relacionado.</a>
           </div>					
-          <div class="col l2 s5 center">
-            <p class="blue-text center">Contacto</p>
-            <hr class="yellow-text">
+          <div class="texto-centro">
+            <p class="texto-css texto-centro">Contacto</p>
+            <hr class="texto-js">
             <ul>
-              <li><a class="white-text css" href="#!">Link 1</a></li>
-              <li><a class="white-text css" href="#!">Link 2</a></li>
-              <li><a class="white-text css" href="#!">Link 3</a></li>
-              <li><a class="white-text css" href="#!">Link 4</a></li>
+              <li><a class="texto-claro css" href="#!">Link 1</a></li>
+              <li><a class="texto-claro css" href="#!">Link 2</a></li>
+              <li><a class="texto-claro css" href="#!">Link 3</a></li>
+              <li><a class="texto-claro css" href="#!">Link 4</a></li>
             </ul>
           </div>
-          <div class="col l2 s7 center">
-              <p class="yellow-text center">RRSS</p>
-              <hr class="deep-purple-text">
-                <a class="cyan-text js" href="https://twitter.com/sinarkista" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-3x"></i></a>
-                <a class="blue-text text-darken-3 js" href="https://www.facebook.com/facundohetoro" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f fa-3x"></i></a>
-                <a class="red-text js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube fa-3x"></i></a>
-                <a class="orange-text js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i aria-hidden="true" class="fab fa-soundcloud fa-3x"></i></a>
+          <div class="texto-centro">
+              <p class="texto-js texto-centro">RRSS</p>
+              <hr class="texto-php">
+                <a class="texto-acento js" href="https://twitter.com/sinarkista" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-3x"></i></a>
+                <a class="texto-css js" href="https://www.facebook.com/facundohetoro" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f fa-3x"></i></a>
+                <a class="texto-html js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube fa-3x"></i></a>
+                <a class="texto-js js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i aria-hidden="true" class="fab fa-soundcloud fa-3x"></i></a>
             </div>
-            <div class="col l2 s12 center">
-                <p class="deep-purple-text center">Cookies</p>
-                <hr class="lime-text text-accent-3">
+            <div class="texto-centro">
+                <p class="texto-php texto-centro">Cookies</p>
+                <hr class="texto-acento">
                 <ul>
-                  <li><a class="white-text php" href="#!">Cookie 1</a></li>
-                  <li><a class="white-text php" href="#!">Cookie 2</a></li>
-                  <li><a class="white-text php" href="#!">Cookie 3</a></li>
-                  <li><a class="white-text php" href="#!">Cookie 4</a></li>
+                  <li><a class="texto-claro php" href="#!">Cookie 1</a></li>
+                  <li><a class="texto-claro php" href="#!">Cookie 2</a></li>
+                  <li><a class="texto-claro php" href="#!">Cookie 3</a></li>
+                  <li><a class="texto-claro php" href="#!">Cookie 4</a></li>
                 </ul>
               </div>
-              <div class="col l2 s5 center">
-                  <p class="lime-text text-accent-3 center">Fuentes</p>
+              <div class="texto-centro">
+                  <p class="texto-acento texto-centro">Fuentes</p>
                   <hr class="resto">
                   <ul>
-                    <li><a title="Google Developers" class="white-text nodeh" href="https://developers.google.com/products/" target="_blank" rel="noopener noreferrer">Google</a></li>
-                    <li><a title="Microsoft Desarrolladores" class="white-text nodeh" href="https://msdn.microsoft.com/es-es" target="_blank" rel="noopener noreferrer">Microsoft</a></li>
-                    <li><a title="Mozzila Developer" class="white-text nodeh" href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">Mozilla</a></li>
-                    <li><a title="W3C Schools" class="white-text nodeh" href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Cs</a></li>
+                    <li><a title="Google Developers" class="texto-claro nodeh" href="https://developers.google.com/products/" target="_blank" rel="noopener noreferrer">Google</a></li>
+                    <li><a title="Microsoft Desarrolladores" class="texto-claro nodeh" href="https://msdn.microsoft.com/es-es" target="_blank" rel="noopener noreferrer">Microsoft</a></li>
+                    <li><a title="Mozzila Developer" class="texto-claro nodeh" href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">Mozilla</a></li>
+                    <li><a title="W3C Schools" class="texto-claro nodeh" href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Cs</a></li>
                   </ul>
                 </div>
-                <div class="col l2 s7 center">
-                    <p class="center sidenav-trigger">Blogs</p>
-                    <hr class="red-text text-accent-3">
+                <div class="texto-centro">
+                    <p class="texto-centro menu-boton">Blogs</p>
+                    <hr class="texto-html">
                     <ul>
-                      <li><a title="César Jodra" class="white-text resto" href="https://cesarjodra.wordpress.com/" target="_blank" rel="noopener noreferrer">César Jodra</a></li>
-                      <li><a title="Javier Gosende" class="white-text resto" href="https://www.javiergosende.com/" target="_blank" rel="noopener noreferrer">Javier Gosende</a></li>
-                      <li><a title="Romuald Fons" class="white-text resto" href="https://romualdfons.com/que-es-el-seo/" target="_blank" rel="noopener noreferrer">Romuald Fons</a></li>
+                      <li><a title="César Jodra" class="texto-claro resto" href="https://cesarjodra.wordpress.com/" target="_blank" rel="noopener noreferrer">César Jodra</a></li>
+                      <li><a title="Javier Gosende" class="texto-claro resto" href="https://www.javiergosende.com/" target="_blank" rel="noopener noreferrer">Javier Gosende</a></li>
+                      <li><a title="Romuald Fons" class="texto-claro resto" href="https://romualdfons.com/que-es-el-seo/" target="_blank" rel="noopener noreferrer">Romuald Fons</a></li>
                     </ul>
                   </div>
       
-                  <div class="col l12 s12 m12 reduce">
-                    <p class="resenyas grey-text text-darken-2">Hecho con la ayuda de 
-                      <a href="https://materializecss.com/about.html" target="_blank" rel="noopener noreferrer">
-                        <img id="materializecss" class="responsive-img" data-hover-src="img/materialize-teal.png" src="img/materialize-grey.png" title="Materializecss" alt="Logo de Materializecss">
-                      </a>
+                  <div class="grid-completa reduce">
+                    <p class="resenyas texto-suave">Hecho con la ayuda de 
                         <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">
-                          <img id="fonts" class="responsive-img" data-hover-src="img/gf1.png" src="img/gf.png" alt="Google Fonts" title="GoogleFonts">
+                          <img id="fonts" data-hover-src="img/gf1.png" src="img/gf.png" alt="Google Fonts" title="GoogleFonts">
                         </a>
                       <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">
-                        <img id="fawesome" class="responsive-img" data-hover-src="img/fntaw1.png" src="img/fntaw.png" alt="FontAwesome" title="FontAwesome">
+                        <img id="fawesome" data-hover-src="img/fntaw1.png" src="img/fntaw.png" alt="FontAwesome" title="FontAwesome">
                       </a>
                         <a href="https://material.io/tools/icons/?style=baseline" target="_blank" rel="noopener noreferrer">
-                          <img id="mati" class="responsive-img" data-hover-src="img/mati1.png" src="img/mati.png" alt="MaterialIcons" title="MaterialIcons">
+                          <img id="mati" data-hover-src="img/mati1.png" src="img/mati.png" alt="MaterialIcons" title="MaterialIcons">
                         </a>
                     </p>
                   </div>
@@ -236,8 +232,6 @@
       
   </div>
     <!--  Scripts-->
-    <script src="js/materialize.min.js"></script>
-    <script src="js/init.js"></script>
     <script src="js/funk.js"></script>
   
   </body>

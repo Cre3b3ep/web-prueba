@@ -1,19 +1,20 @@
 /*
  * style.css — hoja maestra del sitio (CSS puro, sin librerías).
  *
- * Orden de prioridad (de menos a más):
- *   @layer reset → base → layout → componentes → utilidades → (reglas sin capa)
+ * PARA JUGAR CON EL DISEÑO: casi todo sale de las variables de :root.
+ * Cambia un color, una fuente o un espaciado ahí y se aplica en todo el
+ * sitio. Las "zonas oscuras" (pie, banners, menú lateral, bloques de
+ * código) redefinen algunos colores para que se lean sobre fondo oscuro.
  *
- * Por qué capas: cualquier regla SIN capa gana a cualquier regla CON capa,
- * sea cual sea su especificidad. Mientras Materialize siga cargado en las
- * páginas antiguas (es CSS sin capa) gana él, y estas reglas sólo se aplican
- * donde Materialize no dice nada. Cuando se quite Materialize, las capas
- * pasan a mandar sin tener que reescribir nada.
- *
- * Las reglas del final ("Legado") siguen sin capa a propósito: hoy pelean
- * contra Materialize y tienen que seguir ganando hasta que desaparezca.
+ * Orden de prioridad (de menos a más), gracias a @layer:
+ *   reset → base → layout → sitio → componentes → utilidades
+ * Una capa posterior gana siempre a una anterior, sea cual sea la
+ * especificidad del selector. Por eso no hace falta ningún !important.
+ *   - sitio: reglas propias de las páginas (títulos, efectos, diario...)
+ *   - componentes: piezas reutilizables (.btn, .card, menú, pie...)
+ *   - utilidades: .texto-* y .fondo-*, que ganan a todo lo anterior
  */
-@layer reset, base, layout, componentes, utilidades;
+@layer reset, base, layout, sitio, componentes, utilidades;
 
 
 /* =========================================================================
@@ -27,29 +28,34 @@
   --color-acento-fondo: #48beb3;
   --color-acento-tenue: rgba(25, 148, 136, .082);
 
-  /* --- Un color por lenguaje (menú, pie, títulos) */
-  --color-html: #e53935;
+  /* --- Un color por lenguaje, para texto sobre fondo claro */
+  --color-html: #d32f2f;
+  --color-css: #1565c0;
+  --color-js: #b8860b;
+  --color-php: #6a1b9a;
+  /* ...y para fondos (botones, hover del menú) */
   --color-html-fondo: #d11800;
-  --color-css: #2979ff;
   --color-css-fondo: #110766;
-  --color-js: #ffc400;
   --color-js-fondo: #ffd900;
-  --color-morado: #4a0080;
-  --color-morado-vivo: #661fff;
+  --color-php-fondo: #4a0080;
   --color-lima: #68cf00;
 
   /* --- Neutros */
   --color-texto: #212121;
   --color-texto-suave: #616161;
   --color-texto-claro: #fff;
+  --color-texto-oscuro: #000;
   --color-fondo: #fff;
   --color-fondo-oscuro: #000;
-  --color-fondo-plano: #1c2331;        /* parallax sin foto */
+  --color-fondo-plano: #1c2331;        /* banner sin foto */
   --color-fondo-menu: hsla(322, 54%, 7%, .8);
   --color-borde: rgba(0, 0, 0, .1);
   --color-tinte: hsla(54, 100%, 100%, .224);       /* fondo general */
   --color-tinte-activo: hsla(54, 100%, 50%, .224); /* fondo general al pasar */
+  --color-tinte-tableta: rgba(255, 229, 0, .333);
+  --color-tinte-movil: rgba(255, 229, 0, .666);
   --color-resaltado: #ffd900;
+  --color-cita: #4a0080;
 
   /* --- Código */
   --color-codigo-fondo: rgb(13, 14, 15);
@@ -83,11 +89,16 @@
   --esp-7: 4rem;
 
   /* --- Layout */
-  --ancho-max: 75rem;
+  --ancho-max: 60rem;
   --ancho-texto: 70ch;
   --margen-lateral: clamp(1rem, 4vw, 2rem);
   --grid-min: 16rem;  /* ancho mínimo de una columna en .grid */
   --grid-hueco: var(--esp-4);
+  --alto-barra: 4rem;
+  --alto-banner: 35rem;
+  --ancho-menu-lateral: 18.75rem;
+  --punto-tableta: 48rem;    /* sólo como referencia: las @media no leen variables */
+  --punto-escritorio: 62rem;
 
   /* --- Bordes y sombras */
   --radio-s: .2rem;
@@ -103,9 +114,26 @@
   --transicion-lenta: 1.33s ease-in-out;
 
   /* --- Capas (z-index) */
+  --z-banner: 1;
   --z-menu: 100;
   --z-flotante: 200;
+  --z-tooltip: 300;
   --z-dialogo: 1000;
+}
+
+/* Zonas oscuras: los mismos nombres, valores que se leen sobre negro.
+   Las clases .texto-* usan estas variables, así que se adaptan solas. */
+.pie,
+.banner,
+.menu-lateral,
+.fondo-oscuro,
+pre {
+  --color-html: #ff5252;
+  --color-css: #448aff;
+  --color-js: #ffd740;
+  --color-php: #b388ff;
+  --color-acento: #4dd0c4;
+  --color-texto-suave: #bdbdbd;
 }
 
 
@@ -222,12 +250,18 @@
 
   a {
     color: var(--color-acento);
-    text-decoration-thickness: 1px;
-    text-underline-offset: .15em;
+    text-decoration: none;
     transition: color var(--transicion-rapida), background-color var(--transicion-rapida);
   }
   a:hover {
     color: var(--color-texto);
+  }
+  /* Los enlaces dentro del texto, subrayados: no sólo el color los distingue */
+  p a,
+  li a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .15em;
   }
   a:focus-visible,
   button:focus-visible {
@@ -236,8 +270,8 @@
   }
 
   blockquote {
-    border-left: 4px solid var(--color-morado);
-    color: var(--color-morado);
+    border-left: 4px solid var(--color-cita);
+    color: var(--color-cita);
     font-style: italic;
     padding-left: var(--esp-4);
   }
@@ -282,6 +316,12 @@
    Layout: contenedor, rejilla y secciones
    ========================================================================= */
 @layer layout {
+  /* flow-root: contiene los .flotar-* de dentro (lo que hacía .row en Materialize) */
+  .container,
+  .section {
+    display: flow-root;
+  }
+
   .container {
     margin-inline: auto;
     width: min(100% - 2 * var(--margen-lateral), var(--ancho-max));
@@ -291,7 +331,7 @@
   }
 
   .section {
-    padding-block: var(--esp-5);
+    padding-block: var(--esp-4);
   }
 
   /*
@@ -304,12 +344,40 @@
     gap: var(--grid-hueco);
     grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min), 100%), 1fr));
   }
+  /* Columnas estrechas (pie): caben 2 en móvil, 5-6 en escritorio */
+  .grid--compacta {
+    --grid-min: 9rem;
+    --grid-hueco: var(--esp-3);
+  }
 
   /* Número fijo de columnas a partir de tableta (en móvil, una) */
   @media (min-width: 48rem) {
     .grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    /* Proporciones a medida en el propio HTML: style="--columnas: 2fr 1fr 1fr" */
+    .grid--a-medida { grid-template-columns: var(--columnas, 1fr); }
+  }
+
+  /* Rejilla con contenido suelto (títulos, párrafos) entre las columnas:
+     sólo las .celda son columnas, el resto ocupa la fila entera */
+  .grid--mixta > :not(.celda) {
+    grid-column: 1 / -1;
+  }
+
+  /* Rejilla de 12 pistas para composiciones irregulares (4+8, 3+9...).
+     Cada .celda dice cuántas ocupa en el HTML: style="--span: 4".
+     En móvil, todo a una columna. */
+  .grid--12 > * {
+    grid-column: 1 / -1;
+  }
+  @media (min-width: 48rem) {
+    .grid--12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+    .grid--12 > .celda {
+      grid-column: span var(--span, 12);
+    }
   }
 
   /* Un hijo que ocupa toda la fila de la rejilla */
@@ -323,6 +391,262 @@
     display: flex;
     flex-wrap: wrap;
     gap: var(--esp-3);
+  }
+
+  .flotar-dcha { float: right; }
+  .flotar-izda { float: left; }
+
+  /* Sólo en escritorio (el menú horizontal); en móvil va el lateral */
+  .solo-escritorio {
+    display: none;
+  }
+  @media (min-width: 62rem) {
+    .solo-escritorio {
+      display: flex;
+    }
+  }
+}
+
+
+/* =========================================================================
+   Sitio: reglas propias de las páginas
+   ========================================================================= */
+@layer sitio {
+  /* Enlaces a páginas que todavía no existen: se ven, pero no llevan a un 404 */
+  a.pendiente,
+  a.pendiente:hover {
+    cursor: not-allowed;
+    opacity: .55;
+  }
+
+  blockquote,
+  cite,
+  figcaption,
+  h1, h2, h3, h4, h5, h6,
+  li,
+  p,
+  pre {
+    cursor: default;
+  }
+
+  #contenedor {
+    background-color: var(--color-tinte);
+    min-height: 100%;
+    transition: var(--transicion-lenta);
+  }
+  #contenedor:hover {
+    background-color: var(--color-tinte-activo);
+  }
+  @media (min-width: 413px) and (max-width: 794px) {
+    #contenedor {
+      background-color: var(--color-tinte-tableta);
+      transition: all 2s ease-in-out;
+    }
+  }
+  @media (max-width: 413px) {
+    #contenedor {
+      background-color: var(--color-tinte-movil);
+      transition: all 2s ease-in-out;
+    }
+    .titulos,
+    h2 {
+      text-align: left;
+    }
+  }
+
+  .resto {
+    color: var(--color-acento-suave);
+  }
+  .nodeh:hover {
+    background-color: var(--color-lima);
+  }
+
+  #google_translate_element {
+    z-index: 99999;
+  }
+
+  #logo {
+    perspective: 100px;
+  }
+  #logo img {
+    height: calc(var(--alto-barra) - var(--esp-4));
+    transform: rotateX(33deg);
+    transform-style: preserve-3d;
+    width: auto;
+  }
+
+  .lista1 li {
+    display: inline-block;
+    padding: 0 11px;
+  }
+  .afuera i {
+    display: none;
+  }
+  .afuera:hover i {
+    display: inline;
+  }
+  .aportaciones::before {
+    content: open-quote;
+  }
+  .aportaciones::after {
+    content: close-quote;
+  }
+  .aportaciones {
+    font-size: 90%;
+    font-style: oblique;
+  }
+  .deco {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+  }
+  .ejCss {
+    color: #f33333;
+    font-family: var(--fuente-tecnica);
+    font-size: 15pt;
+  }
+  .icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+    font-size: inherit;
+  }
+  .fondo_tit {
+    background-color: hsla(51, 66%, 6%, .111);
+    border-radius: 3px;
+  }
+  .kolo::first-letter {
+    font-size: 33pt;
+  }
+  .mainontaOikealla {
+    padding: 1.3%;
+  }
+  .oculto {
+    visibility: hidden;
+  }
+  .pieInvisible {
+    color: transparent;
+    transition: all 1s ease-in-out;
+  }
+  .pieInvisible:hover {
+    color: var(--color-texto-oscuro);
+  }
+  .purpur {
+    background-color: var(--color-fondo-menu);
+  }
+  .pre {
+    color: var(--color-codigo-texto);
+  }
+  .pKlein {
+    cursor: default;
+    font-family: var(--fuente-display);
+    font-size: 10pt;
+    overflow-wrap: break-word;
+  }
+  .reduce img {
+    max-width: 7%;
+  }
+  .resenyas {
+    font-family: var(--fuente-tecnica);
+    font-size: 69%;
+  }
+  .resalto {
+    text-shadow: var(--sombra-texto);
+  }
+  .resalte {
+    background-color: var(--color-acento-tenue);
+  }
+  .subrr {
+    background-color: var(--color-resaltado);
+  }
+  .sombraBtns {
+    text-shadow: #000 .4px .6px .4px;
+  }
+  .titSemantik {
+    font-size: 1.3em;
+    font-style: italic;
+  }
+  .valor {
+    color: var(--color-acento);
+  }
+  .yaen {
+    background-color: var(--color-acento-fondo);
+  }
+
+  /* --- Diario e IA (páginas con el layout compartido) */
+  #contenido {
+    min-height: 60vh;
+  }
+  .lista-entradas {
+    list-style: none;
+    padding: 0;
+  }
+  .lista-entradas li {
+    border-bottom: 1px solid var(--color-borde);
+    padding: .8rem 0;
+  }
+  .lista-entradas a {
+    text-decoration: none;
+  }
+  .lista-entradas time,
+  .entrada-meta time {
+    color: var(--color-texto-suave);
+    font-size: .9em;
+    margin-right: .6rem;
+  }
+  .entrada-migas a,
+  .entrada-meta a {
+    text-decoration: underline;
+  }
+  .entrada-cuerpo p {
+    text-align: left;
+  }
+  .entrada-cuerpo pre {
+    overflow-x: auto;
+  }
+  .entrada-cuerpo ul {
+    padding-left: 1.5rem;
+  }
+  .entrada .chip {
+    margin: 0 .3rem 0 0;
+  }
+  .grupo-etiqueta {
+    scroll-margin-top: 2rem;
+  }
+  .aviso-borrador {
+    background: #fff3cd;
+    border-left: 4px solid #b58100;
+    color: #3d2c00;
+    padding: .6rem 1rem;
+  }
+  /* Código en línea distinguible del texto */
+  .entrada-cuerpo :not(pre) > code {
+    background: var(--color-codigo-linea-fondo);
+    border-radius: var(--radio-s);
+    color: var(--color-codigo-linea-texto);
+    padding: .05rem .3rem;
+  }
+  /* Autoría: persona o IA, siempre visible */
+  .autor {
+    border-radius: 1rem;
+    font-size: .8em;
+    padding: .1rem .6rem;
+    white-space: nowrap;
+  }
+  .autor-jbaton {
+    background: #e0f2f1;
+    color: #00574b;
+  }
+  .autor-claude {
+    background: #ede7f6;
+    color: #3f1d8a;
+  }
+  .autoria-claude .entrada-cuerpo {
+    border-left: 4px solid #b39ddb;
+    padding-left: 1rem;
+  }
+  .firma {
+    font-style: italic;
+    text-align: right;
   }
 }
 
@@ -349,17 +673,22 @@
     padding: var(--esp-2) var(--esp-4);
     text-decoration: none;
     text-transform: uppercase;
-    transition: background-color var(--transicion-rapida), box-shadow var(--transicion-rapida);
+    transition: filter var(--transicion-rapida), box-shadow var(--transicion-rapida);
   }
+  /* Aclarar en vez de cambiar de color: vale para cualquier .fondo-* */
   .btn:hover {
-    background-color: var(--color-acento);
     box-shadow: var(--sombra-2);
-    color: var(--color-texto-claro);
+    filter: brightness(1.12);
   }
   .btn--grande {
     font-size: var(--texto-l);
     min-height: 3.375rem;
     padding-inline: var(--esp-5);
+  }
+  .btn--pequeno {
+    font-size: var(--texto-s);
+    min-height: 2rem;
+    padding-inline: var(--esp-3);
   }
   /* Botón redondo de sólo icono (lleva aria-label) */
   .btn--redondo {
@@ -380,6 +709,9 @@
     box-shadow: var(--sombra-1);
     margin-block-end: var(--esp-3);
     overflow: hidden;
+  }
+  .card > pre {
+    margin: 0;
   }
   .card-contenido {
     padding: var(--esp-4);
@@ -411,28 +743,317 @@
     padding-inline: var(--esp-3);
   }
 
-  /* --- Imagen ampliable (el zoom con <dialog> llega en la fase 3) */
+  /* --- Iconos */
+  .icono-pequeno { font-size: 1rem; }
+  .icono-grande { font-size: 4rem; }
+
+  /* --- Barra de navegación */
+  header nav {
+    background-color: var(--color-fondo);
+    box-shadow: var(--sombra-1);
+    position: relative;
+    z-index: var(--z-menu);
+  }
+  .barra {
+    align-items: center;
+    display: flex;
+    gap: var(--esp-3);
+    min-height: var(--alto-barra);
+  }
+  .barra #logo {
+    margin-right: auto;
+    order: -1;
+  }
+  .barra a,
+  .desplegable a,
+  .menu-lateral a,
+  .botonera-flotante a {
+    text-decoration: none;
+  }
+  .barra ul {
+    list-style: none;
+    padding: 0;
+  }
+  .barra > ul {
+    gap: var(--esp-1);
+    margin: 0;
+  }
+  .barra > ul a {
+    display: block;
+    padding: var(--esp-2) var(--esp-3);
+  }
+  .barra .menu-boton {
+    color: var(--color-acento-claro);
+    display: inline-flex;
+  }
+  @media (min-width: 62rem) {
+    .barra .menu-boton {
+      display: none;
+    }
+  }
+
+  /* --- Desplegables del menú (los abre js/ui.js poniendo data-abierto) */
+  .desplegable {
+    background-color: var(--color-fondo);
+    box-shadow: var(--sombra-2);
+    display: none;
+    list-style: none;
+    margin: 0;
+    min-width: 10rem;
+    padding: 0;
+    position: absolute;
+    z-index: var(--z-menu);
+  }
+  .desplegable[data-abierto] {
+    display: block;
+  }
+  .desplegable a {
+    display: block;
+    padding: var(--esp-3) var(--esp-4);
+  }
+
+  /* --- Menú lateral para móvil (lo abre js/ui.js poniendo data-abierto) */
+  .menu-lateral {
+    background-color: var(--color-fondo-menu);
+    box-shadow: var(--sombra-2);
+    height: 100dvh;
+    inset-block: 0;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    overflow-y: auto;
+    padding: 0 0 var(--esp-4);
+    position: fixed;
+    transform: translateX(-105%);
+    transition: transform var(--transicion);
+    width: var(--ancho-menu-lateral);
+    z-index: var(--z-menu);
+  }
+  .menu-lateral[data-abierto] {
+    transform: none;
+  }
+  .menu-lateral a {
+    align-items: center;
+    display: flex;
+    gap: var(--esp-4);
+    padding: var(--esp-3) var(--esp-5);
+  }
+  .menu-lateral-cabecera {
+    isolation: isolate;
+    margin-bottom: var(--esp-2);
+    min-height: 9rem;
+    position: relative;
+  }
+  .menu-lateral-fondo {
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .menu-lateral-fondo img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  /* --- Botonera flotante: se despliega al pasar el ratón o con el teclado */
+  .botonera-flotante {
+    bottom: var(--esp-4);
+    position: fixed;
+    right: var(--esp-4);
+    z-index: var(--z-flotante);
+  }
+  .botonera-flotante ul {
+    align-items: center;
+    bottom: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--esp-3);
+    left: 50%;
+    list-style: none;
+    margin: 0;
+    opacity: 0;
+    padding: 0 0 var(--esp-3);
+    position: absolute;
+    transform: translate(-50%, var(--esp-3));
+    transition: opacity var(--transicion), transform var(--transicion), visibility var(--transicion);
+    visibility: hidden;
+  }
+  .botonera-flotante:hover ul,
+  .botonera-flotante:focus-within ul,
+  .botonera-flotante[data-abierto] ul {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    visibility: visible;
+  }
+
+  /* --- Banner (antes "parallax"): foto de fondo con título encima */
+  .banner {
+    align-items: center;
+    color: var(--color-texto-claro);
+    display: grid;
+    isolation: isolate;
+    min-height: var(--alto-banner);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+  .banner.fondo-plano {
+    background-color: var(--color-fondo-plano);
+  }
+  .banner-imagen {
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .banner-imagen img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  /* --- Pie */
+  .pie {
+    clear: both;
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-texto-claro);
+    padding-block: var(--esp-5) var(--esp-3);
+  }
+  .pie ul {
+    list-style: none;
+    padding: 0;
+  }
+  .pie p {
+    margin-block-end: var(--esp-2);
+  }
+  .pie a {
+    text-decoration: none;
+  }
+  .pie-copyright {
+    font-size: var(--texto-s);
+    padding-block: var(--esp-3);
+  }
+
+  /* --- Tooltips: texto de data-tooltip, al pasar el ratón o con el foco */
+  [data-tooltip] {
+    position: relative;
+  }
+  /* Sólo existe mientras se muestra: un ::after invisible pero presente
+     ensancharía la página en móvil (desbordamiento horizontal) */
+  [data-tooltip]:hover::after,
+  [data-tooltip]:focus-visible::after {
+    background-color: #323232;
+    border-radius: var(--radio-s);
+    bottom: calc(100% + var(--esp-2));
+    color: var(--color-texto-claro);
+    content: attr(data-tooltip);
+    font-family: var(--fuente-cuerpo);
+    font-size: var(--texto-s);
+    left: 50%;
+    line-height: 1.3;
+    max-width: min(15rem, 80vw);
+    padding: var(--esp-1) var(--esp-2);
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    transform: translateX(-50%);
+    width: max-content;
+    z-index: var(--z-tooltip);
+  }
+  [data-tooltip][data-position="bottom"]::after {
+    bottom: auto;
+    top: calc(100% + var(--esp-2));
+  }
+  [data-tooltip][data-position="left"]::after,
+  [data-tooltip][data-position="right"]::after {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  [data-tooltip][data-position="left"]::after {
+    left: auto;
+    right: calc(100% + var(--esp-2));
+  }
+  [data-tooltip][data-position="right"]::after {
+    left: calc(100% + var(--esp-2));
+  }
+
+  /* --- Imagen ampliable y visor (<dialog>, lo abre js/ui.js) */
   .ampliable {
     cursor: zoom-in;
+    display: block;
+  }
+  .visor {
+    background: transparent;
+    border: 0;
+    margin: auto;
+    max-height: 90dvh;
+    max-width: 90vw;
+    padding: 0;
+  }
+  .visor::backdrop {
+    background: rgba(0, 0, 0, .8);
+  }
+  .visor img {
+    cursor: zoom-out;
+    max-height: 90dvh;
+    object-fit: contain;
   }
 }
 
 
 /* =========================================================================
-   Utilidades (pocas y ligadas a las variables)
+   Utilidades (pocas y ligadas a las variables). Ganan a todo lo anterior.
    ========================================================================= */
 @layer utilidades {
   .texto-html   { color: var(--color-html); }
   .texto-css    { color: var(--color-css); }
   .texto-js     { color: var(--color-js); }
+  .texto-php    { color: var(--color-php); }
   .texto-acento { color: var(--color-acento); }
   .texto-claro  { color: var(--color-texto-claro); }
   .texto-suave  { color: var(--color-texto-suave); }
+  .texto-oscuro { color: var(--color-texto-oscuro); }
+
+  .fondo-html   { background-color: var(--color-html-fondo); }
+  .fondo-css    { background-color: var(--color-css-fondo); }
+  .fondo-js     { background-color: var(--color-js-fondo); color: var(--color-texto-oscuro); }
+  .fondo-php    { background-color: var(--color-php-fondo); }
+  .fondo-acento { background-color: var(--color-acento-claro); }
+  .fondo-claro  { background-color: var(--color-fondo); }
+  .fondo-oscuro { background-color: var(--color-fondo-oscuro); }
+  .fondo-transparente { background-color: transparent; box-shadow: none; }
 
   .texto-centro    { text-align: center; }
   .texto-izquierda { text-align: left; }
   .texto-derecha   { text-align: right; }
 
+  /* Hover por lenguaje (menú, desplegables, pie): va aquí para ganar a .texto-*
+     — :hover suma especificidad dentro de la misma capa */
+  .html:hover,
+  #dropdown3 li a:hover {
+    background-color: var(--color-html-fondo);
+    color: var(--color-texto-claro);
+  }
+  .css:hover,
+  #dropdown2 li a:hover {
+    background-color: var(--color-css-fondo);
+    color: var(--color-texto-claro);
+  }
+  .js:hover,
+  #dropdown1 li a:hover {
+    background-color: var(--color-js-fondo);
+    color: var(--color-texto-oscuro); /* blanco sobre amarillo no se lee (contraste 1.4:1) */
+  }
+  .php:hover,
+  #dropdown4 li a:hover {
+    background-color: var(--color-php-fondo);
+    color: var(--color-texto-claro);
+  }
+  .resto:hover {
+    background-color: var(--color-acento-suave);
+    color: var(--color-texto-claro);
+  }
   /* Oculto a la vista pero legible por lectores de pantalla */
   .solo-lectores {
     border: 0;
@@ -445,260 +1066,4 @@
     white-space: nowrap;
     width: 1px;
   }
-}
-
-
-/* =========================================================================
-   Legado (sin capa): reglas propias anteriores.
-   Se irán moviendo a las capas a medida que se quite Materialize.
-   ========================================================================= */
-
-/* Enlaces a páginas que todavía no existen: se ven, pero no llevan a un 404 */
-a.pendiente,
-a.pendiente:hover {
-  cursor: not-allowed;
-  opacity: .55;
-}
-
-/* Gana a `a` y `nav ul a` de Materialize. :where() excluye los botones sin
-   subir la especificidad (seguiría perdiendo contra .btn-floating, como hoy). */
-a:where(:not(.btn)),
-nav,
-nav ul a:where(:not(.btn)) {
-  color: var(--color-acento);
-}
-li a:where(:not(.btn)):hover,
-p a:where(:not(.btn)):hover {
-  color: #000
-}
-blockquote,
-cite,
-figcaption,
-h1,h2,h3,
-h4,h5,h6,
-li,p {
-  cursor: default;
-}
-li:hover, p, pre {
-  cursor: default;
-}
-
-#contenedor {
-  background-color: var(--color-tinte);
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  transition: var(--transicion-lenta);
-}
-#contenedor:hover{
-  background-color: var(--color-tinte-activo);
-}
-
-#dropdown3 li a:hover {
-  background-color: var(--color-html-fondo) !important;
-  color: #fff
-}
-
-#dropdown2 li a:hover {
-  background-color: navy !important;
-  color: #fff
-}
-
-#dropdown1 li a:hover {
-  background-color: var(--color-js-fondo) !important;
-  color: #000 /* blanco sobre amarillo no se lee (contraste 1.4:1) */
-}
-
-#dropdown4 li a:hover {
-  background-color: var(--color-morado-vivo) !important;
-  color: #fff
-}
-#google_translate_element{
-  z-index: 99999
-}
-
-#logo {
-  font-size: 4.5em;
-  width: 5.1%;
-  perspective: 100px;
-}
-#logo img{
-  transform-style: preserve-3d;
-  transform: rotateX(33deg);
-}
-.lista1 li {
-  display:inline-block;
-  padding:0 11px 0 11px;
-}
-.afuera i{
-  display: none
-}
-.afuera:hover i{
-  display: inline;
-}
-.aportaciones:before {
-  content: open-quote
-}
-.aportaciones:after {
-  content: close-quote
-}
-.aportaciones {
-  font-size: 90%;
-  font-style: oblique;
-}
-
-.css:hover {
-  background-color : var(--color-css-fondo) !important ;
-  color : #fff !important;
-}
-.deco{
-  text-decoration: underline;
-  text-decoration-style: wavy
-}
-.ejCss{
-  color:#F33333 !important;
-  font-family: var(--fuente-tecnica);
-  font-size: 15pt;
-}
-.html:hover {
-  background-color : var(--color-html-fondo) !important ;
-  color : #fff !important;
-}
-.icon-block {
-  padding: 0 15px
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-.js:hover {
-  background-color : #ffd000 !important ;
-  color : #000 !important; /* contraste AA sobre amarillo */
-}
-.fondo_tit{
-  background-color: hsla(51, 66%, 6%, 0.111);
-  border-radius: 3px
-}
-.kolo:first-letter {
-  font-size: 33pt
-}
-.mainontaOikealla {
-  padding: 1.3%
-}
-.nodeh:hover{
-  background-color: var(--color-lima)
-}
-.oculto{
-  visibility:hidden;
-}
-.parallax-container {
-  min-height: 35rem;
-  z-index: 99
-}
-.parallax-container .section {
-  width: 100%
-}
-.pieInvisible {
-  color: transparent;
-  transition: all 1s ease-in-out
-}
-.purpur{
-  background-color: var(--color-fondo-menu) !important;
-}
-.php:hover{
-  background-color: var(--color-morado)
-}
-.pre{
-  color: var(--color-codigo-texto);
-}
-.pieInvisible:hover {
-  color: #000
-}
-.pKlein {
-  font-size: 10pt;
-  font-family: var(--fuente-display);
-  word-wrap: break-word;
-  cursor: default
-}
-.reduce img{
-  max-width: 7%;
-}
-.resenyas{
-  font-family: var(--fuente-tecnica);
-  font-size: 69%;
-}
-.resalto{
-  text-shadow: var(--sombra-texto);
-}
-.resalte {
-  background-color: var(--color-acento-tenue)
-}
-.resto{
-  color: var(--color-acento-suave)
-}
-.resto:hover {
-  background-color : var(--color-acento-suave) !important ;
-  color : #fff !important;
-}
-.subrr {
-  background-color: var(--color-resaltado)
-}
-.sidenav-trigger {
-  color: var(--color-acento-claro)
-}
-.sombraBtns {
-  text-shadow: #000 .4px .6px .4px
-}
-.titSemantik {
-  font-size: 1.3em;
-  font-style: italic;
-}
-.valor {
-  color: var(--color-acento)
-}
-.yaen{
-  background-color: var(--color-acento-fondo);
-}
-
-
-@media only screen and (max-width:992px) {
-  .parallax-container .section {
-    top: 0
-  }
-
-  #index-banner .section {
-    top: 10%
-  }
-}
-
-@media only screen and (min-width:413px) and (max-width:794px) {
-  #contenedor {
-    background-color: rgba(255, 229, 0, .333);
-    transition: all 2s ease-in-out
-  }
-}
-
-@media only screen and (max-width:600px) {
-  #index-banner .section {
-    top: 0
-  }
-}
-
-@media only screen and (max-width:413px) {
-  #contenedor {
-    background-color: rgba(255, 229, 0, .666);
-    transition: all 2s ease-in-out
-  }
-  .titulos,
-  h2 {
-    font-size: 2em;
-    text-align: left;
-  }
-  h1{
-    font-size: 2.8em;
-  }
-}
-
-/* Parallax cuya foto ya no existe: fondo plano oscuro (los títulos de color se leen bien encima) */
-.parallax-container.fondo-plano {
-  background-color: var(--color-fondo-plano);
 }

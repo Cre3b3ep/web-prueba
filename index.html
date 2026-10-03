@@ -9,7 +9,6 @@
 
 	<!-- ↓ CSS  ↓ -->
 	<link href="css/fuentes.css" type="text/css" rel="stylesheet" />
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 
 	<!-- ↓ Favicons ↓ -->
@@ -33,88 +32,88 @@
 		<a id="anchorTarget"></a> <!-- Ancla -->
 		<!-- Opciones menú H -->
 		<div id="nav_dropdowns">
-			<ul id="dropdown3" class="dropdown-content">
-				<li><a class="center-align" href="html.html">Básico</a></li>
-				<li><a class="center-align" href="html5.html">HTML5</a></li>
-				<li><a class="center-align" href="fw-html.html">Útiles</a></li>
+			<ul id="dropdown3" class="desplegable">
+				<li><a class="texto-centro" href="html.html">Básico</a></li>
+				<li><a class="texto-centro" href="html5.html">HTML5</a></li>
+				<li><a class="texto-centro" href="fw-html.html">Útiles</a></li>
 			</ul>
-			<ul id="dropdown2" class="dropdown-content">
-				<li><a class="center-align" href="css.html">Básico</a></li>
-				<li><a class="pendiente center-align" aria-disabled="true">CSS3</a></li>
-				<li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
+			<ul id="dropdown2" class="desplegable">
+				<li><a class="texto-centro" href="css.html">Básico</a></li>
+				<li><a class="pendiente texto-centro" aria-disabled="true">CSS3</a></li>
+				<li><a class="texto-centro" href="fw-css.html">FrameWorks</a></li>
 			</ul>
-			<ul id="dropdown1" class="dropdown-content">
-				<li><a class="center-align" href="js.html">Báscio</a></li>
-				<li><a class="center-align" href="es6.html">ES6</a></li>
-				<li><a class="center-align" href="fw-js.html">FrameWorkss</a></li>
+			<ul id="dropdown1" class="desplegable">
+				<li><a class="texto-centro" href="js.html">Báscio</a></li>
+				<li><a class="texto-centro" href="es6.html">ES6</a></li>
+				<li><a class="texto-centro" href="fw-js.html">FrameWorkss</a></li>
 			</ul>
 		</div>
 		<!-- Opciones menú H -->
 
 		<!-- Navegador horizontal -->
 		<header>
-			<nav class="white">
-				<div class="nav-wrapper container">
-					<ul class="right hide-on-med-and-down">
-						<li><a class="dropdown-trigger html" href="javascript:void(0);" data-target="dropdown3">HTML</a></li>
-						<li><a class="dropdown-trigger css" href="#!" data-target="dropdown2">CSS</a></li>
-						<li><a class="dropdown-trigger js" href="#!" data-target="dropdown1">JavaScript</a></li>
+			<nav>
+				<div class="barra container">
+					<ul class="solo-escritorio">
+						<li><a class="desplegable-boton html" href="javascript:void(0);" data-target="dropdown3">HTML</a></li>
+						<li><a class="desplegable-boton css" href="#!" data-target="dropdown2">CSS</a></li>
+						<li><a class="desplegable-boton js" href="#!" data-target="dropdown1">JavaScript</a></li>
 						<li><a title="Guías según lenguaje" class="resto" href="guias.html">Guías</a></li>
 						<li><a class="resto" href="relacionando.html">Relacionado</a></li>
 						<li><a class="resto" href="diario/">Diario</a></li>
 					</ul>
-					<a href="#" class="sidenav-trigger" data-target="menu-lateral" aria-label="Abrir menú">
+					<a href="#" class="menu-boton" data-target="menu-lateral" aria-label="Abrir menú">
 						<i aria-hidden="true" class="material-icons">menu</i></a>
 
 					<!-- Fin Logo -->
 					<div id="logo">
-						<a class="tooltipped" data-position="left" data-tooltip="Click! => Inicio" href="index.html">
-							<img src="img/fav1.png" class="responsive-img" alt="Logo">
+						<a data-position="left" data-tooltip="Click! => Inicio" href="index.html">
+							<img src="img/fav1.png" alt="Logo">
 						</a>
 					</div>
 					<!-- Fin Logo -->
 
 					<!-- nav movil -->
-					<ul id="menu-lateral" class="sidenav purpur">
+					<ul id="menu-lateral" class="menu-lateral purpur">
 						<li>
-							<div class="user-view">
-								<a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons grey-text text-lighten-2">home</i></a>
-								<div class="background">
+							<div class="menu-lateral-cabecera">
+								<a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons texto-suave">home</i></a>
+								<div class="menu-lateral-fondo">
 									<img src="img/dedojpeg.jpg" alt="Fondo menú móvil">
 								</div>
 							</div>
 						</li>
 						<li>
-							<a href="html.html" class="red-text text-accent-4 html"><i aria-hidden="true"
-									class="material-icons red-text text-accent-4 html">check_box_outline_blank</i>HTML</a>
+							<a href="html.html" class="texto-html html"><i aria-hidden="true"
+									class="material-icons texto-html html">check_box_outline_blank</i>HTML</a>
 						</li>
 						<li>
-							<a href="css.html" class="blue-text text-accent-4 css"><i aria-hidden="true"
-									class="material-icons blue-text text-accent-4">check_box_outline_blank</i>CSS</a>
+							<a href="css.html" class="texto-css css"><i aria-hidden="true"
+									class="material-icons texto-css">check_box_outline_blank</i>CSS</a>
 						</li>
 						<li>
-							<a href="js.html" class="amber-text text-accent-4 js"><i aria-hidden="true"
-									class="material-icons amber-text text-accent-4">check_box_outline_blank</i>JavaScript</a>
+							<a href="js.html" class="texto-js js"><i aria-hidden="true"
+									class="material-icons texto-js">check_box_outline_blank</i>JavaScript</a>
 						</li>
 						<li>
-							<a href="guias.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true"
-									class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Guías</a>
+							<a href="guias.html" class="texto-acento resto"><i aria-hidden="true"
+									class="material-icons texto-acento">check_box_outline_blank</i>Guías</a>
 						</li>
 						<li>
-							<a href="relacionando.html" class="cyan-text text-accent-4 resto"><i aria-hidden="true"
-									class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Relacionado</a>
+							<a href="relacionando.html" class="texto-acento resto"><i aria-hidden="true"
+									class="material-icons texto-acento">check_box_outline_blank</i>Relacionado</a>
 						</li>
 						<li>
-							<a href="diario/" class="cyan-text text-accent-4 resto"><i aria-hidden="true"
-									class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>Diario</a>
+							<a href="diario/" class="texto-acento resto"><i aria-hidden="true"
+									class="material-icons texto-acento">check_box_outline_blank</i>Diario</a>
 						</li>
 						<li>
-							<a aria-disabled="true" class="pendiente cyan-text text-accent-4 resto"><i aria-hidden="true"
-									class="material-icons cyan-text text-accent-4">check_box_outline_blank</i>¿Cuánto sabes?</a>
+							<a aria-disabled="true" class="pendiente texto-acento resto"><i aria-hidden="true"
+									class="material-icons texto-acento">check_box_outline_blank</i>¿Cuánto sabes?</a>
 						</li>
 						<li>
-							<a href="contacto.html" class="indigo-text text-lighten-2"><i aria-hidden="true"
-									class="fab fa-telegram indigo-text text-lighten-2"></i>Contacta</a>
+							<a href="contacto.html" class="texto-css"><i aria-hidden="true"
+									class="fab fa-telegram texto-css"></i>Contacta</a>
 						</li>
 					</ul>
 					<!-- Fin nav movil -->
@@ -124,47 +123,47 @@
 		</header>
 
 		<!-- Fixed bton -->
-		<div class="fixed-action-btn">
-			<a class="btn-floating btn-large resto">
+		<div class="botonera-flotante">
+			<a class="btn btn--redondo btn--grande resto">
 				<i aria-hidden="true" class="fas fa-cog fa-spin"></i>
 			</a>
 			<ul>
-				<li><a class="btn-floating resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
-				<li><a class="btn-floating resto red" href="#html" aria-label="HTML"><i aria-hidden="true" class="fab fa-html5"></i></a></li>
-				<li><a class="btn-floating resto blue" href="#css" aria-label="CSS"><i aria-hidden="true" class="fab fa-css3-alt"></i></a></li>
-				<li><a class="btn-floating resto yellow" href="#js" aria-label="JavaScript"><i aria-hidden="true" class="fab fa-js"></i></a></li>
-				<li><a class="btn-floating resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
+				<li><a class="btn btn--redondo resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
+				<li><a class="btn btn--redondo resto fondo-html" href="#html" aria-label="HTML"><i aria-hidden="true" class="fab fa-html5"></i></a></li>
+				<li><a class="btn btn--redondo resto fondo-css" href="#css" aria-label="CSS"><i aria-hidden="true" class="fab fa-css3-alt"></i></a></li>
+				<li><a class="btn btn--redondo resto fondo-js" href="#js" aria-label="JavaScript"><i aria-hidden="true" class="fab fa-js"></i></a></li>
+				<li><a class="btn btn--redondo resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
 			</ul>
 		</div>
 		<!-- Fin Fixed bton -->
 
 		<!-- HTML Paralax -->
 		<a id="html"></a> <!-- Ancla -->
-		<div id="index-banner" class="parallax-container row">
-			<div class="section no-pad-bot">
-				<div class="container center">
-					<div class="col s12 m10 l12">
-						<h1 class="header red-text text-accent-4 resalto">HTML</h1><br>
-						<h2 class="titulos white-text resalto">Lenguaje de marcas hipertextuales</h2>
+		<div id="index-banner" class="banner">
+			<div class="section">
+				<div class="container texto-centro">
+					<div>
+						<h1 class="header texto-html resalto">HTML</h1><br>
+						<h2 class="titulos texto-claro resalto">Lenguaje de marcas hipertextuales</h2>
 					</div>
 
-					<div class="col s12 m10 l12">
+					<div>
 						<span class="sombraBtns"><a href="html5.html" aria-label="Más sobre html"
-								class="btn red darken-2 btn-large waves-effect waves-red html resalto"><i aria-hidden="true"
+								class="btn fondo-html btn--grande html resalto"><i aria-hidden="true"
 									class="fab fa-html5"></i></a></span>
 					</div>
 					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-					<div class="right afuera">
+					<div class="flotar-dcha afuera">
 						<a target="_blank" rel="noopener noreferrer"
 							href="https://www.pexels.com/photo/black-lighted-gaming-keyboard-841228/"
-							class="red-text text-darken-3">Pexel por</a>
+							class="texto-html">Pexel por</a>
 						<a target="_blank" rel="noopener noreferrer" href="https://www.pexels.com/@karoldach"
-							class="red-text text-lighten-4">@karoldach<i aria-hidden="true" class="tiny material-icons red-text">open_in_new</i></a>
+							class="texto-html">@karoldach<i aria-hidden="true" class="icono-pequeno material-icons texto-html">open_in_new</i></a>
 					</div>
 
 				</div>
 			</div>
-			<div class="parallax">
+			<div class="banner-imagen">
 				<img src="img/rojotecladonegro.jpeg" title="KarolDach" alt="Teclado negro con rojos">
 			</div>
 		</div>
@@ -173,32 +172,32 @@
 		<!-- Sección HTML -->
 		<div class="container" id="cont_html">
 			<section class="section">
-				<div class="row">
+				<div>
 
-					<div class="col s12">
-						<h2 class="black-text center"><span class="red-text center">H</span>yper<span class="red-text">T</span>ext
-							<span class="red-text">M</span>arkup <span class="red-text">L</span>anguage </h2>
-						<h3 class="center titSemantik">El lenguaje usado para estructurar un sitio web...<br><br><span
+					<div>
+						<h2 class="texto-oscuro texto-centro"><span class="texto-html texto-centro">H</span>yper<span class="texto-html">T</span>ext
+							<span class="texto-html">M</span>arkup <span class="texto-html">L</span>anguage </h2>
+						<h3 class="texto-centro titSemantik">El lenguaje usado para estructurar un sitio web...<br><br><span
 								class="aportaciones">HTML es el cuerpo del conjunto</span> <sub>jBaton.</sub></h3><br>
-						<p class="left-align kolo">Donde apoyamos otros recursos para implementar funcionalidades, animaciones e
+						<p class="texto-izquierda kolo">Donde apoyamos otros recursos para implementar funcionalidades, animaciones e
 							interacción.<br> &emsp; Hace ya <span id="fecha"></span>
 							<span id="segundos"></span>en el <a target="_blank" rel="noopener noreferrer" href="https://home.cern/"
-								class="tooltipped afuera" data-position="top"
+								class="afuera" data-position="top"
 								data-tooltip="Conseil Européen pour la Recherche Nucléaire"><abbr
 									title="Organización Europea para la Investigación Nuclear">CERN</abbr><sup><i aria-hidden="true"
-										class="tiny material-icons">open_in_new</i></sup></a>, a un ingeniero llamado<br> <a
+										class="icono-pequeno material-icons">open_in_new</i></sup></a>, a un ingeniero llamado<br> <a
 								href="https://www.w3.org/People/Berners-Lee/" target="_blank" rel="noopener noreferrer"
-								class="tooltipped afuera" data-position="top" data-tooltip="w3.org/People/Berners-Lee">Tim
-								Berners-Lee<sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup></a>
+								class="afuera" data-position="top" data-tooltip="w3.org/People/Berners-Lee">Tim
+								Berners-Lee<sup><i aria-hidden="true" class="icono-pequeno material-icons">open_in_new</i></sup></a>
 							se le ocurrió crear un sistema para compartir archivos en línea, estableciendo la primera comunicación
 							entre un
 							<a href="https://es.wikipedia.org/wiki/Cliente_(inform%C3%A1tica)" title="Wiki definición"
-								class="tooltipped" data-position="top" data-tooltip="El que pide">"cliente"</a> y un <a
+								class="" data-position="top" data-tooltip="El que pide">"cliente"</a> y un <a
 								href="https://es.wikipedia.org/wiki/Servidor_inform%C3%A1tico" title="Wiki definición"
-								class="tooltipped" data-position="top" data-tooltip="El que ofrece">"servidor"</a> a través de <span
-								class="tooltipped black-text" data-position="top" data-tooltip="HyperText Transfer Protocol">
+								class="" data-position="top" data-tooltip="El que ofrece">"servidor"</a> a través de <span
+								class="texto-oscuro" data-position="top" data-tooltip="HyperText Transfer Protocol">
 								<abbr title="Protocolo de transferencia de hipertexto"><b>HTTP</b></abbr>. </span> Bautizando a su
-							creación bajo las siglas<span class="black-text tooltipped" data-position="top"
+							creación bajo las siglas<span class="texto-oscuro" data-position="top"
 								data-tooltip="Hyper Text Markup Language"> <abbr
 									title="Lenguaje de marcado hipertextual"><b>HTML</b></abbr></span> . Como todo en esta vida, <abbr
 								title="HyperText Markup Language"> HTML</abbr> evoluciona a
@@ -208,36 +207,36 @@
 							estandarizar
 							en octubre de ese año.</p>
 						<article>
-							<h4 class="center">La última versión más utilizada es HTML <i aria-hidden="true" class="fab fa-html5"></i></h4>
-							<p class="left-align kolo">Publicada y estandarizada por el <a target="_blank" rel="noopener noreferrer"
-									href="https://www.w3.org/TR/html52/" class="tooltipped afuera" data-position="top"
+							<h4 class="texto-centro">La última versión más utilizada es HTML <i aria-hidden="true" class="fab fa-html5"></i></h4>
+							<p class="texto-izquierda kolo">Publicada y estandarizada por el <a target="_blank" rel="noopener noreferrer"
+									href="https://www.w3.org/TR/html52/" class="afuera" data-position="top"
 									data-tooltip="w3.org/TR/html52">World
-									Wide Web Consortium<sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup></a>.<br> &emsp;Conociendo
+									Wide Web Consortium<sup><i aria-hidden="true" class="icono-pequeno material-icons">open_in_new</i></sup></a>.<br> &emsp;Conociendo
 								a fondo el uso
 								y funcionamiento de HTML se comprenden mejor los cambios
 								realizados en las versiones posteriores.<br><br>HTML5 especifica:</p>
-							<ol class="left-align">
+							<ol class="texto-izquierda">
 								<li>
-									<p>Una estructura que <a href="estr_html5.html" class="tooltipped" data-position="top"
+									<p>Una estructura que <a href="estr_html5.html" data-position="top"
 											data-tooltip="Estructura recomendada con HTML5">ayuda</a>
 										a los desarrolladores.</p>
 								</li>
 								<li>
-									<p>Una mejora en su <a class="pendiente tooltipped" data-position="top"
+									<p>Una mejora en su <a class="pendiente" data-position="top"
 											data-tooltip="Verificación de formularios" aria-disabled="true">seguridad</a>.</p>
 								</li>
 								<li>
 									<p>Corrección de errores y eliminación de funcionalidades obsoletas.</p>
 								</li>
 								<li>
-									<p><a class="tooltipped afuera" data-position="top"
+									<p><a class="afuera" data-position="top"
 											data-tooltip=".w3schools.com/html/html5_geolocation.asp"
 											href="https://www.w3schools.com/html/html5_geolocation.asp" target="_blank"
 											rel="noopener noreferrer">Diferentes
-											API's<sup><i aria-hidden="true" class="material-icons tiny">open_in_new</i></sup></a></p>
+											API's<sup><i aria-hidden="true" class="material-icons icono-pequeno">open_in_new</i></sup></a></p>
 								</li>
 								<li>
-									<p><a class="tooltipped" data-position="top" data-tooltip="Recopilación de etiquetas HTML5 semánticas"
+									<p><a data-position="top" data-tooltip="Recopilación de etiquetas HTML5 semánticas"
 											href="accesibilidad.html">Accesibilidad</a>,
 										gracias a sus etiquetas semánticas.</p>
 								</li>
@@ -247,9 +246,9 @@
 				</div>
 				<!-- publicidad -->
 				<aside>
-					<div class="container center">
-						<div class="row">
-							<div class="card section card-action s5 m5 l5">
+					<div class="container texto-centro">
+						<div>
+							<div class="card section card-acciones">
 								<div class="amzn-ad-prod-detail">
 									<div id="title">
 										<a rel="nofollow sponsored noopener noreferrer" id="titlehref"
@@ -284,33 +283,33 @@
 
 		<!-- CSS Paralax -->
 		<a id="css"></a> <!-- Ancla -->
-		<div class="parallax-container row">
-			<div class="section no-pad-bot">
-				<div class="container center">
+		<div class="banner">
+			<div class="section">
+				<div class="container texto-centro">
 
-					<div class="col s12 m10 l12">
-						<h1 class="center blue-text text-darken-1 resalto">CSS</h1>
-						<h2 class="titulos white-text resalto">Hoja de Estilos en Cascada</h2>
+					<div>
+						<h1 class="texto-centro texto-css resalto">CSS</h1>
+						<h2 class="titulos texto-claro resalto">Hoja de Estilos en Cascada</h2>
 					</div>
 
-					<div class="col s12 m10 l12">
+					<div>
 						<span class="sombraBtns"><a aria-disabled="true" aria-label="Más sobre css"
-								class="pendiente btn blue waves-effect btn-large waves-light css resalto"><i aria-hidden="true" class="fab fa-css3"></i></a></span>
+								class="pendiente btn fondo-css btn--grande css resalto"><i aria-hidden="true" class="fab fa-css3"></i></a></span>
 					</div>
 
 					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-					<div class="right afuera">
+					<div class="flotar-dcha afuera">
 						<a href="https://www.pexels.com/photo/close-up-shot-of-black-computer-keyboard-1010496/" target="_blank"
 							rel="noopener noreferrer">Pexel por</a>
 						<a href="https://www.pexels.com/@iseeghoststoo" target="_blank" rel="noopener noreferrer"
-							class="blue-text text-lighten-4">@iseeghoststoo<i aria-hidden="true"
-								class="material-icons tiny cyan-text">open_in_new</i></a>
+							class="texto-css">@iseeghoststoo<i aria-hidden="true"
+								class="material-icons icono-pequeno texto-acento">open_in_new</i></a>
 					</div>
 
 				</div>
 			</div>
-			<div class="parallax"><img src="img/pexels-photo-1010497.jpeg" title="iSeeGhostsToo"
+			<div class="banner-imagen"><img src="img/pexels-photo-1010497.jpeg" title="iSeeGhostsToo"
 					alt="Teclado negro con azules"></div>
 		</div>
 		<!-- Fin CSS Paralax -->
@@ -318,38 +317,38 @@
 		<!-- Seccion CSS -->
 		<div class="container" id="cont_css">
 			<section class="section">
-				<div class="row">
+				<div>
 
-					<div class="col s12">
-						<h2 class="black-text center"><span class="cyan-text">C</span>ascade <span class="cyan-text">S</span>tyle
-							<span class="cyan-text">S</span>sheets</h2>
-						<h3 class="center titSemantik">Es el lenguaje usado para dar estilos a la estructura de un sitio
+					<div class="grid grid--12">
+						<h2 class="texto-oscuro texto-centro"><span class="texto-acento">C</span>ascade <span class="texto-acento">S</span>tyle
+							<span class="texto-acento">S</span>sheets</h2>
+						<h3 class="texto-centro titSemantik">Es el lenguaje usado para dar estilos a la estructura de un sitio
 							web...<br><br><span class="aportaciones">CSS es el alma del conjunto</span> <sub>jBaton.</sub></h3><br>
-						<p class="kolo"><i>"C<b>ascade..."</b></i> Cascada, la <a aria-disabled="true" class="pendiente tooltipped"
+						<p class="kolo"><i>"C<b>ascade..."</b></i> Cascada, la <a aria-disabled="true" class="pendiente"
 								data-position="top" data-tooltip="Ver sintaxis de CSS">sintaxis</a> de CSS produce un "efecto cascada",
 							cuando es escrito de modo
 							externo en un archivo con la extensión .css, el cual es llamado desde un "doc".html con la etiqueta
-							<a class="tooltipped" data-position="top" data-tooltip="+ Sobre los link en html"
+							<a data-position="top" data-tooltip="+ Sobre los link en html"
 								href="links.html">&lt;link></a>
 						</p>
 
 						<!-- Sección Ejemplo1 css -->
-						<div class="col m4 s12 codigo">
+						<div class="celda codigo" style="--span: 4">
 							<div class="card">
-								<pre class="green-text"><span class="red-text text-darken-4">*</span><span class="white-text">{</span> <br> margin: <span class="valor">0</span>;<br> padding:<span class="valor">0</span>; <br> <span class="white-text">}</span> <br><br><span class="red-text text-darken-4">body,html</span><span class="white-text">{</span><br> font-family: <span class="amber-text">'Special Elite'</span>;<br> color: <span class="white-text">#FFF</span>;<br><span class="white-text">}</span> <br><br><span class="red-text text-darken-4">pre</span><span class="white-text">{</span><br> font-size: <span class="valor">87.5</span><span class="red-text">%</span>; <br> color: <span class="valor">#e83e8c</span>; <br> word-break: break-word; <br> background-color: <span class="valor">#212529</span>;<br> padding: <span class="valor">0.2<span class="red-text">rem</span> 0.4<span class="red-text">rem</span></span>; <br> border-radius: <span class="valor">0.2 <span class="red-text">rem</span></span>;<br><span class="white-text">}</span><br>	
+								<pre class="texto-acento"><span class="texto-html">*</span><span class="texto-claro">{</span> <br> margin: <span class="valor">0</span>;<br> padding:<span class="valor">0</span>; <br> <span class="texto-claro">}</span> <br><br><span class="texto-html">body,html</span><span class="texto-claro">{</span><br> font-family: <span class="texto-js">'Special Elite'</span>;<br> color: <span class="texto-claro">#FFF</span>;<br><span class="texto-claro">}</span> <br><br><span class="texto-html">pre</span><span class="texto-claro">{</span><br> font-size: <span class="valor">87.5</span><span class="texto-html">%</span>; <br> color: <span class="valor">#e83e8c</span>; <br> word-break: break-word; <br> background-color: <span class="valor">#212529</span>;<br> padding: <span class="valor">0.2<span class="texto-html">rem</span> 0.4<span class="texto-html">rem</span></span>; <br> border-radius: <span class="valor">0.2 <span class="texto-html">rem</span></span>;<br><span class="texto-claro">}</span><br>	
 </pre>
 							</div>
 						</div>
 						<!-- <a href="#!"></a> -->
-						<div class="col m8 s12">
+						<div class="celda" style="--span: 8">
 							<div class="card">
-								<pre><span class="white-text">/*</span> La sintaxis en CSS, aparte de estar programado en Inglés, es sencilla. Invocas un elemento, encierras dentro uno o más <a aria-disabled="true" class="pendiente tooltipped" data-position="top" data-tooltip="Lista de atributos CSS">atributos</a> con sus respectivos valores separados por ";" y por ordenar mejor el código, dando un salto de línea. <br> Mirando el ejemplo de la izquierda: <br> <span class="white-text">*/</span> <br><span class="red-text text-darken-4">ELEMENTO</span> <span class="white-text">=></span> <span class="white-text">(</span><span class="red-text text-darken-4">body, html, pre, h1... h6, nav, div...</span> <span class="white-text">)</span> <br><span class="white-text">/*</span> Los elementos serán nuestro modo de especificar donde exactamente queremos el estilo.<span class="white-text">*/</span> <br><span class="green-text">ATRIBUTO </span> <span class="white-text">=></span> <span class="white-text">(</span>margin, padding, color, position, background... <span class="white-text">)</span> <br><span class="white-text">/*</span> Con los atributos indicamos qué es lo que queremos modificar. Su tamaño, color, posición y mucho más.<span class="white-text">*/</span><br> <span class="valor">VALOR</span> <span class="white-text">=></span> <span class="white-text">(</span><span class="valor">0, 87.5<span class="red-text">%</span>, #e83e8c</span><span class="white-text">)</span> <br><span class="white-text">/*</span> Los valores son muy variados, desde colores rgb, rgba, en hexadecimal unidades de medida absolutas, relativas, etc...<span class="white-text">*/</span> <br><span class="grey-text"><i>Quedando algo así:</i></span> <br> <span class="red-text text-accent-4">ELEMENTO</span> <span class="white-text">{</span> <br> <span class="green-text">ATRIBUTO</span>:<span class="valor">VALOR</span>; <br> <span class="white-text">}</span></pre>
+								<pre><span class="texto-claro">/*</span> La sintaxis en CSS, aparte de estar programado en Inglés, es sencilla. Invocas un elemento, encierras dentro uno o más <a aria-disabled="true" class="pendiente" data-position="top" data-tooltip="Lista de atributos CSS">atributos</a> con sus respectivos valores separados por ";" y por ordenar mejor el código, dando un salto de línea. <br> Mirando el ejemplo de la izquierda: <br> <span class="texto-claro">*/</span> <br><span class="texto-html">ELEMENTO</span> <span class="texto-claro">=></span> <span class="texto-claro">(</span><span class="texto-html">body, html, pre, h1... h6, nav, div...</span> <span class="texto-claro">)</span> <br><span class="texto-claro">/*</span> Los elementos serán nuestro modo de especificar donde exactamente queremos el estilo.<span class="texto-claro">*/</span> <br><span class="texto-acento">ATRIBUTO </span> <span class="texto-claro">=></span> <span class="texto-claro">(</span>margin, padding, color, position, background... <span class="texto-claro">)</span> <br><span class="texto-claro">/*</span> Con los atributos indicamos qué es lo que queremos modificar. Su tamaño, color, posición y mucho más.<span class="texto-claro">*/</span><br> <span class="valor">VALOR</span> <span class="texto-claro">=></span> <span class="texto-claro">(</span><span class="valor">0, 87.5<span class="texto-html">%</span>, #e83e8c</span><span class="texto-claro">)</span> <br><span class="texto-claro">/*</span> Los valores son muy variados, desde colores rgb, rgba, en hexadecimal unidades de medida absolutas, relativas, etc...<span class="texto-claro">*/</span> <br><span class="texto-suave"><i>Quedando algo así:</i></span> <br> <span class="texto-html">ELEMENTO</span> <span class="texto-claro">{</span> <br> <span class="texto-acento">ATRIBUTO</span>:<span class="valor">VALOR</span>; <br> <span class="texto-claro">}</span></pre>
 							</div>
 						</div>
 						<p>Psst! efecto <span class="subrr aportaciones">ELEMENTO:hover{color:#000}</span> en este ↓ "espacio en
 							blanco" ↓</p>
 						<div class="pieInvisible">
-							<p>El texto que se encuentra entre '<span class="pink-text">/* */</span>' es el método a seguir en CSS,
+							<p>El texto que se encuentra entre '<span class="texto-html">/* */</span>' es el método a seguir en CSS,
 								que nos permite, en su formato .css, dejar indicaciones a tener en cuenta en ese punto del doc.css, y
 								estas no interrumpirán el flujo de lectura de la máquina.<span class="subrr"><br>/* comentario con más
 									de una línea en .CSS */ </span></p>
@@ -357,7 +356,7 @@
 						<!-- Fin Sección ejemplos css -->
 
 						<!-- Sección Iframe -->
-						<div class="col s12">
+						<div class="celda">
 							<p class="kolo"><i>"S<b>tyle..."</b></i> Sería <span class="subrr">el conjunto de ATRIBUTOS Y
 									VALORES</span> que
 								proporcionamos al <span class="subrr">ELEMENTO</span> o los elementos, para <b>Formar</b> una estructura
@@ -368,14 +367,14 @@
 									href="https://codepen.io/jBaton">@jBaton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 							<br><br><br>
-							<div class="col s12">
+							<div>
 								<p class="kolo"><i>"S<b>heets..."</b></i> Hojas. Es en una o varias "hojas de estilos en cascada" donde
 									vamos a indicar lo necesario para que nuestra estructura html sea más vistosa. Antes de CSS los
 									estilos se aplicaban dentro del mismo código HTML, pero se externalizó, de modo que resultase, por un
 									lado la estructura HTML y por otro las características visuales.</p>
-								<div class="col l4 left">
-									<div class="transparent center">
-										<img src="img/crokis-html-css.png" alt="Crokis separación de html y css" class="responsive-img">
+								<div class="flotar-izda">
+									<div class="fondo-transparente texto-centro">
+										<img src="img/crokis-html-css.png" alt="Crokis separación de html y css">
 									</div>
 								</div>
 								<p>Una vez separados los estilos del código HTML, CSS evoluciona rápido llegando en 1999 a su versión
@@ -384,74 +383,74 @@
 							</div>
 						</div>
 						<!-- Fin sección Iframe -->
-						<div class="row">
-							<div class="col m6 l6">
+						<div class="grid grid--2">
+							<div>
 								<p>Dentro de HTML</p>
 								<ol>
-									<li>Llamar estilos css inline<img class="materialboxed"
+									<li>Llamar estilos css inline<img class="ampliable"
 											data-caption="Dentro del documento HTML entre las etiquetas head podemos crear una 'hoja de estilos'."
 											width="150" src="img/declare_stylecss.png" alt="Captura de pantalla llamando a style"></li>
-									<li>Misma sintaxis...<img class="materialboxed"
+									<li>Misma sintaxis...<img class="ampliable"
 											data-caption="Lo bueno de este método es que editas más rápido los estilos. Lo malo lo verás pronto."
 											width="150" src="img/style_on_head.png" alt="Captura de pantalla estilos en el head"></li>
 								</ol>
 							</div>
-							<div class="col m6 l6">
+							<div>
 								<p>Llamando al archivo.css</p>
 								<ol>
-									<li>Indica la ruta hasta .css<img class="materialboxed"
+									<li>Indica la ruta hasta .css<img class="ampliable"
 											data-caption="Buscando el archivo de estilos CSS" width="150" src="img/call_ext_stylecss.png"
 											alt="Captura de pantalla/guardando archivo.html"></li>
-									<li>Dentro de css<img class="materialboxed"
+									<li>Dentro de css<img class="ampliable"
 											data-caption="A diseñar! Indíca que valores de atributo tendrán tus elementos." width="150"
 											src="img/ej_css.png" alt="Captura de pantalla/guardando archivo.html"></li>
 								</ol>
 							</div>
 						</div>
 						<!-- POSIBLE CUADRO PARA PUBLI O UN MENÚ -->
-						<div class="col s12 m10 l3	">
-							<div class="card-action collection-header transparent">
-								<div class="col s12 red">
-									<i aria-hidden="true" class="material-icons left">developer_board</i><span class="pKlein">Herramientas CSS</span>
+						<div class="celda" style="--span: 3">
+							<div class="card-acciones fondo-transparente">
+								<div class="fondo-html">
+									<i aria-hidden="true" class="material-icons flotar-izda">developer_board</i><span class="pKlein">Herramientas CSS</span>
 								</div>
 								<ul>
 									<li><br><br></li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://cssgradient.io/" target="_blank"
-											rel="noopener noreferrer"> Generar gradientes</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i>
+											rel="noopener noreferrer"> Generar gradientes</a><i aria-hidden="true" class="material-icons icono-pequeno">open_in_new</i>
 									</li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://uigradients.com/#Argon" target="_blank"
-											rel="noopener noreferrer"> Ver gradientes</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i></li>
+											rel="noopener noreferrer"> Ver gradientes</a><i aria-hidden="true" class="material-icons icono-pequeno">open_in_new</i></li>
 									<li class="afuera"><a title="Nueva pestaña"
 											href="https://color.hailpixel.com/#26190D,C78B57,1C0D26,C1ABE3,1F3B5C,E0A3A3" target="_blank"
-											rel="noopener noreferrer"> Paleta de colores</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i>
+											rel="noopener noreferrer"> Paleta de colores</a><i aria-hidden="true" class="material-icons icono-pequeno">open_in_new</i>
 									</li>
 									<li class="afuera"><a title="Nueva pestaña"
 											href="https://www.hostingatope.com/tutorial-aprender-css-basico-manual-pdf/" target="_blank"
-											rel="noopener noreferrer"> Guía de CSS</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i></li>
+											rel="noopener noreferrer"> Guía de CSS</a><i aria-hidden="true" class="material-icons icono-pequeno">open_in_new</i></li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://lorempixel.com/" target="_blank"
-											rel="noopener noreferrer"> LoremPixel</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i></li>
+											rel="noopener noreferrer"> LoremPixel</a><i aria-hidden="true" class="material-icons icono-pequeno">open_in_new</i></li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://material.io/tools/icons/?style=baseline"
 											target="_blank" rel="noopener noreferrer"> Material Icons</a><i aria-hidden="true"
-											class="material-icons tiny">open_in_new</i></li>
+											class="material-icons icono-pequeno">open_in_new</i></li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://colorhunt.co/palette/132369" target="_blank"
-											rel="noopener noreferrer"> Colores</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i></li>
+											rel="noopener noreferrer"> Colores</a><i aria-hidden="true" class="material-icons icono-pequeno">open_in_new</i></li>
 									<li class="afuera"><a title="Nueva pestaña" href="https://csscompressor.com/" target="_blank"
-											rel="noopener noreferrer"> Minificar CSS</a><i aria-hidden="true" class="material-icons tiny">open_in_new</i></li>
+											rel="noopener noreferrer"> Minificar CSS</a><i aria-hidden="true" class="material-icons icono-pequeno">open_in_new</i></li>
 								</ul>
 							</div>
 						</div>
-						<div class="col s12 m11 l9">
-							<p><a aria-disabled="true" class="pendiente tooltipped" data-position="top"
+						<div class="celda" style="--span: 9">
+							<p><a aria-disabled="true" class="pendiente" data-position="top"
 									data-tooltip="Métodos para incluir CSS">Aquí</a>, podrás ver los distintos métodos más a fondo.</p>
 						</div>
-						<div class="col s12 m11 l9">
+						<div class="celda" style="--span: 9">
 							<p class="kolo">Resumiendo, CSS nos da la posibilidad de darle un toque "artístico" para que nuestra web
 								no tenga solo lineas de texto e hipertexto.</p>
-							<a href="css.html" class="btn transparent css black-text">CSS</a>
-							<a href="fw-css.html" class="btn transparent css black-text">FrameWorks de CSS</a>
-							<a aria-disabled="true" class="pendiente btn transparent css black-text">CSS<sub><i aria-hidden="true"
+							<a href="css.html" class="btn fondo-transparente css texto-oscuro">CSS</a>
+							<a href="fw-css.html" class="btn fondo-transparente css texto-oscuro">FrameWorks de CSS</a>
+							<a aria-disabled="true" class="pendiente btn fondo-transparente css texto-oscuro">CSS<sub><i aria-hidden="true"
 										class="fab fa-css3-alt"></i></sub></a>
-							<a aria-disabled="true" class="pendiente btn disabled transparent css black-text">Funciones con CSS</a>
+							<a aria-disabled="true" class="pendiente btn fondo-transparente css texto-oscuro">Funciones con CSS</a>
 						</div>
 					</div>
 				</div>
@@ -463,34 +462,34 @@
 
 		<!-- JS Paralax -->
 		<a id="js"></a> <!-- Ancla Js -->
-		<div class="parallax-container row">
-			<div class="section no-pad-bot">
-				<div class="container center">
+		<div class="banner">
+			<div class="section">
+				<div class="container texto-centro">
 
-					<div class="col s12 m10 l12">
-						<h1 class="center amber-text text-lighten-2 resalto">JavaScript</h1>
-						<h2 class="titulos white-text resalto">Lenguaje de programación interpretado</h2>
+					<div>
+						<h1 class="texto-centro texto-js resalto">JavaScript</h1>
+						<h2 class="titulos texto-claro resalto">Lenguaje de programación interpretado</h2>
 					</div>
 
-					<div class="col s12 m10 l12">
+					<div>
 						<span class="sombraBtns"><a href="es6.html" aria-label="Más sobre javascript"
-								class="resalto btn yellow waves-effect btn-large waves-amber js"><i aria-hidden="true" class="fab fa-js"></i></a></span>
+								class="resalto btn fondo-js btn--grande js"><i aria-hidden="true" class="fab fa-js"></i></a></span>
 					</div>
 
 					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-					<div class="right afuera">
+					<div class="flotar-dcha afuera">
 						<a href="https://www.pexels.com/photo/blur-blurred-blurry-dark-572665/" target="_blank"
-							rel="noopener noreferrer" class="yellow-text">Pexel
+							rel="noopener noreferrer" class="texto-js">Pexel
 							por</a>
 						<a href="https://www.pexels.com/@wesley-woodard-177495" target="_blank" rel="noopener noreferrer"
-							class="amber-text text-darken-2">@wesleywoodard<i aria-hidden="true"
-								class="material-icons tiny yellow-text">open_in_new</i></a>
+							class="texto-js">@wesleywoodard<i aria-hidden="true"
+								class="material-icons icono-pequeno texto-js">open_in_new</i></a>
 					</div>
 
 				</div>
 			</div>
 
-			<div class="parallax">
+			<div class="banner-imagen">
 				<img src="img/javascript.jpg" alt="Teclado negro con amarillos">
 			</div>
 		</div>
@@ -500,35 +499,35 @@
 		<!-- Sección JS -->
 		<div class="container" id="cont_js">
 			<section class="section">
-				<div class="row">
+				<div class="grid grid--2">
 
-					<div id="txt" class="col s12">
-						<h2 class="black-text center"><span class="amber-text">J</span>ava<span class="amber-text">S</span>cript
+					<div id="txt" class="grid-completa">
+						<h2 class="texto-oscuro texto-centro"><span class="texto-js">J</span>ava<span class="texto-js">S</span>cript
 						</h2>
-						<h3 class="center titSemantik">El lenguaje usado para "dar vida" tanto a los estilos CSS como a la
+						<h3 class="texto-centro titSemantik">El lenguaje usado para "dar vida" tanto a los estilos CSS como a la
 							estructura HTML de un sitio web...<br><br><span class="aportaciones">JavaScript es el espíritu del
 								conjunto</span> <sub>jBaton.</sub></h3><br>
 						<p class="kolo">JavaScript puede hacer que nuestro estilo CSS "cobre vida", que nuestro HTML tenga cierta
-							"inteligencia" al poder programar con <a aria-disabled="true" class="pendiente tooltipped" data-position="top"
+							"inteligencia" al poder programar con <a aria-disabled="true" class="pendiente" data-position="top"
 								data-tooltip="¿Qué es un Script?">Scripts</a> acciones y métodos, como por ejemplo la <a
-								aria-disabled="true" class="pendiente tooltipped" data-position="top" data-tooltip="Mira cómo">validación de
-								formularios</a>, <a aria-disabled="true" class="pendiente tooltipped" data-position="left"
+								aria-disabled="true" class="pendiente" data-position="top" data-tooltip="Mira cómo">validación de
+								formularios</a>, <a aria-disabled="true" class="pendiente" data-position="left"
 								data-tooltip="Cómo crear Cookies"> la creación de Cookies</a> y un larguísimo etc.</p>
 						<p class="kolo">Se diseña en <a href="https://es.wikipedia.org/wiki/Netscape_Communications_Corporation"
-								target="_blank" rel="noopener noreferrer" class="tooltipped afuera" data-position="top"
+								target="_blank" rel="noopener noreferrer" class="afuera" data-position="top"
 								data-tooltip="Más en la WikiPedia">Netscape Communications Corp<i aria-hidden="true"
-									class="tiny material-icons ">open_in_new</i></a>. La persona más relevante en el proyecto es <a
+									class="icono-pequeno material-icons">open_in_new</i></a>. La persona más relevante en el proyecto es <a
 								href="https://github.com/BrendanEich" target="_blank" rel="noopener noreferrer"
-								class="tooltipped afuera" data-position="top" data-tooltip="Brendan Eich en GitHub">Brendan Eich<i aria-hidden="true"
-									class="tiny material-icons ">open_in_new</i></a>. Ex <abbr class="tooltipped"
+								class="afuera" data-position="top" data-tooltip="Brendan Eich en GitHub">Brendan Eich<i aria-hidden="true"
+									class="icono-pequeno material-icons">open_in_new</i></a>. Ex <abbr
 								data-tooltip="Director Ejecutivo" data-position="top" title="Chief Executive Officer">CEO</abbr> de <a
 								href="https://www.mozilla.org/es-ES/firefox/" target="_blank" rel="noopener noreferrer"
-								class="afuera tooltipped" data-position="top" data-tooltip="Lee sobre firefox">Mozilla Corp<i aria-hidden="true"
-									class="tiny material-icons">open_in_new</i></a>. Y actual CEO de Brave Software. Ha creado su propio
+								class="afuera" data-position="top" data-tooltip="Lee sobre firefox">Mozilla Corp<i aria-hidden="true"
+									class="icono-pequeno material-icons">open_in_new</i></a>. Y actual CEO de Brave Software. Ha creado su propio
 							navegador... <a href="https://brave.com/boj118" target="_blank" rel="noopener noreferrer sponsored"
-								class="tooltipped afuera" data-position="top"
-								data-tooltip='"Brave is on a mission to fix the web."'><span class="orange-text "><b>Brave!<i aria-hidden="true"
-											class="material-icons tiny">open_in_new</i></b></span></a>. Al parecer es bastante potente, tengo
+								class="afuera" data-position="top"
+								data-tooltip='"Brave is on a mission to fix the web."'><span class="texto-js"><b>Brave!<i aria-hidden="true"
+											class="material-icons icono-pequeno">open_in_new</i></b></span></a>. Al parecer es bastante potente, tengo
 							entendido que está creado mayormente con <abbr title="JavaScript">JS</abbr> y con unos principios
 							realmente interesantes (recomiendo una investigación a fondo y su prueba, la verdad que es rápido y parece
 							que mantiene su palabra de privacidad). </p>
@@ -542,38 +541,38 @@
 						</p>
 					</div>
 
-					<div class="col s12 m6 left">
-						<div class="card transparent">
-							<div class="card-content">
-								<p><span class="card-title center"><span title="Constante"
-											class="deep-purple-text text-accent-1 tooltipped deco" data-position="top"
+					<div class="flotar-izda">
+						<div class="card fondo-transparente">
+							<div class="card-contenido">
+								<p><span class="card-titulo texto-centro"><span title="Constante"
+											class="texto-php deco" data-position="top"
 											data-tooltip="En programación 'const' = Valor inalterable">const</span> <span
-											class="amber-text">JavaScript <a class="tooltipped deco" data-position="top"
+											class="texto-js">JavaScript <a class="deco" data-position="top"
 												data-tooltip="No es igual" title="Operador lógico usado en JavaScript">!=</a></span><span
-											class="red-text"> java</span>;
+											class="texto-html"> java</span>;
 									</span></p>
-								<p class="kolo grey-text text-darken-3 afuera">Algo a tener en cuenta, aunque si has llegado aquí doy
+								<p class="kolo texto-suave afuera">Algo a tener en cuenta, aunque si has llegado aquí doy
 									por supuesto que no tendrás mucha idea respecto a lo siguiente, es que JavaScript no tiene una
 									"conexión" directa con <a
 										href="https://www.google.com/search?q=java&ie=utf-8&oe=utf-8&client=firefox-b-ab" target="_blank"
-										rel="noopener noreferrer" class="tooltipped" data-position="right"
-										data-tooltip="Resultados de Java en google"><span class="red-text">Java</span><sub><i aria-hidden="true"
-												class="fab fa-java cyan-text medium"></i></sub><sup><i aria-hidden="true"
-												class="tiny material-icons">open_in_new</i></sup></a> ya que son lenguajes diferentes, <span
-										class="amber-text">J</span>ava<span class="amber-text">S</span>cript <i aria-hidden="true"
-										class="fab fa-js medium amber-text"></i> puede ser escrito dentro de un documento.html y de modo
-									externo. Mientras que <span class="red-text">Java</span><i aria-hidden="true" class="fab fa-java cyan-text medium"></i>
+										rel="noopener noreferrer" data-position="right"
+										data-tooltip="Resultados de Java en google"><span class="texto-html">Java</span><sub><i aria-hidden="true"
+												class="fab fa-java texto-acento icono-grande"></i></sub><sup><i aria-hidden="true"
+												class="icono-pequeno material-icons">open_in_new</i></sup></a> ya que son lenguajes diferentes, <span
+										class="texto-js">J</span>ava<span class="texto-js">S</span>cript <i aria-hidden="true"
+										class="fab fa-js icono-grande texto-js"></i> puede ser escrito dentro de un documento.html y de modo
+									externo. Mientras que <span class="texto-html">Java</span><i aria-hidden="true" class="fab fa-java texto-acento icono-grande"></i>
 									necesita de un entorno para ser desarrollado en condiciones.
 								</p><br>
 							</div>
 						</div>
 					</div>
 
-					<div class="col s12 m6 right">
-						<div class="card transparent">
-							<div class="card-content">
-								<p><span class="card-title center">3 Formas de incluir JavaScript</span></p>
-								<pre>&lt;!-- 1<sup>º</sup> Sobre un elemento HTML --><br><span class="white-text">&lt;</span><span class="red-text">body</span><span class="orange-text"> onload</span><span class="white-text">=</span><span class="green-text">"</span><a aria-disabled="true" class="pendiente tooltipped" data-position="top" data-tooltip="Eventos de JavaScript"><span class="light-blue-text deco">eventos</span></a><span class="green-text">(),</span><span class="light-blue-text">soyUnEventodeJs</span><span class="green-text">();</span><span class="green-text">"</span><span class="white-text">></span><br><br>&lt;!-- 2<sup>º</sup> Dentro del doc.html --><br><span class="white-text">&lt;</span><span class="red-text">script</span><span class="white-text">></span><br><span class="yellow-text">alert</span><span class="white-text">(</span><span class="green-text">"Hola, soy un <a aria-disabled="true" class="pendiente deco tooltipped" data-position="top" data-tooltip="Métodos de JavaScript"><span class="green-text">método</span></a> de JS"</span><span class="white-text">);</span><br><span class="white-text">&lt;/</span><span class="red-text">script</span><span class="white-text">></span><br><br>&lt;!-- 3<sup>º</sup> Llamando a un archivo.js --><br><span class="white-text">&lt;</span><span class="red-text">script</span> <span class="purple-text">src</span><span class="white-text">=</span><span class="green-text">"js/archivo.js"</span><span class="white-text">>&lt;/</span><span class="red-text">script</span><span class="white-text">></span></pre>
+					<div class="flotar-dcha">
+						<div class="card fondo-transparente">
+							<div class="card-contenido">
+								<p><span class="card-titulo texto-centro">3 Formas de incluir JavaScript</span></p>
+								<pre>&lt;!-- 1<sup>º</sup> Sobre un elemento HTML --><br><span class="texto-claro">&lt;</span><span class="texto-html">body</span><span class="texto-js"> onload</span><span class="texto-claro">=</span><span class="texto-acento">"</span><a aria-disabled="true" class="pendiente" data-position="top" data-tooltip="Eventos de JavaScript"><span class="texto-css deco">eventos</span></a><span class="texto-acento">(),</span><span class="texto-css">soyUnEventodeJs</span><span class="texto-acento">();</span><span class="texto-acento">"</span><span class="texto-claro">></span><br><br>&lt;!-- 2<sup>º</sup> Dentro del doc.html --><br><span class="texto-claro">&lt;</span><span class="texto-html">script</span><span class="texto-claro">></span><br><span class="texto-js">alert</span><span class="texto-claro">(</span><span class="texto-acento">"Hola, soy un <a aria-disabled="true" class="pendiente deco" data-position="top" data-tooltip="Métodos de JavaScript"><span class="texto-acento">método</span></a> de JS"</span><span class="texto-claro">);</span><br><span class="texto-claro">&lt;/</span><span class="texto-html">script</span><span class="texto-claro">></span><br><br>&lt;!-- 3<sup>º</sup> Llamando a un archivo.js --><br><span class="texto-claro">&lt;</span><span class="texto-html">script</span> <span class="texto-php">src</span><span class="texto-claro">=</span><span class="texto-acento">"js/archivo.js"</span><span class="texto-claro">>&lt;/</span><span class="texto-html">script</span><span class="texto-claro">></span></pre>
 							</div>
 						</div>
 					</div>
@@ -586,14 +585,14 @@
 		<!-- Fin JS -->
 
 		<!-- Pié de página -->
-		<footer class="page-footer black">
+		<footer class="pie">
 			<a id="footer"></a>
 			<div class="container">
-				<div class="row">
-					<div class="col l11 s12">
-						<h1 class="grey-text center">Nota</h1>
-						<hr class="grey-text">
-						<p class="kolo grey-text center">Aclarar que esta documentación es desarrollada a partir de los
+				<div class="grid grid--compacta">
+					<div class="grid-completa">
+						<h1 class="texto-suave texto-centro">Nota</h1>
+						<hr class="texto-suave">
+						<p class="kolo texto-suave texto-centro">Aclarar que esta documentación es desarrollada a partir de los
 							conocimientos que he ido adquiriendo con el tiempo, siendo de utilidad para la iniciación a los lenguajes
 							más conocidos y usados actualmente para el desarrollo de páginas web sin necesidad de CMS's. La primera
 							intención era ordenar dicha información como si de un bloc de notas se tratase, pero conforme la idea ha
@@ -602,98 +601,94 @@
 							puedo permitir que se pongan en contacto conmigo vía email, para su modificación y en un futuro permitir
 							su edición bajo supervisión del personal más cualificado.</p>
 					</div>
-					<div class="col l2 s12 center">
-						<p class="red-text center">Mapa del sitio</p>
-						<hr class="blue-text">
-						<a class="white-text html" href="html.html">HTML,</a>
-						<a class="white-text css" href="css.html">CSS,</a>
-						<a class="white-text js" href="js.html">JS,</a>
-						<a class="white-text resto" href="guias.html">Guías,</a>
-						<a class="white-text resto" href="relacionando.html">Relacionado.</a>
+					<div class="texto-centro">
+						<p class="texto-html texto-centro">Mapa del sitio</p>
+						<hr class="texto-css">
+						<a class="texto-claro html" href="html.html">HTML,</a>
+						<a class="texto-claro css" href="css.html">CSS,</a>
+						<a class="texto-claro js" href="js.html">JS,</a>
+						<a class="texto-claro resto" href="guias.html">Guías,</a>
+						<a class="texto-claro resto" href="relacionando.html">Relacionado.</a>
 					</div>
-					<div class="col l2 s5 center">
-						<p class="blue-text center">Contacto</p>
-						<hr class="yellow-text">
+					<div class="texto-centro">
+						<p class="texto-css texto-centro">Contacto</p>
+						<hr class="texto-js">
 						<ul>
-							<li><a class="white-text css"
+							<li><a class="texto-claro css"
 									href="https://twitter.com/messages/compose?recipient_id=3364552791&ref_src=twsrc%5Etfw"
 									target="_blank" rel="noopener noreferrer" data-lang="es" data-screen-name="@Sinarkista"
 									data-show-count="false" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-1x"></i></a>
 							</li>
-							<li><a class="white-text css" href="#!">Link 2</a></li>
-							<li><a class="white-text css" href="#!">Link 3</a></li>
-							<li><a class="white-text css" href="#!">Link 4</a></li>
+							<li><a class="texto-claro css" href="#!">Link 2</a></li>
+							<li><a class="texto-claro css" href="#!">Link 3</a></li>
+							<li><a class="texto-claro css" href="#!">Link 4</a></li>
 						</ul>
 					</div>
-					<div class="col l2 s7 center">
-						<p class="yellow-text center">RRSS</p>
-						<hr class="deep-purple-text">
-						<a class="cyan-text js" href="https://twitter.com/Sinarkista?ref_src=twsrc%5Etfw" target="_blank"
+					<div class="texto-centro">
+						<p class="texto-js texto-centro">RRSS</p>
+						<hr class="texto-php">
+						<a class="texto-acento js" href="https://twitter.com/Sinarkista?ref_src=twsrc%5Etfw" target="_blank"
 							rel="noopener noreferrer" data-show-screen-name="false" data-lang="es" data-show-count="false" aria-label="Twitter"><i aria-hidden="true"
 								class="fab fa-twitter fa-3x"></i></a>
-						<a class="blue-text text-darken-3 js" href="https://www.facebook.com/facundohetoro" target="_blank"
+						<a class="texto-css js" href="https://www.facebook.com/facundohetoro" target="_blank"
 							rel="noopener noreferrer" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f fa-3x"></i></a>
-						<a class="red-text js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank"
+						<a class="texto-html js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank"
 							rel="noopener noreferrer" aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube fa-3x"></i></a>
-						<a class="orange-text js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i aria-hidden="true"
+						<a class="texto-js js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i aria-hidden="true"
 								class="fab fa-soundcloud fa-3x"></i></a>
 					</div>
-					<div class="col l2 s12 center">
-						<p class="deep-purple-text center">Cookies</p>
-						<hr class="lime-text text-accent-3">
+					<div class="texto-centro">
+						<p class="texto-php texto-centro">Cookies</p>
+						<hr class="texto-acento">
 						<ul>
-							<li><a class="white-text php" href="#!">Cookie 1</a></li>
-							<li><a class="white-text php" href="#!">Cookie 2</a></li>
-							<li><a class="white-text php" href="#!">Cookie 3</a></li>
-							<li><a class="white-text php" href="#!">Cookie 4</a></li>
+							<li><a class="texto-claro php" href="#!">Cookie 1</a></li>
+							<li><a class="texto-claro php" href="#!">Cookie 2</a></li>
+							<li><a class="texto-claro php" href="#!">Cookie 3</a></li>
+							<li><a class="texto-claro php" href="#!">Cookie 4</a></li>
 						</ul>
 					</div>
-					<div class="col l2 s5 center">
-						<p class="lime-text text-accent-3 center">Fuentes</p>
+					<div class="texto-centro">
+						<p class="texto-acento texto-centro">Fuentes</p>
 						<hr class="resto">
 						<ul>
-							<li><a title="Google Developers" class="white-text nodeh" href="https://developers.google.com/products/"
+							<li><a title="Google Developers" class="texto-claro nodeh" href="https://developers.google.com/products/"
 									target="_blank" rel="noopener noreferrer">Google</a></li>
-							<li><a title="Microsoft Desarrolladores" class="white-text nodeh" href="https://msdn.microsoft.com/es-es"
+							<li><a title="Microsoft Desarrolladores" class="texto-claro nodeh" href="https://msdn.microsoft.com/es-es"
 									target="_blank" rel="noopener noreferrer">Microsoft</a></li>
-							<li><a title="Mozzila Developer" class="white-text nodeh" href="https://developer.mozilla.org/es/"
+							<li><a title="Mozzila Developer" class="texto-claro nodeh" href="https://developer.mozilla.org/es/"
 									target="_blank" rel="noopener noreferrer">Mozilla</a></li>
-							<li><a title="W3C Schools" class="white-text nodeh" href="https://www.w3schools.com/" target="_blank"
+							<li><a title="W3C Schools" class="texto-claro nodeh" href="https://www.w3schools.com/" target="_blank"
 									rel="noopener noreferrer">W3Cs</a></li>
-							<li><a title="StackOverFlow" class="white-text nodeh"
+							<li><a title="StackOverFlow" class="texto-claro nodeh"
 									href="https://es.stackoverflow.com/users/95378/loki-farbauti-laufey" target="_blank"
 									rel="noopener noreferrer">StackOverFlow</a></li>
 						</ul>
 					</div>
-					<div class="col l2 s7 center">
-						<p class="center sidenav-trigger">Blogs</p>
-						<hr class="red-text text-accent-3">
+					<div class="texto-centro">
+						<p class="texto-centro menu-boton">Blogs</p>
+						<hr class="texto-html">
 						<ul>
-							<li><a title="César Jodra" class="white-text resto" href="https://cesarjodra.wordpress.com/"
+							<li><a title="César Jodra" class="texto-claro resto" href="https://cesarjodra.wordpress.com/"
 									target="_blank" rel="noopener noreferrer">César Jodra</a></li>
-							<li><a title="Javier Gosende" class="white-text resto" href="https://www.javiergosende.com/"
+							<li><a title="Javier Gosende" class="texto-claro resto" href="https://www.javiergosende.com/"
 									target="_blank" rel="noopener noreferrer">Javier Gosende</a></li>
-							<li><a title="Romuald Fons" class="white-text resto" href="https://romualdfons.com/que-es-el-seo/"
+							<li><a title="Romuald Fons" class="texto-claro resto" href="https://romualdfons.com/que-es-el-seo/"
 									target="_blank" rel="noopener noreferrer">Romuald Fons</a></li>
 						</ul>
 					</div>
 
-					<div class="col l12 s12 m12 reduce">
-						<p class="resenyas grey-text text-darken-2">Hecho con la ayuda de
-							<a href="https://materializecss.com/about.html" target="_blank" rel="noopener noreferrer">
-								<img id="materializecss" class="responsive-img" data-hover-src="img/materialize-teal.png"
-									src="img/materialize-grey.png" title="Materializecss" alt="Logo de Materializecss">
-							</a>
+					<div class="grid-completa reduce">
+						<p class="resenyas texto-suave">Hecho con la ayuda de
 							<a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">
-								<img id="fonts" class="responsive-img" data-hover-src="img/gf1.png" src="img/gf.png" alt="Google Fonts"
+								<img id="fonts" data-hover-src="img/gf1.png" src="img/gf.png" alt="Google Fonts"
 									title="GoogleFonts">
 							</a>
 							<a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">
-								<img id="fawesome" class="responsive-img" data-hover-src="img/fntaw1.png" src="img/fntaw.png"
+								<img id="fawesome" data-hover-src="img/fntaw1.png" src="img/fntaw.png"
 									alt="FontAwesome" title="FontAwesome">
 							</a>
 							<a href="https://material.io/tools/icons/?style=baseline" target="_blank" rel="noopener noreferrer">
-								<img id="mati" class="responsive-img" data-hover-src="img/mati1.png" src="img/mati.png" alt="MaterialIcons"
+								<img id="mati" data-hover-src="img/mati1.png" src="img/mati.png" alt="MaterialIcons"
 									title="MaterialIcons">
 							</a>
 						</p>
@@ -705,9 +700,7 @@
 	</div>
 	<!--  Scripts; Si se cambia este orden puede que algo falle-->
 	<!-- 2 -->
-	<script src="js/materialize.js"></script>
 	<!-- 3 -->
-	<script src="js/init.js"></script>
 	<!-- 4 -->
 	<script src="js/funk.js"></script>
 </body>

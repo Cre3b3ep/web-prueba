@@ -9,7 +9,6 @@
 
 	<!-- ↓ CSS  ↓ -->
 	<link href="css/fuentes.css" type="text/css" rel="stylesheet" />
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" />
 
 
@@ -34,61 +33,61 @@
 		<a id="anchorTarget"></a> <!-- Ancla -->
 		<!-- Navegador movil vertical -->
 		<div id="nav_dropdowns">
-			<ul id="dropdown3" class="dropdown-content">
-				<li><a class="center-align" href="html.html">HTML</a></li>
-				<li><a class="center-align" href="html5.html">HTML+5</a></li>
-				<li><a class="center-align" href="fw-html.html">FrameWorks</a></li>
+			<ul id="dropdown3" class="desplegable">
+				<li><a class="texto-centro" href="html.html">HTML</a></li>
+				<li><a class="texto-centro" href="html5.html">HTML+5</a></li>
+				<li><a class="texto-centro" href="fw-html.html">FrameWorks</a></li>
 			</ul>
 
-			<ul id="dropdown2" class="dropdown-content">
-				<li><a class="center-align" href="css.html">CSS</a></li>
-				<li><a class="pendiente center-align" aria-disabled="true">CSS 3</a></li>
-				<li><a class="center-align" href="fw-css.html">FrameWorks</a></li>
+			<ul id="dropdown2" class="desplegable">
+				<li><a class="texto-centro" href="css.html">CSS</a></li>
+				<li><a class="pendiente texto-centro" aria-disabled="true">CSS 3</a></li>
+				<li><a class="texto-centro" href="fw-css.html">FrameWorks</a></li>
 			</ul>
-			<ul id="dropdown1" class="dropdown-content">
-				<li><a class="center-align" href="js.html">JS</a></li>
-				<li><a class="center-align" href="es6.html">JS ES6</a></li>
-				<li><a class="center-align" href="fw-js.html">FrameWorkss</a></li>
+			<ul id="dropdown1" class="desplegable">
+				<li><a class="texto-centro" href="js.html">JS</a></li>
+				<li><a class="texto-centro" href="es6.html">JS ES6</a></li>
+				<li><a class="texto-centro" href="fw-js.html">FrameWorkss</a></li>
 			</ul>
 
-			<ul id="dropdown4" class="dropdown-content">
-				<li><a class="pendiente center-align" aria-disabled="true">PHP</a></li>
-				<li><a class="pendiente center-align" aria-disabled="true">PHP 7</a></li>
-				<li><a class="center-align" href="https://openwebinars.net/blog/los-10-mejores-frameworks-php-que-solicitan-las-empresas/">FrameWorks</a></li>
+			<ul id="dropdown4" class="desplegable">
+				<li><a class="pendiente texto-centro" aria-disabled="true">PHP</a></li>
+				<li><a class="pendiente texto-centro" aria-disabled="true">PHP 7</a></li>
+				<li><a class="texto-centro" href="https://openwebinars.net/blog/los-10-mejores-frameworks-php-que-solicitan-las-empresas/">FrameWorks</a></li>
 			</ul>
 		</div>
 		<!-- Navegador horizontal -->
 		<header>
-		<nav class="white">
-			<div class="nav-wrapper container">
-				<ul class="right hide-on-med-and-down">
-					<li><a class="dropdown-trigger html" href="javascript:void(0);" data-target="dropdown3">HTML</a></li>
-					<li><a class="dropdown-trigger css" href="#!" data-target="dropdown2">CSS</a></li>
-					<li><a class="dropdown-trigger js" href="#!" data-target="dropdown1">JavaScript</a></li>
-					<li><a class="dropdown-trigger php" href="#!" data-target="dropdown4">PHP</a></li>
+		<nav>
+			<div class="barra container">
+				<ul class="solo-escritorio">
+					<li><a class="desplegable-boton html" href="javascript:void(0);" data-target="dropdown3">HTML</a></li>
+					<li><a class="desplegable-boton css" href="#!" data-target="dropdown2">CSS</a></li>
+					<li><a class="desplegable-boton js" href="#!" data-target="dropdown1">JavaScript</a></li>
+					<li><a class="desplegable-boton php" href="#!" data-target="dropdown4">PHP</a></li>
 					<li><a class="resto" href="#">Guías</a></li>
 					<li><a class="resto" href="relacionando.html">Relacionado</a></li>
 				</ul>
 
-				<a href="#" class="sidenav-trigger" data-target="menu-lateral" aria-label="Abrir menú">
+				<a href="#" class="menu-boton" data-target="menu-lateral" aria-label="Abrir menú">
 					<i aria-hidden="true" class="material-icons">menu</i></a>
 
 				<div id="logo">
-					<a class="tooltipped" data-position="left" data-tooltip="Click! => Inicio" href="index.html">
-						<span class="red-text text-darken-4">H</span>
-						<span class="blue-text text-darken-4">C</span>
-						<span class="yellow-text text-darken-4">J</span>
-						<span class="deep-purple-text text-darken-4">P</span>
+					<a data-position="left" data-tooltip="Click! => Inicio" href="index.html">
+						<span class="texto-html">H</span>
+						<span class="texto-css">C</span>
+						<span class="texto-js">J</span>
+						<span class="texto-php">P</span>
 					</a>
 				</div>
 
 				<!-- nav movil -->
-				<ul id="menu-lateral" class="sidenav">
+				<ul id="menu-lateral" class="menu-lateral">
 					<li>
-						<div class="user-view">
-							<div class="background">
+						<div class="menu-lateral-cabecera">
+							<div class="menu-lateral-fondo">
 							</div>
-							<a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons white-text">home</i>
+							<a href="index.html" aria-label="Inicio"><i aria-hidden="true" class="material-icons texto-claro">home</i>
 							</a>
 						</div>
 					</li>
@@ -135,22 +134,22 @@
 
 		<!-- HTML -->
 		<a id="html"></a> <!-- Ancla -->
-		<div id="index-banner" class="parallax-container fondo-plano row">
-			<div class="section no-pad-bot">				
-				<div class="container center">
+		<div id="index-banner" class="banner fondo-plano">
+			<div class="section">				
+				<div class="grid grid--3 container texto-centro">
 
-					<div class="col s12 m10 l12">
-						<h1 class="titulos header white-text text-accent-4 ">HTML</h1>	
-						<h4 class="white-text text-accent-4">Lenguaje de marcas hipertextuales</h4>
+					<div class="grid-completa">
+						<h1 class="titulos header texto-claro">HTML</h1>	
+						<h4 class="texto-claro">Lenguaje de marcas hipertextuales</h4>
 					</div>
 
-					<div class="col s12 m10 l12 right">
-						<a href="html.html" aria-label="Más sobre html" class="btn btn-large red waves-effect waves-red html">Empieza!</a>
+					<div class="grid-completa flotar-dcha">
+						<a href="html.html" aria-label="Más sobre html" class="btn btn--grande fondo-html html">Empieza!</a>
 					</div>
 
 					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-					<div class="col s4 bottom left">
+					<div class="flotar-izda">
 				  </div>
 				</div>
 			</div>
@@ -160,18 +159,18 @@
 		<!-- Sección HTML -->
 		<div class="container" id="cont_html">
 			<section class="section">
-				<div class="row">
-					<div class="col s12 center">
+				<div>
+					<div class="texto-centro">
 						<h3><i class="redHtml">HTML</i></h3>
-						<p class="left-align kolo">Hace ya <span id="fecha"></span>
-							<span id="segundos"></span>en el <a target="_blank" rel="noopener noreferrer" href="https://home.cern/" class="tooltipped" data-position="top"
-							 data-tooltip="Conseil Européen pour la Recherche Nucléaire"><abbr title="Organización Europea para la Investigación Nuclear">CERN</abbr><sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup>
+						<p class="texto-izquierda kolo">Hace ya <span id="fecha"></span>
+							<span id="segundos"></span>en el <a target="_blank" rel="noopener noreferrer" href="https://home.cern/" data-position="top"
+							 data-tooltip="Conseil Européen pour la Recherche Nucléaire"><abbr title="Organización Europea para la Investigación Nuclear">CERN</abbr><sup><i aria-hidden="true" class="icono-pequeno material-icons">open_in_new</i></sup>
 							</a>
-							a un ingeniero llamado <a href="https://www.w3.org/People/Berners-Lee/" target="_blank" rel="noopener noreferrer" class="tooltipped"
-							 data-position="top" data-tooltip="w3.org/People/Berners-Lee">Tim Berners-Lee<sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup></a>
+							a un ingeniero llamado <a href="https://www.w3.org/People/Berners-Lee/" target="_blank" rel="noopener noreferrer"
+							 data-position="top" data-tooltip="w3.org/People/Berners-Lee">Tim Berners-Lee<sup><i aria-hidden="true" class="icono-pequeno material-icons">open_in_new</i></sup></a>
 							se le ocurrió crear un sistema para compartir archivos en línea, estableciendo la primera comunicación entre un
-							"cliente" y un "servidor" a través de <span class="tooltipped black-text" data-position="top" data-tooltip="HyperText Transfer Protocol">
-								<abbr title="Protocolo de transferencia de hipertexto"><b>HTTP</b></abbr> </span> bautizando a su creación bajo las siglas<span class="black-text tooltipped" data-position="top"
+							"cliente" y un "servidor" a través de <span class="texto-oscuro" data-position="top" data-tooltip="HyperText Transfer Protocol">
+								<abbr title="Protocolo de transferencia de hipertexto"><b>HTTP</b></abbr> </span> bautizando a su creación bajo las siglas<span class="texto-oscuro" data-position="top"
 							 data-tooltip="Hyper Text Markup Language"> <abbr title="Lenguaje de marcado hipertextual"><b>HTML</b></abbr></span>	. Como todo en esta vida <abbr title="HyperText Markup Language"> HTML</abbr> evoluciona a
 							pasos casi agigantados, pasados 20 años se comienza a desarrollar el estándar de la versión 5 y hasta el 2014 no
 							se establece, pero durante ese plazo de 7 años se dio a conocer al Mundo y gracias a él se pudo estandarizar
@@ -179,28 +178,28 @@
 							<p>El hombre ingenuo considera como real lo que puede percibir con los sentidos, y lo que no se le presenta como percepción (Dios, el alma, el conocimiento, etc.) se lo representa como algo análogo a lo que se percibe.</p> <br> <p>Si el realismo ingenuo quiere fundar una ciencia, sólo puede concebirla como una descripxión extacta del contenido de la percepción. Los conceptos le son solo medios para su fin. Existen para crear imágenes reflejas de las percepciones. Carecen de sentido para las cosas mismas. El realista ingenuo sólo considera reales los tulipanes individuales que se ven, o que podrían ver; la idea misma del tuli`´an la considera una abstracción, la imagen mental irreal que el alma se ha fomrado de las características comunes a todos los tulipanes.</p>
 						<article>
 							<h4>HTML <i>5</i> es la última versión.</h4>
-							<p class="left-align kolo">Publicada y estandarizada por el <a target="_blank" rel="noopener noreferrer" href="https://www.w3.org/TR/html52/"
-								 class="tooltipped" data-position="top" data-tooltip="w3.org/TR/html52">World
-									Wide Web Consortium<sup><i aria-hidden="true" class="tiny material-icons">open_in_new</i></sup></a><br>Conociendo a fondo el uso
+							<p class="texto-izquierda kolo">Publicada y estandarizada por el <a target="_blank" rel="noopener noreferrer" href="https://www.w3.org/TR/html52/"
+								 data-position="top" data-tooltip="w3.org/TR/html52">World
+									Wide Web Consortium<sup><i aria-hidden="true" class="icono-pequeno material-icons">open_in_new</i></sup></a><br>Conociendo a fondo el uso
 								y funcionamiento de HTML se comprenden mejor los cambios
 								realizados en las versiones posteriores. <br> HTML5 especifica:</p>
-							<ol class="left-align">
+							<ol class="texto-izquierda">
 								<li>
-									<p>Una estructura que <a href="estr_html5.html" class="tooltipped" data-position="top" data-tooltip="Estructura recomendada con HTML5">ayuda</a>
+									<p>Una estructura que <a href="estr_html5.html" data-position="top" data-tooltip="Estructura recomendada con HTML5">ayuda</a>
 										a los desarrolladores.</p>
 								</li>
 								<li>
-									<p>Una mejora en su <a class="pendiente tooltipped" data-position="top" data-tooltip="Verificación de formularios" aria-disabled="true">seguridad.</a></p>
+									<p>Una mejora en su <a class="pendiente" data-position="top" data-tooltip="Verificación de formularios" aria-disabled="true">seguridad.</a></p>
 								</li>
 								<li>
 									<p>Corrección de errores y eliminación de funcionalidades obsoletas.</p>
 								</li>
 								<li>
-									<p><a class="tooltipped" data-position="top" data-tooltip=".w3schools.com/html/html5_geolocation.asp" href="https://www.w3schools.com/html/html5_geolocation.asp">Diferentes
-											API's<sup><i aria-hidden="true" class="material-icons tiny">open_in_new</i></sup></a></p>
+									<p><a data-position="top" data-tooltip=".w3schools.com/html/html5_geolocation.asp" href="https://www.w3schools.com/html/html5_geolocation.asp">Diferentes
+											API's<sup><i aria-hidden="true" class="material-icons icono-pequeno">open_in_new</i></sup></a></p>
 								</li>
 								<li>
-									<p><a class="tooltipped" data-position="top" data-tooltip="Recopilación de etiquetas HTML5 semánticas" href="accesibilidad.html">Accesibilidad</a>,
+									<p><a data-position="top" data-tooltip="Recopilación de etiquetas HTML5 semánticas" href="accesibilidad.html">Accesibilidad</a>,
 										gracias a sus etiquetas semánticas.</p>
 								</li>
 							</ol>
@@ -208,9 +207,9 @@
 					</div>
 				</div>
 				<!-- publicidad -->
-				<div class="container center">
-					<div class="row">
-						<div class="card section card-action s5 m5 l5">
+				<div class="container texto-centro">
+					<div>
+						<div class="card section card-acciones">
 							<a href="#">Publicidad</a>
 						</div>
 					</div>
@@ -222,50 +221,50 @@
 
 		<!-- CSS -->
 		<a id="css"></a> <!-- Ancla -->
-		<div class="parallax-container">
-			<div class="section no-pad-bot">
+		<div class="banner">
+			<div class="section">
 				<div class="container">
-					<h2 class="titulos center blue-text text-darken-1 left">CSS</h2>
-					<div class="row center">
-						<h4 class="header col s12 blue-text text-lighten-2">Hoja de Estilos en Cascada</h4>
+					<h2 class="titulos texto-centro texto-css flotar-izda">CSS</h2>
+					<div class="texto-centro">
+						<h4 class="header texto-css">Hoja de Estilos en Cascada</h4>
 					</div>
-					<div class="row center">
-						<a aria-disabled="true" aria-label="Más información sobre css" class="pendiente btn btn-large blue waves-effect waves-light css right">CSS
+					<div class="texto-centro">
+						<a aria-disabled="true" aria-label="Más información sobre css" class="pendiente btn btn--grande fondo-css css flotar-dcha">CSS
 							3.1!</a>
 					</div>
 					<a href="https://www.pexels.com/photo/closeup-photo-of-black-and-blue-keyboard-1194713/" target="_blank" rel="noopener noreferrer">Pexel
 						por</a>
-					<a href="https://www.pexels.com/@martabranco" target="_blank" rel="noopener noreferrer" class="blue-text text-lighten-4">@martabranco</a><i aria-hidden="true"
-					 class="material-icons tiny cyan-text">open_in_new</i>
+					<a href="https://www.pexels.com/@martabranco" target="_blank" rel="noopener noreferrer" class="texto-css">@martabranco</a><i aria-hidden="true"
+					 class="material-icons icono-pequeno texto-acento">open_in_new</i>
 				</div>
 			</div>
-			<div class="parallax"><img src="img/pexels-photo-1010497.jpeg" title="Marta Branco" alt="Photo by Marta Branco from Pexels"></div>
+			<div class="banner-imagen"><img src="img/pexels-photo-1010497.jpeg" title="Marta Branco" alt="Photo by Marta Branco from Pexels"></div>
 		</div>
 		<!-- Seccion CSS -->
 		<div class="container" id="cont_css">
 			<section class="section">
-				<div class="row">
+				<div class="grid grid--12">
 
-					<div class="col s12">
-						<h3 class="blue-text center">CSS</h3>
-						<p class="kolo"><i>"C<b>ascade..."</b></i> Cascada, la <a aria-disabled="true" class="pendiente tooltipped" data-position="top"
+					<div class="celda">
+						<h3 class="texto-css texto-centro">CSS</h3>
+						<p class="kolo"><i>"C<b>ascade..."</b></i> Cascada, la <a aria-disabled="true" class="pendiente" data-position="top"
 							 data-tooltip="Ver sintaxis de CSS">sintaxis</a> de CSS produce un "efecto cascada", cuando es escrito de modo
 							externo en un archivo con la extensión .css, el cual es llamado desde un "doc".html con la etiqueta
-							<a class="tooltipped" data-position="top" data-tooltip="+ Sobre los link en html" href="links.html">&lt;link></a>
+							<a data-position="top" data-tooltip="+ Sobre los link en html" href="links.html">&lt;link></a>
 						</p>
 					</div>
 
 
 					<!-- Sección Ejemplo1 css -->
-					<div class="col m4 s12 codigo">
+					<div class="celda codigo" style="--span: 4">
 						<div class="card">
-							<pre><span class="red-text text-darken-4">*</span><span class="white-text">{</span> <br> margin: <span class="valor">0</span>;<br> padding:<span class="valor">0</span> <br> <span class="white-text">}</span> <br><br><span class="red-text text-darken-4">body,html</span><span class="white-text">{</span><br> font-family: <span class="amber-text">'Specila Elite'</span>, sans -serfi;<br> color: <span class="white-text">#FFF</span><br><span class="white-text">}</span> <br><br><span class="red-text text-darken-4">pre</span><span class="white-text">{</span><br> font-size: <span class="valor">87.5</span><span class="red-text">%</span>; <br> color: <span class="valor">#e83e8c</span>; <br> word-break: break-word; <br> background-color: <span class="valor">#212529</span>;<br> padding: <span class="valor">0.2<span class="red-text">rem</span> 0.4<span class="red-text">rem</span></span>; <br> border-radius: <span class="valor">0.2 <span class="red-text">rem</span></span>;<br><span class="white-text">}</span>	
+							<pre><span class="texto-html">*</span><span class="texto-claro">{</span> <br> margin: <span class="valor">0</span>;<br> padding:<span class="valor">0</span> <br> <span class="texto-claro">}</span> <br><br><span class="texto-html">body,html</span><span class="texto-claro">{</span><br> font-family: <span class="texto-js">'Specila Elite'</span>, sans -serfi;<br> color: <span class="texto-claro">#FFF</span><br><span class="texto-claro">}</span> <br><br><span class="texto-html">pre</span><span class="texto-claro">{</span><br> font-size: <span class="valor">87.5</span><span class="texto-html">%</span>; <br> color: <span class="valor">#e83e8c</span>; <br> word-break: break-word; <br> background-color: <span class="valor">#212529</span>;<br> padding: <span class="valor">0.2<span class="texto-html">rem</span> 0.4<span class="texto-html">rem</span></span>; <br> border-radius: <span class="valor">0.2 <span class="texto-html">rem</span></span>;<br><span class="texto-claro">}</span>	
 </pre>
 						</div>
 					</div>
-					<div class="col m8 s12">
+					<div class="celda" style="--span: 8">
 						<div class="card">
-						<pre><span class="white-text">/*</span> La sintaxis en CSS, aparte de usar palabras Inglés, es sencilla. Invocas un elemento, encierras dentro uno o más atributos con sus respectivos valores separados por ";" y por ordenar mejor el código, dando un salto de línea. <br> Mirando el ejemplo de la izquierda: <br> <span class="white-text">*/</span> <br><span class="amber-text">ELEMENTO</span> <span class="white-text">=></span> <span class="white-text">(</span><span class="red-text text-darken-4">body, html, pre, h1... h6, nav, div...</span> <span class="white-text">)</span> <br><span class="white-text">/*</span> Los elementos serán nuestro modo de especificar donde exactamente queremos el estilo.<span class="white-text">*/</span> <br><span class="amber-text">ATRIBUTO </span> <span class="white-text">=></span> <span class="white-text">(</span>margin, padding, color, position, background... <span class="white-text">)</span> <br><span class="white-text">/*</span> Con los atributos indicamos qué es lo que queremos modificar. Su tamaño, color, posición y mucho más.<span class="white-text">*/</span><br> <span class="amber-text">VALOR</span> <span class="white-text">=></span> <span class="white-text">(</span><span class="valor">0, 87.5<span class="red-text">%</span>, #e83e8c</span><span class="white-text">)</span> <br><span class="white-text">/*</span> Los valores son muy variados, desde colores rgb, rgba, en hexadecimal unidades de medida absolutas, relativas, etc...<span class="white-text">*/</span> <br><span class="grey-text"><i>Quedando algo así:</i></span> <br> <span class="red-text text-accent-4">ELEMENTO</span> <span class="white-text">{</span> <br> ATRIBUTO: <span class="valor">VALOR</span>; <br> <span class="white-text">}</span></pre>
+						<pre><span class="texto-claro">/*</span> La sintaxis en CSS, aparte de usar palabras Inglés, es sencilla. Invocas un elemento, encierras dentro uno o más atributos con sus respectivos valores separados por ";" y por ordenar mejor el código, dando un salto de línea. <br> Mirando el ejemplo de la izquierda: <br> <span class="texto-claro">*/</span> <br><span class="texto-js">ELEMENTO</span> <span class="texto-claro">=></span> <span class="texto-claro">(</span><span class="texto-html">body, html, pre, h1... h6, nav, div...</span> <span class="texto-claro">)</span> <br><span class="texto-claro">/*</span> Los elementos serán nuestro modo de especificar donde exactamente queremos el estilo.<span class="texto-claro">*/</span> <br><span class="texto-js">ATRIBUTO </span> <span class="texto-claro">=></span> <span class="texto-claro">(</span>margin, padding, color, position, background... <span class="texto-claro">)</span> <br><span class="texto-claro">/*</span> Con los atributos indicamos qué es lo que queremos modificar. Su tamaño, color, posición y mucho más.<span class="texto-claro">*/</span><br> <span class="texto-js">VALOR</span> <span class="texto-claro">=></span> <span class="texto-claro">(</span><span class="valor">0, 87.5<span class="texto-html">%</span>, #e83e8c</span><span class="texto-claro">)</span> <br><span class="texto-claro">/*</span> Los valores son muy variados, desde colores rgb, rgba, en hexadecimal unidades de medida absolutas, relativas, etc...<span class="texto-claro">*/</span> <br><span class="texto-suave"><i>Quedando algo así:</i></span> <br> <span class="texto-html">ELEMENTO</span> <span class="texto-claro">{</span> <br> ATRIBUTO: <span class="valor">VALOR</span>; <br> <span class="texto-claro">}</span></pre>
 					</div>
 				</div>
 				<div class="pieInvisible"><p>El texto que se encuentra entre '/* */' es el método a seguir en CSS, que nos permite, en su formato .css, dejar indicaciones a tener en cuenta en ese punto del doc.css, y estas no interrupirán el flujo de lectura de la máquina.<span class="subrr"><br>/* comentario con mas de una linea en CSS. */ </span></p>
@@ -275,19 +274,19 @@
 <!-- Fin Sección ejemplos css -->
 
 <!-- Sección Iframe -->
-					<div class="col s12">
+					<div class="celda">
 						<p class="kolo"><i>"S<b>tyle..."</b></i> sería<span class="subrr"> el conjunto de ATRIBUTOS Y VALORES</span> que
 							proporcionamos al <span class="subrr">ELEMENTO</span> o los elementos, para <b>Formar</b> una estructura
 							visualmente "firme" como dándole carácter... <br><b>El estilo, vamos!</b></p>
 							<p data-height="265" data-theme-id="dark" data-slug-hash="PdxJzj" data-default-tab="css,result" data-user="jBaton" data-pen-title="Estilos simples de CSS" class="codepen">See the Pen <a href="https://codepen.io/jBaton/pen/PdxJzj/">Estilos simples de CSS</a> by jaronJabaton (<a href="https://codepen.io/jBaton">@jBaton</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <br><br><br>
-						<div class="col s12">
+						<div>
 							<p class="kolo"><i>"S<b>heets..."</b></i> hojas. Es en una o varias "hojas de estilos en cascada" donde vamos a indicar lo
 								necesario para que nuestra estructura html sea más vistosa! <br> Antes de CSS los estilos se aplicaban dentro
 								del mismo código HTML, pero se externalizó, de modo que resultase, por un lado la estructura HTML y por otro
 								las características visuales.</p>
-							<div class="col l4 left">
-								<div class="transparent center">
+							<div class="flotar-izda">
+								<div class="fondo-transparente texto-centro">
 								</div>
 							</div>
 							<p>Una vez separados los estilos del código HTML, CSS evoluciona rápido llegando en 1999 a su versión
@@ -297,29 +296,29 @@
 					</div>
 					<!-- Fin sección Iframe -->
 
-						<div class="col s11 m5 l5">
+						<div class="celda" style="--span: 5">
 								<p>Dentro de HTML</p>
 							<ol>
-								<li>Llamar estilos css inline<img class="materialboxed" data-caption="Dentro del documento HTML entre las etiquetas head podemos crear una 'hoja de estilos'."
+								<li>Llamar estilos css inline<img class="ampliable" data-caption="Dentro del documento HTML entre las etiquetas head podemos crear una 'hoja de estilos'."
 									 width="150" src="img/declare_stylecss.png" alt="captura de pantalla llamando a style"></li>
-								<li>Misma sintaxis...<img class="materialboxed" data-caption="Lo bueno de este método es que editas más rápido los estilos. Lo malo lo verás pronto."
+								<li>Misma sintaxis...<img class="ampliable" data-caption="Lo bueno de este método es que editas más rápido los estilos. Lo malo lo verás pronto."
 									 width="150" src="img/style_on_head.png" alt="Caputra de pantalla estilos en el head"></li>
 							</ol>
 						</div>
-						<div class="col s11 m5 l5">
+						<div class="celda" style="--span: 5">
 							<p>Llamando al archivo.css</p>
 							<ol>
-								<li>Indica la ruta hasta .css<img class="materialboxed" data-caption="Buscando el archivo de estilos CSS" width="150" src="img/call_ext_stylecss.png" alt="captura de pantalla/guardando archivo.html"></li>
-								<li>Dentro de css<img class="materialboxed" data-caption="A diseñar! Indíca que valores de atributo tendrán tus elementos." width="150" src="img/ej_css.png" alt="captura de pantalla/guardando archivo.html"></li>
+								<li>Indica la ruta hasta .css<img class="ampliable" data-caption="Buscando el archivo de estilos CSS" width="150" src="img/call_ext_stylecss.png" alt="captura de pantalla/guardando archivo.html"></li>
+								<li>Dentro de css<img class="ampliable" data-caption="A diseñar! Indíca que valores de atributo tendrán tus elementos." width="150" src="img/ej_css.png" alt="captura de pantalla/guardando archivo.html"></li>
 								
 							</ol>
 						</div>
-						<div class="col s2">
+						<div class="celda" style="--span: 2">
 							<div class="card">
 								<p> Anunciatem O Fortuna, Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum molestias repellendus in voluptates tempore  velutadd</p>
 							</div>
 						</div>
-						<p>En <a aria-disabled="true" class="pendiente tooltipped" data-position="top" data-tooltip="Metodos para incluir CSS">este</a> apartado, podrás ver los distintos métodos más a fondo.</p>
+						<p>En <a aria-disabled="true" class="pendiente" data-position="top" data-tooltip="Metodos para incluir CSS">este</a> apartado, podrás ver los distintos métodos más a fondo.</p>
 					</div>
 					<!-- Fin CSS -->					
 			</section>
@@ -328,32 +327,32 @@
 
 <!-- Sección JS -->
 		<a id="js"></a> <!-- Ancla Js -->
-		<div class="parallax-container">
-			<div class="section no-pad-bot">
+		<div class="banner">
+			<div class="section">
 				<div class="container">
-					<h2 class="titulos center yellow-text right">JavaScript</h2>
-					<div class="row center">
-						<h4 class="header col s12 yellow-text">Lenguaje de programación</h4>
+					<h2 class="titulos texto-centro texto-js flotar-dcha">JavaScript</h2>
+					<div class="texto-centro">
+						<h4 class="header texto-js">Lenguaje de programación</h4>
 					</div>
-					<div class="row center">
-						<a href="es6.html" aria-label="Más información sobre javascript" class="btn btn-large yellow waves-effect waves-amber js left black-text">EcmaSCRIPT 6!</a>
+					<div class="texto-centro">
+						<a href="es6.html" aria-label="Más información sobre javascript" class="btn btn--grande fondo-js js flotar-izda texto-oscuro">EcmaSCRIPT 6!</a>
 					</div>
-					<a href="https://www.pexels.com/photo/blur-blurred-blurry-dark-572665/" target="_blank" rel="noopener noreferrer" class="yellow-text">Pexel
+					<a href="https://www.pexels.com/photo/blur-blurred-blurry-dark-572665/" target="_blank" rel="noopener noreferrer" class="texto-js">Pexel
 						por</a>
-					<a href="https://www.pexels.com/@wesley-woodard-177495" target="_blank" rel="noopener noreferrer" class="yellow-text text-darken-2">@wesleywoodard</a>
+					<a href="https://www.pexels.com/@wesley-woodard-177495" target="_blank" rel="noopener noreferrer" class="texto-js">@wesleywoodard</a>
 				</div>
 			</div>
-			<div class="parallax">
+			<div class="banner-imagen">
 				<img src="img/javascript.jpg" alt="Photo by Wesley Woodard-177495 from Pexels">
 			</div>
 		</div>
 
 		<div class="container" id="cont_js">
 			<div class="section">
-				<div class="row">
-					<div class="col s12">
-						<h3 class="amber-text text-accent-2 center"><i>JavaScript</i></h3>
-						<div class="col s12 m4 l10">
+				<div>
+					<div>
+						<h3 class="texto-js texto-centro"><i>JavaScript</i></h3>
+						<div>
 							<p><strong>Ventajas de saber JavaScript.</strong> <br>
 								Podrás personalizar efectos visuales.
 								Adaptar la visualización para distintos navegadores.
@@ -369,17 +368,17 @@
 							<p><a href="https://codepen.io/akm2/pen/rHIsa" target="_blank" rel="noopener noreferrer">Gravity Points</a></p>
 
 							<a target="_blank" rel="noopener noreferrer" href="https://codepen.io/akm2"><small>Autor:<cite> @akm2</cite></small></a><br>
-						<p class="left-align light kolo">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id
+						<p class="texto-izquierda kolo">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id
 							nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies
 							eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et
 							pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed.
 							Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam
 							eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
 							posuere cubilia Curae;</p>
-						<p class="left-align light kolo">El hombre ingenuo considera como real lo que puede percibir con los sentidos, y
+						<p class="texto-izquierda kolo">El hombre ingenuo considera como real lo que puede percibir con los sentidos, y
 							lo que no se le presenta como percepción (Dios, el alma, el conocimiento, etc.) se lo representa como algo
 							análogo a lo que se percibe.</p> <br>
-						<p class="left-align light kolo">Si el realismo ingenuo quiere fundar una ciencia, sólo puede concebirla como una
+						<p class="texto-izquierda kolo">Si el realismo ingenuo quiere fundar una ciencia, sólo puede concebirla como una
 							descripxión extacta del contenido de la percepción. Los conceptos le son solo medios para su fin. Existen para
 							crear imágenes reflejas de las percepciones. Carecen de sentido para las cosas mismas. El realista ingenuo sólo
 							considera reales los tulipanes individuales que se ven, o que podrían ver; la idea misma del tuli`´an la
@@ -391,15 +390,15 @@
 		</div>
 
 		<a id="php"></a> <!-- Ancla -->
-		<div class="parallax-container fondo-plano">
-			<div class="section no-pad-bot">
+		<div class="banner fondo-plano">
+			<div class="section">
 				<div class="container">
-					<h2 class="titulos left phpcolor">PHP</h2>
-					<div class="row center">
-						<h4 class="header col s12 blue-text text-lighten-4">Preprocesador de hipertexto</h4>
+					<h2 class="titulos flotar-izda phpcolor">PHP</h2>
+					<div class="texto-centro">
+						<h4 class="header texto-css">Preprocesador de hipertexto</h4>
 					</div>
-					<div class="row center">
-						<a aria-disabled="true" aria-label="Más información sobre php" class="pendiente btn btn-large phpcolo waves-effect waves-light php btnPhp right">Empieza!</a>
+					<div class="texto-centro">
+						<a aria-disabled="true" aria-label="Más información sobre php" class="pendiente btn btn--grande phpcolo php btnPhp flotar-dcha">Empieza!</a>
 					</div>
 				</div>
 			</div>
@@ -408,10 +407,10 @@
 
 		<div class="container" id="cont_php">
 			<div class="section">
-				<div class="row">
-					<div class="col s12 center">
-						<h3 class="deep-purple-text">Porqué PHP?</h3>
-						<p class="left-align light kolo">Plumen inter vitae decurrit ad litora aeternitatis, et hominis, qui in ejus
+				<div>
+					<div class="texto-centro">
+						<h3 class="texto-php">Porqué PHP?</h3>
+						<p class="texto-izquierda kolo">Plumen inter vitae decurrit ad litora aeternitatis, et hominis, qui in ejus
 							creatura
 							aquae superius et inferius placido Ora turbido esse purgatos emergere verum error speculis ostendit fugientia
 							prendere et reflexes apparentibus putari uisis, quaeritis invenire exitum respicite et levate velum intrabit in
@@ -439,15 +438,15 @@
 		</div>
 
 		<a id="node"></a> <!-- Ancla -->
-		<div class="parallax-container fondo-plano">
-			<div class="section no-pad-bot">
+		<div class="banner fondo-plano">
+			<div class="section">
 				<div class="container">
-					<h2 class="titulos center lime-text">Node</h2>
-					<div class="row center">
-						<h4 class="header col s12 lime-text text-lighten-1">Interprete de JavaScript</h4>
+					<h2 class="titulos texto-centro texto-acento">Node</h2>
+					<div class="texto-centro">
+						<h4 class="header texto-acento">Interprete de JavaScript</h4>
 					</div>
-					<div class="row center">
-						<a aria-disabled="true" aria-label="Más información sobre node" class="pendiente btn btn-large waves-effect waves-light node">Empieza!</a>
+					<div class="texto-centro">
+						<a aria-disabled="true" aria-label="Más información sobre node" class="pendiente btn btn--grande node">Empieza!</a>
 					</div>
 				</div>
 			</div>
@@ -456,10 +455,10 @@
 
 		<div class="container" id="cont_node">
 			<div class="section">
-				<div class="row">
-					<div class="col s12 center">
-						<h3 class="black-text">N<span class="lime-text text-accent-3">o</span>de.js</h3>
-						<p class="left-align light kolo">Plumen inter vitae decurrit ad litora aeternitatis, et hominis, qui in ejus
+				<div>
+					<div class="texto-centro">
+						<h3 class="texto-oscuro">N<span class="texto-acento">o</span>de.js</h3>
+						<p class="texto-izquierda kolo">Plumen inter vitae decurrit ad litora aeternitatis, et hominis, qui in ejus
 							creatura
 							aquae superius et inferius placido Ora turbido esse purgatos emergere verum error speculis ostendit fugientia
 							prendere et reflexes apparentibus putari uisis, quaeritis invenire exitum respicite et levate velum intrabit in
@@ -486,71 +485,68 @@
 			</div>
 		</div>
 
-		<footer class="page-footer black">
+		<footer class="pie">
 			<div class="container">
-				<div class="row">
-					<div class="col l6 s12">
-						<h5 class="white-text">Company Bio</h5>
-						<p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
+				<div class="grid grid--a-medida grid--mixta" style="--columnas: 6fr 3fr 3fr">
+					<div class="celda">
+						<h5 class="texto-claro">Company Bio</h5>
+						<p class="texto-suave">We are a team of college students working on this project like it's our
 							full time job. Any amount would help support and continue development on this project and is greatly
 							appreciated.</p>
 					</div>
 
 
 					<!-- Fixed bton -->
-					<div class="fixed-action-btn">
-						<a class="btn-floating btn-large resto">
+					<div class="botonera-flotante">
+						<a class="btn btn--redondo btn--grande resto">
 							<i aria-hidden="true" class="fas fa-cog fa-spin"></i>
 						</a>
 						<ul>
-							<li><a class="btn-floating resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
-							<li><a class="btn-floating resto red" href="#html" aria-label="HTML"><i aria-hidden="true" class="fab fa-html5"></i></a></li>
-							<li><a class="btn-floating resto blue" href="#css" aria-label="CSS"><i aria-hidden="true" class="fab fa-css3-alt"></i></a></li>
-							<li><a class="btn-floating resto yellow" href="#js" aria-label="JavaScript"><i aria-hidden="true" class="fab fa-js"></i></a></li>
-							<li><a class="btn-floating resto deep-purple" href="#php"><i aria-hidden="true" class="fab fa-php"></i></a></li>
-							<li><a class="btn-floating resto lime" href="#node"><i aria-hidden="true" class="fab fa-node-js""></i></a></li>
-							<li><a class="btn-floating resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
+							<li><a class="btn btn--redondo resto anchorLink" href="#anchorTarget" aria-label="Volver arriba"><i aria-hidden="true" class="fas fa-chevron-up"></i></a></li>
+							<li><a class="btn btn--redondo resto fondo-html" href="#html" aria-label="HTML"><i aria-hidden="true" class="fab fa-html5"></i></a></li>
+							<li><a class="btn btn--redondo resto fondo-css" href="#css" aria-label="CSS"><i aria-hidden="true" class="fab fa-css3-alt"></i></a></li>
+							<li><a class="btn btn--redondo resto fondo-js" href="#js" aria-label="JavaScript"><i aria-hidden="true" class="fab fa-js"></i></a></li>
+							<li><a class="btn btn--redondo resto fondo-php" href="#php"><i aria-hidden="true" class="fab fa-php"></i></a></li>
+							<li><a class="btn btn--redondo resto fondo-acento" href="#node"><i aria-hidden="true" class="fab fa-node-js""></i></a></li>
+							<li><a class="btn btn--redondo resto" href="#footer" aria-label="Ir al pie de página"><i aria-hidden="true" class="fas fa-chevron-down"></i></a></li>
 						</ul>
 					</div>
 					<!-- Fixed bton -->
 					
 
 
-					<div class="col l3 s12">
-						<h5 class="white-text">Mapa del sitio</h5>
+					<div class="celda">
+						<h5 class="texto-claro">Mapa del sitio</h5>
 						<ul>
-							<li><a class="white-text" href="html.html">HTML</a></li>
-							<li><a class="white-text" href="css.html">CSS</a></li>
-							<li><a class="white-text" href="js.html">JS</a></li>
-							<li><a class="pendiente white-text" aria-disabled="true">Curiosidades</a></li>
-							<li><a class="white-text" href="guias.html">Guías</a></li>
-							<li><a class="white-text" href="relacionando.html">Relacionado</a></li>
+							<li><a class="texto-claro" href="html.html">HTML</a></li>
+							<li><a class="texto-claro" href="css.html">CSS</a></li>
+							<li><a class="texto-claro" href="js.html">JS</a></li>
+							<li><a class="pendiente texto-claro" aria-disabled="true">Curiosidades</a></li>
+							<li><a class="texto-claro" href="guias.html">Guías</a></li>
+							<li><a class="texto-claro" href="relacionando.html">Relacionado</a></li>
 						</ul>
 					</div>
 
-					<div class="col l3 s12">
-						<h5 class="white-text">Connect</h5>
+					<div class="celda">
+						<h5 class="texto-claro">Connect</h5>
 						<ul>
-							<li><a class="white-text" href="#!">Link 1</a></li>
-							<li><a class="white-text" href="#!">Link 2</a></li>
-							<li><a class="white-text" href="#!">Link 3</a></li>
-							<li><a class="white-text" href="#!">Link 4</a></li>
+							<li><a class="texto-claro" href="#!">Link 1</a></li>
+							<li><a class="texto-claro" href="#!">Link 2</a></li>
+							<li><a class="texto-claro" href="#!">Link 3</a></li>
+							<li><a class="texto-claro" href="#!">Link 4</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<a id="footer"></a>
-			<div class="footer-copyright">
+			<div class="pie-copyright">
 				<div class="container">
-					Made by&with <a class="red-text text-lighten-2" href="http://materializecss.com">Materialize</a>
 				</div>
 			</div>
 		</footer>
 
 	</div>
 	<!--  Scripts-->
-	<script src="js/materialize.js"></script>
-	<script src="js/init.js"></script>
 	<script src="js/funk.js"></script>
 
 

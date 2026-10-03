@@ -10,7 +10,7 @@ eleventyExcludeFromCollections: true
   RAG y agentes NO son ramas nuevas: son formas de USAR un LLM.
 -->
 
-<h1 class="center">{{ title }}</h1>
+<h1 class="texto-centro">{{ title }}</h1>
 
 <ol>
 {%- for p in collections.ia | sort(attribute='data.orden') %}
