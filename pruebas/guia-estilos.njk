@@ -1,0 +1,93 @@
+---
+title: Guía de estilos
+permalink: /pruebas/guia-estilos/
+borrador: true
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="es-ES" dir="ltr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>{{ title }} · DWB</title>
+	<meta name="robots" content="noindex,nofollow" />
+	{#- Página de prueba de css/style.css SIN Materialize: así se verá el sitio
+	    cuando se quite la librería. Es borrador: no se publica con `npm run build`. #}
+	<link href="/css/fuentes.css" type="text/css" rel="stylesheet" />
+	<link href="/css/style.css" type="text/css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="/img/fav1.png" sizes="64x64" />
+</head>
+
+<body>
+	<main class="container section">
+		<h1 class="texto-centro">Guía de estilos</h1>
+		<p class="texto-centro texto-suave">Prueba de <code>css/style.css</code> sin Materialize.</p>
+
+		<section>
+			<h2>Tipografía</h2>
+			<h3>Título de nivel 3</h3>
+			<h4>Título de nivel 4</h4>
+			<p>Texto de cuerpo en la fuente del sistema. Un párrafo largo para comprobar el interlineado y la medida:
+				HTML estructura el contenido, CSS lo presenta y JavaScript le da comportamiento. Este es un
+				<a href="#">enlace dentro del texto</a> y esto es <code>código en línea</code>.</p>
+			<blockquote>«HTML es el cuerpo del conjunto».<cite> — jBaton</cite></blockquote>
+			<pre>a {
+  color: var(--color-acento);
+}</pre>
+			<ul>
+				<li>Lista con viñetas</li>
+				<li>Segundo elemento</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Colores</h2>
+			<p class="fila">
+				<span class="texto-html">.texto-html</span>
+				<span class="texto-css">.texto-css</span>
+				<span class="texto-js">.texto-js</span>
+				<span class="texto-acento">.texto-acento</span>
+				<span class="texto-suave">.texto-suave</span>
+				<span class="texto-claro" style="background: var(--color-fondo-oscuro); padding: 0 .5rem">.texto-claro</span>
+			</p>
+		</section>
+
+		<section>
+			<h2>Botones y etiquetas</h2>
+			<p class="fila">
+				<a class="btn" href="#">Botón</a>
+				<a class="btn btn--grande" href="#">Botón grande</a>
+				<a class="btn btn--redondo" href="#" aria-label="Botón redondo">+</a>
+				<a class="btn btn--redondo btn--grande" href="#" aria-label="Botón redondo grande">+</a>
+			</p>
+			<p><span class="chip">seguridad</span><span class="chip">git</span><span class="chip">npm</span></p>
+		</section>
+
+		<section>
+			<h2>Rejilla</h2>
+			<h3><code>.grid</code> automática</h3>
+			<div class="grid">
+				{%- for n in [1, 2, 3, 4] %}
+				<article class="card">
+					<div class="card-contenido">
+						<span class="card-titulo">Tarjeta {{ n }}</span>
+						<p>Contenido de la tarjeta. Las columnas se reparten solas según el ancho.</p>
+					</div>
+					<div class="card-acciones"><a href="#">Acción</a></div>
+				</article>
+				{%- endfor %}
+			</div>
+
+			<h3><code>.grid.grid--3</code></h3>
+			<div class="grid grid--3">
+				<div class="card"><div class="card-contenido">Uno</div></div>
+				<div class="card"><div class="card-contenido">Dos</div></div>
+				<div class="card"><div class="card-contenido">Tres</div></div>
+				<div class="card grid-completa"><div class="card-contenido">Fila completa (<code>.grid-completa</code>)</div></div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
