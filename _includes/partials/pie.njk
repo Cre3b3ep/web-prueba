@@ -12,21 +12,27 @@
 						<a class="texto-claro resto" href="/relacionando.html">Relacionado,</a>
 						<a class="texto-claro resto" href="/diario/">Diario.</a>
 					</div>
+					{#- Contacto y redes salen de _data/sitio.js #}
+					{%- if sitio.contacto.length %}
 					<div class="texto-centro">
 						<p class="texto-css texto-centro">Contacto</p>
 						<hr class="texto-js">
 						<ul>
-							<li><a class="texto-claro css" href="https://twitter.com/messages/compose?recipient_id=3364552791&ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-1x"></i></a></li>
+							{%- for c in sitio.contacto %}
+							<li><a class="texto-claro css" href="{{ c.url }}">{{ c.texto }}</a></li>
+							{%- endfor %}
 						</ul>
 					</div>
+					{%- endif %}
+					{%- if sitio.redes.length %}
 					<div class="texto-centro">
 						<p class="texto-js texto-centro">RRSS</p>
 						<hr class="texto-php">
-						<a class="texto-acento js" href="https://twitter.com/Sinarkista?ref_src=twsrc%5Etfw" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter fa-3x"></i></a>
-						<a class="texto-css js" href="https://www.facebook.com/facundohetoro" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f fa-3x"></i></a>
-						<a class="texto-html js" href="https://www.youtube.com/channel/UC5_EM3MOGWl1uMlq23qq8Rg" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i aria-hidden="true" class="fab fa-youtube fa-3x"></i></a>
-						<a class="texto-js js" href="https://soundcloud.com/puro3" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i aria-hidden="true" class="fab fa-soundcloud fa-3x"></i></a>
+						{%- for r in sitio.redes %}
+						<a class="{{ r.color }} js" href="{{ r.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ r.nombre }}"><i aria-hidden="true" class="{{ r.icono }} fa-3x"></i></a>
+						{%- endfor %}
 					</div>
+					{%- endif %}
 					<div class="texto-centro">
 						<p class="texto-acento texto-centro">Fuentes</p>
 						<hr class="resto">

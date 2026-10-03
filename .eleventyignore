@@ -5,3 +5,5 @@ node_modules/
 .github/
 _site/
 archivo/
+# fonts/ trae licencias en .md: se copian tal cual, no son páginas
+fonts/
